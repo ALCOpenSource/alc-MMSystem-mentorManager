@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="scroll"
+    android:fillViewport="true"
+    tools:context=".ui.fragments.ReportDetailsFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/detailsHead"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="62dp"
+            android:text="Google African Developer Sholarship Report"
+            android:textFontWeight="700"
+            android:textSize="18sp"
+            android:textColor="@color/mms_black_2"
+            app:fontFamily="@font/mukta"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:targetApi="p" />
+
+        <ImageView
+            android:id="@+id/detailsCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_cancel3"
+            app:layout_constraintBottom_toBottomOf="@+id/detailsHead"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/detailsHead" />
+
+        <TextView
+            android:id="@+id/detailsSubTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textFontWeight="600"
+            android:textSize="12sp"
+            android:textColor="@color/mms_black_5"
+            android:text="By Ibrahim Kabir  -  19th - 25th Oct 22"
+            app:fontFamily="@font/mukta"
+            app:layout_constraintStart_toStartOf="@+id/detailsHead"
+            app:layout_constraintTop_toBottomOf="@+id/detailsHead"
+            tools:targetApi="p" />
+
+        <TextView
+            android:id="@+id/detailaAchievementTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Major Achievements"
+            android:textFontWeight="700"
+            android:textSize="16sp"
+            android:textColor="@color/mms_black_2"
+            app:fontFamily="@font/mukta"
+            app:layout_constraintStart_toStartOf="@+id/detailsSubTime"
+            app:layout_constraintTop_toBottomOf="@+id/detailsSubTime" />
+
+        <TextView
+            android:id="@+id/detailsAchievementText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:textFontWeight="400"
+            android:textSize="12sp"
+            android:textColor="@color/mms_black_4"
+            app:fontFamily="@font/mukta"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/detailaAchievementTitle"
+            app:layout_constraintTop_toBottomOf="@+id/detailaAchievementTitle" />
+
+        <TextView
+            android:id="@+id/detailsBlockerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Major Blocker"
+            android:textFontWeight="700"
+            android:textSize="16sp"
+            android:textColor="@color/mms_black_2"
+            app:fontFamily="@font/mukta"
+            app:layout_constraintStart_toStartOf="@+id/detailsAchievementText"
+            app:layout_constraintTop_toBottomOf="@+id/detailsAchievementText" />
+
+        <TextView
+            android:id="@+id/detailsBlockerText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textFontWeight="400"
+            android:textSize="12sp"
+            android:textColor="@color/mms_black_4"
+            app:fontFamily="@font/mukta"
+            android:text="In iaculis arcu eros, eget tempus orci facilisis id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. "
+            app:layout_constraintEnd_toEndOf="@+id/detailsAchievementText"
+            app:layout_constraintStart_toStartOf="@+id/detailsBlockerTitle"
+            app:layout_constraintTop_toBottomOf="@+id/detailsBlockerTitle" />
+
+        <TextView
+            android:id="@+id/detailsRecommendationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Major Recommendations"
+            android:textFontWeight="700"
+            android:textSize="16sp"
+            android:textColor="@color/mms_black_2"
+            app:fontFamily="@font/mukta"
+            app:layout_constraintStart_toStartOf="@+id/detailsBlockerText"
+            app:layout_constraintTop_toBottomOf="@+id/detailsBlockerText" />
+
+        <TextView
+            android:id="@+id/detailsRecommendationText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textFontWeight="400"
+            android:textSize="12sp"
+            android:textColor="@color/mms_black_4"
+            app:fontFamily="@font/mukta"
+            android:text="Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id."
+            app:layout_constraintEnd_toEndOf="@+id/detailsBlockerText"
+            app:layout_constraintStart_toStartOf="@+id/detailsRecommendationTitle"
+            app:layout_constraintTop_toBottomOf="@+id/detailsRecommendationTitle" />
+
+        <Button
+            android:id="@+id/detailsDownload"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:layout_marginBottom="31dp"
+            android:background="@drawable/button_background_filled"
+            android:text="Download"
+            android:textAllCaps="false"
+            android:textFontWeight="700"
+            android:textSize="16sp"
+            app:fontFamily="@font/mukta"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/detailsRecommendationText"
+            app:layout_constraintTop_toBottomOf="@+id/detailsRecommendationText" />
+
+        <Button
+            android:id="@+id/detailsShare"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:layout_marginBottom="31dp"
+            android:background="@drawable/button_border"
+            android:text="Share"
+            android:textAllCaps="false"
+            android:textColor="@color/mms_pry_2"
+            android:textFontWeight="700"
+            android:textSize="16sp"
+            app:fontFamily="@font/mukta"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/detailsRecommendationText"
+            app:layout_constraintTop_toBottomOf="@+id/detailsRecommendationText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
