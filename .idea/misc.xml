@@ -3,6 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/HP/Project/alc-MMSystem-mentorManager/app/src/main/res/drawable/card_border.xml" value="0.1685" />
+        <entry key="..\:/Users/HP/Project/alc-MMSystem-mentorManager/app/src/main/res/drawable/circular.xml" value="0.1685" />
+        <entry key="..\:/Users/HP/Project/alc-MMSystem-mentorManager/app/src/main/res/layout/comment_item.xml" value="0.33" />
+        <entry key="..\:/Users/HP/Project/alc-MMSystem-mentorManager/app/src/main/res/layout/commnt_deleted_dialogue.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Project/alc-MMSystem-mentorManager/app/src/main/res/layout/delete_success_dialogue.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Project/alc-MMSystem-mentorManager/app/src/main/res/layout/forum_item.xml" value="0.18" />
+        <entry key="..\:/Users/HP/Project/alc-MMSystem-mentorManager/app/src/main/res/layout/fragment_comments.xml" value="0.25" />
+        <entry key="..\:/Users/HP/Project/alc-MMSystem-mentorManager/app/src/main/res/layout/fragment_discussion_forum.xml" value="0.33" />
+        <entry key="..\:/Users/HP/Project/alc-MMSystem-mentorManager/app/src/main/res/layout/fragment_edit_post.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Project/alc-MMSystem-mentorManager/app/src/main/res/layout/fragment_edith_post.xml" value="0.25" />
+        <entry key="..\:/Users/HP/Project/alc-MMSystem-mentorManager/app/src/main/res/layout/fragment_new_topic.xml" value="0.15" />
+        <entry key="..\:/Users/HP/Project/alc-MMSystem-mentorManager/app/src/main/res/layout/post_updated_dialogue.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Project/alc-MMSystem-mentorManager/app/src/main/res/menu/menu_item.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/drawable/abc_ic_search.xml" value="0.1685" />
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/drawable/button_background_filled.xml" value="0.1785" />
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/drawable/button_border.xml" value="0.194" />

@@ -9,47 +9,47 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="51dp"
+        android:layout_marginStart="78dp"
         android:layout_marginTop="52dp"
-        android:layout_marginEnd="51dp"
-        android:text="Report Downloaded Successfully!"
+        android:layout_marginEnd="78dp"
+        android:text="Post updated successfully!"
         android:textColor="@color/mms_black_2"
         android:textFontWeight="600"
         android:textSize="18sp"
         app:fontFamily="@font/mukta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:targetApi="p" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="115dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="115dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="76dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/ic_download_image" />
+        app:srcCompat="@drawable/ic_success_report_image" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="21dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="52dp"
         android:background="@drawable/button_background_filled"
         android:text="Done"
         android:textAllCaps="false"
-        android:textFontWeight="700"
-        android:textSize="16sp"
+        android:textFontWeight="600"
+        android:textSize="18sp"
         app:fontFamily="@font/mukta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

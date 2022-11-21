@@ -2,6 +2,13 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
+        android:id="@+id/menu_broadcast"
+        android:title="Broadcast"
+        android:icon="@drawable/ic_broadcast"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView|withText" />/>
+
+    <item
         android:id="@+id/app_bar_search"
         style="@style/reportSearchViewStyle"
         android:icon="@drawable/abc_ic_search"
