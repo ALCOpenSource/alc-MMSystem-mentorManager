@@ -6,7 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.commit
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentDiscussionForumBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.DiscussionForumAdapter
@@ -33,6 +35,12 @@ class DiscussionForumFragment : Fragment() {
     ): View {
         _binding = FragmentDiscussionForumBinding.inflate(inflater, container, false)
 
+        binding.carbonAdd.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_discussionForumFragment_to_newTopicFragment)
+
+
+        }
+
         binding.forumToolbar.apply {
             setNavigationIcon(R.drawable.ic_back)
         }
@@ -42,49 +50,7 @@ class DiscussionForumFragment : Fragment() {
             adapter = adapters
         }
 
-        adapters.apply {
-            setOnMessageClickListener(object : OnMessageClickListener{
-                override fun onMessageClick() {
-                    val fragment = CommentsFragment()
-                    activity?.supportFragmentManager?.commit {
-                        setCustomAnimations(
-                            R.anim.slide_in,
-                            R.anim.fade_out
-                        )
-                        replace(R.id.fragment_container_view, fragment)
-                        addToBackStack(null)
-                    }
-                }
-            })
 
-            setOnBroadcastClickListener(object : OnBroadcastClickListener{
-                override fun onBroadcastClick() {
-                    val fragment = NewTopicFragment()
-                    activity?.supportFragmentManager?.commit {
-                        setCustomAnimations(
-                            R.anim.slide_in,
-                            R.anim.fade_out
-                        )
-                        replace(R.id.fragment_container_view, fragment)
-                        addToBackStack(null)
-                    }
-                }
-            })
-
-            setOnShareClickListener(object : OnShareClickListener{
-                override fun onShareClick() {
-                    val fragment = EditPostFragment()
-                    activity?.supportFragmentManager?.commit {
-                        setCustomAnimations(
-                            R.anim.slide_in,
-                            R.anim.fade_out
-                        )
-                        replace(R.id.fragment_container_view, fragment)
-                        addToBackStack(null)
-                    }
-                }
-            })
-        }
 
         return binding.root
     }

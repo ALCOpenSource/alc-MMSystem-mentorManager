@@ -84,6 +84,7 @@ class Broadcast_messages_Fragment : Fragment() {
 
         binding.broadcastM.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.action_navigation_home_to_broadcast_messages_Fragment)
+
         }
         val layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(context)
         // pass it to rvLists layoutManager

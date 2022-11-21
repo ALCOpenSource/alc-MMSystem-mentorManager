@@ -22,29 +22,38 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/forumImg"
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
                 android:layout_width="49dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
+                app:cardCornerRadius="100dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:shapeAppearanceOverlay="@style/roundedImageView"
-                app:srcCompat="@drawable/img_test" />
+                app:shapeAppearanceOverlay="@style/roundedImageView">
+
+                <ImageView
+                    android:id="@+id/mentor_program_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/img_test" />
+            </androidx.cardview.widget.CardView>
+
 
             <TextView
                 android:id="@+id/forumName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="14dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="22dp"
                 android:text="Samuel Kebede"
                 android:textColor="@color/mms_black_2"
                 android:textFontWeight="600"
                 android:textSize="18sp"
                 app:fontFamily="@font/mukta"
-                app:layout_constraintStart_toEndOf="@+id/forumImg"
+                app:layout_constraintStart_toEndOf="@+id/cardView"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
@@ -64,14 +73,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="13dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="23dp"
                 android:text="The New MMS Discussion Forum "
                 android:textColor="@color/mms_black_2"
                 android:textFontWeight="600"
                 android:textSize="16sp"
                 app:fontFamily="@font/mukta"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/forumImg" />
+                app:layout_constraintTop_toBottomOf="@+id/forumPos" />
 
             <TextView
                 android:id="@+id/forumText"

@@ -5,66 +5,51 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentormanager.R
+import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ForumItemBinding
+import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorListRecyclerviewItemBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.util.OnBroadcastClickListener
 import com.peculiaruc.alc_mmsystem_mentormanager.util.OnMessageClickListener
 import com.peculiaruc.alc_mmsystem_mentormanager.util.OnShareClickListener
 
 class DiscussionForumAdapter(private val discussions: Array<String>)
-    : RecyclerView.Adapter<DiscussionForumAdapter.DiscussionForumViewHolder>() {
+    : RecyclerView.Adapter<DiscussionForumAdapter.ViewHolder>() {
 
-    private lateinit var listener1: OnMessageClickListener
-    private lateinit var listener2: OnBroadcastClickListener
-    private lateinit var listener3: OnShareClickListener
 
-    fun setOnMessageClickListener(listener: OnMessageClickListener) {
-        listener1 = listener
+inner class ViewHolder(val binding: ForumItemBinding) : RecyclerView.ViewHolder(binding.root)
+
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val binding = ForumItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+
+        return ViewHolder(binding)
     }
 
-    fun setOnBroadcastClickListener(listener: OnBroadcastClickListener) {
-        listener2 = listener
-    }
-
-    fun setOnShareClickListener(listener: OnShareClickListener) {
-        listener3 = listener
-    }
-
-    inner class DiscussionForumViewHolder(view: View): RecyclerView.ViewHolder(view) {
-        private val nName = view.findViewById<TextView>(R.id.forumName)
-        private val message = view.findViewById<ImageView>(R.id.forumIconMess)
-        private val broadcast = view.findViewById<ImageView>(R.id.forumIconBroad)
-        private val share = view.findViewById<ImageView>(R.id.forumIconShare)
-
-        init {
-            message.setOnClickListener {
-                listener1.onMessageClick()
-            }
-
-            broadcast.setOnClickListener {
-                listener2.onBroadcastClick()
-            }
-
-            share.setOnClickListener {
-                listener3.onShareClick()
-            }
-        }
-
-        fun bind(name: String) {
-            nName.text = name
-        }
-    }
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DiscussionForumViewHolder {
-        val view = LayoutInflater.from(parent.context, )
-            .inflate(R.layout.forum_item, parent, false)
-        return DiscussionForumViewHolder(view)
-    }
-
-    override fun onBindViewHolder(holder: DiscussionForumViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val current = discussions[position]
-        holder.bind(current)
+
+        with(holder){
+            with(discussions[position]){
+                binding.forumName.text=current
+                binding.forumIconMess.setOnClickListener {
+                    Navigation.findNavController(it).navigate(R.id.action_discussionForumFragment_to_commentsFragment)
+                }
+                binding.forumMore.setOnClickListener {
+                    Navigation.findNavController(it).navigate(R.id.action_discussionForumFragment_to_editPostFragment)
+                }
+                binding.forumIconBroad.setOnClickListener {
+                    Navigation.findNavController(it).navigate(R.id.action_discussionForumFragment_to_fragment_mm_chat2)
+                }
+
+            }
+        }
     }
 
-    override fun getItemCount(): Int = discussions.size
+    override fun getItemCount(): Int {
+        return discussions.size
+    }
 }
+
+
