@@ -3,13 +3,15 @@ package com.peculiaruc.alc_mmsystem_mentormanager.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ActivityMainBinding
+import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ActivityMmReportsBinding
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+class activity_mm_reports : AppCompatActivity() {
+    private lateinit var binding:ActivityMmReportsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMmReportsBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
     }
 }
