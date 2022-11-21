@@ -23,7 +23,7 @@ class EditPostFragment : Fragment() {
 
         binding.editPostToolbar.apply {
             setNavigationIcon(R.drawable.ic_back)
-        }cdcd
+        }
 
         binding.editPostButtonChange.setOnClickListener {
             val fragment = PostUpdatedDialogueFragment()

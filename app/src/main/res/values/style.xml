@@ -13,6 +13,10 @@
         <item name="searchIcon">@drawable/abc_ic_search</item>
     </style>
 
+    <style name="roundedImageView" parent="Widget.AppCompat.SearchView">
+        <item name="searchIcon">@drawable/abc_ic_search</item>
+    </style>
+
     <style name="radio_text_style" parent="Widget.AppCompat.TextView">
         <item name="android:textColor">@color/mms_black_2</item>
         <item name="android:textSize">16sp</item>
@@ -46,10 +50,5 @@
         <item name="android:gravity">center</item>
         <item name="fontFamily">@font/mukta</item>
         <item name="android:background">@drawable/group_button_background</item>
-    </style>
-
-    <style name="roundedImageView">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">50%</item>
     </style>
 </resources>

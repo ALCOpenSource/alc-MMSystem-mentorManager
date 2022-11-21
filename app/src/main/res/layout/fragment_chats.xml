@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.chat_messages.home.chat_messages_Fragment">
+
+
+
+    <!-- Group 591 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/group_591"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+        <!-- Group 563 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/group_428"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#00000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- arrow-left 1 -->
+            <RelativeLayout
+                android:id="@+id/arrow_left_"
+                android:layout_width="20dp"
+                android:layout_height="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/arrow_left_"
+                android:clipToOutline="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="40dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="11dp"
+                app:cardCornerRadius="100dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/arrow_left_"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/mentor_program_pic"
+                    android:layout_width="40dp"
+                    android:layout_height="39dp"
+                    android:src="@drawable/grace" />
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Mentors -->
+            <TextView
+                android:id="@+id/mentors"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="11dp"
+                android:fontFamily="@font/mukta"
+                android:gravity="top"
+                android:text="Kenny Dabiri"
+                android:textAppearance="@style/mentor_profile_name"
+                android:textFontWeight="600"
+                app:layout_constraintBottom_toBottomOf="@+id/arrow_left_"
+                app:layout_constraintStart_toEndOf="@+id/cardView"
+                app:layout_constraintTop_toTopOf="@+id/arrow_left_" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- comment-circle-chat-message 1 -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="100dp"
+            android:layout_height="1px"
+            android:background="@drawable/line_5"
+            app:layout_constraintBottom_toBottomOf="@+id/conversatio"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/conversatio">
+
+        </TextView>
+
+        <!-- Conversation Started, -->
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:background="@drawable/line_5"
+            app:layout_constraintBottom_toBottomOf="@+id/conversatio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/conversation_start_date"
+            app:layout_constraintTop_toTopOf="@+id/conversatio">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/conversatio"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:gravity="top"
+            android:text="@string/conversatio"
+            android:textAppearance="@style/conversatio"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/group_428" />
+
+        <!-- 15 Oct -->
+        <TextView
+            android:id="@+id/conversation_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="7dp"
+            android:gravity="top"
+            android:text="@string/conversation_start_date"
+            android:textAppearance="@style/conversation_start_date"
+            app:layout_constraintBottom_toBottomOf="@+id/conversatio"
+            app:layout_constraintStart_toEndOf="@+id/conversatio"
+            app:layout_constraintTop_toTopOf="@+id/conversatio" />
+        <!-- Frame 24 -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mentor_tasks_recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="23dp"
+            app:layout_constraintBottom_toTopOf="@+id/frame_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/frame_24"
+            android:layout_width="282dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="29dp"
+            android:background="@drawable/frame_24"
+            android:clipToOutline="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/mentor_tasks_recycleview">
+
+
+            <!-- emoji-smiley-happy-face 1 -->
+            <RelativeLayout
+                android:id="@+id/emoji_smile"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/emoji_smiley_happy_face_1"
+                android:clipToOutline="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <!-- Type message... -->
+            <TextView
+                android:id="@+id/type_messag"
+                android:layout_width="104dp"
+                android:layout_height="27dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="4dp"
+                android:layout_toEndOf="@+id/emoji_smile"
+                android:gravity="top"
+                android:text="@string/type_messag"
+                android:textAppearance="@style/type_messag"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/emoji_smile"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <!-- attachment-clip-hook 1 -->
+            <RelativeLayout
+                android:id="@+id/attachment_"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="7dp"
+                android:background="@drawable/attachment_clip_hook_1"
+                android:clipToOutline="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!-- broadcast message -->
+        <RelativeLayout
+            android:id="@+id/broadcast_m_vector"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/broadcast_m"
+            android:clipToOutline="true"
+            app:layout_constraintBottom_toBottomOf="@+id/frame_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/frame_24"
+            app:layout_constraintTop_toTopOf="@+id/frame_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
