@@ -1,20 +1,15 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments
+package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.disscussion_forum
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.commit
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentDiscussionForumBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.DiscussionForumAdapter
-import com.peculiaruc.alc_mmsystem_mentormanager.util.OnBroadcastClickListener
-import com.peculiaruc.alc_mmsystem_mentormanager.util.OnMessageClickListener
-import com.peculiaruc.alc_mmsystem_mentormanager.util.OnShareClickListener
 
 
 class DiscussionForumFragment : Fragment() {

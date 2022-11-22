@@ -56,7 +56,7 @@
         android:label="fragment_mm_chat2" />
     <fragment
         android:id="@+id/discussionForumFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.DiscussionForumFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.disscussion_forum.DiscussionForumFragment"
         android:label="fragment_discussion_forum"
         tools:layout="@layout/fragment_discussion_forum" >
         <action
@@ -74,15 +74,15 @@
     </fragment>
     <fragment
         android:id="@+id/newTopicFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.NewTopicFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.disscussion_forum.NewTopicFragment"
         android:label="fragment_new_topic"
         tools:layout="@layout/fragment_new_topic" />
     <fragment
         android:id="@+id/commentsFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.CommentsFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.disscussion_forum.CommentsFragment"
         android:label="CommentsFragment" />
     <fragment
         android:id="@+id/editPostFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.EditPostFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.disscussion_forum.EditPostFragment"
         android:label="EditPostFragment" />
 </navigation>

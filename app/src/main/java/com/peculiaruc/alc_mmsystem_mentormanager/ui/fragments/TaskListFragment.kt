@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.ui
+package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments
 
 import android.os.Bundle
 import android.view.*

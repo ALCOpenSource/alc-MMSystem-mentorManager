@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments
+package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.disscussion_forum
 
 import android.os.Bundle
 import android.view.LayoutInflater

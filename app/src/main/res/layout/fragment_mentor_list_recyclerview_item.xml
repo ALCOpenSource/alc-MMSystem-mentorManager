@@ -50,11 +50,11 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="11dp"
             android:fontFamily="@font/mukta"
+            android:textSize="15dp"
             android:gravity="top"
             android:text="@string/peculiar_c_"
-            android:textAppearance="@style/peculiar_c_"
             android:textColor="@color/mms_black_2"
-            android:textFontWeight="700"
+            android:textFontWeight="600"
             app:layout_constraintStart_toEndOf="@+id/cardView"
             app:layout_constraintTop_toTopOf="parent" />
         <!-- Program Assistant, Andela, She/her -->
@@ -66,8 +66,9 @@
             android:layout_alignParentTop="true"
             android:fontFamily="@font/mukta"
             android:gravity="top"
+            android:textColor="@color/mms_black_5"
             android:text="@string/program_ass"
-            android:textAppearance="@style/program_ass"
+             android:textSize="10dp"
             android:textFontWeight="400"
             app:layout_constraintStart_toStartOf="@+id/mentor_name"
             app:layout_constraintTop_toBottomOf="@+id/mentor_name" />
@@ -98,8 +99,10 @@
                 android:fontFamily="@font/mukta"
                 android:textColor="@color/mms_pry_2"
                 android:gravity="top"
+                android:textFontWeight="400"
+                android:textSize="10dp"
                 android:text="@string/mentro_title"
-                android:textAppearance="@style/mentor_title"
+
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -132,7 +135,10 @@
                 android:layout_marginEnd="6dp"
                 android:gravity="top"
                 android:text="@string/mentor_gad"
-                android:textAppearance="@style/mentor_gad"
+                android:fontFamily="@font/mukta"
+                android:textColor="@color/mms_pry_2"
+                android:textFontWeight="400"
+                android:textSize="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

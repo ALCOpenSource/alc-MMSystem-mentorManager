@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.RelativeLayout
+import androidx.appcompat.app.AlertDialog
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentormanager.R
@@ -19,7 +22,8 @@ class Mentor_list_Fragment : Fragment() {
     private lateinit var mentorLists : List<mentor_list>
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?):
-            View? { _binding = FragmentMentorListBinding.inflate(inflater, container, false)
+            View? {
+        _binding = FragmentMentorListBinding.inflate(inflater, container, false)
                load_mentors_dummy_list()
 
                return binding.root
@@ -62,6 +66,56 @@ class Mentor_list_Fragment : Fragment() {
         rvAdapter = mentor_list_adapter(mentorLists)
         // attach adapter to the recycler view
         binding.mentorsRv.adapter = rvAdapter
+
+
+        binding.carbonAdd.setOnClickListener {
+            val dialogView = layoutInflater.inflate(R.layout.alert_dialog_box_add_mentor, null)
+            val confirmsend = layoutInflater.inflate(R.layout.alert_dialog_box_done_adding_mentor, null)
+
+
+            val customDialog = context?.let { it1 ->
+                AlertDialog.Builder(it1)
+                    .setView(dialogView)
+                    .show()
+            }
+
+
+            val btDismiss = dialogView.findViewById<RelativeLayout>(R.id.frame_352)
+            btDismiss.setOnClickListener {
+                if (customDialog != null) {
+                    customDialog.dismiss()
+                }
+            }
+            val btndone = dialogView.findViewById<RelativeLayout>(R.id.frame_351)
+
+
+            btndone.setOnClickListener {
+
+                val btDismiss = confirmsend.findViewById<RelativeLayout>(R.id.frame_351)
+
+                if (customDialog != null) {
+                    customDialog.dismiss()
+                }
+
+                val customDialog_confirm = context?.let { it1 ->
+                    AlertDialog.Builder(it1)
+                        .setView(confirmsend)
+                        .show()
+
+                }
+
+                btDismiss.setOnClickListener {
+                    if (customDialog_confirm != null) {
+                        customDialog_confirm.dismiss()
+                    }
+                }
+
+            }
+
+        }
+
+
+
     }
 
     override fun onDestroyView() {

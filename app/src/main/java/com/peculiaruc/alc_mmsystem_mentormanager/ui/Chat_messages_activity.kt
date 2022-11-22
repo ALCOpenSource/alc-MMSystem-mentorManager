@@ -18,7 +18,6 @@ class chat_messages_activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
         binding = ActivityChatMessagesBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

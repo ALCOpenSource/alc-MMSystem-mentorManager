@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.commit
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentComposeReportBinding
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.TaskListFragment
+import com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.TaskListFragment
 
 class ComposeReportFragment : Fragment() {
 
