@@ -6,8 +6,10 @@ import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.MenuProvider
 import androidx.core.widget.TextViewCompat
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentTaskListBinding
+import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.TaskListAdapter
 
 class TaskListFragment : Fragment() {
 
@@ -19,6 +21,15 @@ class TaskListFragment : Fragment() {
     private var isAssignedSelected = false
     private var isCompletedSelected = false
     private var isMyTaskSelected = false
+
+    private val tasks = arrayOf(
+        "Room library article write", "Room library article write",
+        "Room library article write", "Room library article write",
+        "Room library article write", "Room library article write",
+        "Room library article write", "Room library article write",
+    )
+
+    private val adapters = TaskListAdapter(tasks)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -38,6 +49,11 @@ class TaskListFragment : Fragment() {
                 }
 
             })
+        }
+
+        binding.taskList.apply {
+            layoutManager = LinearLayoutManager(requireContext())
+            adapter = adapters
         }
 
         handleGroupButtonClick()
