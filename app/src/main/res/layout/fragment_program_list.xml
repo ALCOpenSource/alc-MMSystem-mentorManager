@@ -44,17 +44,19 @@
             <TextView
                 android:id="@+id/programAll"
                 style="@style/group_button_text_selected"
+                android:layout_width="0dp"
                 android:layout_marginStart="6dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:text="All"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/programAssigned"
                 style="@style/group_button_text"
+                android:layout_width="0dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
@@ -66,6 +68,7 @@
             <TextView
                 android:id="@+id/programCompleted"
                 style="@style/group_button_text"
+                android:layout_width="0dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
@@ -77,11 +80,14 @@
             <TextView
                 android:id="@+id/programMyTask"
                 style="@style/group_button_text"
+                android:layout_width="0dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginEnd="6dp"
                 android:layout_marginBottom="5dp"
                 android:text="My Task"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/programCompleted"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
