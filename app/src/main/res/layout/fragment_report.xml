@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.ReportFragment">
+    tools:context="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_reports.ReportFragment">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/reportToolbar"

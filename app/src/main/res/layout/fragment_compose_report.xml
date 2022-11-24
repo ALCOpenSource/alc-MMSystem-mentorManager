@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    tools:context=".ui.fragments.ComposeReportFragment"
+    tools:context=".ui.fragments.mentor_reports.ComposeReportFragment"
     android:fillViewport="true">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -47,8 +47,8 @@
 
         <ImageView
             android:id="@+id/radioProgram"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
             android:layout_marginTop="16dp"
             android:clickable="true"
             android:contentDescription="@string/radio_unselected"
@@ -72,8 +72,8 @@
 
         <ImageView
             android:id="@+id/radioTask"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
             android:layout_marginStart="25dp"
             android:layout_marginTop="16dp"
             android:clickable="true"

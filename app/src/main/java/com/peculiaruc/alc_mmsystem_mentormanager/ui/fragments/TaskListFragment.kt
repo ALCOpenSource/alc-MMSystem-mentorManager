@@ -11,6 +11,7 @@ import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentTaskListBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.TaskListAdapter
 
+
 class TaskListFragment : Fragment() {
 
     private var _binding: FragmentTaskListBinding? = null
