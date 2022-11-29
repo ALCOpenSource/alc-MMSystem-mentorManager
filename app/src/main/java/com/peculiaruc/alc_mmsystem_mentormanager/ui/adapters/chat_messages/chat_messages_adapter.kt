@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
+import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication.Companion.global_Var_chat_partner
+import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication.Companion.global_Var_chat_profile_pic
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages.chat_messages
 import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mentors_programs
@@ -31,6 +33,8 @@ class chat_messages_adapter(var chats_message_list: List<chat_messages>, ) : Rec
                 binding.noOfMessages.text = this.number
 
                 binding.dropdownsD.setOnClickListener {
+                    global_Var_chat_partner=this.name
+                    global_Var_chat_profile_pic=this.profile_pic
                     Navigation.findNavController(it).navigate(R.id.action_navigation_home_to_individual_chat_fragment)
                 }
             }

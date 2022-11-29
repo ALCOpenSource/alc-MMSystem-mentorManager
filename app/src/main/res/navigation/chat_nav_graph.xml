@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_navigation_home_to_fragment_mm_chat2"
             app:destination="@id/fragment_mm_chat2" />
+        <action
+            android:id="@+id/action_navigation_home_to_discussion_forum2"
+            app:destination="@id/discussion_forum2" />
     </fragment>
 
 
@@ -51,4 +54,8 @@
         android:id="@+id/fragment_mm_chat2"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.disscussion_forum.fragment_mm_chat2"
         android:label="fragment_mm_chat2" />
+    <activity
+        android:id="@+id/discussion_forum2"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.Discussion_forum"
+        android:label="Discussion_forum" />
 </navigation>

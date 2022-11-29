@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_discussionForumFragment2_to_newTopicFragment"
             app:destination="@id/newTopicFragment" />
+        <action
+            android:id="@+id/action_discussionForumFragment2_to_commentFragment"
+            app:destination="@id/commentFragment" />
     </fragment>
     <fragment
         android:id="@+id/newTopicFragment"
@@ -31,4 +34,10 @@
         tools:layout="@layout/fragment_edit_post" >
     </fragment>
 
+    <fragment
+        android:id="@+id/commentFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.disscussion_forum.CommentsFragment"
+        android:label="fragment_new_topic"
+        tools:layout="@layout/fragment_comments" >
+    </fragment>
 </navigation>

@@ -9,6 +9,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication.Companion.global_Var_chat_partner
+import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication.Companion.global_Var_chat_profile_pic
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages.chat__broadcast_messages
 import com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages.individual_chat_messages
@@ -85,11 +87,19 @@ class individual_chat_fragment : Fragment() {
 
         val layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(context)
         // pass it to rvLists layoutManager
+
+        binding.mentors.text=global_Var_chat_partner
+        binding.mentorProgramPic.setImageResource(global_Var_chat_profile_pic)
         binding.mentorTasksRecycleview.setLayoutManager(layoutManager)
 
         rvAdapter= individual_chat_fragment_adapter(chat_messages)
         // attach adapter to the recycler view
         binding.mentorTasksRecycleview.adapter = rvAdapter
+
+        binding.arrowLeft.setOnClickListener {
+            activity?.onBackPressed();
+        }
+
     }
 
     override fun onDestroyView() {

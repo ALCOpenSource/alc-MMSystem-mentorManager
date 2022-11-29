@@ -196,8 +196,8 @@ class chat_messages_Fragment : Fragment() {
         binding.broadcastM.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.action_navigation_home_to_broadcast_messages_Fragment)
         }
-        binding.broadcastM.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_navigation_home_to_broadcast_messages_Fragment)
+        binding.carbonAdd.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_navigation_home_to_fragment_mm_chat2)
         }
 
         val navView: BottomNavigationView = binding.navView
@@ -205,7 +205,7 @@ class chat_messages_Fragment : Fragment() {
         navView.setOnNavigationItemReselectedListener {
             when (it.itemId) {
                 R.id.navigation_home -> {
-
+                    //reports task
                     Navigation.findNavController(navView).navigate(R.id.action_navigation_home_to_activity_mm_reports)
 
                 }
@@ -214,11 +214,16 @@ class chat_messages_Fragment : Fragment() {
                 }
                 R.id.programs -> {
 
+
+                    Navigation.findNavController(navView).navigate(R.id.action_navigation_home_to_discussion_forum2)
+
+
                 }
                 R.id.Messages -> {
 
                 }
                 R.id.mentor_profile -> {
+                    //mentor profile task
                     Navigation.findNavController(navView).navigate(R.id.action_navigation_home_to_mentor_list_Activity)
 
                 }
@@ -226,6 +231,9 @@ class chat_messages_Fragment : Fragment() {
             }
         }
 
+        binding.arrowLeft.setOnClickListener {
+            activity?.onBackPressed();
+        }
 
 
 

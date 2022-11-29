@@ -93,6 +93,12 @@ class Broadcast_messages_Fragment : Fragment() {
        rvAdapter=chat_broadcast_messages_adapter(chat_messages)
         // attach adapter to the recycler view
         binding.mentorTasksRecycleview.adapter = rvAdapter
+        binding.arrowLeft.setOnClickListener {
+            activity?.onBackPressed();
+        }
+        binding.frame330.setOnClickListener {
+            activity?.onBackPressed();
+        }
     }
 
     override fun onDestroyView() {
