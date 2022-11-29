@@ -7,61 +7,45 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.RelativeLayout
 import androidx.appcompat.app.AlertDialog
+import androidx.navigation.Navigation
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorReportDetailsBinding
+import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentReportBinding
+import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentReportDetailsBinding
+import com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_reports.DownloadDialogueFragment
+import com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_reports.ShareDialogueFragment
 
 class mentor_report_details : Fragment() {
-    private var _binding: FragmentMentorReportDetailsBinding? = null
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
+    private var _binding: FragmentReportDetailsBinding? = null
+    private val binding
+        get() = _binding!!
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        _binding = FragmentMentorReportDetailsBinding.inflate(inflater, container, false)
+    ): View {
+        _binding = FragmentReportDetailsBinding.inflate(inflater, container, false)
 
+        binding.detailsCancel.setOnClickListener {
+            Navigation.findNavController(requireView()).popBackStack(R.id.reportFragment, false)
+        }
 
+        binding.detailsShare.setOnClickListener {
+            val fragment = ShareDialogueFragment()
+            fragment.show(requireActivity().supportFragmentManager, "show share dialogue")
+        }
 
+        binding.detailsDownload.setOnClickListener {
+            val fragment = DownloadDialogueFragment()
+            fragment.show(requireActivity().supportFragmentManager, "show download dialogue")
+        }
 
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        binding.frame375.setOnClickListener {
-                val dialogView = layoutInflater.inflate(R.layout.alert_dialog_box_share_reportt, null)
-                val customDialog = context?.let { it1 ->
-                    AlertDialog.Builder(it1)
-                        .setView(dialogView)
-                        .show()
-                }
-                val btDismiss = dialogView.findViewById<RelativeLayout>(R.id.frame_352)
-                btDismiss.setOnClickListener {
-                    if (customDialog != null) {
-                        customDialog.dismiss()
-                    }
-            }
-        }
-
-
-        binding.frame376.setOnClickListener {
-            val dialogView = layoutInflater.inflate(R.layout.alert_dialog_box_report_download_succesfult, null)
-            val customDialog = context?.let { it1 ->
-                AlertDialog.Builder(it1)
-                    .setView(dialogView)
-                    .show()
-            }
-            val btDismiss = dialogView.findViewById<RelativeLayout>(R.id.frame_351)
-            btDismiss.setOnClickListener {
-                if (customDialog != null) {
-                    customDialog.dismiss()
-                }
-            }
-        }
-    }
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding =null
+    override fun onDestroy() {
+        _binding = null
+        super.onDestroy()
     }
 
 }

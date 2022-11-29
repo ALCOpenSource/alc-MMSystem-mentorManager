@@ -357,7 +357,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/group_527"
                 android:layout_width="0dp"
-                android:layout_height="48.9dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="16dp"
@@ -366,87 +366,74 @@
                 app:layout_constraintStart_toStartOf="@+id/group_591"
                 app:layout_constraintTop_toBottomOf="@+id/frame_431">
 
+
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/group_565"
-                    android:layout_width="125dp"
-                    android:layout_height="35dp"
+                    android:layout_width="128dp"
+                    android:layout_height="25.27dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginStart="22dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/rectangle_mentor_reports_frame_359"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:background="#00000000"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
                     <!-- 14 sp • Body 1 Regular -->
                     <!-- Body 1 -->
-                    <!-- Maximum -->
                     <TextView
-                        android:id="@+id/maximum"
-                        android:layout_width="51dp"
-                        android:layout_height="20dp"
+                        android:id="@+id/body_1"
+                        android:layout_width="91dp"
+                        android:layout_height="25.27dp"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentTop="true"
-                        android:fontFamily="sans-serif-black"
-                        android:gravity="center"
-                        android:text="@string/maximum"
-                        android:textAppearance="@style/maximum"
-                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="4dp"
+                        android:fontFamily="@font/mukta"
+                        android:gravity="center_vertical"
+                        android:text="All Reports"
+                        android:textAppearance="@style/body_1"
+                        android:textColor="@color/mms_black_2"
+                        android:textFontWeight="600"
+                        android:textSize="16dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
 
                     <!-- arrow-dropdown-caret-sort-select-arrow 2 -->
-                    <androidx.constraintlayout.widget.ConstraintLayout
+                    <RelativeLayout
                         android:id="@+id/arrow_dropd"
-                        android:layout_width="44dp"
-                        android:layout_height="31dp"
+                        android:layout_width="24dp"
+                        android:layout_height="23.83dp"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentTop="true"
-                        android:background="@color/mms_pry_2"
+                        android:background="@drawable/arrow_dropdown_caret_sort_select_arrow_2"
                         android:clipToOutline="true"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-                        <!-- Sort -->
-                        <TextView
-                            android:id="@+id/sort"
-                            android:layout_width="23dp"
-                            android:layout_height="20dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="5dp"
-                            android:layout_marginBottom="6dp"
-                            android:gravity="top"
-                            android:text="@string/sort"
-                            android:textAppearance="@style/sort"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+                        app:layout_constraintBottom_toBottomOf="@+id/body_1"
+                        app:layout_constraintStart_toEndOf="@+id/body_1"
+                        app:layout_constraintTop_toTopOf="@+id/body_1" />
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
                 <!-- search 1 -->
                 <RelativeLayout
                     android:id="@+id/search_1"
-                    android:layout_width="0dp"
-                    android:layout_height="19.94dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentRight="true"
-                    android:layout_marginTop="3.75dp"
                     android:layout_marginEnd="2dp"
-                    android:layout_marginBottom="4.89dp"
                     android:background="@drawable/search_1"
                     android:clipToOutline="true"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/group_565"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="@+id/group_565" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
