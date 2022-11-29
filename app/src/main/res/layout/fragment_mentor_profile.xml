@@ -30,63 +30,30 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
                 <!-- Group 563 -->
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/group_428"
-                    android:layout_width="176dp"
-                    android:layout_height="30dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
-                    android:background="#00000000"
+                <!-- comment-circle-chat-message 1 -->
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/reportToolbar"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="?attr/actionBarTheme"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
-                    <!-- arrow-left 1 -->
-                    <RelativeLayout
-                        android:id="@+id/arrow_left_"
-                        android:layout_width="20dp"
-                        android:layout_height="16dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginStart="3dp"
-                        android:layout_marginTop="9dp"
-                        android:layout_marginBottom="8dp"
-                        android:background="@drawable/arrow_left_"
-                        android:clipToOutline="true"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <!-- Mentors -->
                     <TextView
-                        android:id="@+id/mentors"
+                        android:id="@+id/pagetitle"
+                        style="@style/title_text_style"
                         android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginStart="12dp"
-                        android:fontFamily="@font/mukta"
-                        android:gravity="top"
-                        android:text="@string/mentor_profile_name"
-                        android:textAppearance="@style/mentor_profile_name"
-                        android:textFontWeight="600"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/arrow_left_"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        android:layout_height="wrap_content"
+                        android:text="Mentors"
+                        tools:layout_editor_absoluteX="40dp"
+                        tools:layout_editor_absoluteY="16dp" />
 
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
-                <!-- comment-circle-chat-message 1 -->
-                <RelativeLayout
-                    android:id="@+id/comment_cir"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
-                    android:background="@drawable/comment_circle_chat_message_profile"
-                    android:clipToOutline="true"
+                </androidx.appcompat.widget.Toolbar>
 
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+
 
                 <!-- Group 590 -->
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -95,10 +62,9 @@
                     android:layout_height="114dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginTop="20dp"
                     android:background="#00000000"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/group_428">
+                    app:layout_constraintTop_toBottomOf="@+id/reportToolbar">
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/cardView"
@@ -136,6 +102,7 @@
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
                             android:gravity="center_vertical"
+                            android:textFontWeight="600"
                             android:text="@string/body_2"
                             android:textAppearance="@style/body_2"
                             app:layout_constraintStart_toStartOf="parent"
@@ -179,7 +146,7 @@
             <!-- Frame 431 -->
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/frame_431"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
@@ -191,7 +158,7 @@
                 <!-- About-Programs-Scroller -->
                 <HorizontalScrollView
                     android:id="@+id/about_progr"
-                    android:layout_width="381dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="70dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
@@ -380,6 +347,9 @@
                         android:layout_alignParentTop="true"
                         android:layout_marginLeft="4dp"
                         android:gravity="top"
+                        android:fontFamily="@font/mukta"
+                        android:textFontWeight="600"
+                        android:textColor="@color/mms_black_2"
                         android:text="@string/bio"
                         android:textAppearance="@style/bio"
                         app:layout_constraintStart_toStartOf="parent"
@@ -419,6 +389,9 @@
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
                             android:gravity="top"
+                            android:fontFamily="@font/mukta"
+                            android:textFontWeight="600"
+                            android:textColor="@color/mms_black_2"
                             android:text="@string/technical_p"
                             android:textAppearance="@style/technical_p"
                             app:layout_constraintStart_toStartOf="parent"
@@ -460,6 +433,9 @@
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
                             android:gravity="top"
+                            android:fontFamily="@font/mukta"
+                            android:textFontWeight="600"
+                            android:textColor="@color/mms_black_2"
                             android:text="@string/previous_pr"
                             android:textAppearance="@style/previous_pr"
                             app:layout_constraintStart_toStartOf="parent"
@@ -503,6 +479,9 @@
                             android:layout_alignParentTop="true"
                             android:gravity="top"
                             android:text="@string/previous_ro"
+                            android:fontFamily="@font/mukta"
+                            android:textFontWeight="600"
+                            android:textColor="@color/mms_black_2"
                             android:textAppearance="@style/previous_pr"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -543,6 +522,9 @@
                             android:layout_alignParentTop="true"
                             android:gravity="top"
                             android:text="@string/program_of_"
+                            android:fontFamily="@font/mukta"
+                            android:textFontWeight="600"
+                            android:textColor="@color/mms_black_2"
                             android:textAppearance="@style/program_of_"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -585,6 +567,9 @@
                             android:layout_alignParentTop="true"
                             android:gravity="top"
                             android:text="@string/been_a_ment"
+                            android:fontFamily="@font/mukta"
+                            android:textFontWeight="600"
+                            android:textColor="@color/mms_black_2"
                             android:textAppearance="@style/been_a_ment"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -626,6 +611,9 @@
                             android:gravity="top"
                             android:text="@string/years_of_te"
                             android:textAppearance="@style/years_of_te"
+                            android:fontFamily="@font/mukta"
+                            android:textFontWeight="600"
+                            android:textColor="@color/mms_black_2"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -656,6 +644,9 @@
                         android:layout_alignParentTop="true"
                         android:layout_marginTop="15dp"
                         android:gravity="top"
+                        android:fontFamily="@font/mukta"
+                        android:textFontWeight="600"
+                        android:textColor="@color/mms_black_2"
                         android:text="@string/documents"
                         android:textAppearance="@style/documents"
                         app:layout_constraintStart_toStartOf="@+id/group_453"
@@ -1035,7 +1026,7 @@
                     <!-- Frame 11 -->
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/frame_11"
-                        android:layout_width="321dp"
+                        android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentTop="true"

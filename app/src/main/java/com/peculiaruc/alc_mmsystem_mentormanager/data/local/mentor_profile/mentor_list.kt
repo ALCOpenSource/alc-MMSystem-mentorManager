@@ -5,5 +5,6 @@ data class mentor_list (
     val Bio_data : String ="",
     val Title : String ="",
     val Role : String ="",
-    val profile_pic : Int
+    val profile_pic : Int,
+    val assignne:Boolean
 )

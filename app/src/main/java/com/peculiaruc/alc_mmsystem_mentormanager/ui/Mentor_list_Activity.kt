@@ -4,8 +4,12 @@ import android.os.Bundle
 import android.view.View
 
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 //import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.NavigationUI
+import com.peculiaruc.alc_mmsystem_mentormanager.R
 //import androidx.navigation.ui.navigateUp
 //import androidx.navigation.ui.setupActionBarWithNavController
 //import com.peculiaruc.alc_mmsystem_mentormanager.R
@@ -23,8 +27,9 @@ class Mentor_list_Activity : AppCompatActivity() {
         binding = ActivityMentorListBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
+        val navController = this.findNavController(R.id.nav_host_fragment_content_mentor_list)
+        NavigationUI.setupActionBarWithNavController(this, navController)
+      
     }
 
 

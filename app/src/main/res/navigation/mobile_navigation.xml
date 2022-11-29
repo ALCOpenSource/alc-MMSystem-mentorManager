@@ -52,7 +52,7 @@
         tools:layout="@layout/activity_mm_reports" />
     <fragment
         android:id="@+id/fragment_mm_chat2"
-        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.disscusion_forum.fragment_mm_chat2"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.disscussion_forum.fragment_mm_chat2"
         android:label="fragment_mm_chat2" />
     <fragment
         android:id="@+id/discussionForumFragment"

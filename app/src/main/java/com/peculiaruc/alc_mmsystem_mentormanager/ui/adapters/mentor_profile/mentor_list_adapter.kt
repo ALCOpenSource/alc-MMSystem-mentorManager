@@ -3,14 +3,14 @@ package com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.mentor_profile
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mentor_list
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorListRecyclerviewItemBinding
 
-class mentor_list_adapter(private var mentor_list: List<mentor_list>, ) : RecyclerView.Adapter<mentor_list_adapter.ViewHolder>() {
-
+class mentor_list_adapter(private var mentor_list:ArrayList<mentor_list>, ) : RecyclerView.Adapter<mentor_list_adapter.ViewHolder>() {
 
     inner class ViewHolder(val binding: FragmentMentorListRecyclerviewItemBinding) : RecyclerView.ViewHolder(binding.root)
 
@@ -19,6 +19,18 @@ class mentor_list_adapter(private var mentor_list: List<mentor_list>, ) : Recycl
 
         return ViewHolder(binding)
     }
+    // method for filtering our recyclerview items.
+    // method for filtering our recyclerview items.
+    fun filterList(filterlist: ArrayList<mentor_list>) {
+        // below line is to add our filtered
+        // list in our course array list.
+        mentor_list = filterlist
+        // below line is to notify our adapter
+        // as change in recycler view data.
+        notifyDataSetChanged()
+    }
+
+
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         with(holder){
@@ -29,7 +41,10 @@ class mentor_list_adapter(private var mentor_list: List<mentor_list>, ) : Recycl
                 binding.role.text = this.Role
                 binding.mentorProfilePic.setImageResource(this.profile_pic)
                 binding.dropdownsD.setOnClickListener {
-                    Navigation.findNavController(it).navigate(R.id.action_FirstFragment_to_SecondFragment2)
+
+                    val bundle = bundleOf("Mentor_name" to binding.mentorName.text.toString().trim())
+
+                    Navigation.findNavController(it).navigate(R.id.action_FirstFragment_to_SecondFragment2,bundle)
                 }
             }
             }
@@ -39,5 +54,7 @@ class mentor_list_adapter(private var mentor_list: List<mentor_list>, ) : Recycl
         return mentor_list.size
     }
 }
+
+
 
 
