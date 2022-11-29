@@ -4,7 +4,7 @@
     <item
         android:id="@+id/app_bar_search"
         style="@style/reportSearchViewStyle"
-        android:icon="@drawable/abc_ic_search"
+        android:icon="@drawable/comment_circle_chat_message_profile"
         android:title="@string/search_text"
         app:actionViewClass="androidx.appcompat.widget.SearchView"
         app:showAsAction="ifRoom|collapseActionView|withText" />

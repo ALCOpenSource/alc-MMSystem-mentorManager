@@ -16,8 +16,7 @@
         android:focusable="true"
         android:src="@drawable/arrow_left_"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TouchTargetSizeCheck" />
+
 
     <TextView
         android:id="@+id/reportTitle"

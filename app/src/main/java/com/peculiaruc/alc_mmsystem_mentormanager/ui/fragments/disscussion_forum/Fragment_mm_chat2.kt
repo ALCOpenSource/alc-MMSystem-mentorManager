@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.disscusion_forum
+package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.disscussion_forum
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,17 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentormanager.R
-import com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages.chat__broadcast_messages
 import com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages.individual_chat_messages
-import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentBroadcastMessagesBinding
-import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentChatsBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMmChats2Binding
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.chat_messages.chat_broadcast_messages_adapter
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.chat_messages.individual_chat_fragment_adapter
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.disscussion_forum.fragment_mm_chat2_adapter
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.chat_messages.home.HomeViewModel
 
