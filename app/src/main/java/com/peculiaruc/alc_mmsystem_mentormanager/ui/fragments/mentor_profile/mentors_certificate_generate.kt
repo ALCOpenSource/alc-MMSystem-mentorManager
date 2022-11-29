@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.RelativeLayout
 import androidx.appcompat.app.AlertDialog
 import androidx.navigation.Navigation
+import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorsCertificateDownloadBinding
 
@@ -39,6 +40,16 @@ class mentors_certificate_generate : Fragment() {
                 }
             }
         }
+
+        binding.mentors.text= MentorManagerApplication.global_Var_MENTOR_NAME_certificate_name
+        binding.body2.text= MentorManagerApplication.global_Var_MENTOR_NAME
+        binding.mentorProgramPic.setImageResource(MentorManagerApplication.global_Var_MENTOR_NAME_pic)
+
+        binding.arrowLeft.setOnClickListener {
+            activity?.onBackPressed();
+        }
+
+
 
 
         binding.ace1.setOnClickListener {

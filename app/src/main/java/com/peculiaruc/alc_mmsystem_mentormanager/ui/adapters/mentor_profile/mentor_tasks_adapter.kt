@@ -26,7 +26,7 @@ class mentor_tasks_adapter(var mentor_task: List<mentors_tasks>, ) : RecyclerVie
                 binding.programDate.text = this.date
 //                binding.mentorProgramPic.setImageResource(this.program_profile_pic)
                 binding.dropdownsD.setOnClickListener {
-                    Navigation.findNavController(it).navigate(R.id.action_FirstFragment_to_SecondFragment2)
+                  //  Navigation.findNavController(it).navigate(R.id.action_FirstFragment_to_SecondFragment2)
                 }
             }
             }

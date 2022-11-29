@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
+import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication.Companion.global_Var_MENTOR_NAME
+import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication.Companion.global_Var_MENTOR_NAME_pic
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mentor_list
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorListRecyclerviewItemBinding
@@ -43,7 +45,8 @@ class mentor_list_adapter(private var mentor_list:ArrayList<mentor_list>, ) : Re
                 binding.dropdownsD.setOnClickListener {
 
                     val bundle = bundleOf("Mentor_name" to binding.mentorName.text.toString().trim())
-
+                    global_Var_MENTOR_NAME=binding.mentorName.text.toString()
+                    global_Var_MENTOR_NAME_pic=this.profile_pic
                     Navigation.findNavController(it).navigate(R.id.action_FirstFragment_to_SecondFragment2,bundle)
                 }
             }

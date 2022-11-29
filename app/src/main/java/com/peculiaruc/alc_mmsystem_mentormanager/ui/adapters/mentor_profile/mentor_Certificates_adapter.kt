@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
+import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication.Companion.global_Var_MENTOR_NAME_certificate_name
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mentors_certificate
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorCertificatesRecyclerviewItemBinding
@@ -23,6 +24,9 @@ class mentor_Certificates_adapter(var mentor_certificates: List<mentors_certific
         with(holder){
             with(mentor_certificates[position]){
                 binding.CertficateName.text = this.certifiacte_name
+
+                global_Var_MENTOR_NAME_certificate_name=this.certifiacte_name
+
                 //binding.ace_1.text = this.Report_creation_infor
 //                binding.mentorProgramPic.setImageResource(this.program_profile_pic)
                 binding.dropdownsD.setOnClickListener {

@@ -5,9 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mentors_programs
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorsProgramsFragmentBinding
@@ -67,8 +69,18 @@ class mentors_programs_fragment : Fragment() {
         rvAdapter = mentor_program_adapter(mentors_program_list)
         // attach adapter to the recycler view
         binding.mentorProgramsRecycleview.adapter = rvAdapter
+        binding.mentors.text= MentorManagerApplication.global_Var_MENTOR_NAME
+        binding.body2.text= MentorManagerApplication.global_Var_MENTOR_NAME
+        binding.mentorProgramPic.setImageResource(MentorManagerApplication.global_Var_MENTOR_NAME_pic)
 
+        binding.arrowLeft.setOnClickListener {
+            activity?.onBackPressed();
+        }
+        binding.about.setOnClickListener {
+            activity?.onBackPressed();
+        }
         binding.tasks.setOnClickListener {
+
             Navigation.findNavController(it).navigate(R.id.action_mentors_programs_fragment_to_mentro_tasks_fragment)
         }
     }

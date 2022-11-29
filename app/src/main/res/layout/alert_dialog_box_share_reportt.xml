@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -18,15 +19,17 @@
         <!-- Group 509 -->
         <View
             android:id="@+id/group_509"
-            android:layout_width="118dp"
-            android:layout_height="118dp"
+            android:layout_width="0dp"
+            android:layout_height="149dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="37dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="104dp"
             android:background="@drawable/share_report"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/report_down" />
 
         <!-- Report Downloaded Successfully! -->
         <TextView
@@ -36,14 +39,14 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="51dp"
-            android:layout_marginTop="19dp"
+            android:layout_marginTop="48dp"
             android:layout_marginEnd="51dp"
             android:gravity="center"
             android:text="@string/share_report_vie_mail"
             android:textAppearance="@style/report_down"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/group_509" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <!-- Frame 351 -->
         <RelativeLayout
@@ -53,13 +56,13 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="21dp"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="21dp"
             android:layout_marginEnd="21dp"
             android:background="@drawable/frame_351"
             android:clipToOutline="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/report_down">
+            app:layout_constraintTop_toBottomOf="@+id/group_509">
 
             <!-- Done -->
             <TextView

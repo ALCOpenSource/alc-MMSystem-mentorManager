@@ -17,19 +17,12 @@ import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ActivityMentorListB
 
 
 class Mentor_list_Activity : AppCompatActivity() {
-
 //    private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMentorListBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityMentorListBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        val navController = this.findNavController(R.id.nav_host_fragment_content_mentor_list)
-        NavigationUI.setupActionBarWithNavController(this, navController)
-      
     }
 
 

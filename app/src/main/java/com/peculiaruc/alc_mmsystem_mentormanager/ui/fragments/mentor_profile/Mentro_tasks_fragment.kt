@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mentors_tasks
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentroTasksFragmentBinding
@@ -28,6 +29,9 @@ class Mentro_tasks_fragment : Fragment() {
     ): View? {
         load_dummy_programms()
         _binding = FragmentMentroTasksFragmentBinding.inflate(inflater, container, false)
+
+
+
         return binding.root
     }
 
@@ -72,6 +76,16 @@ class Mentro_tasks_fragment : Fragment() {
         // attach adapter to the recycler view
         binding.mentorTasksRecycleview.adapter = rvAdapter
 
+        binding.mentors.text= MentorManagerApplication.global_Var_MENTOR_NAME
+        binding.body2.text= MentorManagerApplication.global_Var_MENTOR_NAME
+        binding.mentorProgramPic.setImageResource(MentorManagerApplication.global_Var_MENTOR_NAME_pic)
+
+        binding.arrowLeft.setOnClickListener {
+            activity?.onBackPressed();
+        }
+        binding.Programs.setOnClickListener {
+            activity?.onBackPressed();
+        }
         binding.reports.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.action_mentro_tasks_fragment_to_mentors_Reports_fragments)
         }

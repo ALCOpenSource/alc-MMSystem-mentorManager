@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mentors_reports
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorsReportsBinding
@@ -63,6 +64,17 @@ class mentors_Reports_fragments : Fragment() {
         // attach adapter to the recycler view
         binding.mentorTasksRecycleview.adapter = rvAdapter
 
+        binding.mentors.text= MentorManagerApplication.global_Var_MENTOR_NAME
+        binding.body2.text= MentorManagerApplication.global_Var_MENTOR_NAME
+        binding.mentorProgramPic.setImageResource(MentorManagerApplication.global_Var_MENTOR_NAME_pic)
+
+        binding.arrowLeft.setOnClickListener {
+            activity?.onBackPressed();
+        }
+
+        binding.tasks.setOnClickListener {
+            activity?.onBackPressed();
+        }
         binding.certificate.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.action_mentors_Reports_fragments_to_mentor_certificates_fragment)
         }

@@ -5,31 +5,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <!-- Group 614 -->
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/reportToolbar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/pagetitle"
+        <ImageView
+            android:id="@+id/reportBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mentors"
+            android:layout_marginStart="23dp"
+            android:contentDescription="TODO"
+            android:focusable="true"
+            android:src="@drawable/arrow_left_"
+            app:layout_constraintBottom_toBottomOf="@+id/reportTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/reportTitle" />
+
+
+        <TextView
+            android:id="@+id/reportTitle"
             style="@style/title_text_style"
-            tools:layout_editor_absoluteX="40dp"
-            tools:layout_editor_absoluteY="16dp"/>
-    </androidx.appcompat.widget.Toolbar>
-    <!-- Group 565 -->
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="31dp"
+            android:text="Mentors"
+            app:layout_constraintStart_toEndOf="@+id/reportBack"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <!-- 14 sp • Body 1 Regular -->
-        <!-- Body 1 -->
+    <SearchView
+        android:id="@+id/Searchicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:maxWidth="290dp"
+        android:searchHintIcon="@drawable/abc_ic_search"
+        android:searchIcon="@drawable/abc_ic_search"
+        app:layout_constraintBottom_toBottomOf="@+id/reportTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/reportTitle"
+        tools:targetApi="lollipop_mr1" />
 
-    <!-- arrow-dropdown-caret-sort-select-arrow 2 -->
 
 
     <!-- arrow-dropdown-caret-sort-select-arrow 2 -->
@@ -42,7 +55,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/mukta"
         android:gravity="center_vertical"
         android:text="@string/body_1"
@@ -51,13 +64,14 @@
         android:textFontWeight="600"
         android:textSize="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reportToolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/Searchicon" />
 
     <Spinner
         android:id="@+id/MentorsSpinner"
         android:layout_width="109dp"
         android:layout_height="25dp"
         android:background="@null"
+        android:visibility="invisible"
         android:gravity="left"
         app:layout_constraintEnd_toEndOf="@+id/arrow_dropd"
         app:layout_constraintStart_toStartOf="@+id/body_1"
@@ -85,11 +99,10 @@
         android:layout_height="0dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="68dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reportToolbar">
+        app:layout_constraintTop_toBottomOf="@+id/MentorsSpinner">
 
         <!-- Frame 429 -->
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"

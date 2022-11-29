@@ -26,7 +26,7 @@ class mentor_program_adapter(var mentor_program: List<mentors_programs>, ) : Rec
                 binding.programDate.text = this.date
 //                binding.mentorProgramPic.setImageResource(this.program_profile_pic)
                 binding.dropdownsD.setOnClickListener {
-                    Navigation.findNavController(it).navigate(R.id.action_FirstFragment_to_SecondFragment2)
+
                 }
             }
             }

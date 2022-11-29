@@ -27,33 +27,67 @@
                 android:layout_marginEnd="20dp"
                 android:background="#00000000"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
                 <!-- Group 563 -->
-                <!-- comment-circle-chat-message 1 -->
-                <androidx.appcompat.widget.Toolbar
-                    android:id="@+id/reportToolbar"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:minHeight="?attr/actionBarSize"
-                    android:theme="?attr/actionBarTheme"
-                    app:layout_constraintEnd_toEndOf="parent"
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/group_428"
+                    android:layout_width="176dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#00000000"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
+                    <!-- arrow-left 1 -->
+                    <RelativeLayout
+                        android:id="@+id/arrow_left_"
+                        android:layout_width="20dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/arrow_left_"
+                        android:clipToOutline="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- Mentors -->
                     <TextView
-                        android:id="@+id/pagetitle"
-                        style="@style/title_text_style"
+                        android:id="@+id/mentors"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Mentors"
-                        tools:layout_editor_absoluteX="40dp"
-                        tools:layout_editor_absoluteY="16dp" />
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/mukta"
+                        android:gravity="top"
+                        android:text="@string/mentor_profile_name"
+                        android:textAppearance="@style/mentor_profile_name"
+                        android:textFontWeight="600"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/arrow_left_"
+                        app:layout_constraintTop_toTopOf="parent" />
 
 
-                </androidx.appcompat.widget.Toolbar>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <!-- comment-circle-chat-message 1 -->
+                <RelativeLayout
+                    android:id="@+id/comment_cir"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/comment_circle_chat_message_profile"
+                    android:clipToOutline="true"
 
-
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <!-- Group 590 -->
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -62,9 +96,10 @@
                     android:layout_height="114dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
                     android:background="#00000000"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/reportToolbar">
+                    app:layout_constraintTop_toBottomOf="@+id/group_428">
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/cardView"
@@ -102,7 +137,6 @@
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentTop="true"
                             android:gravity="center_vertical"
-                            android:textFontWeight="600"
                             android:text="@string/body_2"
                             android:textAppearance="@style/body_2"
                             app:layout_constraintStart_toStartOf="parent"
@@ -141,6 +175,7 @@
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
             <!-- Frame 431 -->

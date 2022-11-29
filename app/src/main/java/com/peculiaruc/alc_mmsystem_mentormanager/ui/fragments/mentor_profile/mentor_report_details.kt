@@ -20,6 +20,10 @@ class mentor_report_details : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentMentorReportDetailsBinding.inflate(inflater, container, false)
+
+
+
+
         return binding.root
     }
 
