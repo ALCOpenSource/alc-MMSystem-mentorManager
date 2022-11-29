@@ -41,6 +41,16 @@
         <item name="fontFamily">@font/mukta</item>
     </style>
 
+    <style name="program_group_button_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/mms_black_10</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/mukta</item>
+    </style>
+
     <style name="group_button_text_selected">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -50,5 +60,9 @@
         <item name="android:gravity">center</item>
         <item name="fontFamily">@font/mukta</item>
         <item name="android:background">@drawable/group_button_background</item>
+    </style>
+
+    <style name="spinnerStyle" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/spinner_bg</item>
     </style>
 </resources>

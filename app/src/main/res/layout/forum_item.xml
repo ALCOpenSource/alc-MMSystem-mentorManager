@@ -108,14 +108,14 @@
                 app:srcCompat="@drawable/ic_icon_message" />
 
             <ImageView
-                android:id="@+id/forumIconBroad"
+                android:id="@+id/forumIconBookmark"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginBottom="21dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/forumIconMess"
-                app:srcCompat="@drawable/ic_broadcast" />
+                app:srcCompat="@drawable/ic_bookmark" />
 
             <ImageView
                 android:id="@+id/forumIconShare"
@@ -124,7 +124,7 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginBottom="21dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/forumIconBroad"
+                app:layout_constraintStart_toEndOf="@+id/forumIconBookmark"
                 app:srcCompat="@drawable/ic_share_arrow" />
 
             <ImageView
@@ -156,6 +156,67 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_more_icon" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/forumMoreCard"
+                android:visibility="invisible"
+                android:layout_width="111dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="6dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/forum_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Edit Post"
+                        android:textColor="@color/mms_black_2"
+                        android:textFontWeight="400"
+                        android:textSize="12sp"
+                        app:fontFamily="@font/mukta"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/forum_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Delete Post"
+                        android:textColor="@color/mms_black_2"
+                        android:textFontWeight="400"
+                        android:textSize="12sp"
+                        app:fontFamily="@font/mukta"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/forum_edit" />
+
+                    <ImageView
+                        android:id="@+id/forum_up_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="6dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/forum_edit"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_arrow_up" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

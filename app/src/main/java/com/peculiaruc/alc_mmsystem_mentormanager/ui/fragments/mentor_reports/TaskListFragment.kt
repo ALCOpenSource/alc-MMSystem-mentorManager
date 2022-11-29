@@ -1,11 +1,14 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments
+package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_reports
 
 import android.os.Bundle
-import android.view.*
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.content.res.ResourcesCompat
-import androidx.core.view.MenuProvider
 import androidx.core.widget.TextViewCompat
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentTaskListBinding
@@ -38,19 +41,11 @@ class TaskListFragment : Fragment() {
     ): View {
         _binding = FragmentTaskListBinding.inflate(inflater, container, false)
 
-        binding.taskListToolbar.apply {
-            setNavigationIcon(R.drawable.ic_back)
-            addMenuProvider(object : MenuProvider {
-                override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
-                    menuInflater.inflate(R.menu.menu_item, menu)
-                }
-
-                override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
-                    return true
-                }
-
-            })
+        binding.taskBack.setOnClickListener {
+            Navigation.findNavController(requireView()).popBackStack(R.id.composeReportFragment, false)
         }
+
+        handleSearchClicked()
 
         binding.taskList.apply {
             layoutManager = LinearLayoutManager(requireContext())
@@ -60,6 +55,19 @@ class TaskListFragment : Fragment() {
         handleGroupButtonClick()
 
         return binding.root
+    }
+
+    private fun handleSearchClicked() {
+        binding.taskSearch.setOnSearchClickListener {
+            binding.taskSearch.background = AppCompatResources.getDrawable(requireContext(), R.drawable.card_border)
+            binding.taskTitle.visibility = View.INVISIBLE
+        }
+
+        binding.taskSearch.setOnCloseListener {
+            binding.taskSearch.background = null
+            binding.taskTitle.visibility = View.VISIBLE
+            false
+        }
     }
 
     private fun handleGroupButtonClick() {

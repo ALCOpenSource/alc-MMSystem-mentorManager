@@ -1,162 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.fragments.disscussion_forum.NewTopicFragment">
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragments.disscussion_forum.NewTopicFragment">
 
 
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/newPostToolbar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/newTopicAppTitle"
+        <ImageView
+            android:id="@+id/new_topic_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="36dp"
+            android:focusable="true"
+            android:src="@drawable/arrow_left_"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/new_topic_title"
             style="@style/title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
             android:text="New Topic"
-            tools:layout_editor_absoluteX="146dp"
-            tools:layout_editor_absoluteY="137dp" />
-
-    </androidx.appcompat.widget.Toolbar>
-
-    <TextView
-        android:id="@+id/newTopicTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="36dp"
-        android:text="Title"
-        android:textColor="@color/mms_black_2"
-        android:textFontWeight="600"
-        android:textSize="16sp"
-        app:fontFamily="@font/mukta"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newPostToolbar" />
-
-    <EditText
-        android:id="@+id/newTopicInputTitle"
-        android:layout_width="0dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="20dp"
-        android:padding="10dp"
-        android:background="@drawable/card_border"
-        android:textColor="@color/mms_black_2"
-        android:textColorHint="@color/mms_black_6"
-        android:textFontWeight="400"
-        android:textSize="16sp"
-        app:fontFamily="@font/mukta"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="Enter a title"
-        android:inputType="textMultiLine"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newTopicTitle"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/newTopicInputGuide"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:textColor="@color/mms_black_2"
-        android:textFontWeight="400"
-        android:textSize="12sp"
-        app:fontFamily="@font/mukta"
-        android:text="The title must contain a maximum of 32 characters"
-        app:layout_constraintEnd_toEndOf="@+id/newTopicInputTitle"
-        app:layout_constraintStart_toStartOf="@+id/newTopicInputTitle"
-        app:layout_constraintTop_toBottomOf="@+id/newTopicInputTitle" />
-
-    <TextView
-        android:id="@+id/newTpicBody"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Body"
-        android:textColor="@color/mms_black_2"
-        android:textFontWeight="600"
-        android:textSize="16sp"
-        app:fontFamily="@font/mukta"
-        app:layout_constraintStart_toStartOf="@+id/newTopicInputGuide"
-        app:layout_constraintTop_toBottomOf="@+id/newTopicInputGuide" />
-
-    <EditText
-        android:id="@+id/newTopicInputBody"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/card_border"
-        android:ems="10"
-        android:gravity="start|top"
-        android:padding="10dp"
-        android:textColor="@color/mms_black_2"
-        android:textColorHint="@color/mms_black_6"
-        android:hint="Start typing..."
-        android:inputType="textMultiLine"
-        android:textSize="16sp"
-        app:fontFamily="@font/mukta"
-        app:layout_constraintEnd_toEndOf="@+id/newTopicInputGuide"
-        app:layout_constraintStart_toStartOf="@+id/newTpicBody"
-        app:layout_constraintTop_toBottomOf="@+id/newTpicBody" />
-
-    <ImageView
-        android:id="@+id/newTopicIconLink"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="19dp"
-        android:src="@drawable/ic_link"
-        app:layout_constraintBottom_toBottomOf="@+id/newTopicInputBody"
-        app:layout_constraintEnd_toEndOf="@+id/newTopicInputBody" />
-
-    <ImageView
-        android:id="@+id/newTopicIconImg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="26dp"
-        android:src="@drawable/ic_img_pic"
-        app:layout_constraintBottom_toBottomOf="@+id/newTopicIconLink"
-        app:layout_constraintEnd_toStartOf="@+id/newTopicIconLink" />
-
-    <Button
-        android:id="@+id/newTopicButtonPost"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:background="@drawable/button_background_filled"
-        android:text="Post to forum"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="@+id/newTopicInputBody"
-        app:layout_constraintStart_toStartOf="@+id/newTopicInputBody"
-        app:layout_constraintTop_toBottomOf="@+id/newTopicInputBody" />
-
-    <Button
-        android:id="@+id/newTopicButtonCancel"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/button_border"
-        android:text="Cancel"
-        android:textAllCaps="false"
-        android:textColor="@color/mms_pry_2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/newTopicButtonPost"
-        app:layout_constraintStart_toStartOf="@+id/newTopicButtonPost"
-        app:layout_constraintTop_toBottomOf="@+id/newTopicButtonPost" />
+            app:layout_constraintStart_toEndOf="@+id/new_topic_back"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/newTopicTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="36dp"
+            android:text="Title"
+            android:textColor="@color/mms_black_2"
+            android:textFontWeight="600"
+            android:textSize="16sp"
+            app:fontFamily="@font/mukta"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_topic_title" />
+
+        <EditText
+            android:id="@+id/newTopicInputTitle"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/card_border"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Enter a title"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColor="@color/mms_black_2"
+            android:textColorHint="@color/mms_black_6"
+            android:textFontWeight="400"
+            android:textSize="16sp"
+            app:fontFamily="@font/mukta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newTopicTitle"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/newTopicInputGuide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="The title must contain a maximum of 32 characters"
+            android:textColor="@color/mms_black_2"
+            android:textFontWeight="400"
+            android:textSize="12sp"
+            app:fontFamily="@font/mukta"
+            app:layout_constraintEnd_toEndOf="@+id/newTopicInputTitle"
+            app:layout_constraintStart_toStartOf="@+id/newTopicInputTitle"
+            app:layout_constraintTop_toBottomOf="@+id/newTopicInputTitle" />
+
+        <TextView
+            android:id="@+id/newTpicBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Body"
+            android:textColor="@color/mms_black_2"
+            android:textFontWeight="600"
+            android:textSize="16sp"
+            app:fontFamily="@font/mukta"
+            app:layout_constraintStart_toStartOf="@+id/newTopicInputGuide"
+            app:layout_constraintTop_toBottomOf="@+id/newTopicInputGuide" />
+
+        <EditText
+            android:id="@+id/newTopicInputBody"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_border_2"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Start typing..."
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColor="@color/mms_black_2"
+            android:textColorHint="@color/mms_black_6"
+            android:textSize="16sp"
+            app:fontFamily="@font/mukta"
+            app:layout_constraintEnd_toEndOf="@+id/newTopicInputGuide"
+            app:layout_constraintStart_toStartOf="@+id/newTpicBody"
+            app:layout_constraintTop_toBottomOf="@+id/newTpicBody" />
+
+        <ImageView
+            android:id="@+id/newTopicIconLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="19dp"
+            android:src="@drawable/ic_link"
+            app:layout_constraintBottom_toBottomOf="@+id/newTopicInputBody"
+            app:layout_constraintEnd_toEndOf="@+id/newTopicInputBody" />
+
+        <ImageView
+            android:id="@+id/newTopicIconImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="26dp"
+            android:src="@drawable/ic_img_pic"
+            app:layout_constraintBottom_toBottomOf="@+id/newTopicIconLink"
+            app:layout_constraintEnd_toStartOf="@+id/newTopicIconLink" />
+
+        <Button
+            android:id="@+id/newTopicButtonPost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/button_background_filled"
+            android:text="Post to forum"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/newTopicInputBody"
+            app:layout_constraintStart_toStartOf="@+id/newTopicInputBody"
+            app:layout_constraintTop_toBottomOf="@+id/newTopicInputBody" />
+
+        <Button
+            android:id="@+id/newTopicButtonCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_border"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/mms_pry_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/newTopicButtonPost"
+            app:layout_constraintStart_toStartOf="@+id/newTopicButtonPost"
+            app:layout_constraintTop_toBottomOf="@+id/newTopicButtonPost" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
