@@ -210,7 +210,6 @@ class chat_messages_Fragment : Fragment() {
 
                 }
                 R.id.Search -> {
-                    Navigation.findNavController(navView).navigate(R.id.action_navigation_home_to_discussionForumFragment)
 
                 }
                 R.id.programs -> {

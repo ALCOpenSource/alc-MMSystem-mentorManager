@@ -6,50 +6,52 @@
     android:layout_height="match_parent"
     tools:context="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_reports.ReportFragment">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/reportToolbar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/pagetitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/title_reports"
-            style="@style/title_text_style"
-            tools:layout_editor_absoluteX="40dp"
-            tools:layout_editor_absoluteY="16dp"/>
-    </androidx.appcompat.widget.Toolbar>
-
-    <TextView
-        android:id="@+id/reportAll"
+    <ImageView
+        android:id="@+id/reportBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="15dp"
-        android:text="All Reports"
-        android:textColor="@color/mms_black_2"
-        android:textFontWeight="600"
-        android:textSize="16sp"
-        app:fontFamily="@font/mukta"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="TODO"
+        android:focusable="true"
+        android:src="@drawable/arrow_left_"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reportToolbar"
-        tools:targetApi="p" />
+
+
+    <TextView
+        android:id="@+id/reportTitle"
+        style="@style/title_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="31dp"
+        android:text="@string/title_reports"
+        app:layout_constraintStart_toEndOf="@+id/reportBack"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:id="@+id/reportSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="22dp"
+        android:maxWidth="290dp"
+        android:searchIcon="@drawable/abc_ic_search"
+        android:searchHintIcon="@drawable/abc_ic_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/reportTitle"
+        tools:targetApi="lollipop_mr1" />
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/reportList"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reportAll"
+        app:layout_constraintTop_toBottomOf="@+id/reportSpinner"
         tools:listitem="@layout/report_item" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -58,23 +60,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="21dp"
-        android:layout_marginBottom="24dp"
-        android:clickable="true"
+        android:layout_marginBottom="81dp"
         android:contentDescription="@string/fab"
-        android:focusable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_baseline_add_24" />
 
-    <ImageView
-        android:id="@+id/reportDownArrow"
-        android:layout_width="8dp"
-        android:layout_height="4dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="15dp"
-        android:src="@drawable/ic_arrow_down"
-        app:layout_constraintBottom_toBottomOf="@+id/reportAll"
-        app:layout_constraintStart_toEndOf="@+id/reportAll"
-        app:layout_constraintTop_toBottomOf="@+id/reportToolbar" />
+    <Spinner
+        android:id="@+id/reportSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/spinner_background"
+        android:contentDescription="@string/report_spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reportTitle"
+        tools:ignore="TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

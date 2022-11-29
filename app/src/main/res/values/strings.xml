@@ -7,6 +7,12 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
+    <string-array name="report_array">
+        <item>All Reports</item>
+        <item>Program Reports</item>
+        <item>Task Reports</item>
+    </string-array>
+
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="some_id">6.25</string>
@@ -128,6 +134,8 @@
     <string name="submit_text">Submit Report</string>
     <string name="title_activity_team7">Activity_team_7</string>
     <string name="forwarded">forwarded</string>
+    <string name="report_spinner">spinner</string>
+    <string name="arrow_down">arrow down</string>
     <!-- TODO: Remove or change this placeholder text -->
     >>>>>>> origin/master
 </resources>

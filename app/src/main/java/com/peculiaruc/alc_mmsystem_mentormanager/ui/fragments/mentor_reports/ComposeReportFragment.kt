@@ -6,9 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.commit
+import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentComposeReportBinding
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.TaskListFragment
 
 class ComposeReportFragment : Fragment() {
 
@@ -25,8 +26,8 @@ class ComposeReportFragment : Fragment() {
     ): View {
         _binding = FragmentComposeReportBinding.inflate(inflater, container, false)
 
-        binding.composeReportToolbar.apply {
-            setNavigationIcon(R.drawable.ic_back)
+        binding.composeReportBack.setOnClickListener {
+            Navigation.findNavController(requireView()).popBackStack(R.id.reportFragment, false)
         }
 
         handleRadioButtonClick()
@@ -43,30 +44,11 @@ class ComposeReportFragment : Fragment() {
 
     private fun handleTypeClick() {
         binding.reportTypeButton.setOnClickListener {
-            val taskListFragment = TaskListFragment()
-            val programFragment = ProgramListFragment()
             if (binding.reportTypeButton.text == activity?.getString(R.string.text_select_task)) {
-                activity?.supportFragmentManager?.commit {
-                    setCustomAnimations(
-                        R.anim.slide_in,
-                        R.anim.fade_out,
-                        R.anim.fade_out,
-                        R.anim.slide_in
-                    )
-                    replace(R.id.fragment_container_view, taskListFragment)
-                    addToBackStack(null)
-                }
+                findNavController().navigate(R.id.action_composeReportFragment_to_taskListFragment)
+
             } else {
-                activity?.supportFragmentManager?.commit {
-                    setCustomAnimations(
-                        R.anim.slide_in,
-                        R.anim.fade_out,
-                        R.anim.fade_out,
-                        R.anim.slide_in
-                    )
-                    replace(R.id.fragment_container_view, programFragment)
-                    addToBackStack(null)
-                }
+                findNavController().navigate(R.id.action_composeReportFragment_to_programListFragment)
             }
         }
     }

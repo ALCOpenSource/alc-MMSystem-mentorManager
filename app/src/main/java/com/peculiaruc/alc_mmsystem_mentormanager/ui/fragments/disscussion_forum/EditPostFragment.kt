@@ -1,10 +1,11 @@
 package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.disscussion_forum
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentEditPostBinding
 
@@ -20,8 +21,8 @@ class EditPostFragment : Fragment() {
     ): View {
         _binding = FragmentEditPostBinding.inflate(inflater, container, false)
 
-        binding.editPostToolbar.apply {
-            setNavigationIcon(R.drawable.ic_back)
+        binding.editPostBack.setOnClickListener {
+            Navigation.findNavController(requireView()).popBackStack(R.id.discussionForumFragment2, false)
         }
 
         binding.editPostButtonChange.setOnClickListener {
