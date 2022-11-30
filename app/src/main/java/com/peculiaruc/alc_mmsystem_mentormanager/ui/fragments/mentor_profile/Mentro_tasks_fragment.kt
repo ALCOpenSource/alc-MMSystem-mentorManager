@@ -38,28 +38,17 @@ class Mentro_tasks_fragment : Fragment() {
     private fun load_dummy_programms() {
         mentors_task_list = listOf(
 
-            mentors_tasks("Room library article writ...","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Debugging in VSCode","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Room library article writ...","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Debugging in VSCode","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Room library article writ...","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Debugging in VSCode","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Room library article writ...","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Debugging in VSCode","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Room library article writ...","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Debugging in VSCode","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Room library article writ...","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Room library article writ...","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Debugging in VSCode","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Room library article writ...","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Debugging in VSCode","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Room library article writ...","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Debugging in VSCode","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Room library article writ...","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Debugging in VSCode","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Room library article writ...","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Debugging in VSCode","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Room library article writ...","3 days from now",R.id.mentor_program_pic)
+            mentors_tasks("Room library article writ... 1 ","3 days from now",R.id.mentor_program_pic),
+            mentors_tasks("Debugging in VSCode 2","3 days from now",R.id.mentor_program_pic),
+            mentors_tasks("Room library article writ... 3 ","3 days from now",R.id.mentor_program_pic),
+            mentors_tasks("Debugging in VSCode 4 ","3 days from now",R.id.mentor_program_pic),
+            mentors_tasks("Room library article writ... 5","3 days from now",R.id.mentor_program_pic),
+            mentors_tasks("Debugging in VSCode 6","3 days from now",R.id.mentor_program_pic),
+            mentors_tasks("Room library article writ... 7","3 days from now",R.id.mentor_program_pic),
+            mentors_tasks("Debugging in VSCode 8","3 days from now",R.id.mentor_program_pic),
+            mentors_tasks("Room library article writ... 9","3 days from now",R.id.mentor_program_pic),
+            mentors_tasks("Debugging in VSCode 10","3 days from now",R.id.mentor_program_pic),
+            mentors_tasks("Room library article writ... 11","3 days from now",R.id.mentor_program_pic),
 
 
             )

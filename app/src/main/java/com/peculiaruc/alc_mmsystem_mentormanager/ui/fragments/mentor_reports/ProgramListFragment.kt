@@ -22,9 +22,9 @@ class ProgramListFragment : Fragment() {
     private var isCompletedSelected = false
 
     private val programs = arrayOf(
-        "GADS Program 2022", "GADS Program 2022", "GADS Program 2022", "GADS Program 2022",
-        "GADS Program 2022", "GADS Program 2022", "GADS Program 2022", "GADS Program 2022",
-        "GADS Program 2022", "GADS Program 2022", "GADS Program 2022", "GADS Program 2022",
+        "GADS Program 2022 1", "GADS Program 2022 4", "GADS Program 2022 7", "GADS Program 2022 10",
+        "GADS Program 2022 2", "GADS Program 2022 5", "GADS Program 2022 8", "GADS Program 2022 11",
+        "GADS Program 2022 3", "GADS Program 2022 6", "GADS Program 2022 9", "GADS Program 2022 12",
     )
 
     private val adapters = ProgramListAdapter(programs)

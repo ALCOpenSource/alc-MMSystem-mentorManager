@@ -29,7 +29,7 @@ class CommentsFragment : Fragment() {
         get() = _binding!!
 
     private val comments = arrayOf(
-        "Sarah Tasha", "Sarah Tasha", "Sarah Tasha", "Sarah Tasha", "Sarah Tasha", "Sarah Tasha",
+        "Sarah Tasha 1", "Sarah Tasha 2", "Sarah Tasha 3", "Sarah Tasha 4", "Sarah Tasha 5", "Sarah Tasha 6",
     )
 
     private val adapters = CommentAdapter(comments)

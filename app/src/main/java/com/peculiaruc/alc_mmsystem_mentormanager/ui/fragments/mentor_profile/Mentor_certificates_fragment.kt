@@ -33,24 +33,20 @@ class mentor_certificates_fragment : Fragment() {
 
     private fun load_dummy_programms() {
         mentors_certificates = listOf(
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION 1",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION 2",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION 3",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION 4",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION 5",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION 6",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION 7",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION 8",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION 9",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION 10",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION 11",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION 12",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION 13",R.id.certificate),
+
 
 
             )

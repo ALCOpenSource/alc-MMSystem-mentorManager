@@ -8,7 +8,7 @@
     <!-- MM- Report Alert Dialog -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/mm_report_a"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="391dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
