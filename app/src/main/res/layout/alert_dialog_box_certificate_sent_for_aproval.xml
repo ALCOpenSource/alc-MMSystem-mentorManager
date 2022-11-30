@@ -18,11 +18,13 @@
         <!-- Group 509 -->
         <View
             android:id="@+id/group_509"
-            android:layout_width="180dp"
+            android:layout_width="0dp"
             android:layout_height="161dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
+            android:layout_marginStart="90dp"
             android:layout_marginTop="23dp"
+            android:layout_marginEnd="90dp"
             android:background="@drawable/certifcate_approved"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -31,53 +33,43 @@
         <!-- Report Downloaded Successfully! -->
         <TextView
             android:id="@+id/report_down"
-            android:layout_width="258dp"
+            android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="51dp"
             android:layout_marginTop="52dp"
             android:layout_marginEnd="51dp"
-            android:textFontWeight="600"
-            android:textColor="@color/mms_black_2"
-            android:textSize="18dp"
+            android:fontFamily="@font/mukta"
             android:gravity="center_horizontal"
             android:text="@string/certificate_Sent_for_approval"
             android:textAppearance="@style/report_down"
+            android:textColor="@color/mms_black_2"
+            android:textFontWeight="600"
+            android:textSize="18dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <!-- Frame 351 -->
-        <RelativeLayout
+        <Button
             android:id="@+id/frame_351"
-            android:layout_width="318dp"
-            android:layout_height="50dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="21dp"
             android:layout_marginTop="23dp"
             android:layout_marginEnd="21dp"
-            android:background="@drawable/frame_351"
-            android:clipToOutline="true"
+            android:background="@drawable/button_background_filled"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textFontWeight="700"
+            android:textSize="16sp"
+            app:fontFamily="@font/mukta"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/group_509">
+            app:layout_constraintTop_toBottomOf="@+id/group_509" />
 
-            <!-- Done -->
-            <TextView
-                android:id="@+id/done"
-                android:layout_width="41dp"
-                android:layout_height="30dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="138dp"
-                android:layout_marginTop="10dp"
-                android:gravity="top"
-                android:text="@string/done"
-                android:textAppearance="@style/download_generate" />
-
-        </RelativeLayout>
 
 
 

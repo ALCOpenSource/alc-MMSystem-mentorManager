@@ -25,7 +25,7 @@
             android:layout_height="30dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="69dp"
+            android:layout_marginTop="101dp"
             android:fontFamily="@font/mukta"
             android:gravity="top"
             android:text="Add Mentor"
@@ -43,11 +43,13 @@
 
         <TextView
             android:id="@+id/an_invitati"
-            android:layout_width="204dp"
+            android:layout_width="0dp"
             android:layout_height="81dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
+            android:layout_marginStart="78dp"
             android:layout_marginTop="19dp"
+            android:layout_marginEnd="78dp"
             android:fontFamily="@font/mukta"
             android:gravity="center_horizontal|top"
             android:text="An invitation has been sent to samkebede@gmail.com successfully"
@@ -59,46 +61,24 @@
             app:layout_constraintTop_toBottomOf="@+id/add_mentors" />
 
         <!-- Frame 351 -->
-        <RelativeLayout
+
+        <Button
             android:id="@+id/frame_351"
-            android:layout_width="318dp"
-            android:layout_height="50dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="21dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="39dp"
             android:layout_marginEnd="21dp"
-            android:background="@drawable/frame_351"
-            android:clipToOutline="true"
+            android:background="@drawable/button_background_filled"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textFontWeight="700"
+            android:textSize="16sp"
+            app:fontFamily="@font/mukta"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/an_invitati">
-
-            <!-- Done -->
-            <TextView
-                android:id="@+id/SEND"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="133dp"
-                android:layout_marginLeft="133dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="130dp"
-                android:layout_marginBottom="133dp"
-                android:fontFamily="@font/mukta"
-                android:gravity="top"
-                android:text="Done"
-                android:textAppearance="@style/share_Report"
-                android:textFontWeight="600"
-                android:textSize="18dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </RelativeLayout>
+            app:layout_constraintTop_toBottomOf="@+id/an_invitati" />
 
 
         <!-- Frame 352 -->

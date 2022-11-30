@@ -33,14 +33,16 @@
         <!-- Report Downloaded Successfully! -->
         <TextView
             android:id="@+id/report_down"
-            android:layout_width="258dp"
+            android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="51dp"
             android:layout_marginTop="52dp"
             android:layout_marginEnd="51dp"
-            android:gravity="top"
+            android:textColor="@color/mms_black_2"
+            android:textFontWeight="400"
+            android:gravity="center_horizontal"
             android:text="@string/report_down"
             android:textAppearance="@style/report_down"
             app:layout_constraintEnd_toEndOf="parent"
@@ -48,35 +50,27 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <!-- Frame 351 -->
-        <RelativeLayout
+
+        <Button
             android:id="@+id/frame_351"
-            android:layout_width="318dp"
-            android:layout_height="50dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="21dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="21dp"
-            android:background="@drawable/frame_351"
-            android:clipToOutline="true"
+            android:layout_marginBottom="52dp"
+            android:background="@drawable/button_background_filled"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textFontWeight="700"
+            android:textSize="16sp"
+            app:fontFamily="@font/mukta"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/group_509">
+            app:layout_constraintTop_toBottomOf="@+id/group_509" />
 
-            <!-- Done -->
-            <TextView
-                android:id="@+id/done"
-                android:layout_width="41dp"
-                android:layout_height="30dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="138dp"
-                android:layout_marginTop="10dp"
-                android:gravity="top"
-                android:text="@string/done"
-                android:textAppearance="@style/download_generate" />
 
-        </RelativeLayout>
 
 
 

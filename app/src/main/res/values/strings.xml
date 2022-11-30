@@ -136,6 +136,9 @@
     <string name="forwarded">forwarded</string>
     <string name="report_spinner">spinner</string>
     <string name="arrow_down">arrow down</string>
+    <string name="add_mentor">Add Mentor</string>
+    <string name="email">Email</string>
+    <string name="samkebede_gmail_com">Samkebede@gmail.com</string>
     <!-- TODO: Remove or change this placeholder text -->
     >>>>>>> origin/master
 </resources>

@@ -6,93 +6,99 @@
     android:layout_height="wrap_content">
 
     <!-- Dropdowns / Dropdown User -->
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/dropdowns_d"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/report_item"
         android:layout_width="0dp"
         android:layout_height="73dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/group_50"
-        android:clipToOutline="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/card_border"
+        app:cardCornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
+            <TextView
+                android:id="@+id/reporItemTitle"
+                android:layout_width="221dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="13dp"
+                android:textColor="@color/mms_black_2"
+                android:textFontWeight="400"
+                android:singleLine="true"
+                android:textSize="16sp"
+                app:fontFamily="@font/mukta"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:targetApi="p"
+                tools:text="Google Africa Scholarship Report" />
 
-        <!-- Peculiar C. Umeh -->
-        <TextView
-            android:id="@+id/gads_progra"
-            android:layout_width="221dp"
-            android:layout_height="25dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="13dp"
-            android:fontFamily="@font/mukta"
-            android:text="@string/google_afri_report"
-            android:textAppearance="@style/google_afri_report"
-            android:gravity="top"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/reportItemUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                tools:text="By Ibrahim Kabir - "
+                android:textSize="12sp"
+                android:textColor="@color/mms_black_5"
+                android:textFontWeight="600"
+                app:fontFamily="@font/mukta"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/reporItemTitle"
+                app:layout_constraintTop_toBottomOf="@+id/reporItemTitle"
+                tools:targetApi="p" />
 
-        <!-- By Ibrahim Kabir - 19th - 25th Oct 22 -->
-        <TextView
-            android:id="@+id/report_creation_infor"
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:gravity="center"
-            android:text="@string/by_ibrahim_"
-            android:textAppearance="@style/by_ibrahim_"
-            app:layout_constraintStart_toStartOf="@+id/gads_progra"
-            app:layout_constraintTop_toBottomOf="@+id/gads_progra" />
+            <TextView
+                android:id="@+id/reportItemTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:textColor="@color/mms_black_5"
+                android:textFontWeight="400"
+                android:textSize="12sp"
+                app:fontFamily="@font/mukta"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/reportItemUser"
+                app:layout_constraintTop_toBottomOf="@+id/reporItemTitle"
+                tools:targetApi="p"
+                tools:text="19th - 25th oct 2022" />
 
+            <ImageView
+                android:id="@+id/reportItemDownload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="31dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="31dp"
+                android:contentDescription="@string/download_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/reportItemShare"
+                app:layout_constraintStart_toEndOf="@+id/reporItemTitle"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_download" />
 
-        <!-- download 1 -->
-        <RelativeLayout
-            android:id="@+id/download_1"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="29dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginBottom="25dp"
-            android:background="@drawable/download_1"
-            android:clipToOutline="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/share_alt_1"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <!-- share-alt 1 -->
-        <RelativeLayout
-            android:id="@+id/share_alt_1"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginEnd="26dp"
-            android:background="@drawable/share_alt_1"
-            android:clipToOutline="true"
-            app:layout_constraintBottom_toBottomOf="@+id/download_1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/download_1" />
-
-
-
-
-
-        <!-- Group 579 -->
-        <!-- comment-circle-chat-message 1 -->
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
+            <ImageView
+                android:id="@+id/reportItemShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="31dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="31dp"
+                android:contentDescription="@string/share_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_share" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
