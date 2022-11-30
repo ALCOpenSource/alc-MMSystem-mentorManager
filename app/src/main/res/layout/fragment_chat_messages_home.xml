@@ -15,9 +15,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="?attr/actionBarSize"
         android:background="#00000000"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -114,9 +113,13 @@
                     android:layout_alignParentTop="true"
                     android:layout_marginStart="50dp"
                     android:layout_marginTop="2dp"
+                    android:fontFamily="@font/mukta"
                     android:gravity="center_horizontal|top"
                     android:text="@string/chats"
                     android:textAppearance="@style/chats"
+                    android:textColor="@color/mms_pry_2"
+                    android:textFontWeight="700"
+                    android:textSize="16dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -165,19 +168,17 @@
             <!-- Vector -->
         </RelativeLayout>
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
+        style="@style/MyBottomNavigationView"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
-        app:labelVisibilityMode="labeled"
+        android:layout_height="72dp"
         android:background="@color/mms_pry_10"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

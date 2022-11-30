@@ -50,8 +50,11 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:gravity="top"
+            android:textFontWeight="600"
+            android:textSize="16dp"
+            android:fontFamily="@font/mukta"
+            android:textColor="@color/mms_black_2"
             android:text="@string/peculiar_c_"
-            android:textAppearance="@style/peculiah_c_"
             app:layout_constraintStart_toEndOf="@+id/cardView"
             app:layout_constraintTop_toTopOf="@+id/cardView" />
 
@@ -73,8 +76,11 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:gravity="top"
+                android:textFontWeight="400"
+                android:textSize="12dp"
+                android:fontFamily="@font/mukta"
+                android:textColor="@color/mms_black_5"
                 android:text="@string/can_we_go_a"
-                android:textAppearance="@style/can_we_go_a"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

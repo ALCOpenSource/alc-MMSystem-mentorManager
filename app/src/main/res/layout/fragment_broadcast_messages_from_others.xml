@@ -10,7 +10,7 @@ android:layout_marginEnd="8dp">
         android:id="@+id/text_gchat_date_me"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:paddingStart="8dp"
         android:paddingTop="4dp"
         android:paddingEnd="8dp"
@@ -35,7 +35,6 @@ android:layout_marginEnd="8dp">
         android:paddingBottom="13dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_gchat_date_me">
-
         <!-- Mentors -->
         <TextView
             android:id="@+id/mentors"
@@ -44,6 +43,8 @@ android:layout_marginEnd="8dp">
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="13dp"
+            android:textFontWeight="400"
+            android:fontFamily="@font/mukta"
             android:layout_marginTop="10dp"
             android:gravity="top"
             android:text="@string/mentors"

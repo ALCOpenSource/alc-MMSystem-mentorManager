@@ -186,7 +186,7 @@
 
 
             <!-- Type message... -->
-            <TextView
+            <EditText
                 android:id="@+id/type_messag"
                 android:layout_width="104dp"
                 android:layout_height="27dp"
@@ -194,10 +194,12 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="5dp"
+                android:background="@null"
+                android:hint="type Message "
                 android:layout_marginBottom="4dp"
                 android:layout_toEndOf="@+id/emoji_smile"
                 android:gravity="top"
-                android:text="@string/type_messag"
+
                 android:textAppearance="@style/type_messag"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/emoji_smile"

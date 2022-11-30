@@ -65,10 +65,10 @@ class Mentor_list_Fragment : Fragment() {
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 binding.body1.setText(mList.get(position));
-                if (mList.get(position)=="Assigned"){
+                if (mList[position] =="Assigned"){
                     sort_mentors(true)
                 }
-                else if(mList.get(position)=="Unassigned"){
+                else if(mList[position] =="Unassigned"){
                     sort_mentors(false)
                 }
                 else{
@@ -84,11 +84,6 @@ class Mentor_list_Fragment : Fragment() {
             override fun onNothingSelected(parent: AdapterView<*>?) {
             }
         }
-
-
-
-
-
 
 
 
@@ -130,7 +125,6 @@ class Mentor_list_Fragment : Fragment() {
             }
         }
         if (filteredlist.isEmpty()) {
-            Toast.makeText(context, "No Data Found..", Toast.LENGTH_SHORT).show()
             val mentor_recyleview=binding.mentorsRv
             mentor_recyleview.getAdapter()?.notifyItemInserted(mentorLists.size );
             mentor_recyleview.getAdapter()?.notifyDataSetChanged();
@@ -299,7 +293,6 @@ class Mentor_list_Fragment : Fragment() {
             }
         }
         if (filteredlist.isEmpty()) {
-            Toast.makeText(context, "No Data Found..", Toast.LENGTH_SHORT).show()
             val mentor_recyleview=binding.mentorsRv
             mentor_recyleview.getAdapter()?.notifyItemInserted(mentorLists.size );
             mentor_recyleview.getAdapter()?.notifyDataSetChanged();

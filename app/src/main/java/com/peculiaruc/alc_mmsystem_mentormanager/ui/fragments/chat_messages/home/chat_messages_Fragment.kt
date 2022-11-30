@@ -207,17 +207,11 @@ class chat_messages_Fragment : Fragment() {
                 R.id.navigation_home -> {
                     //reports task
                     Navigation.findNavController(navView).navigate(R.id.action_navigation_home_to_activity_mm_reports)
-
                 }
                 R.id.Search -> {
-
                 }
                 R.id.programs -> {
-
-
                     Navigation.findNavController(navView).navigate(R.id.action_navigation_home_to_discussion_forum2)
-
-
                 }
                 R.id.Messages -> {
 
