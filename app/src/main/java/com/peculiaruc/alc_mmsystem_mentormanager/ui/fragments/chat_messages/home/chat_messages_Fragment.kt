@@ -60,130 +60,74 @@ class chat_messages_Fragment : Fragment() {
 
         chat_messages = listOf(
             chat_messages(
-                "Peculiar C. Umeh",
+                "Peculiar C. Umeh 1",
                 "Can we go ahead to join the UI/UX Team Meeting now",
                 "30m.",
                 "3",
                 R.drawable.ann
             ),
             chat_messages(
-                "James M. Jonathan",
+                "James M. Jonathan 2",
                 "Can we go ahead to join the UI/UX Team Meeting now",
                 "30m.",
                 "3",
                 R.drawable.ann_2
             ),
             chat_messages(
-                "Pendo D Mwaruma",
+                "Pendo D Mwaruma 3",
                 "Can we go ahead to join the UI/UX Team Meeting now",
                 "30m.",
                 "3",
                 R.drawable.grace
             ),
             chat_messages(
-                "Musango J Abdi",
+                "Musango J Abdi 4",
                 "Can we go ahead to join the UI/UX Team Meeting now",
                 "30m.",
                 "3",
                 R.drawable.profile
             ),
             chat_messages(
-                "Abdalah K. Karim",
+                "Abdalah K. Karim 5",
                 "Can we go ahead to join the UI/UX Team Meeting now",
                 "30m.",
                 "3",
                 R.drawable.ann
             ),
             chat_messages(
-                "Pombe R. Karisaa",
+                "Pombe R. Karisaa 6",
                 "Can we go ahead to join the UI/UX Team Meeting now",
                 "30m.",
                 "3",
                 R.drawable.ann_2
             ),
             chat_messages(
-                "Peculiar C. Umeh",
+                "Peculiar C. Umeh 7",
                 "Can we go ahead to join the UI/UX Team Meeting now",
                 "30m.",
                 "3",
                 R.drawable.grace
             ),
             chat_messages(
-                "James M. Jonathan",
+                "James M. Jonathan 8",
                 "Can we go ahead to join the UI/UX Team Meeting now",
                 "30m.",
                 "3",
                 R.drawable.profile
             ),
             chat_messages(
-                "Pendo D Mwaruma",
+                "Pendo D Mwaruma 9",
                 "Can we go ahead to join the UI/UX Team Meeting now",
                 "30m.",
                 "3",
                 R.drawable.ann_2
             ),
             chat_messages(
-                "Musango J Abdi",
+                "Musango J Abdi 10",
                 "Can we go ahead to join the UI/UX Team Meeting now",
                 "30m.",
                 "3",
                 R.drawable.ann
-            ),
-            chat_messages(
-                "Abdalah K. Karim",
-                "Can we go ahead to join the UI/UX Team Meeting now",
-                "30m.",
-                "3",
-                R.drawable.grace
-            ),
-            chat_messages(
-                "Pombe R. Karisaa",
-                "Can we go ahead to join the UI/UX Team Meeting now",
-                "30m.",
-                "3",
-                R.drawable.profile
-            ),
-            chat_messages(
-                "Peculiar C. Umeh",
-                "Can we go ahead to join the UI/UX Team Meeting now",
-                "30m.",
-                "3",
-                R.drawable.ann
-            ),
-            chat_messages(
-                "James M. Jonathan",
-                "Can we go ahead to join the UI/UX Team Meeting now",
-                "30m.",
-                "3",
-                R.drawable.ann_2
-            ),
-            chat_messages(
-                "Pendo D Mwaruma",
-                "Can we go ahead to join the UI/UX Team Meeting now",
-                "30m.",
-                "3",
-                R.drawable.grace
-            ),
-            chat_messages(
-                "Musango J Abdi",
-                "Can we go ahead to join the UI/UX Team Meeting now",
-                "30m.",
-                "3",
-                R.drawable.profile
-            ),
-            chat_messages(
-                "Abdalah K. Karim",
-                "Can we go ahead to join the UI/UX Team Meeting now",
-                "30m.",
-                "3",
-                R.drawable.ann
-            ),
-            chat_messages(
-                "Pombe R. Karisaa",
-                "Can we go ahead to join the UI/UX Team Meeting now",
-                "30m.",
-                "3",
-                R.drawable.grace
             ),
 
 

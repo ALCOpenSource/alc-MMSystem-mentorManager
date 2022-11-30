@@ -34,7 +34,7 @@ class DiscussionForumFragment : Fragment() {
         get() = _binding!!
 
     private val discussions = arrayOf(
-        "Samuel Kebede", "Samuel Kebede", "Samuel Kebede", "Samuel Kebede", "Samuel Kebede", "Samuel Kebede",
+        "Samuel Kebede 1", "Samuel Kebede 2", "Samuel Kebede 3", "Samuel Kebede 4", "Samuel Kebede 5", "Samuel Kebede 6",
     )
 
     private lateinit var adapters: DiscussionForumAdapter
