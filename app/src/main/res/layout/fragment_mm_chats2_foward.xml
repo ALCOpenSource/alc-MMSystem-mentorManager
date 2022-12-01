@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:layout_height="wrap_content"
+ android:layout_alignParentEnd="true">
+    <!-- Frame 20 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frame_20"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/frame_20"
+        android:backgroundTint="@color/mms_pry_10"
+        android:clipToOutline="true"
+        android:paddingBottom="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Mentors -->
+
+
+        <!-- share-alt 1 -->
+        <RelativeLayout
+            android:id="@+id/share_alt_1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/share_alt_1"
+            android:clipToOutline="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!-- Forwarded -->
+        <TextView
+            android:id="@+id/forwarded"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+
+            android:gravity="top"
+            android:text="@string/forwarded"
+            app:layout_constraintStart_toEndOf="@+id/share_alt_1"
+            app:layout_constraintTop_toTopOf="@+id/share_alt_1" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="60dp"
+            app:layout_constraintStart_toStartOf="@+id/share_alt_1"
+            app:layout_constraintTop_toBottomOf="@+id/forwarded">
+
+            <ImageView
+                android:id="@+id/mentor_program_pic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/profile"></ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Samuel Kebede -->
+        <TextView
+            android:id="@+id/samuel_kebe"
+            android:layout_width="158dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/mukta"
+            android:gravity="top"
+            android:lineHeight="26.65dp"
+            android:text="SamueL Kebe"
+            android:textColor="@color/mms_black_2"
+            android:textFontWeight="600"
+            app:layout_constraintStart_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+        <!-- Mentor Manager -->
+        <TextView
+            android:id="@+id/mentor_mana"
+            android:layout_width="105.72dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/mukta"
+            android:gravity="top"
+            android:lineHeight="19.94dp"
+            android:text="Mentor"
+            android:textFontWeight="400"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="@+id/samuel_kebe"
+            app:layout_constraintTop_toBottomOf="@+id/samuel_kebe" />
+
+
+        <!-- The New MMS Discussion Forum -->
+        <TextView
+            android:id="@+id/the_new_mms"
+            android:layout_width="183dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/mukta"
+            android:gravity="top"
+            android:lineHeight="19.94dp"
+            android:text="The New MMS Discussion Forum "
+            android:textColor="@color/mms_black_2"
+            android:textFontWeight="700"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@+id/mentor_mana" />
+
+
+        <TextView
+            android:id="@+id/chat_message_body"
+            android:layout_width="230dp"
+            android:layout_height="93dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="1dp"
+            android:gravity="top"
+            android:lineHeight="19.94dp"
+            android:text="@string/lorem_ipsum"
+            android:textAppearance="@style/lorem_ipsum"
+            android:textColor="@color/mms_black_5"
+            android:textFontWeight="400"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="@+id/the_new_mms"
+            app:layout_constraintTop_toBottomOf="@+id/the_new_mms" />
+
+
+        <!-- 6:00 PM -->
+        <TextView
+            android:id="@+id/chat_time"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="22dp"
+            android:gravity="top"
+            android:lineHeight="19.94dp"
+            android:text="@string/chat_message"
+            android:textAppearance="@style/chat_message"
+            android:textColor="@color/mms_black_3"
+            android:textFontWeight="400"
+
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="@+id/chat_message_body"
+            app:layout_constraintTop_toBottomOf="@+id/chat_message_body" />
+        <!-- Vector -->
+        <RelativeLayout
+            android:id="@+id/vector"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/double_check"
+            app:layout_constraintBottom_toBottomOf="@+id/chat_time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/chat_time" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
