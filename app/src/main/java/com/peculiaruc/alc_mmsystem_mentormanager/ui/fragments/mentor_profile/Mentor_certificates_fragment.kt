@@ -14,6 +14,9 @@ import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mento
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorCertificatesFragmentBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.mentor_profile.mentor_Certificates_adapter
 
+// this class handles the display of the mentor certificates,
+// currents only the Ui is in place and loading of a dummy mentor certificate  list
+
 class mentor_certificates_fragment : Fragment() {
 
     private var _binding: FragmentMentorCertificatesFragmentBinding? = null
