@@ -18,7 +18,9 @@ import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorListR
  */
 
 class mentor_list_adapter(private var mentor_list:ArrayList<mentor_list>, ) : RecyclerView.Adapter<mentor_list_adapter.ViewHolder>() {
-
+    /**
+     * holds views from the rv
+     */
     inner class ViewHolder(val binding: FragmentMentorListRecyclerviewItemBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -26,14 +28,21 @@ class mentor_list_adapter(private var mentor_list:ArrayList<mentor_list>, ) : Re
 
         return ViewHolder(binding)
     }
-    // method for filtering our recyclerview items.
-    // method for filtering our recyclerview items.
+
+    /** method for filtering our recyclerview items.method
+     * for filtering our recyclerview items.
+     *
+     */
+
     fun filterList(filterlist: ArrayList<mentor_list>) {
-        // below line is to add our filtered
-        // list in our course array list.
+        /** below line is to add our filtered. list in our course array list.
+         *
+         */
         mentor_list = filterlist
-        // below line is to notify our adapter
-        // as change in recycler view data.
+        /**below line is to notify our adapter
+         * as change in recycler view data.
+         *
+         */
         notifyDataSetChanged()
     }
 

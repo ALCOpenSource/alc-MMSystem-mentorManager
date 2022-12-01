@@ -14,6 +14,10 @@ import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentTaskListBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.TaskListAdapter
 
+/**
+ * to implement the tasklist fragment screen functionality
+ * currently loading dummy data to the for the task rv
+ */
 
 class TaskListFragment : Fragment() {
 
@@ -29,10 +33,10 @@ class TaskListFragment : Fragment() {
 
     // Dummy data for the recycler view adapter
     private val tasks = arrayOf(
-        "Room library article write", "Room library article write",
-        "Room library article write", "Room library article write",
-        "Room library article write", "Room library article write",
-        "Room library article write", "Room library article write",
+        "Room library article write1", "Room library article write",
+        "Room library article write2", "Room library article write",
+        "Room library article write3", "Room library article write",
+        "Room library article write4", "Room library article write",
     )
 
     private val adapters = TaskListAdapter(tasks)
@@ -60,7 +64,9 @@ class TaskListFragment : Fragment() {
         return binding.root
     }
 
-    // This method handles the search icon click event
+    /** This method handles the search icon click event
+     *
+     */
     private fun handleSearchClicked() {
         binding.taskSearch.setOnSearchClickListener {
             binding.taskSearch.isIconifiedByDefault = false
@@ -75,7 +81,9 @@ class TaskListFragment : Fragment() {
         }
     }
 
-    // This method handles the toggle buttons selections
+    /** This method handles the toggle buttons selections
+     *
+     */
     private fun handleGroupButtonClick() {
         binding.taskAll.setOnClickListener {
             // Group buttons state assigned

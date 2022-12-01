@@ -1,8 +1,14 @@
 package com.peculiaruc.alc_mmsystem_mentormanager.ui
 
+/**
+ * main activity
+ * to be implementated
+ */
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ActivityMainBinding
+
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

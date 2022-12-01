@@ -20,6 +20,7 @@ class TaskListAdapter(private val tasks: Array<String>): RecyclerView.Adapter<Ta
         /** A function used to attach data to the recycler view items
          *
          */
+
         fun bind(title: String) {
             nTitle.text = title
         }

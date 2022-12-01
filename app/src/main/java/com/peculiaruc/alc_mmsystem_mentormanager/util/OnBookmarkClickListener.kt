@@ -6,5 +6,8 @@ package com.peculiaruc.alc_mmsystem_mentormanager.util
  */
 
 interface OnBookmarkClickListener {
+    /**
+     * To implement the view model for the mentor reports screen
+     */
     fun onBookmarkClick()
 }

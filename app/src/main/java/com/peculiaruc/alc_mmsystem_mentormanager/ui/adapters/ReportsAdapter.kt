@@ -26,6 +26,7 @@ class ReportsAdapter(private val reports: List<Reports>) : RecyclerView.Adapter<
     /**A method used for listening to download click event in the comment screen
      *
      */
+
     fun setOnDownloadClickListener(mDownloadListener: OnDownloadClickListener) {
         downloadListener = mDownloadListener
     }
@@ -33,6 +34,7 @@ class ReportsAdapter(private val reports: List<Reports>) : RecyclerView.Adapter<
     /** A method used for listening to share click event in the comment screen
      *
      */
+
     fun setShareClickListener(mShareListener: OnShareClickListener) {
         shareListener = mShareListener
     }
@@ -56,6 +58,10 @@ class ReportsAdapter(private val reports: List<Reports>) : RecyclerView.Adapter<
     }
 
     override fun getItemCount(): Int = reports.size
+
+    /**
+     * implements the adapter's view holder
+     */
 
     inner class ReportsViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
@@ -83,6 +89,7 @@ class ReportsAdapter(private val reports: List<Reports>) : RecyclerView.Adapter<
         /** A function used to attach data to the recycler view items
          *
          */
+
         fun bind(title: String, user: String, time: String) {
             nTitle.text = title
             nUser.text = user

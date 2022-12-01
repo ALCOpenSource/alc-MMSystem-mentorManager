@@ -12,7 +12,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentProgramListBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.ProgramListAdapter
-
+/**
+ * loads the programs in the program list fragment
+ */
 class ProgramListFragment : Fragment() {
     private var _binding: FragmentProgramListBinding? = null
     private val binding
@@ -26,9 +28,9 @@ class ProgramListFragment : Fragment() {
 
     // Dummy data for the recycler view adapter
     private val programs = arrayOf(
-        "GADS Program 2022 1", "GADS Program 2022 4", "GADS Program 2022 7", "GADS Program 2022 10",
-        "GADS Program 2022 2", "GADS Program 2022 5", "GADS Program 2022 8", "GADS Program 2022 11",
-        "GADS Program 2022 3", "GADS Program 2022 6", "GADS Program 2022 9", "GADS Program 2022 12",
+        "GADS Program 20221", "GADS Program 20224", "GADS Program 20227", "GADS Program 202210",
+        "GADS Program 20222", "GADS Program 20225", "GADS Program 20228", "GADS Program 202211",
+        "GADS Program 20223", "GADS Program 20226", "GADS Program 20229", "GADS Program 202212",
     )
 
     private val adapters = ProgramListAdapter(programs)

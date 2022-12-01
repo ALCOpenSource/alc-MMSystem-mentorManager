@@ -1,5 +1,12 @@
 package com.peculiaruc.alc_mmsystem_mentormanager.ui
 
+/**
+ * The activity is the home frangment contrainer for all the mm discusiion forum
+ * task screen
+ *
+ */
+
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ActivityChatMessagesBinding

@@ -31,6 +31,7 @@ class DiscussionForumAdapter(private val context: Context, private val discussio
     /** A method used for listening to delete click event in the comment screen
      *
      */
+
     fun setOnDeleteClickListener(mDeleteClickListener: OnDeleteClickListener) {
         deleteListener = mDeleteClickListener
     }
@@ -38,6 +39,7 @@ class DiscussionForumAdapter(private val context: Context, private val discussio
     /**A method used for listening to message click event in the comment screen
      *
      */
+
     fun setOnMessageClickListener(mMessageClickListener: OnMessageClickListener) {
         messageListener = mMessageClickListener
     }
@@ -45,6 +47,7 @@ class DiscussionForumAdapter(private val context: Context, private val discussio
     /**A method used for listening to bookmark click event in the comment screen
      *
      */
+
     fun setOnBookmarkClickListener(mBookmarkClickListener: OnBookmarkClickListener) {
         bookmarkListener = mBookmarkClickListener
     }
@@ -52,9 +55,14 @@ class DiscussionForumAdapter(private val context: Context, private val discussio
     /** A method used for listening to edit click event in the comment screen
      *
      */
+
     fun setOnEditClickListener(mEditClickListener: OnEditClickListener) {
         editListener = mEditClickListener
     }
+
+    /**
+     * viewholder class fo the adapter
+     */
 
 
 inner class ViewHolder(val binding: ForumItemBinding) : RecyclerView.ViewHolder(binding.root) {
@@ -96,6 +104,7 @@ inner class ViewHolder(val binding: ForumItemBinding) : RecyclerView.ViewHolder(
     /**
      * A function used to attach data to the recycler view items
      */
+
     fun bind(title: String) {
         binding.forumName.text = title
     }

@@ -23,15 +23,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".ui.Team_7_linking_activity"
-            android:exported="true">
 
-
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
         <activity
             android:name=".ui.activity_mm_reports"
             android:exported="false">

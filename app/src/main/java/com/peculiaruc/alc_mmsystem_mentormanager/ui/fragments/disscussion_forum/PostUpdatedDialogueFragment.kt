@@ -1,5 +1,12 @@
 package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.disscussion_forum
 
+/**
+ * to implement the functionality of the post update screen
+ * no functionality implemented yet
+ *
+ */
+
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View

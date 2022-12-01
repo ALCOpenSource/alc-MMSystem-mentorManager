@@ -1,5 +1,10 @@
 package com.peculiaruc.alc_mmsystem_mentormanager.ui
 
+/**
+ * The activity is the home frangment contrainer for all the mm chat messages task screen
+ *
+ */
+
 import android.os.Bundle
 import android.view.View
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -11,10 +16,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ActivityChatMessagesBinding
 
-/**
- * The activity is the home frangment contrainer for all the mm chat messages task screen
- *
- */
+
 
 class chat_messages_activity : AppCompatActivity() {
 

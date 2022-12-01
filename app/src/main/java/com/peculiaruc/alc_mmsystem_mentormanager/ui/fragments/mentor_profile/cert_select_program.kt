@@ -12,8 +12,9 @@ import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentCertSelectProgramBinding
 
-// handle the fragment select program  screen
-// currently not linked to any data and no functionality set
+/**handle the fragment select program  screen
+* currently not linked to any data and no functionality set
+ */
 
 class cert_select_program : Fragment(){
     private var _binding: FragmentCertSelectProgramBinding? = null

@@ -6,5 +6,9 @@ package com.peculiaruc.alc_mmsystem_mentormanager.util
  */
 
 interface OnDeleteClickListener {
+
+    /**
+     * to implement the on click delete event functionality
+     */
     fun onDeleteClick()
 }

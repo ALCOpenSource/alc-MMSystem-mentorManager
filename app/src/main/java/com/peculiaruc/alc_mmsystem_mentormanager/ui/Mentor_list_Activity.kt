@@ -1,4 +1,9 @@
 package com.peculiaruc.alc_mmsystem_mentormanager.ui
+/**
+ * The activity for the mentor profile screens fragments
+ *The fragments container is in the activity_mentor_list XML file
+ *For the Activity_mentor_list xml file to have the fragment container, it includes the content _mentor_list xml file
+ */
 
 import android.os.Bundle
 import android.view.View
@@ -16,11 +21,7 @@ import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ActivityMentorListBinding
 
 
-/**
- * The activity for the mentor profile screens fragments
-*The fragments container is in the activity_mentor_list XML file
-*For the Activity_mentor_list xml file to have the fragment container, it includes the content _mentor_list xml file
- */
+
 
 class Mentor_list_Activity : AppCompatActivity() {
 //    private lateinit var appBarConfiguration: AppBarConfiguration

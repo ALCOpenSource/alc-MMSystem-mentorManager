@@ -6,5 +6,9 @@ package com.peculiaruc.alc_mmsystem_mentormanager.util
  */
 
 interface OnShareClickListener {
+
+    /**
+     * to implement the on share event functionality
+     */
     fun onShareClick()
 }

@@ -20,6 +20,7 @@ class mentor_Certificates_adapter(var mentor_certificates: List<mentors_certific
     /**
      * holds the views for the class
      */
+
     inner class ViewHolder(val binding: FragmentMentorCertificatesRecyclerviewItemBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

@@ -45,6 +45,7 @@ class individual_chat_fragment_adapter(private var messages: List<individual_cha
     /**
      * viewholderclass implementation for the adapter
      */
+
     inner class MessageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val messageText: TextView = itemView.findViewById(com.peculiaruc.alc_mmsystem_mentormanager.R.id.chat_message_body)
 
@@ -53,6 +54,7 @@ class individual_chat_fragment_adapter(private var messages: List<individual_cha
         /**
          * binds views to the data from messages list
          */
+
         fun bind(message: individual_chat_messages) {
                 messageText.text = message.message
 

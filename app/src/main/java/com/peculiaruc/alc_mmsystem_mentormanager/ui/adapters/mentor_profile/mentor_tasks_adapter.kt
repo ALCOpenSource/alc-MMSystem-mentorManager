@@ -16,6 +16,11 @@ import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorProgr
 
 class mentor_tasks_adapter(var mentor_task: List<mentors_tasks>, ) : RecyclerView.Adapter<mentor_tasks_adapter.ViewHolder>() {
 
+
+    /**
+     * holds the views from the rv
+     */
+    
     inner class ViewHolder(val binding: FragmentMentorProgramsRecyclerviewItemBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

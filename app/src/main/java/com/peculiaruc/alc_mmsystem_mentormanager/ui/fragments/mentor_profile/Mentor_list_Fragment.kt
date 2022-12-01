@@ -17,6 +17,11 @@ import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.mentor_profile.ment
 import java.util.*
 
 
+/**
+ *  to implement the functionality of the mentor list screen
+ *  no functionality implmented yet
+ */
+
 class Mentor_list_Fragment : Fragment() {
     private var _binding:FragmentMentorListBinding? = null
     private val binding get() = _binding!!
@@ -48,12 +53,10 @@ class Mentor_list_Fragment : Fragment() {
         }
 
 
+        /**Respond to selection of item in a spinner
+         *
+         */
 
-
-
-
-
-        // Respond to selection of item in a spinner
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 binding.body1.setText(mList.get(position));
@@ -74,9 +77,10 @@ class Mentor_list_Fragment : Fragment() {
                 spinner.setVisibility(View.GONE);
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
-
+                Toast.makeText(context, "", Toast.LENGTH_SHORT).show()
             }
         }
+
 
 
 
@@ -85,7 +89,7 @@ class Mentor_list_Fragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-       // populate the mentors recyclerview with list of all mentros
+        // populate the mentors recyclerview with list of all mentros
         val layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(context)
         binding.mentorsRv.setLayoutManager(layoutManager)
         rvAdapter = mentor_list_adapter(mentorLists)
@@ -102,13 +106,20 @@ class Mentor_list_Fragment : Fragment() {
                     .show() }
                  customDialog?.getWindow()?.setGravity(Gravity.BOTTOM)
 
-          // on click of cancel button close the dialog box
+            /**on click of cancel button close the dialog box
+             *
+             */
+
             val btn_add_mentor_dialog_cancel = dialogadd_mentor.findViewById<Button>(R.id.frame_352)
             btn_add_mentor_dialog_cancel.setOnClickListener {
                  if (customDialog != null)
                  { customDialog.dismiss() }
              }
-            // on click of send button open the confirm_send dialog box the
+
+            /**
+             *  on click of send button open the confirm_send dialog box the
+             */
+
             val btn_add_mentor_dialog_Send = dialogadd_mentor.findViewById<Button>(R.id.frame_351)
             btn_add_mentor_dialog_Send.setOnClickListener {
 
@@ -166,7 +177,10 @@ class Mentor_list_Fragment : Fragment() {
             mentor_recyleview.setAdapter(mentor_list_adapter( filteredlist))
         }
     }
-// loads fummy data to be displayed in the  mentore rv
+
+    /** loads fummy data to be displayed in the  mentore rv
+     *
+     */
     private fun load_mentors_dummy_list() {
         mentorLists = arrayListOf(
             mentor_list("Peculiar C. Umeh", "Program Assistant, Andela, She/her", "PROGRAM ASST.", "MENTOR-GAD", R.drawable.ann, true),

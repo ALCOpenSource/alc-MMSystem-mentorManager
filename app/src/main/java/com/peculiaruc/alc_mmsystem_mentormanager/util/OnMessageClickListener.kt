@@ -6,5 +6,9 @@ package com.peculiaruc.alc_mmsystem_mentormanager.util
  */
 
 interface OnMessageClickListener {
+    /**
+     * to implement the on messange click event functionality
+     */
+
     fun onMessageClick()
 }

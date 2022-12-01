@@ -38,24 +38,16 @@ class mentors_Reports_fragments : Fragment() {
     private fun load_dummy_programms() {
         mentors_reports = listOf(
 
-            mentors_reports("Google Africa Scholarship Report 2","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report 3","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report 4","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report 5","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report 6","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report 7","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report 8","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report 9","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report 10","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report 21","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report 12","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report 13","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report 14","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report 15","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report 16","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report 17 ","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report 18","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-
+            mentors_reports("Google Africa Scholarship Report2","By Ibrahim Kabir  -  19th - 25th Oct 22"),
+            mentors_reports("Google Africa Scholarship Report3","By Ibrahim Kabir  -  19th - 25th Oct 22"),
+            mentors_reports("Google Africa Scholarship Repor4","By Ibrahim Kabir  -  19th - 25th Oct 22"),
+            mentors_reports("Google Africa Scholarship Report5","By Ibrahim Kabir  -  19th - 25th Oct 22"),
+            mentors_reports("Google Africa Scholarship Report6","By Ibrahim Kabir  -  19th - 25th Oct 22"),
+            mentors_reports("Google Africa Scholarship Report7","By Ibrahim Kabir  -  19th - 25th Oct 22"),
+            mentors_reports("Google Africa Scholarship Report8","By Ibrahim Kabir  -  19th - 25th Oct 22"),
+            mentors_reports("Google Africa Scholarship Report9","By Ibrahim Kabir  -  19th - 25th Oct 22"),
+            mentors_reports("Google Africa Scholarship Report10","By Ibrahim Kabir  -  19th - 25th Oct 22"),
+            mentors_reports("Google Africa Scholarship Report21","By Ibrahim Kabir  -  19th - 25th Oct 22"),
         )
     }
 

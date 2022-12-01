@@ -14,16 +14,18 @@ import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mento
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorCertificatesFragmentBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.mentor_profile.mentor_Certificates_adapter
 
-// this class handles the display of the mentor certificates,
-// currents only the Ui is in place and loading of a dummy mentor certificate  list
+/** this class handles the display of the mentor certificates,
+*currents only the Ui is in place and loading of a dummy mentor certificate  list
+*/
 
 class mentor_certificates_fragment : Fragment() {
 
     private var _binding: FragmentMentorCertificatesFragmentBinding? = null
     private lateinit var rvAdapter: mentor_Certificates_adapter
     private lateinit var mentors_certificates : List<mentors_certificate>
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+    /**This property is only valid between onCreateView and
+    * onDestroyView.
+     */
     private val binding get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,21 +36,24 @@ class mentor_certificates_fragment : Fragment() {
         return binding.root
     }
 
+    /**
+     * load dummy data to the list of programs
+     */
     private fun load_dummy_programms() {
         mentors_certificates = listOf(
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION 1",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION 2",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION 3",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION 4",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION 5",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION 6",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION 7",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION 8",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION 9",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION 10",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION 11",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION 12",R.id.certificate),
-            mentors_certificate("GADS CLOUD 2022 - COMPLETION 13",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION1",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION2",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION3",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION4",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION5",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION6",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION7",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION8",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION9",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION10",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION11",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION12",R.id.certificate),
+            mentors_certificate("GADS CLOUD 2022 - COMPLETION13",R.id.certificate),
 
 
 

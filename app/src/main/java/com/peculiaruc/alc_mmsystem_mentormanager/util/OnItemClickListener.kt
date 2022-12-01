@@ -6,5 +6,10 @@ package com.peculiaruc.alc_mmsystem_mentormanager.util
  */
 
 interface OnItemClickListener {
+
+    /**
+     * to implement the on click item event functionality
+     */
+
     fun onItemClickedListener()
 }

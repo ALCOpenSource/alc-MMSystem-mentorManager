@@ -42,17 +42,17 @@ class mentors_programs_fragment : Fragment() {
     // this loads the dummy data on the list of programs for the mentor
     private fun load_dummy_programms() {
         mentors_program_list = listOf(
-            mentors_programs("GADS Program 2022 1","Dec 12, 2022",R.id.mentor_program_pic),
-            mentors_programs("GADS Program 2022 2","Dec 12, 2022",R.id.mentor_program_pic),
-            mentors_programs("GADS Program 2022 3","Dec 12, 2022",R.id.mentor_program_pic),
-            mentors_programs("GADS Program 2022 4","Dec 12, 2022",R.id.mentor_program_pic),
-            mentors_programs("GADS Program 2022 5","Dec 12, 2022",R.id.mentor_program_pic),
-            mentors_programs("GADS Program 2022 6 ","Dec 12, 2022",R.id.mentor_program_pic),
-            mentors_programs("GADS Program 2022 7 ","Dec 12, 2022",R.id.mentor_program_pic),
-            mentors_programs("GADS Program 2022 8","Dec 12, 2022",R.id.mentor_program_pic),
-            mentors_programs("GADS Program 2022 9","Dec 12, 2022",R.id.mentor_program_pic),
-            mentors_programs("GADS Program 2022 10","Dec 12, 2022",R.id.mentor_program_pic),
-            mentors_programs("GADS Program 2022 11","Dec 12, 2022",R.id.mentor_program_pic),
+            mentors_programs("GADS Program 20221","Dec 12, 2022",R.id.mentor_program_pic),
+            mentors_programs("GADS Program 20222","Dec 12, 2022",R.id.mentor_program_pic),
+            mentors_programs("GADS Program 20223","Dec 12, 2022",R.id.mentor_program_pic),
+            mentors_programs("GADS Program 20224","Dec 12, 2022",R.id.mentor_program_pic),
+            mentors_programs("GADS Program 20225","Dec 12, 2022",R.id.mentor_program_pic),
+            mentors_programs("GADS Program 20226 ","Dec 12, 2022",R.id.mentor_program_pic),
+            mentors_programs("GADS Program 20227 ","Dec 12, 2022",R.id.mentor_program_pic),
+            mentors_programs("GADS Program 20228","Dec 12, 2022",R.id.mentor_program_pic),
+            mentors_programs("GADS Program 20229","Dec 12, 2022",R.id.mentor_program_pic),
+            mentors_programs("GADS Program 202210","Dec 12, 2022",R.id.mentor_program_pic),
+            mentors_programs("GADS Program 202211","Dec 12, 2022",R.id.mentor_program_pic),
             )
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

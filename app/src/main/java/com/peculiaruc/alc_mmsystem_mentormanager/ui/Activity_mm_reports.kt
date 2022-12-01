@@ -1,14 +1,16 @@
 package com.peculiaruc.alc_mmsystem_mentormanager.ui
 
+/**
+ * The activity is the home frangment contrainer for all the mm reports screen
+ *
+ */
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ActivityMainBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ActivityMmReportsBinding
 
-/**
- * The activity is the home frangment contrainer for all the mm reports screen
- *
- */
+
 class activity_mm_reports : AppCompatActivity() {
     private lateinit var binding:ActivityMmReportsBinding
     override fun onCreate(savedInstanceState: Bundle?) {

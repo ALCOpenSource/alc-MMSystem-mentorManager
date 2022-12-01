@@ -17,6 +17,9 @@ import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ReportItemBinding
 
 class mentor_report_adapter(var mentor_report: List<mentors_reports>, ) : RecyclerView.Adapter<mentor_report_adapter.ViewHolder>() {
 
+    /**
+     * holds the views from the rv
+     */
 
     inner class ViewHolder(val binding:ReportItemBinding) : RecyclerView.ViewHolder(binding.root)
 

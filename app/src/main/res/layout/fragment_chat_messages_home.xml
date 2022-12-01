@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.chat_messages.home.chat_messages_Fragment">
+    tools:context=".ui.fragments.chat_messages.chat_messages.chat_messages_Fragment">
 
 
     <!-- Group 591 -->

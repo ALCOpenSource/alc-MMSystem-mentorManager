@@ -6,5 +6,10 @@ package com.peculiaruc.alc_mmsystem_mentormanager.util
  */
 
 interface OnEditClickListener {
+
+    /**
+     * to implement the on click edit event functionality
+     */
+
     fun onEditClick()
 }

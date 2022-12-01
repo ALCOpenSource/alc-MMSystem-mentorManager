@@ -4,22 +4,16 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
-import androidx.navigation.ui.AppBarConfiguration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages.chat__broadcast_messages
-import com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages.chat_messages
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentBroadcastMessagesBinding
-import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentChatMessagesHomeBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.chat_messages.chat_broadcast_messages_adapter
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.chat_messages.chat_messages_adapter
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.chat_messages.home.HomeViewModel
+import com.peculiaruc.alc_mmsystem_mentormanager.ui.viewmodels.individual_chats_viewmodel
 
 /**
  * MMM-Team-7
@@ -47,7 +41,7 @@ class Broadcast_messages_Fragment : Fragment() {
 
 
         val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+            ViewModelProvider(this).get(individual_chats_viewmodel::class.java)
         _binding = FragmentBroadcastMessagesBinding.inflate(inflater, container, false)
         val root: View = binding.root
         homeViewModel.text.observe(viewLifecycleOwner) {
@@ -61,24 +55,15 @@ class Broadcast_messages_Fragment : Fragment() {
     private fun load_messages() {
 
         chat_messages = listOf(
-            chat__broadcast_messages("Peculiar C. Umeh  ","Hello Kabiru, trust you are well?",1,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Kabiru M. Magaya ","Hi Peculiar, i am well. Thanks",0,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Peculiar C. Umeh ","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Peculiar C. Umeh ","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Kabiru M. Magaya","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Peculiar C. Umeh","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Kabiru M. Magaya","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Peculiar C. Umeh","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Kabiru M. Magaya","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Peculiar C. Umeh","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Kabiru M. Magaya","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Peculiar C. Umeh","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Kabiru M. Magaya","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Peculiar C. Umeh","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Kabiru M. Magaya","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Peculiar C. Umeh","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Kabiru M. Magaya","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am",R.drawable.ann_2)            )
-
+            chat__broadcast_messages("Peculiar C. Umeh1  ","Hello Kabiru, trust you are well?",1,"10:30 am",R.drawable.ann_2),
+            chat__broadcast_messages("Kabiru M. Magaya2 ","Hi Peculiar, i am well. Thanks",0,"10:30 am",R.drawable.ann_2),
+            chat__broadcast_messages("Peculiar C. Umeh3 ","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
+            chat__broadcast_messages("Peculiar C. Umeh4 ","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
+            chat__broadcast_messages("Kabiru M. Magaya5","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am",R.drawable.ann_2),
+            chat__broadcast_messages("Peculiar C. Umeh6","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
+            chat__broadcast_messages("Kabiru M. Magaya7","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am",R.drawable.ann_2),
+            chat__broadcast_messages("Peculiar C. Umeh8","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
+        )
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

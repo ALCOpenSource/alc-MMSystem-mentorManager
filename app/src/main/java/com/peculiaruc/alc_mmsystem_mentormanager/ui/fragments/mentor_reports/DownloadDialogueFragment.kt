@@ -1,5 +1,9 @@
 package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_reports
 
+/**
+ * to implement the download dialogue fragment functionality
+ * no functionality is implemented yet
+ */
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View

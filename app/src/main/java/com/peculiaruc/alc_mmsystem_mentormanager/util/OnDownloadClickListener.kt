@@ -6,5 +6,10 @@ package com.peculiaruc.alc_mmsystem_mentormanager.util
  */
 
 interface OnDownloadClickListener {
+
+    /**
+     * to implement the on click download event functionality
+     */
+
     fun onDownloadClick()
 }

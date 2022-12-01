@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
+import android.widget.Toast
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -17,7 +18,10 @@ import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.SpinnerAdapter
 import com.peculiaruc.alc_mmsystem_mentormanager.util.OnDownloadClickListener
 import com.peculiaruc.alc_mmsystem_mentormanager.util.OnItemClickListener
 import com.peculiaruc.alc_mmsystem_mentormanager.util.OnShareClickListener
-
+/**
+ * implements the mentor reports screen functinality
+ * only loading of dummy data to the list implemented
+ */
 class ReportFragment : Fragment() {
     private var _binding: FragmentReportBinding? = null
     private val binding
@@ -115,6 +119,7 @@ class ReportFragment : Fragment() {
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
+                Toast.makeText(context, "to be imlemented", Toast.LENGTH_SHORT).show()
             }
 
         }

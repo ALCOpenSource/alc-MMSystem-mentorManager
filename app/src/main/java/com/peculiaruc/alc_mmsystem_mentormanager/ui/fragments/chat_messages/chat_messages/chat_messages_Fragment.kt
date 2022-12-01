@@ -15,8 +15,11 @@ import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages.chat_messages
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentChatMessagesHomeBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.chat_messages.chat_messages_adapter
+import com.peculiaruc.alc_mmsystem_mentormanager.ui.viewmodels.individualmessages_viewmode
 
-//handle the toggle screen in the chats
+/**handle the toggle screen in the chats
+ *
+ */
 class chat_messages_Fragment : Fragment() {
 
     private var _binding: FragmentChatMessagesHomeBinding? = null
@@ -41,7 +44,7 @@ class chat_messages_Fragment : Fragment() {
             )
         )
         val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+            ViewModelProvider(this).get(individualmessages_viewmode::class.java)
         _binding = FragmentChatMessagesHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
         homeViewModel.text.observe(viewLifecycleOwner) {
@@ -51,79 +54,67 @@ class chat_messages_Fragment : Fragment() {
         return binding.root
     }
 
-    //this is loading the dummy data in the chat messages list
+    /**this is loading the dummy data in the chat messages list
+     *
+     */
     private fun load_messages() {
 
         chat_messages = listOf(
             chat_messages(
                 "Peculiar C. Umeh 1",
-                "Can we go ahead to join the UI/UX Team Meeting now",
+                "Can we go ahead to join the UI/UX Team Meeting now1",
                 "30m.",
                 "3",
                 R.drawable.ann
             ),
             chat_messages(
                 "James M. Jonathan 2",
-                "Can we go ahead to join the UI/UX Team Meeting now",
+                "Can we go ahead to join the UI/UX Team Meeting now2",
                 "30m.",
                 "3",
                 R.drawable.ann_2
             ),
             chat_messages(
                 "Pendo D Mwaruma 3",
-                "Can we go ahead to join the UI/UX Team Meeting now",
+                "Can we go ahead to join the UI/UX Team Meeting now3",
                 "30m.",
                 "3",
                 R.drawable.grace
             ),
             chat_messages(
                 "Musango J Abdi 4",
-                "Can we go ahead to join the UI/UX Team Meeting now",
+                "Can we go ahead to join the UI/UX Team Meeting now4",
                 "30m.",
                 "3",
                 R.drawable.profile
             ),
             chat_messages(
                 "Abdalah K. Karim 5",
-                "Can we go ahead to join the UI/UX Team Meeting now",
+                "Can we go ahead to join the UI/UX Team Meeting now5",
                 "30m.",
                 "3",
                 R.drawable.ann
             ),
             chat_messages(
                 "Pombe R. Karisaa 6",
-                "Can we go ahead to join the UI/UX Team Meeting now",
+                "Can we go ahead to join the UI/UX Team Meeting now6",
                 "30m.",
                 "3",
                 R.drawable.ann_2
             ),
             chat_messages(
                 "Peculiar C. Umeh 7",
-                "Can we go ahead to join the UI/UX Team Meeting now",
+                "Can we go ahead to join the UI/UX Team Meeting now7",
                 "30m.",
                 "3",
                 R.drawable.grace
             ),
             chat_messages(
                 "James M. Jonathan 8",
-                "Can we go ahead to join the UI/UX Team Meeting now",
+                "Can we go ahead to join the UI/UX Team Meeting now8",
                 "30m.",
                 "3",
                 R.drawable.profile
-            ),
-            chat_messages(
-                "Pendo D Mwaruma 9",
-                "Can we go ahead to join the UI/UX Team Meeting now",
-                "30m.",
-                "3",
-                R.drawable.ann_2
-            ),
-            chat_messages(
-                "Musango J Abdi 10",
-                "Can we go ahead to join the UI/UX Team Meeting now",
-                "30m.",
-                "3",
-                R.drawable.ann
             ),
 
 
