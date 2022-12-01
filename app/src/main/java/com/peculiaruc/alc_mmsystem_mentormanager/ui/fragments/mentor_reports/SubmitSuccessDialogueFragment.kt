@@ -5,9 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.SubmitSuccessDialogueBinding
 
-class SubmitSuccessDialogueFragment : DialogFragment() {
+class SubmitSuccessDialogueFragment : BottomSheetDialogFragment() {
     private var _binding: SubmitSuccessDialogueBinding? = null
     private val binding
         get() = _binding!!

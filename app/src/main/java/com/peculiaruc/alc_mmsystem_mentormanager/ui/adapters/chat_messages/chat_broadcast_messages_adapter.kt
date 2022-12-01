@@ -8,8 +8,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages.chat__broadcast_messages
 
-
-
+/**
+ * MMM-Team-7
+ * An adapter class for the broadcast message recycler view
+ */
 
 class chat_broadcast_messages_adapter(private var messages: List<chat__broadcast_messages>)  :
     RecyclerView.Adapter<chat_broadcast_messages_adapter.MessageViewHolder>() {

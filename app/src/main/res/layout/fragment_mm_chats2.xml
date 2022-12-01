@@ -231,8 +231,6 @@
             android:layout_height="24dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="14dp"
-            android:layout_marginEnd="20dp"
             android:background="@drawable/broadcast_m"
             android:clipToOutline="true"
             app:layout_constraintBottom_toBottomOf="@+id/frame_24"

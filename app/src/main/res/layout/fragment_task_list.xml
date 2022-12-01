@@ -35,8 +35,14 @@
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="21dp"
         android:maxWidth="290dp"
+        android:textColor="@color/mms_black_5"
+        android:textFontWeight="400"
+        android:textSize="14sp"
+        app:fontFamily="@font/mukta"
         android:searchHintIcon="@drawable/abc_ic_search"
         android:searchIcon="@drawable/abc_ic_search"
+        android:closeIcon="@null"
+        android:queryBackground="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/taskButtonContainer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/taskTitle" />
@@ -67,6 +73,7 @@
                 android:layout_marginBottom="5dp"
                 android:text="All"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/taskAssigned"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -75,11 +82,12 @@
                 style="@style/group_button_text"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:text="Assigned"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/taskCompleted"
                 app:layout_constraintStart_toEndOf="@+id/taskAll"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -87,11 +95,12 @@
                 android:id="@+id/taskCompleted"
                 style="@style/group_button_text"
                 android:layout_width="0dp"
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:text="Completed"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/taskMyTask"
                 app:layout_constraintStart_toEndOf="@+id/taskAssigned"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -99,7 +108,7 @@
                 android:id="@+id/taskMyTask"
                 style="@style/group_button_text"
                 android:layout_width="0dp"
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="6dp"
                 android:layout_marginBottom="5dp"

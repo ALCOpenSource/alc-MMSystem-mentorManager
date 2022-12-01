@@ -2,6 +2,11 @@ package com.peculiaruc.alc_mmsystem_mentormanager
 
 import android.app.Application
 
+/**
+ * MMM-Team-7
+ * Here we override the application class to create a singleton for the application
+ */
+
 class MentorManagerApplication : Application(){
 
     companion object {

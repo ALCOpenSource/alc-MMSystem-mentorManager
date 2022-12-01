@@ -8,6 +8,11 @@ import android.widget.ArrayAdapter
 import android.widget.TextView
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 
+/**
+ * MMM-Team-7
+ * Custom adapter for the report screen spinner
+ */
+
 class SpinnerAdapter(context: Context, list: ArrayList<String>)
     : ArrayAdapter<String>(context, 0, list) {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {

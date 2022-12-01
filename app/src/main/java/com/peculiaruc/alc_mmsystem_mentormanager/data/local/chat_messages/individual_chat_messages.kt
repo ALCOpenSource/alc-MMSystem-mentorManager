@@ -1,5 +1,9 @@
 package com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages
 
+/**
+ * MMM-Team-7
+ * This is a data class use to generate dummy data for the individual chat recycler view
+ */
 
 
 data class individual_chat_messages(

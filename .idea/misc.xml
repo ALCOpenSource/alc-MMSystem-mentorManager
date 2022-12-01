@@ -37,13 +37,18 @@
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/activity_mm_reports.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/activity_reports.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/activity_team7_linking.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/alert_dialog_box_add_mentor.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/alert_dialog_box_certificate_downloaded_succesfully.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/alert_dialog_box_certificate_sent_for_aproval.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/comment_deleted_dialogue.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/comment_item.xml" value="0.22" />
+        <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/delete_success_dialogue.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/download_dialogue_fragment.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/drop_down_item.xml" value="0.203125" />
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/drop_down_spinner.xml" value="0.203125" />
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/forum_item.xml" value="0.22" />
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/fragment_comments.xml" value="0.25" />
-        <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/fragment_compose_report.xml" value="0.25" />
+        <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/fragment_compose_report.xml" value="0.22" />
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/fragment_discussion_forum.xml" value="0.22" />
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/fragment_edit_post.xml" value="0.25" />
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/fragment_mentor_report_details.xml" value="0.20416666666666666" />
@@ -56,11 +61,12 @@
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/fragment_report.xml" value="0.22" />
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/fragment_report_details.xml" value="0.22" />
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/fragment_task_list.xml" value="0.25" />
+        <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/post_updated_dialogue.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/program_item.xml" value="0.33" />
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/report_item.xml" value="0.33" />
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/share_dialogue_fragment.xml" value="0.25" />
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/snackbar_layout.xml" value="0.25" />
-        <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/submit_success_dialogue.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/submit_success_dialogue.xml" value="0.25" />
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/layout/task_item.xml" value="0.33" />
         <entry key="..\:/Users/HP/Projects/alc-MMSystem-mentorManager/app/src/main/res/menu/menu_item.xml" value="0.20416666666666666" />
       </map>

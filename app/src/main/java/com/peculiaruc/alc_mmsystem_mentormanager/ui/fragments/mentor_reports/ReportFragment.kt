@@ -74,6 +74,7 @@ class ReportFragment : Fragment() {
         return binding.root
     }
 
+    // This method handles the events from the click listener interface
     private fun handleReportListItemsSelection() {
         adapters.apply {
             setOnItemClickListener(object : OnItemClickListener{
@@ -94,7 +95,7 @@ class ReportFragment : Fragment() {
             setOnDownloadClickListener(object : OnDownloadClickListener{
                 override fun onDownloadClick() {
                     val fragment = DownloadDialogueFragment()
-                    fragment.show(activity!!.supportFragmentManager, "show share dialogue")
+                    fragment.show(requireActivity().supportFragmentManager, "show share dialogue")
                 }
 
             })
@@ -119,8 +120,10 @@ class ReportFragment : Fragment() {
         }
     }
 
+    // This method handles the search icon click event
     private fun handleSearchClicked() {
         binding.reportSearch.setOnSearchClickListener {
+            binding.reportSearch.isIconifiedByDefault = false
             binding.reportSearch.background = AppCompatResources.getDrawable(requireContext(), R.drawable.card_border)
             binding.reportTitle.visibility = View.INVISIBLE
         }

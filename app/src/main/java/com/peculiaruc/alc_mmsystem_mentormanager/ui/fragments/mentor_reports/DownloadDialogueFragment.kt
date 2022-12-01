@@ -5,9 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.DownloadDialogueFragmentBinding
 
-class DownloadDialogueFragment : DialogFragment() {
+class DownloadDialogueFragment : BottomSheetDialogFragment() {
     private var _binding: DownloadDialogueFragmentBinding? = null
     private val binding
         get() = _binding!!
