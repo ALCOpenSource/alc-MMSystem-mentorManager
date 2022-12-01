@@ -18,12 +18,14 @@
         <!-- Group 509 -->
         <View
             android:id="@+id/group_509"
-            android:layout_width="180dp"
-            android:layout_height="161dp"
+            android:layout_width="184dp"
+            android:layout_height="166dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
+            android:layout_marginStart="88dp"
             android:layout_marginTop="23dp"
-            android:background="@drawable/certifcate_approved"
+            android:layout_marginEnd="88dp"
+            android:background="@drawable/ic_pending_approval"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/report_down" />
@@ -31,19 +33,19 @@
         <!-- Report Downloaded Successfully! -->
         <TextView
             android:id="@+id/report_down"
-            android:layout_width="258dp"
-            android:layout_height="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="51dp"
             android:layout_marginTop="52dp"
             android:layout_marginEnd="51dp"
-            android:textFontWeight="600"
-            android:textColor="@color/mms_black_2"
-            android:textSize="18dp"
             android:gravity="center_horizontal"
             android:text="@string/certificate_Sent_for_approval"
             android:textAppearance="@style/report_down"
+            android:textColor="@color/mms_black_2"
+            android:textFontWeight="600"
+            android:textSize="18dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -51,15 +53,16 @@
         <!-- Frame 351 -->
         <RelativeLayout
             android:id="@+id/frame_351"
-            android:layout_width="318dp"
+            android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="21dp"
-            android:layout_marginTop="23dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="21dp"
             android:background="@drawable/frame_351"
             android:clipToOutline="true"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/group_509">

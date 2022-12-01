@@ -2,6 +2,7 @@ package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_reports
 
 import android.os.Bundle
 import android.view.*
+import android.widget.SearchView
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
@@ -17,10 +18,13 @@ class ProgramListFragment : Fragment() {
     private val binding
     get() = _binding!!
 
+    // Toggle button states
     private var isAllSelected = true
     private var isAssignedSelected = false
     private var isCompletedSelected = false
 
+
+    // Dummy data for the recycler view adapter
     private val programs = arrayOf(
         "GADS Program 2022", "GADS Program 2022", "GADS Program 2022", "GADS Program 2022",
         "GADS Program 2022", "GADS Program 2022", "GADS Program 2022", "GADS Program 2022",
@@ -35,6 +39,7 @@ class ProgramListFragment : Fragment() {
     ): View {
         _binding = FragmentProgramListBinding.inflate(inflater, container, false)
 
+        // Back button pressed handler
         binding.programBack.setOnClickListener {
             Navigation.findNavController(requireView()).popBackStack(R.id.composeReportFragment, false)
         }
@@ -52,8 +57,10 @@ class ProgramListFragment : Fragment() {
         return binding.root
     }
 
+    // This method handles the search icon click event
     private fun handleSearchClicked() {
         binding.programSearch.setOnSearchClickListener {
+            binding.programSearch.isIconifiedByDefault = false
             binding.programSearch.background = AppCompatResources.getDrawable(requireContext(), R.drawable.card_border)
             binding.programTitle.visibility = View.INVISIBLE
         }
@@ -65,8 +72,10 @@ class ProgramListFragment : Fragment() {
         }
     }
 
+    // This method handles the toggle buttons selections
     private fun handleGroupButtonClick() {
         binding.programAll.setOnClickListener {
+            // Group buttons state assigned
             isAllSelected = true
             isAssignedSelected = false
             isCompletedSelected = false

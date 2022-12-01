@@ -15,6 +15,11 @@ import com.peculiaruc.alc_mmsystem_mentormanager.util.OnMessageClickListener
 import com.peculiaruc.alc_mmsystem_mentormanager.util.OnDeleteClickListener
 import com.peculiaruc.alc_mmsystem_mentormanager.util.OnEditClickListener
 
+/**
+ * MMM-Team-7
+ * Adapter for the discussion screen recycler view
+ */
+
 class DiscussionForumAdapter(private val context: Context, private val discussions: Array<String>)
     : RecyclerView.Adapter<DiscussionForumAdapter.ViewHolder>() {
 
@@ -23,15 +28,19 @@ class DiscussionForumAdapter(private val context: Context, private val discussio
     private lateinit var bookmarkListener: OnBookmarkClickListener
     private lateinit var editListener: OnEditClickListener
 
+    // A method used for listening to delete click event in the comment screen
     fun setOnDeleteClickListener(mDeleteClickListener: OnDeleteClickListener) {
         deleteListener = mDeleteClickListener
     }
+    // A method used for listening to message click event in the comment screen
     fun setOnMessageClickListener(mMessageClickListener: OnMessageClickListener) {
         messageListener = mMessageClickListener
     }
+    // A method used for listening to bookmark click event in the comment screen
     fun setOnBookmarkClickListener(mBookmarkClickListener: OnBookmarkClickListener) {
         bookmarkListener = mBookmarkClickListener
     }
+    // A method used for listening to edit click event in the comment screen
     fun setOnEditClickListener(mEditClickListener: OnEditClickListener) {
         editListener = mEditClickListener
     }
@@ -73,6 +82,7 @@ inner class ViewHolder(val binding: ForumItemBinding) : RecyclerView.ViewHolder(
         }
     }
 
+    // A function used to attach data to the recycler view items
     fun bind(title: String) {
         binding.forumName.text = title
     }

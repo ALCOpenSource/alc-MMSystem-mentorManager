@@ -9,6 +9,11 @@ import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mentors_reports
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorReportsRecyclerviewItemBinding
 
+/**
+ * MMM-Team-7
+ * Adapter for the mentors reports screen from the mentors profile
+ */
+
 class mentor_report_adapter(var mentor_report: List<mentors_reports>, ) : RecyclerView.Adapter<mentor_report_adapter.ViewHolder>() {
 
 

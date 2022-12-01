@@ -8,6 +8,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages.individual_chat_messages
 
+/**
+ * MMM-Team-7
+ * Adapter for the individual chat recycler view
+ */
 
 class individual_chat_fragment_adapter(private var messages: List<individual_chat_messages>)  :
     RecyclerView.Adapter<individual_chat_fragment_adapter.MessageViewHolder>() {

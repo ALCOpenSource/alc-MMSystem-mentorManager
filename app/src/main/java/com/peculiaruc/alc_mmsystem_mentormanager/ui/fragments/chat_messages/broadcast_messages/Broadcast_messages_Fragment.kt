@@ -21,10 +21,12 @@ import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.chat_messages.chat_
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.chat_messages.chat_messages_adapter
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.chat_messages.home.HomeViewModel
 
+/**
+ * MMM-Team-7
+ * Main fragment for broadcast messages
+ */
 
 class Broadcast_messages_Fragment : Fragment() {
-
-
 
     private var _binding: FragmentBroadcastMessagesBinding? = null
     private val binding get() = _binding!!
@@ -36,7 +38,7 @@ class Broadcast_messages_Fragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ):
-            View? {
+            View {
         _binding = FragmentBroadcastMessagesBinding.inflate(inflater, container, false)
         load_messages()
 

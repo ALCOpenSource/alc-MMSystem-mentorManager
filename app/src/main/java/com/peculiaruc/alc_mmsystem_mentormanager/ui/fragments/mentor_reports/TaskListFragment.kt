@@ -21,11 +21,13 @@ class TaskListFragment : Fragment() {
     private val binding
         get() = _binding!!
 
+    // Toggle button states
     private var isAllSelected = true
     private var isAssignedSelected = false
     private var isCompletedSelected = false
     private var isMyTaskSelected = false
 
+    // Dummy data for the recycler view adapter
     private val tasks = arrayOf(
         "Room library article write", "Room library article write",
         "Room library article write", "Room library article write",
@@ -41,6 +43,7 @@ class TaskListFragment : Fragment() {
     ): View {
         _binding = FragmentTaskListBinding.inflate(inflater, container, false)
 
+        // Back button pressed handler
         binding.taskBack.setOnClickListener {
             Navigation.findNavController(requireView()).popBackStack(R.id.composeReportFragment, false)
         }
@@ -57,8 +60,10 @@ class TaskListFragment : Fragment() {
         return binding.root
     }
 
+    // This method handles the search icon click event
     private fun handleSearchClicked() {
         binding.taskSearch.setOnSearchClickListener {
+            binding.taskSearch.isIconifiedByDefault = false
             binding.taskSearch.background = AppCompatResources.getDrawable(requireContext(), R.drawable.card_border)
             binding.taskTitle.visibility = View.INVISIBLE
         }
@@ -70,8 +75,10 @@ class TaskListFragment : Fragment() {
         }
     }
 
+    // This method handles the toggle buttons selections
     private fun handleGroupButtonClick() {
         binding.taskAll.setOnClickListener {
+            // Group buttons state assigned
             isAllSelected = true
             isAssignedSelected = false
             isCompletedSelected = false

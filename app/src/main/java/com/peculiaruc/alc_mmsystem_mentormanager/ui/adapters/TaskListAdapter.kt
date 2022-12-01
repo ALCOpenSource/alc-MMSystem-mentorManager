@@ -7,11 +7,17 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 
+/**
+ * MMM-Team-7
+ * Adapter for the task screen recycler view
+ */
+
 class TaskListAdapter(private val tasks: Array<String>): RecyclerView.Adapter<TaskListAdapter.TaskViewHolder>() {
     class TaskViewHolder(view: View): RecyclerView.ViewHolder(view) {
 
         private val nTitle = view.findViewById<TextView>(R.id.taskItemTitle)
 
+        // A function used to attach data to the recycler view items
         fun bind(title: String) {
             nTitle.text = title
         }
