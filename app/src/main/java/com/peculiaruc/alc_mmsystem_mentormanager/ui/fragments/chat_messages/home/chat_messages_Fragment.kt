@@ -159,23 +159,12 @@ class chat_messages_Fragment : Fragment() {
                 R.id.mentor_profile -> {
                     //mentor profile task
                     Navigation.findNavController(navView).navigate(R.id.action_navigation_home_to_mentor_list_Activity)
-
                 }
-
             }
         }
-
         binding.arrowLeft.setOnClickListener {
             activity?.onBackPressed();
         }
-
-
-
-
-
-
-
-
         val layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(context)
         // pass it to rvLists layoutManager
         binding.mentorTasksRecycleview.setLayoutManager(layoutManager)

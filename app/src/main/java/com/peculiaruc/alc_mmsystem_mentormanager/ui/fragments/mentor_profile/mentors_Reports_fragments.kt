@@ -37,7 +37,7 @@ class mentors_Reports_fragments : Fragment() {
 // loads  dummy data in the list of reports from the mentors
     private fun load_dummy_programms() {
         mentors_reports = listOf(
-            mentors_reports("Google Africa Scholarship Report 1","By Ibrahim Kabir  -  19th - 25th Oct 22"),
+
             mentors_reports("Google Africa Scholarship Report 2","By Ibrahim Kabir  -  19th - 25th Oct 22"),
             mentors_reports("Google Africa Scholarship Report 3","By Ibrahim Kabir  -  19th - 25th Oct 22"),
             mentors_reports("Google Africa Scholarship Report 4","By Ibrahim Kabir  -  19th - 25th Oct 22"),
@@ -86,8 +86,6 @@ class mentors_Reports_fragments : Fragment() {
             Navigation.findNavController(it).navigate(R.id.action_mentors_Reports_fragments_to_mentor_certificates_fragment)
         }
     }
-
-
 
     override fun onDestroyView() {
         super.onDestroyView()

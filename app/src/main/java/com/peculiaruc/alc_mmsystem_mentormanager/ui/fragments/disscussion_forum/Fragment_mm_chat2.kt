@@ -40,9 +40,7 @@ class fragment_mm_chat2 : Fragment() {
     private fun load_messages() {
 
         chat_messages = listOf(
-            individual_chat_messages("Peculiar C. Umeh 1","Hello Kabiru, trust you are well?",1,"10:30 am", R.drawable.ann_2),
             individual_chat_messages("Kabiru M. Magaya 2","Hi Peculiar, i am well. Thanks",0,"10:30 am", R.drawable.ann_2),
-            individual_chat_messages("Peculiar C. Umeh 3","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am", R.drawable.ann_2),
             individual_chat_messages("Peculiar C. Umeh 4","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",2,"10:30 am", R.drawable.ann_2),
             individual_chat_messages("Kabiru M. Magaya 5","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am", R.drawable.ann_2),
             individual_chat_messages("Peculiar C. Umeh 6","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am", R.drawable.ann_2),

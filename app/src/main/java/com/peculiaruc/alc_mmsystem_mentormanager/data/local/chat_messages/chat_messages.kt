@@ -1,5 +1,6 @@
 package com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages
-// data class to hold convesationc to be displayed in the chat messages screen
+
+// data class to hold convesation to be displayed in the chat messages screen
 
 data class chat_messages (
     val name : String ="",
