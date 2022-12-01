@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Dropdowns / Dropdown User -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dropdowns_d"
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="45dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="11dp"
+            app:cardCornerRadius="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/mentor_program_pic"
+                android:layout_width="45dp"
+                android:layout_height="43dp"
+                android:src="@drawable/grace" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Peculiah C. Umeh -->
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="133.35dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:gravity="top"
+            android:textFontWeight="600"
+            android:textSize="16dp"
+            android:fontFamily="@font/mukta"
+            android:textColor="@color/mms_black_2"
+            android:text="@string/peculiar_c_"
+            app:layout_constraintStart_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/group_579"
+            android:layout_width="206dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#00000000"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/name">
+
+            <!-- Can we go ahead to join the UI/UX Team Meeting now -->
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="206dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="top"
+                android:textFontWeight="400"
+                android:textSize="12dp"
+                android:fontFamily="@font/mukta"
+                android:textColor="@color/mms_black_5"
+                android:text="@string/can_we_go_a"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- 30m -->
+        <TextView
+            android:id="@+id/aging_time"
+            android:layout_width="23dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="5dp"
+            android:gravity="top"
+            android:text="@string/m"
+            android:textAppearance="@style/m"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/name" />
+
+
+        <!-- Rectangle 28 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rectangle_2"
+            android:layout_width="18dp"
+            android:layout_height="17dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:background="@color/mms_sec_6"
+            app:layout_constraintEnd_toEndOf="@+id/aging_time"
+            app:layout_constraintTop_toBottomOf="@+id/aging_time">
+
+            <!-- 3 -->
+
+            <TextView
+                android:id="@+id/no_of_messages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="top"
+                android:text="@string/no_of_messages"
+                android:textAppearance="@style/no_of_messages"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

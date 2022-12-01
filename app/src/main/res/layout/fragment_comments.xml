@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragments.disscussion_forum.CommentsFragment">
+
+        <ImageView
+            android:id="@+id/comment_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="36dp"
+            android:focusable="true"
+            android:src="@drawable/arrow_left_"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/comment_title"
+            style="@style/title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:text="Comments"
+            app:layout_constraintStart_toEndOf="@+id/comment_back"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgCommentView"
+            android:layout_width="49dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/comment_title"
+            app:shapeAppearanceOverlay="@style/roundedImageView"
+            app:srcCompat="@drawable/img_test" />
+
+        <TextView
+            android:id="@+id/nameCommentView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="21dp"
+            android:text="Samuel Kebede"
+            android:textColor="@color/mms_black_2"
+            android:textFontWeight="600"
+            android:textSize="18sp"
+            app:fontFamily="@font/mukta"
+            app:layout_constraintStart_toEndOf="@+id/imgCommentView"
+            app:layout_constraintTop_toBottomOf="@+id/comment_title"
+            tools:targetApi="p" />
+
+        <TextView
+            android:id="@+id/posCommentView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mentor Manager"
+            android:textColor="@color/mms_black_5"
+            android:textFontWeight="400"
+            android:textSize="12sp"
+            app:fontFamily="@font/mukta"
+            app:layout_constraintStart_toStartOf="@+id/nameCommentView"
+            app:layout_constraintTop_toBottomOf="@+id/nameCommentView" />
+
+        <TextView
+            android:id="@+id/timeCommentView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="14dp"
+            android:text="5h ago"
+            android:textColor="@color/mms_black_5"
+            android:textFontWeight="400"
+            android:textSize="12sp"
+            app:fontFamily="@font/mukta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/comment_title" />
+
+        <ImageView
+            android:id="@+id/clockCommentView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="3dp"
+            android:src="@drawable/ic_clock"
+            app:layout_constraintEnd_toStartOf="@+id/timeCommentView"
+            app:layout_constraintTop_toBottomOf="@+id/comment_title" />
+
+        <TextView
+            android:id="@+id/titleCommentView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:text="The New MMS Discussion Forum "
+            android:textColor="@color/mms_black_2"
+            android:textFontWeight="700"
+            android:textSize="16sp"
+            app:fontFamily="@font/mukta"
+            app:layout_constraintStart_toStartOf="@+id/imgCommentView"
+            app:layout_constraintTop_toBottomOf="@+id/imgCommentView" />
+
+        <TextView
+            android:id="@+id/textCommentView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/mms_black_5"
+            android:textFontWeight="400"
+            android:textSize="14sp"
+            app:fontFamily="@font/mukta"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/titleCommentView"
+            app:layout_constraintTop_toBottomOf="@+id/titleCommentView" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/mms_black_5"
+            android:textFontWeight="400"
+            android:textSize="14sp"
+            app:fontFamily="@font/mukta"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin "
+            app:layout_constraintEnd_toEndOf="@+id/textCommentView"
+            app:layout_constraintStart_toStartOf="@+id/textCommentView"
+            app:layout_constraintTop_toBottomOf="@+id/textCommentView" />
+
+        <ImageView
+            android:id="@+id/commentIconMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/comment_circle_chat_message_1"
+            app:layout_constraintStart_toStartOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <ImageView
+            android:id="@+id/commentIconBookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:src="@drawable/ic_bookmark"
+            app:layout_constraintStart_toEndOf="@+id/commentIconMessage"
+            app:layout_constraintTop_toTopOf="@+id/commentIconMessage" />
+
+        <ImageView
+            android:id="@+id/commentIconShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/ic_share_arrow"
+            app:layout_constraintStart_toEndOf="@+id/commentIconBookmark"
+            app:layout_constraintTop_toTopOf="@+id/commentIconBookmark" />
+
+        <View
+            android:id="@+id/commentLine"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/mms_black_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/commentIconMessage"
+            app:layout_constraintTop_toBottomOf="@+id/commentIconShare" />
+
+        <EditText
+            android:id="@+id/commentTextField"
+            android:layout_width="0dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="11dp"
+            android:background="@drawable/card_border"
+            android:ems="10"
+            android:padding="10dp"
+            android:gravity="start|top"
+            android:textColor="@color/mms_black_2"
+            android:textFontWeight="400"
+            android:textSize="12sp"
+            app:fontFamily="@font/mukta"
+            android:hint="Write a comment"
+            android:textColorHint="@color/mms_black_5"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toStartOf="@+id/commentButton"
+            app:layout_constraintStart_toStartOf="@+id/commentLine"
+            app:layout_constraintTop_toBottomOf="@+id/commentLine" />
+
+        <Button
+            android:id="@+id/commentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comment"
+            android:textAllCaps="false"
+            android:textFontWeight="400"
+            android:textSize="12sp"
+            app:fontFamily="@font/mukta"
+            app:layout_constraintEnd_toEndOf="@+id/commentLine"
+            app:layout_constraintTop_toTopOf="@+id/commentTextField" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/commentList"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:overScrollMode="never"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/commentTextField"
+            tools:listitem="@layout/comment_item" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
