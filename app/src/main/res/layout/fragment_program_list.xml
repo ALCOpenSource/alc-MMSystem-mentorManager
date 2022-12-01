@@ -35,8 +35,14 @@
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="21dp"
         android:maxWidth="290dp"
+        android:textColor="@color/mms_black_5"
+        android:textFontWeight="400"
+        android:textSize="14sp"
+        app:fontFamily="@font/mukta"
         android:searchHintIcon="@drawable/abc_ic_search"
         android:searchIcon="@drawable/abc_ic_search"
+        android:closeIcon="@null"
+        android:queryBackground="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/programButtonContainer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/programTitle" />
@@ -67,6 +73,7 @@
                 android:layout_marginBottom="5dp"
                 android:text="All"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/programAssigned"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -79,6 +86,7 @@
                 android:layout_marginBottom="5dp"
                 android:text="Assigned"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/programCompleted"
                 app:layout_constraintStart_toEndOf="@+id/programAll"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -88,7 +96,7 @@
                 android:layout_width="0dp"
                 android:layout_marginStart="28dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginEnd="28dp"
+                android:layout_marginEnd="6dp"
                 android:layout_marginBottom="5dp"
                 android:text="Completed"
                 app:layout_constraintBottom_toBottomOf="parent"

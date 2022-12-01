@@ -9,6 +9,11 @@ import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mentors_tasks
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorProgramsRecyclerviewItemBinding
 
+/**
+ * MMM-Team-7
+ * Adapter for the mentors task screen from the mentors profile
+ */
+
 class mentor_tasks_adapter(var mentor_task: List<mentors_tasks>, ) : RecyclerView.Adapter<mentor_tasks_adapter.ViewHolder>() {
 
     inner class ViewHolder(val binding: FragmentMentorProgramsRecyclerviewItemBinding) : RecyclerView.ViewHolder(binding.root)

@@ -11,12 +11,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="23dp"
+        android:layout_marginTop="36dp"
         android:contentDescription="TODO"
         android:focusable="true"
         android:src="@drawable/arrow_left_"
-        app:layout_constraintBottom_toBottomOf="@+id/reportTitle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/reportTitle" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
@@ -37,11 +37,17 @@
         android:layout_marginTop="-10dp"
         android:layout_marginEnd="22dp"
         android:maxWidth="290dp"
+        android:textColor="@color/mms_black_5"
+        android:textFontWeight="400"
+        android:textSize="14sp"
+        app:fontFamily="@font/mukta"
         android:searchIcon="@drawable/abc_ic_search"
         android:searchHintIcon="@drawable/abc_ic_search"
+        android:closeIcon="@null"
+        android:queryBackground="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/reportTitle"
-        tools:targetApi="lollipop_mr1" />
+        tools:targetApi="p" />
 
 
     <androidx.recyclerview.widget.RecyclerView

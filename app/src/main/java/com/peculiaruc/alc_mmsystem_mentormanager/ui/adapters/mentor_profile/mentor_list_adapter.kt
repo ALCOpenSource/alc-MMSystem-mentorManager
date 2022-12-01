@@ -12,6 +12,11 @@ import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mentor_list
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorListRecyclerviewItemBinding
 
+/**
+ * MMM-Team-7
+ * Adapter for the mentor list screen
+ */
+
 class mentor_list_adapter(private var mentor_list:ArrayList<mentor_list>, ) : RecyclerView.Adapter<mentor_list_adapter.ViewHolder>() {
 
     inner class ViewHolder(val binding: FragmentMentorListRecyclerviewItemBinding) : RecyclerView.ViewHolder(binding.root)

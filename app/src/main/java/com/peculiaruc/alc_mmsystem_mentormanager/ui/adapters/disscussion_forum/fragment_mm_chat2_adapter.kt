@@ -9,6 +9,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages.individual_chat_messages
 import kotlin.contracts.Returns
 
+/**
+ * MMM-Team-7
+ * Adapter for individual chat recycler with forwarded messages
+ */
 
 class fragment_mm_chat2_adapter(private var messages: List<individual_chat_messages>)  :
     RecyclerView.Adapter<fragment_mm_chat2_adapter.MessageViewHolder>() {

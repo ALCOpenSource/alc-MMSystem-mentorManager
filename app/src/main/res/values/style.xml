@@ -13,8 +13,9 @@
         <item name="searchIcon">@drawable/abc_ic_search</item>
     </style>
 
-    <style name="roundedImageView" parent="Widget.AppCompat.SearchView">
-        <item name="searchIcon">@drawable/abc_ic_search</item>
+    <style name="roundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
     </style>
 
     <style name="radio_text_style" parent="Widget.AppCompat.TextView">
@@ -54,7 +55,7 @@
     <style name="group_button_text_selected">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/mms_pry_2</item>
         <item name="android:textFontWeight" tools:targetApi="p">700</item>
         <item name="android:gravity">center</item>
@@ -64,5 +65,12 @@
 
     <style name="spinnerStyle" parent="android:Widget.Spinner">
         <item name="android:background">@drawable/spinner_bg</item>
+    </style>
+
+    <style name="searchViewTextStyle">
+        <item name="android:textColor">@color/mms_black_5</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/mukta</item>
+        <item name="fontWeight">400</item>
     </style>
 </resources>

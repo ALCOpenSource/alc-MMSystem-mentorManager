@@ -1,6 +1,9 @@
 package com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages
 
-// data class to hold convesation to be displayed in the chat messages screen
+/**
+ * MMM-Team-7
+ * This is a data class use to generate dummy data for the chat screen recycler view
+ */
 
 data class chat_messages (
     val name : String ="",

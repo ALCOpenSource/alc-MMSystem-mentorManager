@@ -13,6 +13,11 @@ import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mento
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentChatMessagesRecyclerviewItemBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorProgramsRecyclerviewItemBinding
 
+/**
+ * MMM-Team-7
+ * An adapter for the chat messages recycler view
+ */
+
 class chat_messages_adapter(var chats_message_list: List<chat_messages>, ) : RecyclerView.Adapter<chat_messages_adapter.ViewHolder>() {
 
     inner class ViewHolder(val binding: FragmentChatMessagesRecyclerviewItemBinding) : RecyclerView.ViewHolder(binding.root)

@@ -64,6 +64,7 @@ class DiscussionForumFragment : Fragment() {
         return binding.root
     }
 
+    // This method handles the events from the click listener interface
     private fun handleItemsClicked() {
         adapters.apply {
             setOnMessageClickListener(object : OnMessageClickListener{
@@ -115,6 +116,7 @@ class DiscussionForumFragment : Fragment() {
 
     private fun handleSearchClicked() {
         binding.discussionForumSearch.setOnSearchClickListener {
+            binding.discussionForumSearch.isIconifiedByDefault = false
             binding.discussionForumSearch.background = AppCompatResources.getDrawable(requireContext(), R.drawable.card_border)
             binding.discussionForumBookmark.visibility = View.INVISIBLE
             binding.discussionForumTitle.visibility = View.INVISIBLE

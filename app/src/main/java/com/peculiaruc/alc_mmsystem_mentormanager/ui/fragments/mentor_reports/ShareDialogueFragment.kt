@@ -5,9 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ShareDialogueFragmentBinding
 
-class ShareDialogueFragment : DialogFragment() {
+class ShareDialogueFragment : BottomSheetDialogFragment() {
     private var _binding: ShareDialogueFragmentBinding? = null
     private val binding
         get() = _binding!!

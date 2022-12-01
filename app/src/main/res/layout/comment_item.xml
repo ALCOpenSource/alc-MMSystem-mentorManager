@@ -13,11 +13,11 @@
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/card_border"
-        app:cardCornerRadius="20dp"
+        app:cardCornerRadius="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -44,11 +44,11 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="40dp"
                 android:layout_marginBottom="20dp"
+                android:text="Found this so insightful. please how can i register to be a part of the program?"
                 android:textColor="@color/mms_black_5"
                 android:textFontWeight="400"
                 android:textSize="12sp"
                 app:fontFamily="@font/mukta"
-                android:text="Found this so insightful. please how can i register to be a part of the program?"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/commentName"

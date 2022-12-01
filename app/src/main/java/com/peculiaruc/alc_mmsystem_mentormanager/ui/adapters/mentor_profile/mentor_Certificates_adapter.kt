@@ -10,6 +10,11 @@ import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mentors_certificate
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorCertificatesRecyclerviewItemBinding
 
+/**
+ * MMM-Team-7
+ * Adapter for the mentor certificate screen
+ */
+
 class mentor_Certificates_adapter(var mentor_certificates: List<mentors_certificate>, ) : RecyclerView.Adapter<mentor_Certificates_adapter.ViewHolder>() {
 
 
