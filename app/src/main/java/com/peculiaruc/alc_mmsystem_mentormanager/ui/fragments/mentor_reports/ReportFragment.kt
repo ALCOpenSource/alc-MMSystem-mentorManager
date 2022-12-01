@@ -29,20 +29,6 @@ class ReportFragment : Fragment() {
 
     private val reports = listOf(
         Reports("Google African Developer Scholarship Report", "By Ibrahim -", "19th-20th oct 22"),
-        Reports("Google African Developer Scholarship Report 1", "By Ibrahim -", "19th-20th oct 22"),
-        Reports("Google African Developer Scholarship Report 2", "By Ibrahim -", "19th-20th oct 22"),
-        Reports("Google African Developer Scholarship Report 3", "By Ibrahim -", "19th-20th oct 22"),
-        Reports("Google African Developer Scholarship Report 4", "By Ibrahim -", "19th-20th oct 22"),
-        Reports("Google African Developer Scholarship Report 5", "By Ibrahim -", "19th-20th oct 22"),
-        Reports("Google African Developer Scholarship Report 6", "By Ibrahim -", "19th-20th oct 22"),
-        Reports("Google African Developer Scholarship Report 7", "By Ibrahim -", "19th-20th oct 22"),
-        Reports("Google African Developer Scholarship Report 8", "By Ibrahim -", "19th-20th oct 22"),
-        Reports("Google African Developer Scholarship Report 9", "By Ibrahim -", "19th-20th oct 22"),
-        Reports("Google African Developer Scholarship Report 10", "By Ibrahim -", "19th-20th oct 22"),
-        Reports("Google African Developer Scholarship Report 11", "By Ibrahim -", "19th-20th oct 22"),
-        Reports("Google African Developer Scholarship Report 12", "By Ibrahim -", "19th-20th oct 22"),
-
-
         )
 
     private val adapters = ReportsAdapter(reports)

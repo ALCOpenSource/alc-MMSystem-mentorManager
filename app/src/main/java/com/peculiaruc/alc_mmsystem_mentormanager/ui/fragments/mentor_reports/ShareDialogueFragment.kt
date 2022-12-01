@@ -8,6 +8,12 @@ import androidx.fragment.app.DialogFragment
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ShareDialogueFragmentBinding
 
+/**
+ * to implement the share dialogue fragment functionality
+ * no functionality is implemented yet
+ */
+
+
 class ShareDialogueFragment : BottomSheetDialogFragment() {
     private var _binding: ShareDialogueFragmentBinding? = null
     private val binding

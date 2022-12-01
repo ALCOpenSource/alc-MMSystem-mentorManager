@@ -1,8 +1,6 @@
 package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.disscussion_forum
 
-/**
- * implements the functionality of the fragment comments screen
- */
+
 
 import android.graphics.Color
 import android.os.Bundle
@@ -26,6 +24,9 @@ import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.CommentAdapter
 import com.peculiaruc.alc_mmsystem_mentormanager.util.OnDeleteClickListener
 import com.peculiaruc.alc_mmsystem_mentormanager.util.OnEditClickListener
 
+/**
+ * implements the functionality of the fragment comments screen
+ */
 
 class CommentsFragment : Fragment() {
 

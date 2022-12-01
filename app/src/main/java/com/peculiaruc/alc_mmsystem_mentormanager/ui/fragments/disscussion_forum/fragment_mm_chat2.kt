@@ -1,8 +1,6 @@
 package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.disscussion_forum
 
-/**
- * implements the functionlaity of the mmcharts screen
- */
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -16,6 +14,10 @@ import com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages.indivi
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMmChats2Binding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.disscussion_forum.fragment_mm_chat2_adapter
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.viewmodels.individual_chats_viewmodel
+
+/**
+ * implements the functionlaity of the mmcharts screen
+ */
 
 class fragment_mm_chat2 : Fragment() {
     private var _binding: FragmentMmChats2Binding? = null
@@ -45,12 +47,7 @@ class fragment_mm_chat2 : Fragment() {
         chat_messages = listOf(
             individual_chat_messages("Kabiru M. Magaya2","Hi Peculiar, i am well. Thanks",0,"10:30 am", R.drawable.ann_2),
             individual_chat_messages("Peculiar C. Umeh4","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",2,"10:30 am", R.drawable.ann_2),
-            individual_chat_messages("Kabiru M. Magaya5","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am", R.drawable.ann_2),
-            individual_chat_messages("Peculiar C. Umeh6","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am", R.drawable.ann_2),
-            individual_chat_messages("Kabiru M. Magaya7","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",2,"10:30 am", R.drawable.ann_2),
-            individual_chat_messages("Peculiar C. Umeh8","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am", R.drawable.ann_2),
-            individual_chat_messages("Kabiru M. Magaya9","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",2,"10:30 am", R.drawable.ann_2),
-            individual_chat_messages("Peculiar C. Umeh10","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am", R.drawable.ann_2),
+
             )
 
     }

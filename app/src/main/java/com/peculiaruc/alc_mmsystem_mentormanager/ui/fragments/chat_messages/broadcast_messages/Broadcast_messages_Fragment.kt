@@ -51,19 +51,16 @@ class Broadcast_messages_Fragment : Fragment() {
         return binding.root
     }
 
+    /**
+     * loads dummy data to the list
+     */
 
     private fun load_messages() {
 
         chat_messages = listOf(
             chat__broadcast_messages("Peculiar C. Umeh1  ","Hello Kabiru, trust you are well?",1,"10:30 am",R.drawable.ann_2),
             chat__broadcast_messages("Kabiru M. Magaya2 ","Hi Peculiar, i am well. Thanks",0,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Peculiar C. Umeh3 ","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Peculiar C. Umeh4 ","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Kabiru M. Magaya5","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Peculiar C. Umeh6","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Kabiru M. Magaya7","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Peculiar C. Umeh8","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
-        )
+          )
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

@@ -40,15 +40,7 @@ class mentors_Reports_fragments : Fragment() {
 
             mentors_reports("Google Africa Scholarship Report2","By Ibrahim Kabir  -  19th - 25th Oct 22"),
             mentors_reports("Google Africa Scholarship Report3","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Repor4","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report5","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report6","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report7","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report8","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report9","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report10","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report21","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-        )
+     )
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

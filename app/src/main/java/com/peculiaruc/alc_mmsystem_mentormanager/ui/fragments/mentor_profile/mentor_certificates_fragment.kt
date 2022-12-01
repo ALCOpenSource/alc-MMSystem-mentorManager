@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication
@@ -26,20 +25,20 @@ class mentor_certificates_fragment : Fragment() {
     /**This property is only valid between onCreateView and
     * onDestroyView.
      */
-    private val binding get() = _binding!!
+    val binding_to_layout_File get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         load_dummy_programms()
         _binding = FragmentMentorCertificatesFragmentBinding.inflate(inflater, container, false)
-        return binding.root
+        return binding_to_layout_File.root
     }
 
     /**
      * load dummy data to the list of programs
      */
-    private fun load_dummy_programms() {
+     fun load_dummy_programms() {
         mentors_certificates = listOf(
             mentors_certificate("GADS CLOUD 2022 - COMPLETION1",R.id.certificate),
             mentors_certificate("GADS CLOUD 2022 - COMPLETION2",R.id.certificate),
@@ -63,22 +62,22 @@ class mentor_certificates_fragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(context)
         // pass it to rvLists layoutManager
-        binding.mentorCertificatesRecycleview.setLayoutManager(layoutManager)
+        binding_to_layout_File.mentorCertificatesRecycleview.setLayoutManager(layoutManager)
         // initialize the adapter,
         // and pass the required argument
         rvAdapter = mentor_Certificates_adapter(mentors_certificates)
         // attach adapter to the recycler view
-        binding.mentorCertificatesRecycleview.adapter = rvAdapter
+        binding_to_layout_File.mentorCertificatesRecycleview.adapter = rvAdapter
 
-        binding.mentors.text= MentorManagerApplication.global_Var_MENTOR_NAME
-        binding.body2.text= MentorManagerApplication.global_Var_MENTOR_NAME
-        binding.mentorProgramPic.setImageResource(MentorManagerApplication.global_Var_MENTOR_NAME_pic)
+        binding_to_layout_File.mentors.text= MentorManagerApplication.global_Var_MENTOR_NAME
+        binding_to_layout_File.body2.text= MentorManagerApplication.global_Var_MENTOR_NAME
+        binding_to_layout_File.mentorProgramPic.setImageResource(MentorManagerApplication.global_Var_MENTOR_NAME_pic)
 
-        binding.arrowLeft.setOnClickListener {
+        binding_to_layout_File.arrowLeft.setOnClickListener {
             activity?.onBackPressed();
         }
 
-        binding.reports.setOnClickListener {
+        binding_to_layout_File.reports.setOnClickListener {
             activity?.onBackPressed();
         }
 

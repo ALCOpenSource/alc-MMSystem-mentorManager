@@ -1,9 +1,6 @@
 package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_reports
 
-/**
- * to implement the success dialogue screen functionalit
- *
- */
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +8,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.SubmitSuccessDialogueBinding
+
+/**
+ * to implement the success dialogue screen functionalit
+ *
+ */
+
 
 class SubmitSuccessDialogueFragment : BottomSheetDialogFragment() {
     private var _binding: SubmitSuccessDialogueBinding? = null

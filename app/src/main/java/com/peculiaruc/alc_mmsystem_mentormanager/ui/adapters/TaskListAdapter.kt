@@ -13,6 +13,11 @@ import com.peculiaruc.alc_mmsystem_mentormanager.R
  */
 
 class TaskListAdapter(private val tasks: Array<String>): RecyclerView.Adapter<TaskListAdapter.TaskViewHolder>() {
+
+    /**
+     * holds views from the  rv
+     */
+
     class TaskViewHolder(view: View): RecyclerView.ViewHolder(view) {
 
         private val nTitle = view.findViewById<TextView>(R.id.taskItemTitle)

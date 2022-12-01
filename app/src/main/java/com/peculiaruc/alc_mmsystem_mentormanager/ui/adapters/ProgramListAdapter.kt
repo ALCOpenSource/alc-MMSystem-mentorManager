@@ -13,7 +13,11 @@ import com.peculiaruc.alc_mmsystem_mentormanager.R
  */
 
 class ProgramListAdapter(private val programs: Array<String>) : RecyclerView.Adapter<ProgramListAdapter.ProgramViewHolder>() {
-  // view holder class for the fragment
+
+
+    /** view holder class for the fragment
+     *
+     */
     class ProgramViewHolder(view: View): RecyclerView.ViewHolder(view) {
 
         private val nTitle = view.findViewById<TextView>(R.id.programHead)

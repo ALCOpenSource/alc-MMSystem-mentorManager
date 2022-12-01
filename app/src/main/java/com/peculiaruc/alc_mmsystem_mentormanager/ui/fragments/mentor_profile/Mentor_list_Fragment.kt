@@ -183,7 +183,7 @@ class Mentor_list_Fragment : Fragment() {
      */
     private fun load_mentors_dummy_list() {
         mentorLists = arrayListOf(
-            mentor_list("Peculiar C. Umeh", "Program Assistant, Andela, She/her", "PROGRAM ASST.", "MENTOR-GAD", R.drawable.ann, true),
+            mentor_list("Peculiar C. Umeh1", "Program Assistant, Andela, She/her", "PROGRAM ASST.", "MENTOR-GAD", R.drawable.ann, true),
             mentor_list(
                 "Mohammend J. Hassan",
                 "Program Assistant, Andela, She/her",
@@ -211,7 +211,7 @@ class Mentor_list_Fragment : Fragment() {
             mentor_list(
                 "Josep K Ndururro",
                 "Program Assistant, Andela, She/her",
-                "PROGRAM ASST.",
+                "PROGRAM ASST.11",
                 "MENTOR-GAD",
                 R.drawable.ann_2,
                 true,

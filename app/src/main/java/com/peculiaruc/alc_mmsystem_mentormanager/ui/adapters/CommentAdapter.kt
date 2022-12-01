@@ -35,6 +35,9 @@ class CommentAdapter(private val comments: Array<String>) : RecyclerView.Adapter
         editListener = mEditClickListener
     }
 
+    /**
+     * class holder for the adapter
+     */
     inner class CommentViewHolder(val binding: CommentItemBinding): RecyclerView.ViewHolder(binding.root) {
 
         /** A function used to attach data to the recycler view items

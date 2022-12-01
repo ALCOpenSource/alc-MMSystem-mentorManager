@@ -44,15 +44,6 @@ class Mentro_tasks_fragment : Fragment() {
 
             mentors_tasks("Room library article writ...1 ","3 days from now",R.id.mentor_program_pic),
             mentors_tasks("Debugging in VSCode2","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Room library article writ...3 ","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Debugging in VSCode4 ","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Room library article writ...5","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Debugging in VSCode6","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Room library article writ...7","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Debugging in VSCode8","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Room library article writ...9","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Debugging in VSCode10","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Room library article writ...11","3 days from now",R.id.mentor_program_pic),
 
 
             )

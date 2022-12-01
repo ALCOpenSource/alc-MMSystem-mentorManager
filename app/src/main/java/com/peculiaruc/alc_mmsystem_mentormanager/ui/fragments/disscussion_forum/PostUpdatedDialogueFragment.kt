@@ -1,10 +1,6 @@
 package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.disscussion_forum
 
-/**
- * to implement the functionality of the post update screen
- * no functionality implemented yet
- *
- */
+
 
 
 import android.os.Bundle
@@ -15,6 +11,12 @@ import androidx.fragment.app.DialogFragment
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.CommentDeletedDialogueBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.PostUpdatedDialogueBinding
+
+/**
+ * to implement the functionality of the post update screen
+ * no functionality implemented yet
+ *
+ */
 
 class PostUpdatedDialogueFragment : BottomSheetDialogFragment() {
     private var _binding: PostUpdatedDialogueBinding? = null

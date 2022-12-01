@@ -1,8 +1,6 @@
 package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.disscussion_forum
 
-/**
- * implements the functionality of the fragment edit task screen
- */
+
 
 
 import android.os.Bundle
@@ -14,6 +12,9 @@ import androidx.navigation.Navigation
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentEditPostBinding
 
+/**
+ * implements the functionality of the fragment edit task screen
+ */
 class EditPostFragment : Fragment() {
 
     private var _binding: FragmentEditPostBinding? = null

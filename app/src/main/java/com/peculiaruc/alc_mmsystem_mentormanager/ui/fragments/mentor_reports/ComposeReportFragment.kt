@@ -1,8 +1,5 @@
 package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_reports
-/**
- * to implement th compose report functionality
- * no functionality yet
- */
+
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -13,7 +10,10 @@ import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentComposeReportBinding
-
+/**
+ * to implement th compose report functionality
+ * no functionality yet
+ */
 class ComposeReportFragment : Fragment() {
 
     private var _binding: FragmentComposeReportBinding? = null

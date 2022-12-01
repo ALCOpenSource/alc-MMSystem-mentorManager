@@ -9,6 +9,12 @@ import androidx.navigation.Navigation
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentReportDetailsBinding
 
+
+/**
+ * to implement the Reports details fragment screen functionality
+ * no functionality is implemented yet
+ */
+
 class ReportDetailsFragment : Fragment() {
     private var _binding: FragmentReportDetailsBinding? = null
     private val binding

@@ -33,10 +33,10 @@ class TaskListFragment : Fragment() {
 
     // Dummy data for the recycler view adapter
     private val tasks = arrayOf(
-        "Room library article write1", "Room library article write",
-        "Room library article write2", "Room library article write",
-        "Room library article write3", "Room library article write",
-        "Room library article write4", "Room library article write",
+        "Room library article write1", "Room library article writ",
+        "Room library article write2", "Room library article writm",
+        "Room library article write3", "Room library article wriue",
+        "Room library article write4", "Room library article writue",
     )
 
     private val adapters = TaskListAdapter(tasks)
@@ -67,7 +67,8 @@ class TaskListFragment : Fragment() {
     /** This method handles the search icon click event
      *
      */
-    private fun handleSearchClicked() {
+
+   fun handleSearchClicked() {
         binding.taskSearch.setOnSearchClickListener {
             binding.taskSearch.isIconifiedByDefault = false
             binding.taskSearch.background = AppCompatResources.getDrawable(requireContext(), R.drawable.card_border)
@@ -84,7 +85,8 @@ class TaskListFragment : Fragment() {
     /** This method handles the toggle buttons selections
      *
      */
-    private fun handleGroupButtonClick() {
+
+   fun handleGroupButtonClick() {
         binding.taskAll.setOnClickListener {
             // Group buttons state assigned
             isAllSelected = true
