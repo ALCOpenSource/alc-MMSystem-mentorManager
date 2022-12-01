@@ -42,11 +42,18 @@ class chat_broadcast_messages_adapter(private var messages: List<chat__broadcast
         }
     }
 
+    /**
+     *  holds the views for the  chat_broadcast message adapter
+     */
     inner class MessageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val messageText: TextView = itemView.findViewById(com.peculiaruc.alc_mmsystem_mentormanager.R.id.chat_message_body)
         private val mentor_name: TextView = itemView.findViewById(com.peculiaruc.alc_mmsystem_mentormanager.R.id.mentors)
 
         private val time: TextView = itemView.findViewById(com.peculiaruc.alc_mmsystem_mentormanager.R.id.text_gchat_date_me)
+
+        /**
+         * binding the views with the text from the list
+         */
         fun bind(message: chat__broadcast_messages) {
                 messageText.text = message.message
            mentor_name.text = message.name

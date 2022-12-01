@@ -19,7 +19,9 @@ import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorProgr
  */
 
 class chat_messages_adapter(var chats_message_list: List<chat_messages>, ) : RecyclerView.Adapter<chat_messages_adapter.ViewHolder>() {
-
+    /**
+     * view holder class for the adapter
+     */
     inner class ViewHolder(val binding: FragmentChatMessagesRecyclerviewItemBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

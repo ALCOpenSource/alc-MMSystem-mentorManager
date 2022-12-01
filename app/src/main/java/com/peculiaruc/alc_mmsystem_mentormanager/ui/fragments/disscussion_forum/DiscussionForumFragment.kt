@@ -26,7 +26,10 @@ import com.peculiaruc.alc_mmsystem_mentormanager.util.OnDeleteClickListener
 import com.peculiaruc.alc_mmsystem_mentormanager.util.OnEditClickListener
 import com.peculiaruc.alc_mmsystem_mentormanager.util.OnMessageClickListener
 
-
+/**
+ * class displays the  discussion forum recycleview items
+ *
+ */
 class DiscussionForumFragment : Fragment() {
 
     private var _binding: FragmentDiscussionForumBinding? = null
@@ -48,7 +51,6 @@ class DiscussionForumFragment : Fragment() {
 
         handleSearchClicked()
 
-        handleItemsClicked()
 
         binding.forumList.apply {
             layoutManager = LinearLayoutManager(requireContext())

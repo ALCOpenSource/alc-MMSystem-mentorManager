@@ -19,19 +19,25 @@ class CommentAdapter(private val comments: Array<String>) : RecyclerView.Adapter
     private lateinit var deleteListener: OnDeleteClickListener
     private lateinit var editListener: OnEditClickListener
 
-    // A method used for listening to delete click event in the comment screen
+    /** A method used for listening to delete click event in the comment screen
+     *
+     */
     fun setOnDeleteClickListener(mDeleteClickListener: OnDeleteClickListener) {
         deleteListener = mDeleteClickListener
     }
 
-    // A method used for listening to edit click event in the comment screen
+    /**A method used for listening to edit click event in the comment screen
+     *
+     */
     fun setOnEditClickListener(mEditClickListener: OnEditClickListener) {
         editListener = mEditClickListener
     }
 
     inner class CommentViewHolder(val binding: CommentItemBinding): RecyclerView.ViewHolder(binding.root) {
 
-        // A function used to attach data to the recycler view items
+        /** A function used to attach data to the recycler view items
+         *
+         */
         fun bind(name: String) {
             binding.commentName.text = name
         }

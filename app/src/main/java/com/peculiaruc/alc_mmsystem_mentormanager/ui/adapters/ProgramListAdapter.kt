@@ -18,7 +18,9 @@ class ProgramListAdapter(private val programs: Array<String>) : RecyclerView.Ada
 
         private val nTitle = view.findViewById<TextView>(R.id.programHead)
 
-        // A function used to attach data to the recycler view items
+        /** A function used to attach data to the recycler view items
+         *
+         */
         fun bind(title: String) {
             nTitle.text = title
         }

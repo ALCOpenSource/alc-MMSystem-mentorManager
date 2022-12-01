@@ -23,17 +23,24 @@ class ReportsAdapter(private val reports: List<Reports>) : RecyclerView.Adapter<
     private lateinit var shareListener: OnShareClickListener
     private lateinit var downloadListener: OnDownloadClickListener
 
-    // A method used for listening to download click event in the comment screen
+    /**A method used for listening to download click event in the comment screen
+     *
+     */
     fun setOnDownloadClickListener(mDownloadListener: OnDownloadClickListener) {
         downloadListener = mDownloadListener
     }
 
-    // A method used for listening to share click event in the comment screen
+    /** A method used for listening to share click event in the comment screen
+     *
+     */
     fun setShareClickListener(mShareListener: OnShareClickListener) {
         shareListener = mShareListener
     }
 
-    // A method used for listening to click event in the comment screen
+    /**A method used for listening to click event in the comment screen*
+     *
+     */
+
     fun setOnItemClickListener(mlistener: OnItemClickListener) {
         listener = mlistener
     }
@@ -73,7 +80,9 @@ class ReportsAdapter(private val reports: List<Reports>) : RecyclerView.Adapter<
         }
 
 
-        // A function used to attach data to the recycler view items
+        /** A function used to attach data to the recycler view items
+         *
+         */
         fun bind(title: String, user: String, time: String) {
             nTitle.text = title
             nUser.text = user

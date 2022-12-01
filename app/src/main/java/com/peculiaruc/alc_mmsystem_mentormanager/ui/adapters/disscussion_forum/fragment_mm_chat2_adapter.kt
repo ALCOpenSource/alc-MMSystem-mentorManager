@@ -55,10 +55,18 @@ class fragment_mm_chat2_adapter(private var messages: List<individual_chat_messa
         return msstype
     }
 
+    /**
+     * view holder class implementation for the adapter
+     */
     inner class MessageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val messageText: TextView = itemView.findViewById(com.peculiaruc.alc_mmsystem_mentormanager.R.id.chat_message_body)
 
         private val time: TextView = itemView.findViewById(com.peculiaruc.alc_mmsystem_mentormanager.R.id.chat_time)
+
+        /**
+         * binds views to the data form the message list
+         */
+
         fun bind(message: individual_chat_messages) {
                 messageText.text = message.message
 

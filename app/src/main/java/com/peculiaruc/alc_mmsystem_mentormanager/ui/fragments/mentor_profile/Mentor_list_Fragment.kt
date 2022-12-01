@@ -74,6 +74,7 @@ class Mentor_list_Fragment : Fragment() {
                 spinner.setVisibility(View.GONE);
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
+
             }
         }
 
@@ -167,16 +168,8 @@ class Mentor_list_Fragment : Fragment() {
     }
 // loads fummy data to be displayed in the  mentore rv
     private fun load_mentors_dummy_list() {
-
         mentorLists = arrayListOf(
-            mentor_list(
-                "Peculiar C. Umeh",
-                "Program Assistant, Andela, She/her",
-                "PROGRAM ASST.",
-                "MENTOR-GAD",
-                R.drawable.ann,
-                true
-            ),
+            mentor_list("Peculiar C. Umeh", "Program Assistant, Andela, She/her", "PROGRAM ASST.", "MENTOR-GAD", R.drawable.ann, true),
             mentor_list(
                 "Mohammend J. Hassan",
                 "Program Assistant, Andela, She/her",
@@ -208,94 +201,6 @@ class Mentor_list_Fragment : Fragment() {
                 "MENTOR-GAD",
                 R.drawable.ann_2,
                 true,
-            ),
-            mentor_list(
-                "Abdul Hassan Mohamed",
-                "Program Assistant, Andela, She/her",
-                "PROGRAM ASST.",
-                "MENTOR-GAD",
-                R.drawable.ann,
-                false
-            ),
-            mentor_list(
-                "MiKe Njoronge Macharia",
-                "Program Assistant, Andela, She/her",
-                "PROGRAM ASST.",
-                "MENTOR-GAD",
-                R.drawable.profile,
-                true
-            ),
-            mentor_list(
-                "Pendo Karisa Haddassah",
-                "Program Assistant, Andela, She/her",
-                "PROGRAM ASST.",
-                "MENTOR-GAD",
-                R.drawable.grace,
-                false
-            ),
-            mentor_list(
-                "Peculiar y. Umeh",
-                "Program Assistant, Andela, She/her",
-                "PROGRAM ASST.",
-                "MENTOR-GAD",
-                R.drawable.ann,
-                true
-            ),
-            mentor_list(
-                "Mohammend k. Hassan",
-                "Program Assistant, Andela, She/her",
-                "PROGRAM ASST.",
-                "MENTOR-GAD",
-                R.drawable.ann_2,
-                false
-            ),
-            mentor_list(
-                "Ombasanjo m. Uke",
-                "Program Assistant, Andela, She/her",
-                "PROGRAM ASST.",
-                "MENTOR-GAD",
-                R.drawable.grace,
-                true
-            ),
-            mentor_list(
-                "James Kari Michael",
-                "Program Assistant, Andela, She/her",
-                "PROGRAM ASST.",
-                "MENTOR-GAD",
-                R.drawable.profile,
-                false
-            ),
-            mentor_list(
-                "Josep T Ndururro",
-                "Program Assistant, Andela, She/her",
-                "PROGRAM ASST.",
-                "MENTOR-GAD",
-                R.drawable.ann_2,
-                true
-            ),
-            mentor_list(
-                "Abdul Hassn Mohamed",
-                "Program Assistant, Andela, She/her",
-                "PROGRAM ASST.",
-                "MENTOR-GAD",
-                R.drawable.ann,
-                false
-            ),
-            mentor_list(
-                "MiKe Njoroge Macharia",
-                "Program Assistant, Andela, She/her",
-                "PROGRAM ASST.",
-                "MENTOR-GAD",
-                R.drawable.profile,
-                true
-            ),
-            mentor_list(
-                "Pendo Kam Haddassah",
-                "Program Assistant, Andela, She/her",
-                "PROGRAM ASST.",
-                "MENTOR-GAD",
-                R.drawable.grace,
-                false
             ),
 
         )

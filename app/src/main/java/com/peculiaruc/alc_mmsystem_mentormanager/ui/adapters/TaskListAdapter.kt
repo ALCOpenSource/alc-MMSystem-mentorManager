@@ -17,7 +17,9 @@ class TaskListAdapter(private val tasks: Array<String>): RecyclerView.Adapter<Ta
 
         private val nTitle = view.findViewById<TextView>(R.id.taskItemTitle)
 
-        // A function used to attach data to the recycler view items
+        /** A function used to attach data to the recycler view items
+         *
+         */
         fun bind(title: String) {
             nTitle.text = title
         }

@@ -17,7 +17,9 @@ import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorCerti
 
 class mentor_Certificates_adapter(var mentor_certificates: List<mentors_certificate>, ) : RecyclerView.Adapter<mentor_Certificates_adapter.ViewHolder>() {
 
-
+    /**
+     * holds the views for the class
+     */
     inner class ViewHolder(val binding: FragmentMentorCertificatesRecyclerviewItemBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

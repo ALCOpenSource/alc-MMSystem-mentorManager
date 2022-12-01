@@ -61,10 +61,10 @@ class Broadcast_messages_Fragment : Fragment() {
     private fun load_messages() {
 
         chat_messages = listOf(
-            chat__broadcast_messages("Peculiar C. Umeh","Hello Kabiru, trust you are well?",1,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Kabiru M. Magaya","Hi Peculiar, i am well. Thanks",0,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Peculiar C. Umeh","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Peculiar C. Umeh","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
+            chat__broadcast_messages("Peculiar C. Umeh  ","Hello Kabiru, trust you are well?",1,"10:30 am",R.drawable.ann_2),
+            chat__broadcast_messages("Kabiru M. Magaya ","Hi Peculiar, i am well. Thanks",0,"10:30 am",R.drawable.ann_2),
+            chat__broadcast_messages("Peculiar C. Umeh ","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
+            chat__broadcast_messages("Peculiar C. Umeh ","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
             chat__broadcast_messages("Kabiru M. Magaya","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am",R.drawable.ann_2),
             chat__broadcast_messages("Peculiar C. Umeh","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
             chat__broadcast_messages("Kabiru M. Magaya","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am",R.drawable.ann_2),
