@@ -12,6 +12,15 @@ import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorsCertificateDownloadBinding
 
+
+/**
+ * This handles the   generation of mentors certificate
+ * no dummy data is loaded
+ * current no functionality is implemented,
+ *  only ui and some navigation
+ */
+
+
 class mentors_certificate_generate : Fragment() {
     private var _binding: FragmentMentorsCertificateDownloadBinding? = null
     // This property is only valid between onCreateView and

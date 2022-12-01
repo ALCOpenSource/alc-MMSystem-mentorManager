@@ -21,11 +21,8 @@ import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.chat_messages.chat_
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.chat_messages.chat_messages_adapter
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.chat_messages.home.HomeViewModel
 
-
+// this class handle the broadcast messages screen under the  mentor chats task
 class Broadcast_messages_Fragment : Fragment() {
-
-
-
     private var _binding: FragmentBroadcastMessagesBinding? = null
     private val binding get() = _binding!!
     private lateinit var rvAdapter: chat_broadcast_messages_adapter
@@ -39,11 +36,6 @@ class Broadcast_messages_Fragment : Fragment() {
             View? {
         _binding = FragmentBroadcastMessagesBinding.inflate(inflater, container, false)
         load_messages()
-
-
-
-
-
         val homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
         _binding = FragmentBroadcastMessagesBinding.inflate(inflater, container, false)
@@ -69,7 +61,7 @@ class Broadcast_messages_Fragment : Fragment() {
             chat__broadcast_messages("Peculiar C. Umeh 8","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
             chat__broadcast_messages("Kabiru M. Magaya 9","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am",R.drawable.ann_2),
             chat__broadcast_messages("Peculiar C. Umeh 10","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Kabiru M. Magaya 11","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am",R.drawable.ann_2),
+            chat__broadcast_messages("Kabiru M. Magaya 31","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am",R.drawable.ann_2),
             chat__broadcast_messages("Peculiar C. Umeh 12","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),
             chat__broadcast_messages("Kabiru M. Magaya 14","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am",R.drawable.ann_2),
             chat__broadcast_messages("Peculiar C. Umeh 14","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am",R.drawable.ann_2),

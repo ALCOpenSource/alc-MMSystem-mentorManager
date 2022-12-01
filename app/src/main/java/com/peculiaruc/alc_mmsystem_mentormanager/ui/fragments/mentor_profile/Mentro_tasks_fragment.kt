@@ -14,6 +14,12 @@ import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mento
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentroTasksFragmentBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.mentor_profile.mentor_tasks_adapter
 
+/**
+ * This handles the display of mentors tasks
+ * current no functionality is implemented,
+ *  only ui and some navigation
+ */
+
 class Mentro_tasks_fragment : Fragment() {
 
 
@@ -30,11 +36,9 @@ class Mentro_tasks_fragment : Fragment() {
         load_dummy_programms()
         _binding = FragmentMentroTasksFragmentBinding.inflate(inflater, container, false)
 
-
-
         return binding.root
     }
-
+   // loads dummy data in the list of tasks
     private fun load_dummy_programms() {
         mentors_task_list = listOf(
 

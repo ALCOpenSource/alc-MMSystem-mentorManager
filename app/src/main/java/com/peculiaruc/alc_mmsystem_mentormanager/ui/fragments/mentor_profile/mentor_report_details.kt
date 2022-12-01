@@ -15,6 +15,12 @@ import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentReportDetai
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_reports.DownloadDialogueFragment
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_reports.ShareDialogueFragment
 
+/**
+ * This handles the details of the report
+ * current no functionality is implemented,
+ *  only ui and some navigation
+ */
+
 class mentor_report_details : Fragment() {
     private var _binding: FragmentReportDetailsBinding? = null
     private val binding

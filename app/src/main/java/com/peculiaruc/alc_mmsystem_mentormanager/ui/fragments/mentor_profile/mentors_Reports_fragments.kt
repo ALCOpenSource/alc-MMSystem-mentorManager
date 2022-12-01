@@ -13,6 +13,11 @@ import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mentors_reports
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorsReportsBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.mentor_profile.mentor_report_adapter
+/**
+ * This handles the  display of mentors Reports
+ * current no functionality is implemented,
+ *  only ui and some navigation
+ */
 
 class mentors_Reports_fragments : Fragment() {
     private var _binding: FragmentMentorsReportsBinding? = null
@@ -29,7 +34,7 @@ class mentors_Reports_fragments : Fragment() {
         _binding = FragmentMentorsReportsBinding.inflate(inflater, container, false)
         return binding.root
     }
-
+// loads  dummy data in the list of reports from the mentors
     private fun load_dummy_programms() {
         mentors_reports = listOf(
             mentors_reports("Google Africa Scholarship Report 1","By Ibrahim Kabir  -  19th - 25th Oct 22"),
@@ -63,18 +68,20 @@ class mentors_Reports_fragments : Fragment() {
         rvAdapter = mentor_report_adapter(mentors_reports)
         // attach adapter to the recycler view
         binding.mentorTasksRecycleview.adapter = rvAdapter
-
+            // intialization for mentor name in the tool bar and the mentor pic
         binding.mentors.text= MentorManagerApplication.global_Var_MENTOR_NAME
         binding.body2.text= MentorManagerApplication.global_Var_MENTOR_NAME
         binding.mentorProgramPic.setImageResource(MentorManagerApplication.global_Var_MENTOR_NAME_pic)
-
+// handles back navigation to the previous page
         binding.arrowLeft.setOnClickListener {
             activity?.onBackPressed();
         }
-
+// handles  the navigation to the previous task screen
         binding.tasks.setOnClickListener {
             activity?.onBackPressed();
         }
+        // handles  the navigation to the cetificate task screen
+
         binding.certificate.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.action_mentors_Reports_fragments_to_mentor_certificates_fragment)
         }

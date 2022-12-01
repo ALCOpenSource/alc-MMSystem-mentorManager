@@ -20,7 +20,9 @@ import kotlin.properties.Delegates
 
 
 /**
- * A simple [Fragment] subclass as the second destination in the navigation.
+ * This handles the mento about  screen
+ * current no functionality is implemented,
+ *  only ui and some navigation
  */
 class Mentor_profile_Fragment : Fragment() {
     private var _binding:FragmentMentorProfileBinding? = null

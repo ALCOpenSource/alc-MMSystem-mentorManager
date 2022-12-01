@@ -92,8 +92,6 @@ class Mentor_list_Fragment : Fragment() {
         // add new mentor
         binding.carbonAdd.setOnClickListener {
             val dialogadd_mentor = layoutInflater.inflate(R.layout.alert_dialog_box_add_mentor, null)
-
-
             val dialog_confirmsend = layoutInflater.inflate(R.layout.alert_dialog_box_done_adding_mentor, null)
             //display the add mentor dialog box
             val customDialog = context?.let {
@@ -329,7 +327,7 @@ class Mentor_list_Fragment : Fragment() {
             mentor_recyleview.setAdapter(mentor_list_adapter( filteredlist))
         }
     }
-
+// handle the search of the  mentors list when when the search icon is clicked in the customixe app bar
     private fun handleSearchClicked() {
         binding.Searchicon.setOnSearchClickListener {
             binding.Searchicon.background = AppCompatResources.getDrawable(requireContext(), R.drawable.searchview_frame)

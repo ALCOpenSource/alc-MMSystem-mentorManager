@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.peculiaruc.alc_mmsystem_mentormanager.R
-import com.peculiaruc.alc_mmsystem_mentormanager.data.models.Reports
+import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.Reports
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentReportBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.ReportsAdapter
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.SpinnerAdapter
@@ -23,7 +23,8 @@ class ReportFragment : Fragment() {
     private val binding
         get() = _binding!!
 
-    private val reports = listOf(Reports("Google African Developer Scholarship Report", "By Ibrahim -", "19th-20th oct 22"),
+    private val reports = listOf(
+        Reports("Google African Developer Scholarship Report", "By Ibrahim -", "19th-20th oct 22"),
         Reports("Google African Developer Scholarship Report 1", "By Ibrahim -", "19th-20th oct 22"),
         Reports("Google African Developer Scholarship Report 2", "By Ibrahim -", "19th-20th oct 22"),
         Reports("Google African Developer Scholarship Report 3", "By Ibrahim -", "19th-20th oct 22"),

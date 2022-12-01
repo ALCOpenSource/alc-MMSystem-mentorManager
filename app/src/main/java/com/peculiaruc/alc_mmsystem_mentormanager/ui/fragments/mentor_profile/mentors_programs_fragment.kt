@@ -15,6 +15,13 @@ import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mento
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorsProgramsFragmentBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.mentor_profile.mentor_program_adapter
 
+/**
+ * This handles the  display of mentors certificate
+ * current no functionality is implemented,
+ *  only ui and some navigation
+ */
+
+
 class mentors_programs_fragment : Fragment() {
 
 
@@ -32,7 +39,7 @@ class mentors_programs_fragment : Fragment() {
         _binding = FragmentMentorsProgramsFragmentBinding.inflate(inflater, container, false)
         return binding.root
     }
-
+    // this loads the dummy data on the list of programs for the mentor
     private fun load_dummy_programms() {
         mentors_program_list = listOf(
             mentors_programs("GADS Program 2022 1","Dec 12, 2022",R.id.mentor_program_pic),

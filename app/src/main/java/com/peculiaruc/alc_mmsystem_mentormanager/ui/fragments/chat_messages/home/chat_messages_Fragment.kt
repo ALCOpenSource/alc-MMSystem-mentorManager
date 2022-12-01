@@ -16,7 +16,7 @@ import com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages.chat_m
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentChatMessagesHomeBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.chat_messages.chat_messages_adapter
 
-
+//handle the toggle screen in the chats
 class chat_messages_Fragment : Fragment() {
 
     private var _binding: FragmentChatMessagesHomeBinding? = null
@@ -40,10 +40,6 @@ class chat_messages_Fragment : Fragment() {
                 R.id.navigation_home, R.id.mentor_profile
             )
         )
-
-
-
-
         val homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
         _binding = FragmentChatMessagesHomeBinding.inflate(inflater, container, false)
@@ -55,7 +51,7 @@ class chat_messages_Fragment : Fragment() {
         return binding.root
     }
 
-
+    //this is loading the dummy data in the chat messages list
     private fun load_messages() {
 
         chat_messages = listOf(

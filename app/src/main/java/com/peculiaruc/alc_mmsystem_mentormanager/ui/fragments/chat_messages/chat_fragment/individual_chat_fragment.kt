@@ -20,6 +20,9 @@ import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.chat_messages.chat_
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.chat_messages.individual_chat_fragment_adapter
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.chat_messages.home.HomeViewModel
 
+// class the functionality of the  chats screen
+// currently it load dummy data and no additional funcitonality
+
 class individual_chat_fragment : Fragment() {
     private var _binding: FragmentChatsBinding? = null
     private val binding get() = _binding!!
