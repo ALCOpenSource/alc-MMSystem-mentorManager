@@ -10,12 +10,6 @@
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.chat_messages.home.chat_messages_Fragment"
         android:label="chat_messages_Fragment" >
         <action
-            android:id="@+id/action_chat_messages_Fragment3_to_individual_chat_fragment2"
-            app:destination="@id/individual_chat_fragment2" />
-        <action
-            android:id="@+id/action_chat_messages_Fragment3_to_mentor_list_Activity2"
-            app:destination="@id/mentor_list_Activity2" />
-        <action
             android:id="@+id/action_chat_messages_Fragment3_to_activity_mm_reports2"
             app:destination="@id/activity_mm_reports2" />
         <action
@@ -24,6 +18,12 @@
         <action
             android:id="@+id/action_chat_messages_Fragment3_to_broadcast_messages_Fragment"
             app:destination="@id/broadcast_messages_Fragment" />
+        <action
+            android:id="@+id/action_chat_messages_Fragment3_to_mentor_list_Activity2"
+            app:destination="@id/mentor_list_Activity2" />
+        <action
+            android:id="@+id/action_chat_messages_Fragment3_to_individual_chat_fragment2"
+            app:destination="@id/individual_chat_fragment2" />
     </fragment>
     <fragment
         android:id="@+id/individual_chat_fragment2"
