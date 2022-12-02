@@ -51,6 +51,8 @@ class DiscussionForumFragment : Fragment() {
 
         handleSearchClicked()
 
+        handleItemsClicked()
+
 
         binding.forumList.apply {
             layoutManager = LinearLayoutManager(requireContext())
@@ -60,7 +62,7 @@ class DiscussionForumFragment : Fragment() {
         binding.discussionForumFab.setOnClickListener {
             binding.discussionForumSearch.isIconified = true
             binding.discussionForumSearch.onActionViewCollapsed()
-            findNavController().navigate(R.id.action_discussionForumFragment2_to_newTopicFragment)
+            //findNavController().navigate(R.id.action_discussionForumFragment2_to_newTopicFragment)
         }
 
         return binding.root
@@ -71,9 +73,9 @@ class DiscussionForumFragment : Fragment() {
         adapters.apply {
             setOnMessageClickListener(object : OnMessageClickListener{
                 override fun onMessageClick() {
-                    binding.discussionForumSearch.isIconified = true
-                    binding.discussionForumSearch.onActionViewCollapsed()
-                    findNavController().navigate(R.id.action_discussionForumFragment2_to_commentFragment)
+                    //binding.discussionForumSearch.isIconified = true
+                   // binding.discussionForumSearch.onActionViewCollapsed()
+                    //findNavController().navigate(R.id.action_discussionForumFragment2_to_commentFragment)
                 }
             })
 
@@ -101,9 +103,9 @@ class DiscussionForumFragment : Fragment() {
 
             setOnEditClickListener(object : OnEditClickListener{
                 override fun onEditClick() {
-                    binding.discussionForumSearch.isIconified = true
-                    binding.discussionForumSearch.onActionViewCollapsed()
-                    findNavController().navigate(R.id.action_discussionForumFragment2_to_editPostFragment)
+                    //binding.discussionForumSearch.isIconified = true
+                    //binding.discussionForumSearch.onActionViewCollapsed()
+                    //findNavController().navigate(R.id.action_discussionForumFragment2_to_editPostFragment)
                 }
             })
 
