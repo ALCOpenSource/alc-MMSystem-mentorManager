@@ -2,11 +2,9 @@ package com.peculiaruc.alc_mmsystem_mentormanager.ui.activities
 
 
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ActivityChatMessagesBinding
+import androidx.appcompat.app.AppCompatActivity
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ActivityDiscussionForumBinding
-import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ActivityMmReportsBinding
 
 /**
  * The activity is the home frangment contrainer for all the mm discusiion forum
