@@ -44,7 +44,7 @@ class chat_messages_adapter(var chats_message_list: List<chat_messages>, ) : Rec
                 binding.dropdownsD.setOnClickListener {
                     global_Var_chat_partner=this.name
                     global_Var_chat_profile_pic=this.profile_pic
-                    Navigation.findNavController(it).navigate(R.id.action_navigation_home_to_individual_chat_fragment)
+                    Navigation.findNavController(it).navigate(R.id.action_chat_messages_Fragment3_to_individual_chat_fragment2)
                 }
             }
             }

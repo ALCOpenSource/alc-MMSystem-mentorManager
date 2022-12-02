@@ -104,10 +104,13 @@ class chat_messages_Fragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.broadcastM.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_chat_messages_Fragment3_to_broadcast_messages_Fragment)
 
         }
         binding.carbonAdd.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_navigation_home_to_fragment_mm_chat2)
+            Navigation.findNavController(it).navigate(R.id.action_chat_messages_Fragment3_to_fragment_mm_chat22)
+
+
         }
 
         val navView: BottomNavigationView = binding.navView
@@ -121,7 +124,7 @@ class chat_messages_Fragment : Fragment() {
                 R.id.Search -> {
                 }
                 R.id.programs -> {
-                    Navigation.findNavController(navView).navigate(R.id.action_navigation_home_to_discussion_forum2)
+                    Navigation.findNavController(navView).navigate(R.id.action_chat_messages_Fragment3_to_discussionForumFragment)
 
                 }
                 R.id.Messages -> {
