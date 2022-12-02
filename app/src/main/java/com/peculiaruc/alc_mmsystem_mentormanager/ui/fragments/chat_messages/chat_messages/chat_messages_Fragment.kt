@@ -104,10 +104,11 @@ class chat_messages_Fragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.broadcastM.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_chat_messages_Fragment3_to_individual_chat_fragment2)
 
         }
         binding.carbonAdd.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_navigation_home_to_fragment_mm_chat2)
+            Navigation.findNavController(it).navigate(R.id.action_chat_messages_Fragment3_to_fragment_mm_chat22)
         }
 
         val navView: BottomNavigationView = binding.navView

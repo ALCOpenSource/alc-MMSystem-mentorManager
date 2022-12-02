@@ -24,6 +24,9 @@
         <action
             android:id="@+id/action_chat_messages_Fragment3_to_individual_chat_fragment2"
             app:destination="@id/individual_chat_fragment2" />
+        <action
+            android:id="@+id/action_chat_messages_Fragment3_to_fragment_mm_chat22"
+            app:destination="@id/fragment_mm_chat22" />
     </fragment>
     <fragment
         android:id="@+id/individual_chat_fragment2"
@@ -48,4 +51,8 @@
         android:id="@+id/broadcast_messages_Fragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.chat_messages.broadcast_messages.Broadcast_messages_Fragment"
         android:label="Broadcast_messages_Fragment" />
+    <fragment
+        android:id="@+id/fragment_mm_chat22"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.disscussion_forum.fragment_mm_chat2"
+        android:label="fragment_mm_chat2" />
 </navigation>

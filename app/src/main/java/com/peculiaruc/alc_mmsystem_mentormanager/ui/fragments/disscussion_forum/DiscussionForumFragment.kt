@@ -64,10 +64,8 @@ class DiscussionForumFragment : Fragment() {
             binding.discussionForumSearch.onActionViewCollapsed()
             //findNavController().navigate(R.id.action_discussionForumFragment2_to_newTopicFragment)
         }
-
         return binding.root
     }
-
     // This method handles the events from the click listener interface
     private fun handleItemsClicked() {
         adapters.apply {
