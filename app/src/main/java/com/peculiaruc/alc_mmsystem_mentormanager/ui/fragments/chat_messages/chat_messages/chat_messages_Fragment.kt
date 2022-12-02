@@ -54,10 +54,7 @@ class chat_messages_Fragment : Fragment() {
         return binding.root
     }
 
-    /**
-     * this is loading the dummy data in the chat messages list
-     *
-     */
+
 
     private fun load_messages() {
 

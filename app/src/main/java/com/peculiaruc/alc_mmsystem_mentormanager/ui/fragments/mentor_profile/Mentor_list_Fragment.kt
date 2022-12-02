@@ -119,23 +119,21 @@ class Mentor_list_Fragment : Fragment() {
             mentor_recyleview.setAdapter(mentor_list_adapter( filteredlist))
         }
     }
-    /** loads fummy data to be displayed in the  mentore rv
-     *
-     */
+
     private fun load_mentors_dummy_list() {
         mentorLists = arrayListOf(
-            mentor_list("Peculiar C. Umeh1", "Program Assistant, Andela, She/her", "PROGRAM ASST.", "MENTOR-GAD", R.drawable.ann, true),
+            mentor_list("Peculiar C. Umeh1", "Program Assistant, Andela, She.her", "PROGRAM SST.", "MENTOR-GDs", R.drawable.ann, true),
             mentor_list(
                 "Mohammend J. Hassan",
-                "Program Assistant, Andela, She/her",
-                "PROGRAM ASST.",
-                "MENTOR-GAD",
+                "Program Assistant1, Andela, She-her",
+                "PROGRAM ASST",
+                "MENTOR-GADs",
                 R.drawable.ann_2,
                 false
             ),
             mentor_list(
                 "Ombasanjo R. Uke",
-                "Program Assistant, Andela, She/her",
+                "Program Assistant2, Andela, She her",
                 "PROGRAM ASST.",
                 "MENTOR-GAD",
                 R.drawable.grace,
@@ -143,20 +141,13 @@ class Mentor_list_Fragment : Fragment() {
             ),
             mentor_list(
                 "James Karim Michael",
-                "Program Assistant, Andela, She/her",
-                "PROGRAM ASST.",
-                "MENTOR-GAD",
+                "Program Assistant3, Andela, She",
+                "PROGRAM AST.",
+                "MENTOR GAD",
                 R.drawable.profile,
                 false,
             ),
-            mentor_list(
-                "Josep K Ndururro",
-                "Program Assistant, Andela, She/her",
-                "PROGRAM ASST.11",
-                "MENTOR-GAD",
-                R.drawable.ann_2,
-                true,
-            ),
+
 
         )
 

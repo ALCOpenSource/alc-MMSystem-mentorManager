@@ -42,17 +42,11 @@ class mentors_programs_fragment : Fragment() {
     // this loads the dummy data on the list of programs for the mentor
     private fun load_dummy_programms() {
         mentors_program_list = listOf(
-            mentors_programs("GADS Program 20221","Dec 12, 2022",R.id.mentor_program_pic),
-            mentors_programs("GADS Program 20222","Dec 12, 2022",R.id.mentor_program_pic),
-            mentors_programs("GADS Program 20223","Dec 12, 2022",R.id.mentor_program_pic),
-            mentors_programs("GADS Program 20224","Dec 12, 2022",R.id.mentor_program_pic),
-            mentors_programs("GADS Program 20225","Dec 12, 2022",R.id.mentor_program_pic),
-            mentors_programs("GADS Program 20226 ","Dec 12, 2022",R.id.mentor_program_pic),
-            mentors_programs("GADS Program 20227 ","Dec 12, 2022",R.id.mentor_program_pic),
-            mentors_programs("GADS Program 20228","Dec 12, 2022",R.id.mentor_program_pic),
-            mentors_programs("GADS Program 20229","Dec 12, 2022",R.id.mentor_program_pic),
-            mentors_programs("GADS Program 202210","Dec 12, 2022",R.id.mentor_program_pic),
-            mentors_programs("GADS Program 202211","Dec 12, 2022",R.id.mentor_program_pic),
+            mentors_programs("GADS Program 20221","Dec 11, 2022",R.id.mentor_program_pic),
+            mentors_programs("GADS Program 20222","Dec 12, 2022",R.drawable.profile),
+            mentors_programs("GADS Program 20223","Dec 13, 2022",R.drawable.ann_2),
+            mentors_programs("GADS Program 20224","Dec 14, 2022",R.drawable.ann),
+            mentors_programs("GADS Program 20225","Dec 15, 2022",R.drawable.grace),
             )
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

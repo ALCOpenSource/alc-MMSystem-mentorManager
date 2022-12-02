@@ -31,7 +31,7 @@ class TaskListFragment : Fragment() {
     private var isCompletedSelected = false
     private var isMyTaskSelected = false
 
-    // Dummy data for the recycler view adapter
+   // Dummy data for the recycler view adapter
     private val tasks = arrayOf(
         "Room library article write1", "Room library article writ",
         "Room library article write2", "Room library article writm",
@@ -64,9 +64,7 @@ class TaskListFragment : Fragment() {
         return binding.root
     }
 
-    /** This method handles the search icon click event
-     *
-     */
+
 
    fun handleSearchClicked() {
         binding.taskSearch.setOnSearchClickListener {

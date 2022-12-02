@@ -51,10 +51,6 @@ class Broadcast_messages_Fragment : Fragment() {
         return binding.root
     }
 
-    /**
-     * loads dummy data to the list
-     */
-
     private fun load_messages() {
 
         chat_messages = listOf(

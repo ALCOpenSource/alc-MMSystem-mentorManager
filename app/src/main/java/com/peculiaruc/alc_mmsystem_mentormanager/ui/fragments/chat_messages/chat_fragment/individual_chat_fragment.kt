@@ -16,8 +16,9 @@ import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentChatsBindin
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.chat_messages.individual_chat_fragment_adapter
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.viewmodels.individual_chats_viewmodel
 
-// class the functionality of the  chats screen
-// currently it load dummy data and no additional funcitonality
+/** class the functionality of the  chats screen currently it load dummy data and no additional funcitonality
+ *
+ */
 
 class individual_chat_fragment : Fragment() {
     private var _binding: FragmentChatsBinding? = null
@@ -44,18 +45,8 @@ class individual_chat_fragment : Fragment() {
     private fun load_messages() {
 
         chat_messages = listOf(
-            individual_chat_messages("Peculiar C. Umeh1","Hello Kabiru, trust you are well?",1,"10:30 am", R.drawable.ann_2),
-            individual_chat_messages("Kabiru M. Magaya2","Hi Peculiar, i am well. Thanks",0,"10:30 am", R.drawable.ann_2),
-            individual_chat_messages("Peculiar C. Umeh4","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am", R.drawable.ann_2),
-            individual_chat_messages("Kabiru M. Magaya5","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am", R.drawable.ann_2),
-            individual_chat_messages("Peculiar C. Umeh6","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am", R.drawable.ann_2),
-            individual_chat_messages("Kabiru M. Magaya7","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am", R.drawable.ann_2),
-            individual_chat_messages("Peculiar C. Umeh8","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am", R.drawable.ann_2),
-            individual_chat_messages("Kabiru M. Magaya9","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am", R.drawable.ann_2),
-            individual_chat_messages("Peculiar C. Umeh20","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",1,"10:30 am", R.drawable.ann_2),
-            individual_chat_messages("Kabiru M. Magaya11","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",0,"10:30 am", R.drawable.ann_2),
-            individual_chat_messages("Peculiar C. Umeh12","Hello Kabiru, trust you are well?",1,"10:30 am", R.drawable.ann_2),
-
+            individual_chat_messages("Peculiar C. Umeh1","Hello Kabiru, trust you are well?",1,"10:30 am", R.drawable.grace),
+            individual_chat_messages("Kabiru M. Magaya2","Hi Peculiar, i am well. Thanks",0,"10:30 am", R.drawable.profile),
             )
 
     }
