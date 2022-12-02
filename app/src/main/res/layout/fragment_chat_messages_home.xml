@@ -139,6 +139,7 @@
                 android:textAppearance="@style/broadcast_m"
                 app:layout_constraintBottom_toBottomOf="@+id/frame_330"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/frame_330"
                 app:layout_constraintTop_toTopOf="@+id/frame_330" />
 
 

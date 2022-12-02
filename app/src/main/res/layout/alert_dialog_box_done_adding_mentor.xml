@@ -73,13 +73,15 @@
             android:text="Done"
             android:textAllCaps="false"
             android:textFontWeight="700"
+            android:textColor="@color/mms_black_10"
+            android:backgroundTint="@null"
+            app:backgroundTint="@null"
             android:textSize="16sp"
             app:fontFamily="@font/mukta"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/an_invitati" />
-
 
         <!-- Frame 352 -->
 

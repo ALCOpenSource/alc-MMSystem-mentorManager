@@ -30,6 +30,23 @@
             app:layout_constraintStart_toEndOf="@+id/reportBack"
             app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- broadcast message -->
+
+
+    <RelativeLayout
+        android:id="@+id/broadcast_m"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="19dp"
+        android:background="@drawable/broadcast_m"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="@+id/reportTitle"
+        app:layout_constraintEnd_toStartOf="@+id/search_icon_frame"
+        app:layout_constraintTop_toTopOf="@+id/reportTitle"
+        app:layout_constraintVertical_bias="0.666" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/search_icon_frame"
         android:layout_width="wrap_content"
@@ -45,19 +62,27 @@
         app:layout_constraintTop_toTopOf="@+id/reportTitle"
         tools:targetApi="lollipop_mr1">
 
+
+
         <SearchView
             android:id="@+id/Searchicon"
             android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:background="@null"
-            android:maxWidth="291dp"
-            android:queryHint="Search Mentors"
+            android:layout_height="wrap_content"
+            android:closeIcon="@null"
+            android:maxWidth="290dp"
+            android:queryBackground="@android:color/transparent"
+            android:searchHintIcon="@drawable/abc_ic_search"
+            android:searchIcon="@drawable/abc_ic_search"
+            android:textColor="@color/mms_black_5"
+            android:textFontWeight="400"
+            android:textSize="14sp"
+            app:fontFamily="@font/mukta"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:searchIcon="@drawable/abc_ic_search"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-        </SearchView>
+            app:layout_constraintTop_toTopOf="parent"
+            tools:targetApi="p" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -84,16 +109,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/search_icon_frame" />
 
-    <Spinner
-        android:id="@+id/MentorsSpinner"
-        android:layout_width="109dp"
-        android:layout_height="25dp"
-        android:background="@null"
-        android:visibility="invisible"
-        android:gravity="left"
-        app:layout_constraintEnd_toEndOf="@+id/arrow_dropd"
-        app:layout_constraintStart_toStartOf="@+id/body_1"
-        app:layout_constraintTop_toBottomOf="@+id/body_1" />
+
+
+
+
+
+
+
 
     <RelativeLayout
             android:id="@+id/arrow_dropd"
@@ -107,7 +129,16 @@
             app:layout_constraintStart_toEndOf="@+id/body_1"
             app:layout_constraintTop_toTopOf="@+id/body_1" />
 
-
+    <Spinner
+        android:id="@+id/MentorsSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/spinner_background"
+        android:contentDescription="@string/report_spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/body_1"
+        tools:ignore="TouchTargetSizeCheck" />
 
 
     <!-- Frame 430 -->

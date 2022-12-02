@@ -91,7 +91,6 @@ class ReportFragment : Fragment() {
             })
         }
     }
-
     private fun handleSpinnerSelected() {
         binding.reportSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(

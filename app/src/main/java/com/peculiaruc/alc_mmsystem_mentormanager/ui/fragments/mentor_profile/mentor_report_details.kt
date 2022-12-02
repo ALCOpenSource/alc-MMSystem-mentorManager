@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.navigation.Navigation
 import com.peculiaruc.alc_mmsystem_mentormanager.R
+import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorReportDetailsBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentReportDetailsBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_reports.DownloadDialogueFragment
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_reports.ShareDialogueFragment
@@ -22,7 +23,7 @@ import com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_reports.Sha
  */
 
 class mentor_report_details : Fragment() {
-    private var _binding: FragmentReportDetailsBinding? = null
+    private var _binding: FragmentMentorReportDetailsBinding? = null
     private val binding
         get() = _binding!!
 
@@ -30,58 +31,19 @@ class mentor_report_details : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentReportDetailsBinding.inflate(inflater, container, false)
+        _binding = FragmentMentorReportDetailsBinding.inflate(inflater, container, false)
 
-        binding.detailsCancel.setOnClickListener {
-            Navigation.findNavController(requireView()).popBackStack(R.id.reportFragment, false)
+        binding.close.setOnClickListener {
+            activity?.onBackPressed();
         }
 
-        binding.detailsShare.setOnClickListener {
-
-            val dialogshare = layoutInflater.inflate(R.layout.share_dialogue_fragment, null)
-            val customDialog = context?.let {
-                    it1 ->
-                AlertDialog.Builder(it1)
-                    .setView(dialogshare)
-                    .show() }
-            customDialog?.getWindow()?.setGravity(Gravity.BOTTOM)
-
-            // on click of cancel button close the dialog box
-            val btn_add_mentor_dialog_cancel = dialogshare.findViewById<Button>(R.id.button4)
-            btn_add_mentor_dialog_cancel.setOnClickListener {
-                if (customDialog != null)
-                { customDialog.dismiss() }
-            }
-            // on click of send button open the confirm_send dialog box the
-            val btn_add_mentor_dialog_Send = dialogshare.findViewById<Button>(R.id.button3)
-            btn_add_mentor_dialog_Send.setOnClickListener {
-                Toast.makeText(context, "Implement share report via email", Toast.LENGTH_SHORT).show()
-
-            }
-
+        binding.frame375.setOnClickListener {
+            val fragment = ShareDialogueFragment()
+            fragment.show(requireActivity().supportFragmentManager, "show share dialogue")
         }
-
-        binding.detailsDownload.setOnClickListener {
-
-            val dialogdownload = layoutInflater.inflate(R.layout.download_dialogue_fragment, null)
-            val customDialog = context?.let {
-                    it1 ->
-                AlertDialog.Builder(it1)
-                    .setView(dialogdownload)
-                    .show() }
-            customDialog?.getWindow()?.setGravity(Gravity.BOTTOM)
-
-            // on click of cancel button close the dialog box
-            val btn_add_mentor_dialog_cancel = dialogdownload.findViewById<Button>(R.id.button2)
-            btn_add_mentor_dialog_cancel.setOnClickListener {
-                if (customDialog != null)
-                { customDialog.dismiss() }
-            }
-
-
-
-
-
+        binding.frame376.setOnClickListener {
+            val fragment = DownloadDialogueFragment()
+            fragment.show(requireActivity().supportFragmentManager, "show download dialogue")
         }
 
         return binding.root

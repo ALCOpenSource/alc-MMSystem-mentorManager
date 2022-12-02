@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.RelativeLayout
 import androidx.appcompat.app.AlertDialog
 import androidx.navigation.Navigation
@@ -37,7 +38,7 @@ class cert_select_program : Fragment(){
                     .setView(dialogView)
                     .show()
             }
-            val btDismiss = dialogView.findViewById<RelativeLayout>(R.id.frame_351)
+            val btDismiss = dialogView.findViewById<Button>(R.id.frame_351)
             btDismiss.setOnClickListener {
                 if (customDialog != null) {
                     customDialog.dismiss()
