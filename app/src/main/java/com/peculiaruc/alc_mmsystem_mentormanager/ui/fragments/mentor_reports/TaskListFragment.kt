@@ -64,7 +64,9 @@ class TaskListFragment : Fragment() {
         return binding.root
     }
 
-
+    /** This method handles the search icon click event
+     *
+     */
 
    fun handleSearchClicked() {
         binding.taskSearch.setOnSearchClickListener {
@@ -91,77 +93,57 @@ class TaskListFragment : Fragment() {
             isAssignedSelected = false
             isCompletedSelected = false
             isMyTaskSelected = false
-
-
             TextViewCompat.setTextAppearance(binding.taskAll, R.style.group_button_text_selected)
             TextViewCompat.setTextAppearance(binding.taskAssigned, R.style.group_button_text)
             TextViewCompat.setTextAppearance(binding.taskCompleted, R.style.group_button_text)
             TextViewCompat.setTextAppearance(binding.taskMyTask, R.style.group_button_text)
-
             binding.taskAssigned.background = null
             binding.taskCompleted.background = null
             binding.taskMyTask.background = null
             binding.taskAll.background = ResourcesCompat.getDrawable(
-                requireActivity().resources, R.drawable.group_button_background, null
-            )
-        }
-
+                requireActivity().resources, R.drawable.group_button_background, null) }
         binding.taskAssigned.setOnClickListener {
             isAllSelected = false
             isAssignedSelected = true
             isCompletedSelected = false
             isMyTaskSelected = false
-
             TextViewCompat.setTextAppearance(binding.taskAll, R.style.group_button_text)
             TextViewCompat.setTextAppearance(binding.taskAssigned, R.style.group_button_text_selected)
             TextViewCompat.setTextAppearance(binding.taskCompleted, R.style.group_button_text)
             TextViewCompat.setTextAppearance(binding.taskMyTask, R.style.group_button_text)
-
             binding.taskAssigned.background = ResourcesCompat.getDrawable(
-                requireActivity().resources, R.drawable.group_button_background, null
-            )
+            requireActivity().resources, R.drawable.group_button_background, null)
             binding.taskCompleted.background = null
             binding.taskMyTask.background = null
-            binding.taskAll.background = null
-        }
-
+            binding.taskAll.background = null }
         binding.taskCompleted.setOnClickListener {
             isAllSelected = false
             isAssignedSelected = false
             isCompletedSelected = true
             isMyTaskSelected = false
-
             TextViewCompat.setTextAppearance(binding.taskAll, R.style.group_button_text)
             TextViewCompat.setTextAppearance(binding.taskAssigned, R.style.group_button_text)
             TextViewCompat.setTextAppearance(binding.taskCompleted, R.style.group_button_text_selected)
             TextViewCompat.setTextAppearance(binding.taskMyTask, R.style.group_button_text)
-
             binding.taskAssigned.background = null
             binding.taskCompleted.background = ResourcesCompat.getDrawable(
-                requireActivity().resources, R.drawable.group_button_background, null
-            )
+                requireActivity().resources, R.drawable.group_button_background, null)
             binding.taskMyTask.background = null
-            binding.taskAll.background = null
-        }
-
+            binding.taskAll.background = null }
         binding.taskMyTask.setOnClickListener {
             isAllSelected = false
             isAssignedSelected = false
             isCompletedSelected = false
             isMyTaskSelected = true
-
             TextViewCompat.setTextAppearance(binding.taskAll, R.style.group_button_text)
             TextViewCompat.setTextAppearance(binding.taskAssigned, R.style.group_button_text)
             TextViewCompat.setTextAppearance(binding.taskCompleted, R.style.group_button_text)
             TextViewCompat.setTextAppearance(binding.taskMyTask, R.style.group_button_text_selected)
-
             binding.taskAssigned.background = null
             binding.taskCompleted.background = null
             binding.taskMyTask.background = ResourcesCompat.getDrawable(
-                requireActivity().resources, R.drawable.group_button_background, null
-            )
-            binding.taskAll.background = null
-        }
+                requireActivity().resources, R.drawable.group_button_background, null)
+            binding.taskAll.background = null }
     }
 
     override fun onDestroy() {
