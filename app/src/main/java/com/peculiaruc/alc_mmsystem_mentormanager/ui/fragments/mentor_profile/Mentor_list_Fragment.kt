@@ -11,9 +11,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mentor_list
+import com.peculiaruc.alc_mmsystem_mentormanager.databinding.AlertDialogBoxAddMentorBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorListBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.SpinnerAdapter
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.mentor_profile.mentor_list_adapter
+import com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_reports.ShareDialogueFragment
 import java.util.*
 
 
@@ -34,7 +36,7 @@ class Mentor_list_Fragment : Fragment() {
         //  Load dummy data on the mentors list
         load_mentors_dummy_list()
         //Handle Search  icon
-     handleSearchClicked()
+        handleSearchClicked()
         // intialize mentor filter spinner and assign it values
         val spinner: Spinner = binding.MentorsSpinner
         val mList = arrayListOf("All Mentors", "Assigned", "Unassigned")
@@ -42,17 +44,8 @@ class Mentor_list_Fragment : Fragment() {
        val spinnerArrayAdapter = SpinnerAdapter(requireActivity(), mList)
         binding.MentorsSpinner.adapter = spinnerArrayAdapter
         spinnerArrayAdapter?.setDropDownViewResource(R.layout.spinner_list_item)
-        binding.arrowDropd.setOnClickListener {
-            Toast.makeText(context, "i am clicked", Toast.LENGTH_SHORT).show()
-            if (spinner.getVisibility() == View.INVISIBLE) {
-                spinner.setVisibility(View.VISIBLE);
-                spinner.performClick()
-            } else {
-                spinner.setVisibility(View.INVISIBLE);
-            }
-        }
 
-
+        handleSpinnerSelected()
         /**Respond to selection of item in a spinner
          *
          */
@@ -96,59 +89,8 @@ class Mentor_list_Fragment : Fragment() {
         binding.mentorsRv.adapter = rvAdapter
         // add new mentor
         binding.carbonAdd.setOnClickListener {
-            val dialogadd_mentor = layoutInflater.inflate(R.layout.alert_dialog_box_add_mentor, null)
-            val dialog_confirmsend = layoutInflater.inflate(R.layout.alert_dialog_box_done_adding_mentor, null)
-            //display the add mentor dialog box
-            val customDialog = context?.let {
-                    it1 ->
-                AlertDialog.Builder(it1)
-                .setView(dialogadd_mentor)
-                    .show() }
-                 customDialog?.getWindow()?.setGravity(Gravity.BOTTOM)
-
-            /**on click of cancel button close the dialog box
-             *
-             */
-
-            val btn_add_mentor_dialog_cancel = dialogadd_mentor.findViewById<Button>(R.id.frame_352)
-            btn_add_mentor_dialog_cancel.setOnClickListener {
-                 if (customDialog != null)
-                 { customDialog.dismiss() }
-             }
-
-            /**
-             *  on click of send button open the confirm_send dialog box the
-             */
-
-            val btn_add_mentor_dialog_Send = dialogadd_mentor.findViewById<Button>(R.id.frame_351)
-            btn_add_mentor_dialog_Send.setOnClickListener {
-
-                val dialog_send = context?.let {
-                        it1 ->
-                    AlertDialog.Builder(it1)
-                        .setView(dialog_confirmsend)
-                        .show() }
-                dialog_send?.getWindow()?.setGravity(Gravity.BOTTOM)
-
-                val btn_add_mentor_dialog_send_done = dialog_confirmsend.findViewById<Button>(R.id.frame_351)
-
-                btn_add_mentor_dialog_send_done.setOnClickListener {
-
-                    if (dialog_send != null)
-                    { dialog_send?.dismiss() }
-                    if (customDialog != null)
-                    { customDialog?.dismiss() }
-                }
-
-
-
-            }
-
-
-
-
-
-
+            val fragment = addmentorDialogueFragment()
+            fragment.show(requireActivity().supportFragmentManager, "show add dialogue")
         }
     }
 
@@ -177,7 +119,6 @@ class Mentor_list_Fragment : Fragment() {
             mentor_recyleview.setAdapter(mentor_list_adapter( filteredlist))
         }
     }
-
     /** loads fummy data to be displayed in the  mentore rv
      *
      */
@@ -249,8 +190,9 @@ class Mentor_list_Fragment : Fragment() {
 // handle the search of the  mentors list when when the search icon is clicked in the customixe app bar
     private fun handleSearchClicked() {
         binding.Searchicon.setOnSearchClickListener {
-            binding.Searchicon.background = AppCompatResources.getDrawable(requireContext(), R.drawable.searchview_frame)
+            binding.Searchicon.background = AppCompatResources.getDrawable(requireContext(), R.drawable.card_border)
             binding.reportTitle.visibility = View.INVISIBLE
+            binding.broadcastM.visibility = View.INVISIBLE
         }
         val searchView: android.widget.SearchView = binding.Searchicon
         // below line is to call set on query text listener method.
@@ -269,13 +211,31 @@ class Mentor_list_Fragment : Fragment() {
         binding.Searchicon.setOnCloseListener {
             binding.Searchicon.background = null
             binding.reportTitle.visibility = View.VISIBLE
+            binding.broadcastM.visibility = View.INVISIBLE
             false
         }
 
 
     }
 
+    private fun handleSpinnerSelected() {
+        binding.MentorsSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
 
+                binding.MentorsSpinner.dropDownWidth = 300
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                Toast.makeText(context, "to be imlemented", Toast.LENGTH_SHORT).show()
+            }
+
+        }
+    }
 
 
     override fun onDestroyView() {

@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_reports
+package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_profile
 
 
 import android.os.Bundle
@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.peculiaruc.alc_mmsystem_mentormanager.databinding.AlertDialogBoxAddMentorBinding
+import com.peculiaruc.alc_mmsystem_mentormanager.databinding.AlertDialogBoxDoneAddingMentorBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.SubmitSuccessDialogueBinding
 
 /**
@@ -14,8 +16,8 @@ import com.peculiaruc.alc_mmsystem_mentormanager.databinding.SubmitSuccessDialog
  *
  */
 
-class SubmitSuccessDialogueFragment : BottomSheetDialogFragment() {
-    private var _binding: SubmitSuccessDialogueBinding? = null
+class addmentro_confirm_Email_SendDialogueFragment : BottomSheetDialogFragment() {
+    private var _binding: AlertDialogBoxDoneAddingMentorBinding? = null
     private val binding
         get() = _binding!!
 
@@ -25,8 +27,11 @@ class SubmitSuccessDialogueFragment : BottomSheetDialogFragment() {
         savedInstanceState: Bundle?
     ): View {
         super.onCreateView(inflater, container, savedInstanceState)
-        _binding = SubmitSuccessDialogueBinding.inflate(inflater, container, false)
+        _binding = AlertDialogBoxDoneAddingMentorBinding.inflate(inflater, container, false)
+        binding.frame351.setOnClickListener {
+            activity?.onBackPressed();
 
+        }
         return binding.root
     }
 

@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment2"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_chats_broadcast_messages_home_to_addmentorDialogueFragment"
+            app:destination="@id/addmentorDialogueFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -80,4 +83,8 @@
             android:id="@+id/action_mentors_certificate_generate_to_cert_select_program"
             app:destination="@id/cert_select_program" />
     </fragment>
+    <dialog
+        android:id="@+id/addmentorDialogueFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_profile.addmentorDialogueFragment"
+        android:label="addmentorDialogueFragment" />
 </navigation>

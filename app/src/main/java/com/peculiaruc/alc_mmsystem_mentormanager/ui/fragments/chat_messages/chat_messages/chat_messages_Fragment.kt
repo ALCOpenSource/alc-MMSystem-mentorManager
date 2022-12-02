@@ -97,8 +97,6 @@ class chat_messages_Fragment : Fragment() {
                 "3",
                 R.drawable.ann
             ),
-
-
             )
     }
 
@@ -106,7 +104,7 @@ class chat_messages_Fragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.broadcastM.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_navigation_home_to_broadcast_messages_Fragment)
+
         }
         binding.carbonAdd.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.action_navigation_home_to_fragment_mm_chat2)
@@ -118,19 +116,23 @@ class chat_messages_Fragment : Fragment() {
             when (it.itemId) {
                 R.id.chat_messages_Fragment -> {
                     //reports task
-                    Navigation.findNavController(navView).navigate(R.id.action_navigation_home_to_activity_mm_reports)
+                    Navigation.findNavController(navView).navigate(R.id.action_chat_messages_Fragment3_to_activity_mm_reports2)
                 }
                 R.id.Search -> {
                 }
                 R.id.programs -> {
                     Navigation.findNavController(navView).navigate(R.id.action_navigation_home_to_discussion_forum2)
+
                 }
                 R.id.Messages -> {
 
                 }
                 R.id.mentor_profile -> {
                     //mentor profile task
-                    Navigation.findNavController(navView).navigate(R.id.action_navigation_home_to_mentor_list_Activity)
+
+                    Navigation.findNavController(navView).navigate(R.id. action_chat_messages_Fragment3_to_mentor_list_Activity2)
+
+
                 }
             }
         }
