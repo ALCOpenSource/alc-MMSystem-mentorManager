@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- Group 591 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/group_591"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!-- Group 563 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/group_428"
+            android:layout_width="176dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#00000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- arrow-left 1 -->
+            <RelativeLayout
+                android:id="@+id/arrow_left_"
+                android:layout_width="20dp"
+                android:layout_height="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/arrow_left_"
+                android:clipToOutline="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Mentors -->
+            <TextView
+                android:id="@+id/mentors"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/mukta"
+                android:gravity="top"
+                android:text="Messages"
+                android:textAppearance="@style/mentor_profile_name"
+                android:textFontWeight="600"
+                app:layout_constraintStart_toEndOf="@+id/arrow_left_"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- comment-circle-chat-message 1 -->
+        <RelativeLayout
+            android:id="@+id/comment_cir"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/search_1"
+            android:clipToOutline="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="17dp"
+            android:background="@color/mms_pry_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/comment_cir">
+
+            <!-- Frame 330 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/frame_330"
+                android:layout_width="0dp"
+                android:layout_height="29dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/frame_330"
+                android:clipToOutline="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/broadcast_m"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!-- Chats -->
+                <TextView
+                    android:id="@+id/chats"
+                    android:layout_width="40dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/mukta"
+                    android:gravity="center_horizontal|top"
+                    android:text="@string/chats"
+                    android:textAppearance="@style/chats"
+                    android:textColor="@color/mms_pry_2"
+                    android:textFontWeight="700"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <!-- Broadcast Messages -->
+            <TextView
+                android:id="@+id/broadcast_m"
+                android:layout_width="170dp"
+                android:layout_height="27dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="25dp"
+                android:gravity="center_horizontal|top"
+                android:text="@string/broadcast_m"
+                android:textAppearance="@style/broadcast_m"
+                app:layout_constraintBottom_toBottomOf="@+id/frame_330"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/frame_330"
+                app:layout_constraintTop_toTopOf="@+id/frame_330" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mentor_tasks_recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <RelativeLayout
+            android:id="@+id/carbon_add_"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/carbon_add_filled"
+            android:clipToOutline="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <!-- Vector -->
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        style="@style/MyBottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:background="@color/mms_pry_10"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

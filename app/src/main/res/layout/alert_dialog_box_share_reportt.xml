@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="391dp">
+
+        <!-- Group 509 -->
+
+    <Button
+        android:id="@+id/frame_351"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/button_background_filled"
+        android:text="Share Email"
+        android:textAllCaps="false"
+        android:textFontWeight="700"
+        android:textSize="16sp"
+        app:fontFamily="@font/mukta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group_509" />
+
+    <Button
+        android:id="@+id/frame_352"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_border"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/mms_pry_2"
+        android:textFontWeight="700"
+        android:textSize="16sp"
+        app:fontFamily="@font/mukta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frame_351"
+        app:layout_constraintStart_toStartOf="@+id/frame_351"
+        app:layout_constraintTop_toBottomOf="@+id/frame_351" />
+
+
+
+
+
+
+        <View
+            android:id="@+id/group_509"
+            android:layout_width="0dp"
+            android:layout_height="149dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="104dp"
+            android:background="@drawable/share_report"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/report_down" />
+
+        <!-- Report Downloaded Successfully! -->
+        <TextView
+            android:id="@+id/report_down"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="94dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="94dp"
+            android:gravity="center"
+            android:text="@string/share_report_vie_mail"
+            android:textAppearance="@style/report_down"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Frame 351 -->
+
+
+
+        <!-- Frame 352 -->
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginEnd="8dp">
+
+    <TextView
+        android:id="@+id/text_gchat_date_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="4dp"
+        android:text="June 10"
+        android:textColor="#C0C0C0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Frame 20 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frame_20"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/frame_20"
+        android:clipToOutline="true"
+        android:paddingBottom="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_gchat_date_me">
+        <!-- Mentors -->
+        <TextView
+            android:id="@+id/mentors"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:textFontWeight="400"
+            android:fontFamily="@font/mukta"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:text="@string/mentors"
+            android:textAppearance="@style/broascast_mentor_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/chat_message_body"
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="13dp"
+            android:gravity="top"
+            android:text="@string/lorem_ipsum"
+            android:textAppearance="@style/chats_broadcast_message"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/mentors"
+            app:layout_constraintTop_toBottomOf="@+id/mentors" />
+
+
+        <!-- Vector -->
+        <RelativeLayout
+            android:id="@+id/vector"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/check_good_yes_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chat_message_body" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

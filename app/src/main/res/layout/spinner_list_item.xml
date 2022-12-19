@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <!-- Body 1 -->
+<TextView android:id="@+id/spinner_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="24dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:fontFamily="@font/mukta"
+    android:lineHeight="26.7dp"
+    android:textColor="@color/mms_black_5"
+    android:textFontWeight="400"
+    android:textSize="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+
