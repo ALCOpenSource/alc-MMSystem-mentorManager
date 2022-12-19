@@ -20,6 +20,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AlcMMSystemmentorManager"
         tools:targetApi="31">
+
         <activity
             android:name=".ui.activities.HomeActivity"
             android:exported="false">
@@ -84,8 +85,9 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
-            android:name=".ui.activities.SplashScreenActivity"
+            android:name=".ui.activities.chat_messages_activity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
@@ -93,9 +95,34 @@
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activities.Mentor_list_Activity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.activities.activity_mm_reports"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+
+
+
+        <activity
+            android:name=".ui.activities.SplashScreenActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
         <activity
             android:name=".ui.activities.MainActivity"

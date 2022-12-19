@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="selected_item">Selected item:</string>
+    <string-array name="Mentor_filter">
+        <item>Assigned</item>
+        <item>Unassigned</item>
+    </string-array>
+
+
+</resources>
