@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.CertBeneficiaryFragment">
+
+
+    <ImageView
+        android:id="@+id/btnBackHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/benf_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/mukta_bold"
+        android:text="@string/select_beneficiary"
+        android:textColor="@color/mms_black_2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/btnBackHome"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/benef_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/search_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/benf_header">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardBackgroundColor="@color/mms_pry_10"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnCertBeneficiary">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/mmProfilePicture"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="266dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/fk"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:shapeAppearanceOverlay="@style/Circular" />
+
+                    <TextView
+                        android:id="@+id/benef_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/mukta_bold"
+                        android:text="@string/franka_kebede"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toEndOf="@+id/mmProfilePicture"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/benef_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="100dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/program_assistant_andela_she_her"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.385" />
+
+                    <Button
+                        android:id="@+id/pa_assit_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        style="?attr/materialButtonOutlinedStyle"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/mms_pry_8"
+                        app:backgroundTint="@color/mms_pry_10"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/program_asst"
+                        android:textColor="@color/mms_pry_2"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mmProfilePicture"
+                        app:layout_constraintTop_toBottomOf="@+id/benef_details"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <Button
+                        android:id="@+id/ment_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        style="?attr/materialButtonOutlinedStyle"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/mms_pry_8"
+                        app:backgroundTint="@color/mms_pry_10"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/mentor_gad"
+                        android:textColor="@color/mms_pry_2"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/pa_assit_btn"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardBackgroundColor="@color/mms_pry_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardView1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/mmProfilePicture2"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="266dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/ku"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:shapeAppearanceOverlay="@style/Circular" />
+
+                    <TextView
+                        android:id="@+id/benef_header2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/mukta_bold"
+                        android:text="@string/Kenneth_uwakwe"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toEndOf="@+id/mmProfilePicture2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/benef_details2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="100dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/program_assistant_andela_she_her"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.385" />
+
+                    <Button
+                        android:id="@+id/pa_assit_btn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        style="?attr/materialButtonOutlinedStyle"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/mms_pry_8"
+                        app:backgroundTint="@color/mms_pry_10"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/program_asst"
+                        android:textColor="@color/mms_pry_2"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mmProfilePicture2"
+                        app:layout_constraintTop_toBottomOf="@+id/benef_details2"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <Button
+                        android:id="@+id/ment_btn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        style="?attr/materialButtonOutlinedStyle"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/mms_pry_8"
+                        app:backgroundTint="@color/mms_pry_10"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/mentor_gad"
+                        android:textColor="@color/mms_pry_2"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/pa_assit_btn2"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardBackgroundColor="@color/mms_pry_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardView2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/mmProfilePicture3"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="266dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/jo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:shapeAppearanceOverlay="@style/Circular" />
+
+                    <TextView
+                        android:id="@+id/benef_header3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/mukta_bold"
+                        android:text="@string/judith_okafor"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toEndOf="@+id/mmProfilePicture3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/benef_details3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="100dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/program_assistant_andela_she_her"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.385" />
+
+                    <Button
+                        android:id="@+id/pa_assit_btn3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        style="?attr/materialButtonOutlinedStyle"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/mms_pry_8"
+                        app:backgroundTint="@color/mms_pry_10"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/program_asst"
+                        android:textColor="@color/mms_pry_2"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mmProfilePicture3"
+                        app:layout_constraintTop_toBottomOf="@+id/benef_details3"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <Button
+                        android:id="@+id/ment_btn3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        style="?attr/materialButtonOutlinedStyle"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/mms_pry_8"
+                        app:backgroundTint="@color/mms_pry_10"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/mentor_gad"
+                        android:textColor="@color/mms_pry_2"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/pa_assit_btn3"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardBackgroundColor="@color/mms_pry_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardView3">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/mmProfilePicture4"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="266dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/ao"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:shapeAppearanceOverlay="@style/Circular" />
+
+                    <TextView
+                        android:id="@+id/benef_header4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/mukta_bold"
+                        android:text="@string/ayodele_oluwa"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toEndOf="@+id/mmProfilePicture4"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/benef_details4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="100dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/program_assistant_andela_she_her"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.385" />
+
+                    <Button
+                        android:id="@+id/pa_assit_btn4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        style="?attr/materialButtonOutlinedStyle"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/mms_pry_8"
+                        app:backgroundTint="@color/mms_pry_10"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/program_asst"
+                        android:textColor="@color/mms_pry_2"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mmProfilePicture4"
+                        app:layout_constraintTop_toBottomOf="@+id/benef_details4"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <Button
+                        android:id="@+id/ment_btn4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        style="?attr/materialButtonOutlinedStyle"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/mms_pry_8"
+                        app:backgroundTint="@color/mms_pry_10"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/mentor_gad"
+                        android:textColor="@color/mms_pry_2"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/pa_assit_btn4"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardBackgroundColor="@color/mms_pry_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardView4">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/mmProfilePicture5"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="266dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/jlo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:shapeAppearanceOverlay="@style/Circular" />
+
+                    <TextView
+                        android:id="@+id/benef_header5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/mukta_bold"
+                        android:text="@string/jennifer_lopez"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toEndOf="@+id/mmProfilePicture5"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/benef_details5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="100dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/program_assistant_andela_she_her"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.385" />
+
+                    <Button
+                        android:id="@+id/pa_assit_btn5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        style="?attr/materialButtonOutlinedStyle"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/mms_pry_8"
+                        app:backgroundTint="@color/mms_pry_10"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/program_asst"
+                        android:textColor="@color/mms_pry_2"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mmProfilePicture5"
+                        app:layout_constraintTop_toBottomOf="@+id/benef_details5"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <Button
+                        android:id="@+id/ment_btn5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        style="?attr/materialButtonOutlinedStyle"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/mms_pry_8"
+                        app:backgroundTint="@color/mms_pry_10"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/mentor_gad"
+                        android:textColor="@color/mms_pry_2"
+                        android:textSize="11sp"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/pa_assit_btn5"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardBackgroundColor="@color/mms_pry_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardView5">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/mmProfilePicture6"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="266dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/eo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:shapeAppearanceOverlay="@style/Circular" />
+
+                    <TextView
+                        android:id="@+id/benef_header6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/mukta_bold"
+                        android:text="@string/ebubechi_orijiakor"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toEndOf="@+id/mmProfilePicture6"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/benef_details6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="100dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/program_assistant_andela_she_her"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.385" />
+
+                    <Button
+                        android:id="@+id/pa_assit_btn6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        style="?attr/materialButtonOutlinedStyle"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/mms_pry_8"
+                        app:backgroundTint="@color/mms_pry_10"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/program_asst"
+                        android:textColor="@color/mms_pry_2"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mmProfilePicture6"
+                        app:layout_constraintTop_toBottomOf="@+id/benef_details6"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <Button
+                        android:id="@+id/ment_btn6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        style="?attr/materialButtonOutlinedStyle"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/mms_pry_8"
+                        app:backgroundTint="@color/mms_pry_10"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/mentor_gad"
+                        android:textColor="@color/mms_pry_2"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/pa_assit_btn6"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardBackgroundColor="@color/mms_pry_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardView6">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/mmProfilePicture7"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="266dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/ao"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:shapeAppearanceOverlay="@style/Circular" />
+
+                    <TextView
+                        android:id="@+id/benef_header7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/mukta_bold"
+                        android:text="@string/ayodele_oluwa"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toEndOf="@+id/mmProfilePicture7"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/benef_details7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="100dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/program_assistant_andela_she_her"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.385" />
+
+                    <Button
+                        android:id="@+id/pa_assit_btn7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        style="?attr/materialButtonOutlinedStyle"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/mms_pry_8"
+                        app:backgroundTint="@color/mms_pry_10"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/program_asst"
+                        android:textColor="@color/mms_pry_2"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mmProfilePicture7"
+                        app:layout_constraintTop_toBottomOf="@+id/benef_details7"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <Button
+                        android:id="@+id/ment_btn7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        style="?attr/materialButtonOutlinedStyle"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/mms_pry_8"
+                        app:backgroundTint="@color/mms_pry_10"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/mentor_gad"
+                        android:textColor="@color/mms_pry_2"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/pa_assit_btn7"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -48,4 +48,21 @@ class ProgramDetailsFragment : Fragment() {
         super.onDestroy()
         _binding = null
     }
+//import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentProgramsBinding
+//
+///**
+// * Fragment to display details of a program
+// */
+//class ProgramDetailsFragment : Fragment() {
+//    lateinit var binding: FragmentProgramsBinding
+//
+//    override fun onCreateView(
+//        inflater: LayoutInflater, container: ViewGroup?,
+//        savedInstanceState: Bundle?
+//    ): View? {
+//        // Inflate the layout for this fragment
+//        binding = FragmentProgramsBinding.inflate(inflater)
+//        return binding.root
+//    }
+
 }

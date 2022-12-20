@@ -21,10 +21,28 @@ class ProgramsFragment : Fragment() {
     var binding: FragmentProgramsBinding? = null
 
     @RequiresApi(Build.VERSION_CODES.M)
+
+//import android.os.Bundle
+//import androidx.fragment.app.Fragment
+//import android.view.LayoutInflater
+//import android.view.View
+//import android.view.ViewGroup
+//import com.peculiaruc.alc_mmsystem_mentormanager.R
+//import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentApprovedCertificatesBinding
+//import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentProfileBinding
+//import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentProgramsBinding
+//
+///**
+// * fragment to display programs
+// */
+//class ProgramsFragment : Fragment() {
+//  private lateinit var binding: FragmentProgramsBinding
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         binding = FragmentProgramsBinding.inflate(layoutInflater)
 
         val tempImage1 = "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
@@ -107,4 +125,13 @@ class ProgramsFragment : Fragment() {
         super.onDestroyView()
         binding = null
     }
+//        binding =FragmentProgramsBinding.inflate(inflater)
+//
+//        // Inflate the layout for this fragment
+//
+//        return binding.root
+//    }
+//
+//
+
 }

@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.uiDummy.ProgramDummy">
+    <ImageView
+        android:id="@+id/btnBackProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cert_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="11dp"
+        android:text="Francess Rosaline"
+        android:textSize="18sp"
+        android:fontFamily="@font/mukta_semibold"
+        android:textColor="@color/mms_black_2"
+        app:layout_constraintStart_toEndOf="@+id/btnBackProfile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/edit_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/mmProfileImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mm_profile_picture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cert_header"
+        app:shapeAppearanceOverlay="@style/CircleImage" />
+
+    <TextView
+        android:id="@+id/tvMmName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="28dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/mukta_regular"
+        android:text="Francess Rosaline"
+        android:textColor="@color/mms_black_2"
+        android:textSize="16sp"
+        app:drawableEndCompat="@drawable/nigerian_flag"
+        app:layout_constraintBottom_toBottomOf="@+id/mmProfileImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/mmProfileImage"
+        app:layout_constraintTop_toTopOf="@+id/mmProfileImage" />
+
+    <TextView
+        android:id="@+id/tvDesignation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mukta_regular"
+        android:text="Mentor Manager"
+        android:textColor="@color/mms_black_5"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/tvMmName"
+        app:layout_constraintTop_toBottomOf="@+id/tvMmName" />
+
+    <HorizontalScrollView
+        android:id="@+id/profileOptionsScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingHorizontal="12dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mmProfileImage">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:checkedChip="@+id/chip_about"
+            app:selectionRequired="true"
+            app:singleLine="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipAbout"
+                style="?attr/materialButtonOutlinedStyle"
+                android:backgroundTint="@color/mms_pry_10"
+                app:chipStrokeColor="@color/mms_pry_8"
+                app:chipStrokeWidth="1dp"
+                android:textColor="@color/mms_black_2"
+                android:textSize="15sp"
+                app:chipCornerRadius="5dp"
+                android:fontFamily="@font/mukta_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipPrograms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?attr/materialButtonOutlinedStyle"
+                android:fontFamily="@font/mukta_regular"
+                android:textSize="15sp"
+                app:chipCornerRadius="5dp"
+                android:textColor="@color/mms_black_10"
+                app:chipStrokeColor="@color/mms_pry_8"
+                android:backgroundTint="@color/mms_pry_2"
+                android:text="Programs" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipMentors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?attr/materialButtonOutlinedStyle"
+                android:fontFamily="@font/mukta_regular"
+                android:textSize="15sp"
+                app:chipCornerRadius="5dp"
+                android:textColor="@color/mms_black_2"
+                app:chipStrokeWidth="1dp"
+                app:chipStrokeColor="@color/mms_pry_8"
+                android:backgroundTint="@color/mms_pry_10"
+                android:text="@string/mentors" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipTasks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?attr/materialButtonOutlinedStyle"
+                android:fontFamily="@font/mukta_regular"
+                android:textSize="15sp"
+                app:chipCornerRadius="5dp"
+                android:textColor="@color/mms_black_2"
+                app:chipStrokeWidth="1dp"
+                app:chipStrokeColor="@color/mms_pry_8"
+                android:backgroundTint="@color/mms_pry_10"
+                android:text="@string/tasks" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipReports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?attr/materialButtonOutlinedStyle"
+                android:fontFamily="@font/mukta_regular"
+                android:textSize="15sp"
+                app:chipCornerRadius="5dp"
+                android:textColor="@color/mms_black_2"
+                app:chipStrokeWidth="1dp"
+                app:chipStrokeColor="@color/mms_pry_8"
+                android:backgroundTint="@color/mms_pry_10"
+                android:text="@string/reports" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipCertificates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?attr/materialButtonOutlinedStyle"
+                android:fontFamily="@font/mukta_regular"
+                android:textSize="15sp"
+                app:chipCornerRadius="5dp"
+                android:textColor="@color/mms_black_2"
+                app:chipStrokeWidth="1dp"
+                app:chipStrokeColor="@color/mms_pry_8"
+                android:backgroundTint="@color/mms_pry_10"
+                android:text="@string/certificates" />
+        </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
+
+    <ScrollView
+        android:id="@+id/profileDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="290dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileOptionsScroll"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/allReports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/mukta_regular"
+                android:text="All Programs "
+                android:drawablePadding="8dp"
+                android:textColor="@color/mms_black_2"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:drawableRightCompat="@drawable/down_vector" />
+
+            <TextView
+                android:id="@+id/vectorSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/mukta_regular"
+                android:textColor="@color/mms_black_2"
+                android:drawableStart="@drawable/search"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="@id/allReports"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/allReports" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card1"
+                style="?attr/materialCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/allReports"
+                app:strokeColor="@color/mms_pry_10"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="14dp">
+
+                    <ImageView
+                        android:id="@+id/imgProgramImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/google_icon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvProgramTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:lines="1"
+                        android:text="GADS Program 2022"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toEndOf="@+id/imgProgramImage"
+                        app:layout_constraintTop_toTopOf="@+id/imgProgramImage" />
+
+                    <TextView
+                        android:id="@+id/tvProgramDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:drawablePadding="4dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:lines="1"
+                        android:text="Dec 12, 2022"
+                        android:textColor="@color/mms_black_5"
+                        android:textSize="12sp"
+                        app:drawableStartCompat="@drawable/calender_icon"
+                        app:layout_constraintBottom_toBottomOf="@+id/imgProgramImage"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="@+id/tvProgramTitle"
+                        app:layout_constraintTop_toBottomOf="@id/tvProgramTitle" />
+
+                    <ImageView
+                        android:id="@+id/imgProgramStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/single_check"
+                        app:layout_constraintBottom_toBottomOf="@+id/imgProgramImage"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imgProgramImage"
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card2"
+                style="?attr/materialCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                app:layout_constraintTop_toBottomOf="@id/card1"
+                app:layout_constraintStart_toStartOf="@id/card1"
+                app:layout_constraintEnd_toEndOf="@id/card1"
+                app:strokeColor="@color/mms_pry_10"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="14dp">
+
+                    <ImageView
+                        android:id="@+id/imgProgramImage1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/google_icon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvProgramTitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:lines="1"
+                        android:text="GADS Program 2022"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toEndOf="@+id/imgProgramImage1"
+                        app:layout_constraintTop_toTopOf="@+id/imgProgramImage1" />
+
+                    <TextView
+                        android:id="@+id/tvProgramDate1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:drawablePadding="4dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:lines="1"
+                        android:text="Dec 12, 2022"
+                        android:textColor="@color/mms_black_5"
+                        android:textSize="12sp"
+                        app:drawableStartCompat="@drawable/calender_icon"
+                        app:layout_constraintBottom_toBottomOf="@+id/imgProgramImage1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="@+id/tvProgramTitle1"
+                        app:layout_constraintTop_toBottomOf="@id/tvProgramTitle1" />
+
+                    <ImageView
+                        android:id="@+id/imgProgramStatus1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/double_check"
+                        app:layout_constraintBottom_toBottomOf="@+id/imgProgramImage1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imgProgramImage1"
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card3"
+                style="?attr/materialCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                app:layout_constraintTop_toBottomOf="@id/card2"
+                app:layout_constraintStart_toStartOf="@id/card1"
+                app:layout_constraintEnd_toEndOf="@id/card1"
+                app:strokeColor="@color/mms_pry_10"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="14dp">
+
+                    <ImageView
+                        android:id="@+id/imgProgramImage2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/google_icon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvProgramTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:lines="1"
+                        android:text="GADS Program 2022"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toEndOf="@+id/imgProgramImage2"
+                        app:layout_constraintTop_toTopOf="@+id/imgProgramImage2" />
+
+                    <TextView
+                        android:id="@+id/tvProgramDate2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:drawablePadding="4dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:lines="1"
+                        android:text="Dec 12, 2022"
+                        android:textColor="@color/mms_black_5"
+                        android:textSize="12sp"
+                        app:drawableStartCompat="@drawable/calender_icon"
+                        app:layout_constraintBottom_toBottomOf="@+id/imgProgramImage2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="@+id/tvProgramTitle2"
+                        app:layout_constraintTop_toBottomOf="@id/tvProgramTitle2" />
+
+                    <ImageView
+                        android:id="@+id/imgProgramStatus2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/single_check"
+                        app:layout_constraintBottom_toBottomOf="@+id/imgProgramImage2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imgProgramImage2"
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card4"
+                style="?attr/materialCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                app:layout_constraintTop_toBottomOf="@id/card3"
+                app:layout_constraintStart_toStartOf="@id/card1"
+                app:layout_constraintEnd_toEndOf="@id/card1"
+                app:strokeColor="@color/mms_pry_10"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="14dp">
+
+                    <ImageView
+                        android:id="@+id/imgProgramImage3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/google_icon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvProgramTitle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:lines="1"
+                        android:text="GADS Program 2022"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toEndOf="@+id/imgProgramImage3"
+                        app:layout_constraintTop_toTopOf="@+id/imgProgramImage3" />
+
+                    <TextView
+                        android:id="@+id/tvProgramDate3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:drawablePadding="4dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:lines="1"
+                        android:text="Dec 12, 2022"
+                        android:textColor="@color/mms_black_5"
+                        android:textSize="12sp"
+                        app:drawableStartCompat="@drawable/calender_icon"
+                        app:layout_constraintBottom_toBottomOf="@+id/imgProgramImage3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="@+id/tvProgramTitle3"
+                        app:layout_constraintTop_toBottomOf="@id/tvProgramTitle3" />
+
+                    <ImageView
+                        android:id="@+id/imgProgramStatus3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/single_check"
+                        app:layout_constraintBottom_toBottomOf="@+id/imgProgramImage3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imgProgramImage3"
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card5"
+                style="?attr/materialCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                app:layout_constraintTop_toBottomOf="@id/card4"
+                app:layout_constraintStart_toStartOf="@id/card1"
+                app:layout_constraintEnd_toEndOf="@id/card1"
+                app:strokeColor="@color/mms_pry_10"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="14dp">
+
+                    <ImageView
+                        android:id="@+id/imgProgramImage4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/google_icon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvProgramTitle4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:lines="1"
+                        android:text="GADS Program 2022"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toEndOf="@+id/imgProgramImage4"
+                        app:layout_constraintTop_toTopOf="@+id/imgProgramImage4" />
+
+                    <TextView
+                        android:id="@+id/tvProgramDate4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:drawablePadding="4dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:lines="1"
+                        android:text="Dec 12, 2022"
+                        android:textColor="@color/mms_black_5"
+                        android:textSize="12sp"
+                        app:drawableStartCompat="@drawable/calender_icon"
+                        app:layout_constraintBottom_toBottomOf="@+id/imgProgramImage4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="@+id/tvProgramTitle4"
+                        app:layout_constraintTop_toBottomOf="@id/tvProgramTitle4" />
+
+                    <ImageView
+                        android:id="@+id/imgProgramStatus4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/double_check"
+                        app:layout_constraintBottom_toBottomOf="@+id/imgProgramImage4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imgProgramImage4"
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

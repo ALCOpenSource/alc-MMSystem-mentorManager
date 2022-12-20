@@ -65,4 +65,52 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".ui.fragments.NotificationsFragment">-->
+
+<!--    <Spinner-->
+<!--        android:id="@+id/spinnerNotifications"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:entries="@array/notification_category"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvMarkAllAsRead"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/mukta_regular"-->
+<!--        android:padding="8dp"-->
+<!--        android:text="@string/mark_all_as_read"-->
+<!--        android:textColor="@color/mms_black_1"-->
+<!--        android:textSize="12sp"-->
+<!--        app:drawableEndCompat="@drawable/markcomplete"-->
+<!--        app:drawableTint="@color/mms_pry_2"-->
+<!--        android:layout_marginStart="166dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/spinnerNotifications"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/spinnerNotifications"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/spinnerNotifications" />-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/recyclerViewNotifications"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/spinnerNotifications"-->
+<!--        tools:listitem="@layout/notifications_item" />-->
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

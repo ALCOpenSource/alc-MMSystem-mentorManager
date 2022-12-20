@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/mms_black_5"
+    tools:context=".ui.fragments.ApprovedCertificateFragment">
+
+    <ImageView
+        android:id="@+id/approv_back"
+        android:layout_width="11dp"
+        android:layout_height="9dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/icon_back"
+        app:backgroundTint="@color/mms_black_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/approv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:fontFamily="@font/mukta_bold"
+        android:text="@string/approved_certificates"
+        android:textColor="@color/mms_black_2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/approv_back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/approv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/mms_black_5"
+        android:src="@drawable/search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="406dp"
+        android:layout_height="685dp"
+        android:fillViewport="true"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/approv_search"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/approv_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/approvedCerts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/cert_image1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/certificate1" />
+
+                    <TextView
+                        android:id="@+id/cert_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/franka_kebede"
+                        android:textColor="@color/mms_black_1"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/cert_image1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/gad_cloud1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/gads_cloud_2022_compl"
+                        android:textColor="@color/mms_black_1"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/cert_image1"
+                        app:layout_constraintTop_toBottomOf="@+id/cert_name1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/approv_card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/approv_card">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/cert_image2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/certificate1" />
+
+                    <TextView
+                        android:id="@+id/cert_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/kenneth_uwakwe"
+                        android:textColor="@color/mms_black_1"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/cert_image2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/gads_cloud2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/gads_cloud_2022_compl"
+                        android:textColor="@color/mms_black_1"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/cert_image2"
+                        app:layout_constraintTop_toBottomOf="@+id/cert_name2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/approv_card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/approv_card2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/cert_image3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/certificate1" />
+
+                    <TextView
+                        android:id="@+id/cert_name3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/kenneth_uwakwe"
+                        android:textColor="@color/mms_black_1"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/cert_image3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/gads_cloud3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/gads_cloud_2022_compl"
+                        android:textColor="@color/mms_black_1"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/cert_image3"
+                        app:layout_constraintTop_toBottomOf="@+id/cert_name3" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/approv_card4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/approv_card3">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/cert_image4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/certificate1" />
+
+                    <TextView
+                        android:id="@+id/cert_name4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/kenneth_uwakwe"
+                        android:textColor="@color/mms_black_1"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/cert_image4"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/gads_cloud4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/gads_cloud_2022_compl"
+                        android:textColor="@color/mms_black_1"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/cert_image4"
+                        app:layout_constraintTop_toBottomOf="@+id/cert_name4" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/approv_card5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/approv_card4">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/cert_image5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/certificate1" />
+
+                    <TextView
+                        android:id="@+id/cert_name5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/kenneth_uwakwe"
+                        android:textColor="@color/mms_black_1"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/cert_image5"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/gads_cloud5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/gads_cloud_2022_compl"
+                        android:textColor="@color/mms_black_1"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/cert_image5"
+                        app:layout_constraintTop_toBottomOf="@+id/cert_name5" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/approv_card6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/approv_card5">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/cert_image6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/certificate1" />
+
+                    <TextView
+                        android:id="@+id/cert_name6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/kenneth_uwakwe"
+                        android:textColor="@color/mms_black_1"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/cert_image6"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/gads_cloud6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/gads_cloud_2022_compl"
+                        android:textColor="@color/mms_black_1"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/cert_image6"
+                        app:layout_constraintTop_toBottomOf="@+id/cert_name6" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/approv_card7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/approv_card6">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/cert_image7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/certificate1" />
+
+                    <TextView
+                        android:id="@+id/cert_name7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/kenneth_uwakwe"
+                        android:textColor="@color/mms_black_1"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/cert_image7"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/gads_cloud7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/gads_cloud_2022_compl"
+                        android:textColor="@color/mms_black_1"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/cert_image7"
+                        app:layout_constraintTop_toBottomOf="@+id/cert_name7" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/approv_card8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/approv_card7">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/cert_image8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/certificate1" />
+
+                    <TextView
+                        android:id="@+id/cert_name8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/kenneth_uwakwe"
+                        android:textColor="@color/mms_black_1"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/cert_image8"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/gads_cloud8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/gads_cloud_2022_compl"
+                        android:textColor="@color/mms_black_1"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/cert_image8"
+                        app:layout_constraintTop_toBottomOf="@+id/cert_name8" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/approv_card9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/approv_card8">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/cert_image9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/certificate1" />
+
+                    <TextView
+                        android:id="@+id/cert_name9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/kenneth_uwakwe"
+                        android:textColor="@color/mms_black_1"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/cert_image9"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/gads_cloud9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/gads_cloud_2022_compl"
+                        android:textColor="@color/mms_black_1"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/cert_image9"
+                        app:layout_constraintTop_toBottomOf="@+id/cert_name9" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

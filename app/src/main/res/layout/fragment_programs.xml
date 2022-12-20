@@ -132,3 +132,19 @@
         tools:listitem="@layout/item_program" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+<!--=======-->
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".ui.fragments.ReportsFragment">-->
+
+<!--    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/reports" />-->
+
+<!--</FrameLayout>-->
+<!--&gt;>>>>>> e5ac31b808eb7dd1aa42911e53351360c465df0d-->

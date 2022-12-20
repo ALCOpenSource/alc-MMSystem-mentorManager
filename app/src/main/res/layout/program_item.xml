@@ -1,92 +1,174 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="0dp"
-        android:layout_height="74dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="10dp"
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="74dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="11dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        app:cardCornerRadius="5dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/programImage"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginTop="14dp"-->
+<!--                android:layout_marginBottom="14dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:srcCompat="@drawable/ic_g_icon" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/programHead"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="37dp"-->
+<!--                android:layout_marginTop="14dp"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="GADS Program 2022"-->
+<!--                android:textColor="@color/mms_black_2"-->
+<!--                android:textFontWeight="600"-->
+<!--                android:textSize="15sp"-->
+<!--                app:fontFamily="@font/mukta"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/programImage"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/dateIcon"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:layout_marginBottom="21dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/programHead"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/programHead"-->
+<!--                app:srcCompat="@drawable/ic_date_icon" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/programDate"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="6dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:layout_marginBottom="21dp"-->
+<!--                android:text="Dec 12, 2022"-->
+<!--                android:textColor="@color/mms_black_5"-->
+<!--                android:textFontWeight="400"-->
+<!--                android:textSize="12sp"-->
+<!--                app:fontFamily="@font/mukta"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/dateIcon"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/programHead" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/programStatus"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:layout_marginEnd="34dp"-->
+<!--                android:layout_marginBottom="30dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:srcCompat="@drawable/ic_double_mark" />-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto">-->
+
+    <com.google.android.material.card.MaterialCardView
+        style="?attr/materialCardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
         app:cardCornerRadius="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardElevation="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/mms_pry_10"
+        app:strokeWidth="1dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="14dp">
 
             <ImageView
-                android:id="@+id/programImage"
+                android:id="@+id/imgProgramImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="14dp"
-                android:layout_marginBottom="14dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/google_icon"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_g_icon" />
-
-            <TextView
-                android:id="@+id/programHead"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="37dp"
-                android:layout_marginTop="14dp"
-                android:singleLine="true"
-                android:text="GADS Program 2022"
-                android:textColor="@color/mms_black_2"
-                android:textFontWeight="600"
-                android:textSize="15sp"
-                app:fontFamily="@font/mukta"
-                app:layout_constraintStart_toEndOf="@+id/programImage"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/dateIcon"
+            <TextView
+                android:id="@+id/tvProgramTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:layout_marginBottom="21dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/programHead"
-                app:layout_constraintTop_toBottomOf="@+id/programHead"
-                app:srcCompat="@drawable/ic_date_icon" />
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/mukta_regular"
+                android:lines="1"
+                android:text="GADS Program 2022"
+                android:textColor="@color/mms_black_2"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@+id/imgProgramImage"
+                app:layout_constraintTop_toTopOf="@+id/imgProgramImage" />
 
             <TextView
-                android:id="@+id/programDate"
+                android:id="@+id/tvProgramDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="6dp"
-                android:layout_marginTop="1dp"
-                android:layout_marginBottom="21dp"
+                android:layout_marginEnd="6dp"
+                android:drawablePadding="4dp"
+                android:fontFamily="@font/mukta_regular"
+                android:lines="1"
                 android:text="Dec 12, 2022"
                 android:textColor="@color/mms_black_5"
-                android:textFontWeight="400"
                 android:textSize="12sp"
-                app:fontFamily="@font/mukta"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/dateIcon"
-                app:layout_constraintTop_toBottomOf="@+id/programHead" />
+                app:drawableStartCompat="@drawable/calender_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/imgProgramImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@+id/tvProgramTitle"
+                app:layout_constraintTop_toBottomOf="@id/tvProgramTitle" />
 
             <ImageView
-                android:id="@+id/programStatus"
+                android:id="@+id/imgProgramStatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="34dp"
-                android:layout_marginBottom="30dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/single_check"
+                app:layout_constraintBottom_toBottomOf="@+id/imgProgramImage"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_double_mark" />
+                app:layout_constraintTop_toTopOf="@+id/imgProgramImage"
+                 />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.GenerateCertFragment">
+
+
+    <ImageView
+        android:id="@+id/gencert_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gen_cert_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/mukta_semibold"
+        android:text="@string/select_program"
+        android:textColor="@color/mms_black_2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/gencert_arrow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cert_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gen_cert_header">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/gen_cert_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ellipse1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/gen_cert_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/mukta_regular"
+                android:text="@string/franka_kebede"
+                android:textColor="@color/mms_black_2"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/gen_cert_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/gen_cert_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/program_assistant_andela_she_her"
+                app:layout_constraintStart_toEndOf="@+id/gen_cert_image"
+                app:layout_constraintTop_toBottomOf="@+id/gen_cert_name" />
+
+            <Button
+                android:id="@+id/gen_cert_pa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_button_generate_cert"
+                android:fontFamily="@font/mukta_regular"
+                android:text="@string/program_asst"
+                android:textColor="@color/mms_pry_2"
+                app:backgroundTint="@color/mms_green_11"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/gen_cert_image"
+                app:layout_constraintTop_toBottomOf="@+id/gen_cert_details"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/gen_cert_mentor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_button_generate_cert"
+                android:text="@string/mentor_gad"
+                android:textColor="@color/mms_pry_2"
+                android:textSize="11sp"
+                app:backgroundTint="@color/mms_green_11"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/gen_cert_pa"
+                app:layout_constraintTop_toBottomOf="@+id/gen_cert_details" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/showPrograms"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="12dp"
+        android:hint="Select Program"
+        app:endIconDrawable="@drawable/img"
+        app:layout_constraintEnd_toEndOf="@id/cert_cardView"
+        app:layout_constraintStart_toStartOf="@id/cert_cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cert_cardView">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteProgram"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="none"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="169dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/cert_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/ace1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showPrograms"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <Button
+        android:id="@+id/generate_btn"
+        android:layout_width="275dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/mukta_semibold"
+        android:text="Generate"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cert_img" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

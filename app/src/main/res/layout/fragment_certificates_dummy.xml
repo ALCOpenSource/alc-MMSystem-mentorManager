@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.uiDummy.CertificatesDummy">
+    <ImageView
+        android:id="@+id/btnBackProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cert_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="11dp"
+        android:text="Francess Rosaline"
+        android:textSize="18sp"
+        android:fontFamily="@font/mukta_semibold"
+        android:textColor="@color/mms_black_2"
+        app:layout_constraintStart_toEndOf="@+id/btnBackProfile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/edit_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/mmProfileImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mm_profile_picture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cert_header"
+        app:shapeAppearanceOverlay="@style/CircleImage" />
+
+    <TextView
+        android:id="@+id/tvMmName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="28dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/mukta_regular"
+        android:text="Francess Rosaline"
+        android:textColor="@color/mms_black_2"
+        android:textSize="16sp"
+        app:drawableEndCompat="@drawable/nigerian_flag"
+        app:layout_constraintBottom_toBottomOf="@+id/mmProfileImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/mmProfileImage"
+        app:layout_constraintTop_toTopOf="@+id/mmProfileImage" />
+
+    <TextView
+        android:id="@+id/tvDesignation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mukta_regular"
+        android:text="Mentor Manager"
+        android:textColor="@color/mms_black_5"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/tvMmName"
+        app:layout_constraintTop_toBottomOf="@+id/tvMmName" />
+
+    <HorizontalScrollView
+        android:id="@+id/profileOptionsScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingHorizontal="12dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mmProfileImage">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:checkedChip="@+id/chip_about"
+            app:selectionRequired="true"
+            app:singleLine="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipAbout"
+                style="?attr/materialButtonOutlinedStyle"
+                android:backgroundTint="@color/mms_pry_10"
+                app:chipStrokeColor="@color/mms_pry_8"
+                app:chipStrokeWidth="1dp"
+                android:textColor="@color/mms_black_2"
+                android:textSize="15sp"
+                app:chipCornerRadius="5dp"
+                android:fontFamily="@font/mukta_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipPrograms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?attr/materialButtonOutlinedStyle"
+                android:fontFamily="@font/mukta_regular"
+                android:textSize="15sp"
+                app:chipCornerRadius="5dp"
+                android:textColor="@color/mms_black_2"
+                app:chipStrokeWidth="1dp"
+                app:chipStrokeColor="@color/mms_pry_8"
+                android:backgroundTint="@color/mms_pry_10"
+                android:text="Programs" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipMentors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?attr/materialButtonOutlinedStyle"
+                android:fontFamily="@font/mukta_regular"
+                android:textSize="15sp"
+                app:chipCornerRadius="5dp"
+                android:textColor="@color/mms_black_2"
+                app:chipStrokeWidth="1dp"
+                app:chipStrokeColor="@color/mms_pry_8"
+                android:backgroundTint="@color/mms_pry_10"
+                android:text="@string/mentors" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipTasks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?attr/materialButtonOutlinedStyle"
+                android:fontFamily="@font/mukta_regular"
+                android:textSize="15sp"
+                app:chipStrokeColor="@color/mms_pry_8"
+                android:backgroundTint="@color/mms_pry_10"
+                app:chipCornerRadius="5dp"
+                android:textColor="@color/mms_black_2"
+                app:chipStrokeWidth="1dp"
+                android:text="@string/tasks" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipReports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?attr/materialButtonOutlinedStyle"
+                android:fontFamily="@font/mukta_regular"
+                android:textSize="15sp"
+                app:chipCornerRadius="5dp"
+                android:textColor="@color/mms_black_2"
+                android:backgroundTint="@color/mms_pry_10"
+                app:chipStrokeColor="@color/mms_pry_8"
+                app:chipStrokeWidth="1dp"
+                android:text="@string/reports" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipCertificates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?attr/materialButtonOutlinedStyle"
+                android:fontFamily="@font/mukta_regular"
+                android:textSize="15sp"
+                app:chipCornerRadius="5dp"
+                android:textColor="@color/mms_black_10"
+                android:backgroundTint="@color/mms_pry_2"
+                android:text="@string/certificates" />
+        </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
+
+    <ScrollView
+        android:id="@+id/profileDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="290dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileOptionsScroll"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cCard"
+                style="?attr/materialCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                app:cardBackgroundColor="@color/mms_pry_10"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/mms_pry_10"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgCertificateImage"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="20dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/certificate_image"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintDimensionRatio="32:26"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvCertificateTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:lines="2"
+                        android:text="GADS CLOUD 2022 - \n COMPLETION"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imgCertificateImage"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toEndOf="@+id/imgCertificateImage"
+                        app:layout_constraintTop_toTopOf="@id/imgCertificateImage" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cCard1"
+                style="?attr/materialCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                app:cardBackgroundColor="@color/mms_pry_10"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cCard"
+                app:strokeColor="@color/mms_pry_10"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgCertificateImage1"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="20dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/certificate_image"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintDimensionRatio="32:26"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvCertificateTitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:lines="2"
+                        android:text="GADS CLOUD 2022 - \n COMPLETION"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imgCertificateImage1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toEndOf="@+id/imgCertificateImage1"
+                        app:layout_constraintTop_toTopOf="@id/imgCertificateImage1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cCard2"
+                style="?attr/materialCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                app:cardBackgroundColor="@color/mms_pry_10"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cCard1"
+                app:strokeColor="@color/mms_pry_10"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgCertificateImage2"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="20dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/certificate_image"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintDimensionRatio="32:26"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvCertificateTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:lines="2"
+                        android:text="GADS CLOUD 2022 - \n COMPLETION"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imgCertificateImage2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toEndOf="@+id/imgCertificateImage2"
+                        app:layout_constraintTop_toTopOf="@id/imgCertificateImage2" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cCard3"
+                style="?attr/materialCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                app:cardBackgroundColor="@color/mms_pry_10"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cCard2"
+                app:strokeColor="@color/mms_pry_10"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgCertificateImage3"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="20dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/certificate_image"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintDimensionRatio="32:26"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvCertificateTitle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:lines="2"
+                        android:text="GADS CLOUD 2022 - \n COMPLETION"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imgCertificateImage3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toEndOf="@+id/imgCertificateImage3"
+                        app:layout_constraintTop_toTopOf="@id/imgCertificateImage3" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cCard4"
+                style="?attr/materialCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                app:cardBackgroundColor="@color/mms_pry_10"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cCard3"
+                app:strokeColor="@color/mms_pry_10"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgCertificateImage4"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="20dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/certificate_image"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintDimensionRatio="32:26"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvCertificateTitle4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:lines="2"
+                        android:text="GADS CLOUD 2022 - \n COMPLETION"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imgCertificateImage4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toEndOf="@+id/imgCertificateImage4"
+                        app:layout_constraintTop_toTopOf="@id/imgCertificateImage4" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/myReportsScrollView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tvMyReportTitle"
+                android:layout_width="204dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="62dp"
+                android:lineSpacingExtra="-10sp"
+                android:text="Google Africa Scholarship Program Report"
+                android:textColor="@color/mms_black_2"
+                android:textFontWeight="700"
+                android:textSize="18sp"
+                app:fontFamily="@font/mukta_regular"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:targetApi="p" />
+
+            <TextView
+                android:id="@+id/tvReportGenerator"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/mukta_regular"
+                android:gravity="top"
+                android:text="By Ibrahim Kabir  -  19th - 25th Oct 22"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/tvMyReportTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvMyReportTitle" />
+
+            <Button
+                android:id="@+id/btnCloseReport"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="21dp"
+                android:background="@drawable/close_button"
+                android:padding="6dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvMyReportTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvMyReportTitle" />
+
+
+            <TextView
+                android:id="@+id/tvReportMajorAchievement"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:text="Major Achievements"
+                android:textColor="@color/mms_black_2"
+                android:textSize="16sp"
+                app:fontFamily="@font/mukta_medium"
+                app:layout_constraintStart_toStartOf="@+id/tvReportGenerator"
+                app:layout_constraintTop_toBottomOf="@+id/tvReportGenerator" />
+
+
+            <TextView
+                android:id="@+id/tvMajorAchievementDetails"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="21dp"
+                android:fontFamily="@font/mukta_regular"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. "
+                android:textColor="@color/mms_black_4"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvReportMajorAchievement"
+                app:layout_constraintTop_toBottomOf="@+id/tvReportMajorAchievement" />
+
+
+            <TextView
+                android:id="@+id/tvReportMajorBlocker"
+                android:layout_width="145dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="20dp"
+                android:gravity="top"
+                android:text="Major Blocker"
+                android:textColor="@color/mms_black_2"
+                android:textSize="16sp"
+                app:fontFamily="@font/mukta_medium"
+                app:layout_constraintStart_toStartOf="@+id/tvMajorAchievementDetails"
+                app:layout_constraintTop_toBottomOf="@+id/tvMajorAchievementDetails" />
+
+            <TextView
+                android:id="@+id/tvMajorBlockerDetails"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/mukta_regular"
+                android:text="In iaculis arcu eros, eget tempus orci facilisis id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. "
+                android:textColor="@color/mms_black_4"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/tvMajorAchievementDetails"
+                app:layout_constraintStart_toStartOf="@+id/tvReportMajorBlocker"
+                app:layout_constraintTop_toBottomOf="@+id/tvReportMajorBlocker" />
+
+            <!-- Major Recommendations -->
+            <TextView
+                android:id="@+id/tvReportMajorRecommendations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="top"
+                android:text="Major Recommendations"
+                android:textColor="@color/mms_black_2"
+                android:textSize="16sp"
+                app:fontFamily="@font/mukta_medium"
+                app:layout_constraintStart_toStartOf="@+id/tvMajorBlockerDetails"
+                app:layout_constraintTop_toBottomOf="@+id/tvMajorBlockerDetails" />
+
+
+            <TextView
+                android:id="@+id/tvReportMajorRecommendationsDetails"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/mukta_regular"
+                android:gravity="top"
+                android:text="Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id."
+                android:textColor="@color/mms_black_4"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/tvMajorBlockerDetails"
+                app:layout_constraintStart_toStartOf="@+id/tvReportMajorRecommendations"
+                app:layout_constraintTop_toBottomOf="@+id/tvReportMajorRecommendations" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnShareReport"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="60dp"
+                android:fontFamily="@font/mukta_regular"
+                android:text="Share"
+                android:textAllCaps="false"
+                android:textColor="@color/mms_pry_2"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvReportMajorRecommendationsDetails"
+                app:strokeColor="@color/mms_pry_2"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDownloadReport"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="@color/mms_pry_2"
+                android:fontFamily="@font/mukta_regular"
+                android:text="Download"
+                android:textAllCaps="false"
+                android:textColor="@color/mms_black_10"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnShareReport"
+                app:layout_constraintTop_toTopOf="@+id/btnShareReport" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

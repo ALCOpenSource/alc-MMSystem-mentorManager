@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerHeader"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:background="@color/mms_pry_2"
+    android:gravity="bottom">
+
+    <ImageView
+        android:id="@+id/MentorImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/mentor_image"
+        android:paddingTop="8dp"
+        android:src="@drawable/ellipse6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/setting_Account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/settings_account_more_1"
+        app:layout_constraintEnd_toEndOf="@+id/user_name"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/setting_link" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:paddingTop="10dp"
+        android:text="@string/mentors"
+        android:textColor="@color/mms_black_10"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ProgramTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ProgramTitle"
+        app:layout_constraintTop_toBottomOf="@+id/setting_Account" />
+
+    <TextView
+        android:id="@+id/ProgramTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/roboto_medium"
+        android:paddingTop="2dp"
+        android:text="@string/mentor_manager"
+        android:textColor="@color/mms_black_10"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/MentorImage"
+        app:layout_constraintTop_toBottomOf="@+id/user_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>

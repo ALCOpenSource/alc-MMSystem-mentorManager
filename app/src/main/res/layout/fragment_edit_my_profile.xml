@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.EditMyProfileFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/btnBackHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/back_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/earn_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/mukta_bold"
+            android:text="Edit Profile"
+            android:textColor="@color/mms_black_2"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/btnBackHome"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/mmProfilePicture"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="266dp"
+            android:src="@drawable/ellipse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.117"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnBackHome"
+            app:shapeAppearanceOverlay="@style/Circular" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="105dp"
+            android:layout_marginEnd="156dp"
+            android:text="@string/set_a_profile_picture"
+            android:fontFamily="@font/mukta_regular"
+            android:textColor="@color/mms_black_2"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/mmProfilePicture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.244"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mmProfilePicture"
+            app:layout_constraintVertical_bias="0.172" />
+
+        <Button
+            android:id="@+id/btnSelectFile"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/btn_select_file"
+            android:textColor="@color/mms_pry_2"
+            android:fontFamily="@font/mukta_regular"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rounded_border_background"
+            android:hint="@string/full_name"
+            android:padding="8dp"
+            android:textColor="@color/mms_black_5"
+            android:fontFamily="@font/mukta_regular"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mmProfilePicture" />
+
+        <EditText
+            android:id="@+id/etHeadline"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_border_background"
+            android:hint="@string/headline"
+            android:padding="8dp"
+            android:fontFamily="@font/mukta_regular"
+            android:textColor="@color/mms_black_5"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/etFullName"
+            app:layout_constraintStart_toStartOf="@+id/etFullName"
+            app:layout_constraintTop_toBottomOf="@+id/etFullName" />
+
+        <EditText
+            android:id="@+id/etAbout"
+            android:layout_width="320dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_border_background"
+            android:gravity="start"
+            android:hint="@string/about"
+            android:padding="8dp"
+            android:fontFamily="@font/mukta_regular"
+            android:textColor="@color/mms_black_5"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/etHeadline"
+            app:layout_constraintStart_toStartOf="@+id/etHeadline"
+            app:layout_constraintTop_toBottomOf="@+id/etHeadline" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/exposedDropdownCountry"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/country"
+            app:endIconDrawable="@drawable/img"
+            app:layout_constraintEnd_toEndOf="@+id/etAbout"
+            app:layout_constraintStart_toStartOf="@+id/etAbout"
+            app:layout_constraintTop_toBottomOf="@+id/etAbout">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteCountryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/mukta_regular"
+                android:textSize="16sp"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/exposedDropDownCity"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/city"
+            app:endIconDrawable="@drawable/img"
+            app:layout_constraintEnd_toEndOf="@+id/exposedDropdownCountry"
+            app:layout_constraintStart_toStartOf="@+id/exposedDropdownCountry"
+            app:layout_constraintTop_toBottomOf="@+id/exposedDropdownCountry">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteCityTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:fontFamily="@font/mukta_regular"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvTechnicalProficiency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="175dp"
+            android:text="@string/technical_proficiency"
+            android:fontFamily="@font/mukta_bold"
+            android:textColor="@color/mms_black_2"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/exposedDropDownCity" />
+
+        <RelativeLayout
+            android:id="@+id/technicalProficiencyButtons"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_border_background"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTechnicalProficiency">
+
+            <Button
+                android:id="@+id/btnPython"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:text="Python"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnJava"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_toEndOf="@+id/btnPython"
+                android:text="Java"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnKotlin"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/btnJava"
+                android:text="Kotlin"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnDjango"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnPython"
+                android:text="Django"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnJavascript"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnPython"
+                android:layout_marginStart="6dp"
+                android:layout_toEndOf="@+id/btnDjango"
+                android:text="Javascript"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnMySql"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnPython"
+                android:layout_marginStart="6dp"
+                android:layout_toEndOf="@+id/btnJavascript"
+                android:text="My Sql"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnAndroid"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnDjango"
+                android:text="Android"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnSwift"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnJavascript"
+                android:layout_marginStart="6dp"
+                android:layout_toEndOf="@+id/btnAndroid"
+                android:text="Swift"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnCPlusPlus"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnMySql"
+                android:layout_marginStart="6dp"
+                android:layout_toEndOf="@+id/btnJavascript"
+                android:text="C++"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvPreviousRoles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="175dp"
+            android:text="@string/previous_roles_held"
+            android:fontFamily="@font/mukta_bold"
+            android:textColor="@color/mms_black_2"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/technicalProficiencyButtons" />
+
+        <RelativeLayout
+            android:id="@+id/PreviousRolesButtons"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_border_background"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPreviousRoles">
+
+            <Button
+                android:id="@+id/btnLearner"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:text="Learner"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnMentor"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_toEndOf="@+id/btnLearner"
+                android:text="Mentor"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnProgramAssistant"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/btnMentor"
+                android:text="Program Assistant"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnProgramAssistantLead"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnLearner"
+                android:text="Program Assistant Lead"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnMentorManager"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnLearner"
+                android:layout_marginStart="6dp"
+                android:layout_toEndOf="@+id/btnProgramAssistantLead"
+                android:text="Mentor Manager"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvPreviousPrograms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="175dp"
+            android:text="@string/previous_programs"
+            android:fontFamily="@font/mukta_bold"
+            android:textColor="@color/mms_black_2"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PreviousRolesButtons" />
+
+        <EditText
+            android:id="@+id/etInputPreviousHeldPrograms1"
+            android:layout_width="320dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_border_background"
+            android:drawableEnd="@drawable/subtractcircleminusremove1"
+            android:drawablePadding="10dp"
+            android:hint="@string/input_previous_held_programs"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/mms_black_5"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPreviousPrograms" />
+
+        <EditText
+            android:id="@+id/etInputPreviousHeldPrograms2"
+            android:layout_width="320dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_border_background"
+            android:drawableEnd="@drawable/subtractcircleminusremove1"
+            android:drawablePadding="10dp"
+            android:hint="@string/input_previous_held_programs"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/mms_black_5"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etInputPreviousHeldPrograms1" />
+
+        <Button
+            android:id="@+id/btnAddProgram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="253dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_border_background"
+            android:text="Add Program"
+            android:textColor="@color/mms_black_10"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/etInputPreviousHeldPrograms2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/etInputPreviousHeldPrograms2"
+            app:layout_constraintTop_toBottomOf="@+id/etInputPreviousHeldPrograms2" />
+
+        <TextView
+            android:id="@+id/tvDocuments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginEnd="250dp"
+            android:text="@string/documents"
+            android:fontFamily="@font/mukta_bold"
+            android:textColor="@color/mms_black_2"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etInputPreviousHeldPrograms2" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_documents"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            tools:itemCount="3"
+            tools:listitem="@layout/list_item"
+            android:background="@drawable/rounded_border_background"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvDocuments"
+            app:layout_constraintTop_toBottomOf="@+id/tvDocuments"
+            />
+
+        <Button
+            android:id="@+id/btnUploadDocuments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="253dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_border_background"
+            android:padding="8dp"
+            android:text="Upload Documents"
+            android:textColor="@color/mms_black_10"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/recyclerView_documents"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/recyclerView_documents"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView_documents" />
+
+        <TextView
+            android:id="@+id/tvSocial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="293dp"
+            android:text="@string/social"
+            android:textColor="@color/mms_black_2"
+            android:fontFamily="@font/mukta_bold"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView_documents" />
+        <EditText
+            android:id="@+id/etWebsiteSocial"
+            android:layout_width="320dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_border_background"
+            android:drawableStart="@drawable/globeworldearth1"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/mms_black_5"
+            android:hint="@string/website"
+            android:paddingLeft="15dp"
+            android:textColor="@color/mms_black_5"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSocial" />
+
+        <EditText
+            android:id="@+id/etGithubSocial"
+            android:layout_width="320dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_border_background"
+            android:drawableStart="@drawable/github"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/mms_black_5"
+            android:hint="@string/github"
+            android:paddingLeft="15dp"
+            android:textColor="@color/mms_black_5"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etWebsiteSocial" />
+
+        <EditText
+            android:id="@+id/etInstagramSocial"
+            android:layout_width="320dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_border_background"
+            android:drawableStart="@drawable/instagram"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/mms_black_5"
+            android:hint="@string/instagram"
+            android:paddingLeft="15dp"
+            android:textColor="@color/mms_black_5"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etGithubSocial" />
+
+        <EditText
+            android:id="@+id/etLinkedinSocial"
+            android:layout_width="320dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_border_background"
+            android:drawableStart="@drawable/linkedin"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/mms_black_5"
+            android:hint="@string/linkedin"
+            android:paddingLeft="15dp"
+            android:textColor="@color/mms_black_5"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etInstagramSocial" />
+
+        <EditText
+            android:id="@+id/etTwitterSocial"
+            android:layout_width="320dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_border_background"
+            android:drawableStart="@drawable/twitter"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/mms_black_5"
+            android:hint="@string/twitter"
+            android:paddingLeft="15dp"
+            android:textColor="@color/mms_black_5"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etLinkedinSocial" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/rounded_border_background"
+            android:fontFamily="@font/mukta_semi_bold"
+            android:text="@string/save"
+            android:textColor="@color/mms_black_10"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etTwitterSocial" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

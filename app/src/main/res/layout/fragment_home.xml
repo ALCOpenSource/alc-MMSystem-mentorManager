@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/mmDashProfilePicture"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ellipse6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMmGreeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/mukta_semibold"
+            android:text="@string/hello_kabir"
+            android:textColor="@color/mms_black_2"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/mmDashProfilePicture"
+            app:layout_constraintStart_toEndOf="@+id/mmDashProfilePicture" />
+
+        <TextView
+            android:id="@+id/tvMmRole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/mukta_regular"
+            android:text="@string/mentor_manager"
+            android:textColor="@color/mms_black_2"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvMmGreeting"
+            app:layout_constraintStart_toStartOf="@+id/tvMmGreeting"
+            app:layout_constraintTop_toBottomOf="@+id/tvMmGreeting" />
+
+        <ImageView
+            android:id="@+id/btnNotifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="257dp"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/notification_bell"
+            app:layout_constraintBottom_toBottomOf="@+id/mmDashProfilePicture"
+            app:layout_constraintStart_toEndOf="@+id/mmDashProfilePicture"
+            app:layout_constraintTop_toTopOf="@+id/mmDashProfilePicture"
+             />
+
+        <HorizontalScrollView
+            android:id="@+id/mmCardsScroll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mmDashProfilePicture">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="235dp"
+                    android:layout_height="87dp"
+                    android:layout_marginEnd="19dp"
+                    android:backgroundTint="@color/mms_pry_2"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="130dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:fontFamily="@font/mukta_semibold"
+                            android:gravity="fill"
+                            android:text="20"
+                            android:textColor="@color/mms_green_11"
+                            android:textSize="64sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/mukta_semibold"
+                            android:gravity="center"
+                            android:lineSpacingMultiplier="0.7"
+                            android:text="Mentors"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/mms_green_11"
+                            android:textSize="16sp"
+                            tools:ignore="RtlCompat" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnViewMentors"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="50dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="11dp"
+                        android:backgroundTint="@color/mms_pry_10"
+                        android:fontFamily="@font/mukta_regular"
+                        android:padding="0dp"
+                        android:text="View"
+                        android:textAllCaps="false"
+                        android:textColor="@color/mms_pry_2"
+                        android:textSize="12sp"
+                        app:strokeColor="@color/mms_pry_10" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="235dp"
+                    android:layout_height="87dp"
+                    android:layout_marginEnd="19dp"
+                    android:backgroundTint="@color/mms_pry_2"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="130dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:fontFamily="@font/mukta_semibold"
+                            android:gravity="fill"
+                            android:text="5"
+                            android:textColor="@color/mms_green_11"
+                            android:textSize="64sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/mukta_semibold"
+                            android:gravity="center"
+                            android:lineSpacingMultiplier="0.7"
+                            android:text="Programs"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/mms_green_11"
+                            android:textSize="16sp"
+                            tools:ignore="RtlCompat" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnViewPrograms"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="50dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="11dp"
+                        android:backgroundTint="@color/mms_pry_10"
+                        android:fontFamily="@font/mukta_regular"
+                        android:padding="0dp"
+                        android:text="View"
+                        android:textAllCaps="false"
+                        android:textColor="@color/mms_pry_2"
+                        android:textSize="12sp"
+                        app:strokeColor="@color/mms_pry_10" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="235dp"
+                    android:layout_height="87dp"
+                    android:backgroundTint="@color/mms_pry_2"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="130dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:fontFamily="@font/mukta_semibold"
+                            android:gravity="fill"
+                            android:text="10"
+                            android:textColor="@color/mms_green_11"
+                            android:textSize="64sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/mukta_semibold"
+                            android:gravity="center"
+                            android:lineSpacingMultiplier="0.7"
+                            android:text="Tasks"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/mms_green_11"
+                            android:textSize="16sp"
+                            tools:ignore="RtlCompat" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnViewTasks"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="50dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="11dp"
+                        android:backgroundTint="@color/mms_pry_10"
+                        android:fontFamily="@font/mukta_regular"
+                        android:padding="0dp"
+                        android:text="View"
+                        android:textAllCaps="false"
+                        android:textColor="@color/mms_pry_2"
+                        android:textSize="12sp"
+                        app:strokeColor="@color/mms_pry_10" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tvQuickActions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/mukta_bold"
+            android:text="@string/quick_actions"
+            android:textColor="@color/mms_pry_2"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mmCardsScroll" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/createTaskCard"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="20dp"
+            android:clickable="true"
+            android:padding="8dp"
+            app:cardBackgroundColor="@color/mms_black_10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvQuickActions"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgCreateTask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginEnd="66dp"
+                    android:src="@drawable/create_task"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvCreateTask"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="49dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="51dp"
+                    android:fontFamily="@font/mukta_regular"
+                    android:text="@string/create_task"
+                    android:textColor="@color/mms_black_2"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgCreateTask" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/sendBroadcastMessageCard"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            android:padding="8dp"
+            app:cardBackgroundColor="@color/mms_black_10"
+            app:layout_constraintBottom_toBottomOf="@+id/createTaskCard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/createTaskCard"
+            app:layout_constraintTop_toTopOf="@+id/createTaskCard"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgSendBroadcastMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginEnd="66dp"
+                    android:src="@drawable/broadcast"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvSendBroadcastMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="49dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="51dp"
+                    android:fontFamily="@font/mukta_regular"
+                    android:gravity="center"
+                    android:text="@string/send_broadcast_message"
+                    android:textColor="@color/mms_black_2"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgSendBroadcastMessage" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/addNewMentorCard"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:padding="8dp"
+            app:cardBackgroundColor="@color/mms_black_10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createTaskCard"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgAddNewMentor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginEnd="66dp"
+                    android:src="@drawable/mentor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvAddNewMentor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="49dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="51dp"
+                    android:fontFamily="@font/mukta_regular"
+                    android:gravity="center"
+                    android:text="@string/add_new_mentor"
+                    android:textColor="@color/mms_black_2"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgAddNewMentor" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/manageReportsCard"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="20dp"
+            android:clickable="true"
+            android:padding="8dp"
+            app:cardBackgroundColor="@color/mms_black_10"
+            app:layout_constraintBottom_toBottomOf="@+id/addNewMentorCard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/addNewMentorCard"
+            app:layout_constraintTop_toTopOf="@+id/addNewMentorCard"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgManageReports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginEnd="66dp"
+                    android:src="@drawable/reports"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvManageReports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="49dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="51dp"
+                    android:fontFamily="@font/mukta_regular"
+                    android:text="@string/manage_reports"
+                    android:textColor="@color/mms_black_2"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgManageReports" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tvRequests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/mukta_bold"
+            android:text="@string/requests"
+            android:textColor="@color/mms_pry_2"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addNewMentorCard" />
+
+        <Button
+            android:id="@+id/btnMentorApplication"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="44dp"
+            android:backgroundTint="@color/mms_pry_8"
+            android:text="@string/mentor_application"
+            android:textAllCaps="false"
+            android:textColor="@color/mms_pry_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvRequests" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

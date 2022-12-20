@@ -25,3 +25,14 @@
         tools:targetApi="p"
         tools:text="TextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+<!--=======-->
+<!--<TextView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:padding="16dp"-->
+<!--    android:maxLines="1"-->
+<!--    android:ellipsize="end"-->
+<!--    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1">-->
+
+<!--</TextView>-->
+<!--&gt;>>>>>> e5ac31b808eb7dd1aa42911e53351360c465df0d-->

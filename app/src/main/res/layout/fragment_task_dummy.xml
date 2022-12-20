@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.uiDummy.TaskDummy">
+    <ImageView
+        android:id="@+id/btnBackProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cert_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="11dp"
+        android:text="Francess Rosaline"
+        android:textSize="18sp"
+        android:fontFamily="@font/mukta_semibold"
+        android:textColor="@color/mms_black_2"
+        app:layout_constraintStart_toEndOf="@+id/btnBackProfile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/edit_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/mmProfileImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mm_profile_picture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cert_header"
+        app:shapeAppearanceOverlay="@style/CircleImage" />
+
+    <TextView
+        android:id="@+id/tvMmName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="28dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/mukta_regular"
+        android:text="Francess Rosaline"
+        android:textColor="@color/mms_black_2"
+        android:textSize="16sp"
+        app:drawableEndCompat="@drawable/nigerian_flag"
+        app:layout_constraintBottom_toBottomOf="@+id/mmProfileImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/mmProfileImage"
+        app:layout_constraintTop_toTopOf="@+id/mmProfileImage" />
+
+    <TextView
+        android:id="@+id/tvDesignation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mukta_regular"
+        android:text="Mentor Manager"
+        android:textColor="@color/mms_black_5"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/tvMmName"
+        app:layout_constraintTop_toBottomOf="@+id/tvMmName" />
+
+    <HorizontalScrollView
+        android:id="@+id/profileOptionsScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingHorizontal="12dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mmProfileImage">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:checkedChip="@+id/chip_about"
+            app:selectionRequired="true"
+            app:singleLine="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipAbout"
+                style="?attr/materialButtonOutlinedStyle"
+                android:backgroundTint="@color/mms_pry_10"
+                app:chipStrokeColor="@color/mms_pry_8"
+                app:chipStrokeWidth="1dp"
+                android:textColor="@color/mms_black_2"
+                android:textSize="15sp"
+                app:chipCornerRadius="5dp"
+                android:fontFamily="@font/mukta_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipPrograms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?attr/materialButtonOutlinedStyle"
+                android:fontFamily="@font/mukta_regular"
+                android:textSize="15sp"
+                app:chipCornerRadius="5dp"
+                android:textColor="@color/mms_black_2"
+                app:chipStrokeWidth="1dp"
+                app:chipStrokeColor="@color/mms_pry_8"
+                android:backgroundTint="@color/mms_pry_10"
+                android:text="Programs" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipMentors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?attr/materialButtonOutlinedStyle"
+                android:fontFamily="@font/mukta_regular"
+                android:textSize="15sp"
+                app:chipCornerRadius="5dp"
+                android:textColor="@color/mms_black_2"
+                app:chipStrokeWidth="1dp"
+                app:chipStrokeColor="@color/mms_pry_8"
+                android:backgroundTint="@color/mms_pry_10"
+                android:text="@string/mentors" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipTasks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?attr/materialButtonOutlinedStyle"
+                android:fontFamily="@font/mukta_regular"
+                android:textSize="15sp"
+                app:chipCornerRadius="5dp"
+                android:textColor="@color/mms_black_10"
+                app:chipStrokeWidth="1dp"
+                android:backgroundTint="@color/mms_pry_2"
+                android:text="@string/tasks" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipReports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?attr/materialButtonOutlinedStyle"
+                android:fontFamily="@font/mukta_regular"
+                android:textSize="15sp"
+                app:chipCornerRadius="5dp"
+                android:textColor="@color/mms_black_2"
+                app:chipStrokeWidth="1dp"
+                app:chipStrokeColor="@color/mms_pry_8"
+                android:backgroundTint="@color/mms_pry_10"
+                android:text="@string/reports" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipCertificates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?attr/materialButtonOutlinedStyle"
+                android:fontFamily="@font/mukta_regular"
+                android:textSize="15sp"
+                app:chipCornerRadius="5dp"
+                android:textColor="@color/mms_black_2"
+                app:chipStrokeWidth="1dp"
+                app:chipStrokeColor="@color/mms_pry_8"
+                android:backgroundTint="@color/mms_pry_10"
+                android:text="@string/certificates" />
+        </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
+
+    <ScrollView
+        android:id="@+id/profileDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="290dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileOptionsScroll"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/allReports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/mukta_regular"
+                android:text="All Tasks "
+                android:drawablePadding="8dp"
+                android:textColor="@color/mms_black_2"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:drawableRightCompat="@drawable/down_vector" />
+
+            <TextView
+                android:id="@+id/vectorSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/mukta_regular"
+                android:textColor="@color/mms_black_2"
+                android:drawableStart="@drawable/search"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="@id/allReports"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/allReports" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tCard1"
+                style="?attr/materialCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:minHeight="80dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/mms_pry_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/allReports"
+                app:strokeColor="@color/mms_pry_10"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:minHeight="64dp">
+
+                    <ImageView
+                        android:id="@+id/imgTaskImage"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/task"
+                        android:backgroundTint="@color/mms_black_4"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintDimensionRatio="24:26"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvTaskTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="Debugging in VSCode"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/imgTaskImage"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:layout_constraintVertical_chainStyle="packed" />
+
+                    <TextView
+                        android:id="@+id/tvTaskDueDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="4dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="3 days from now"
+                        android:textColor="@color/mms_black_5"
+                        android:textSize="12sp"
+                        android:layout_marginTop="8dp"
+                        app:drawableStartCompat="@drawable/calender_appointment"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/tvTaskTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTaskTitle"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
+                    <TextView
+                        android:id="@+id/tvTaskStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="Assigned"
+                        android:textColor="@color/mms_black_5"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tCard2"
+                style="?attr/materialCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:minHeight="80dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tCard1"
+                app:strokeColor="@color/mms_pry_10"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:minHeight="64dp">
+
+                    <ImageView
+                        android:id="@+id/imgTaskImage1"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/task"
+                        android:backgroundTint="@color/mms_black_4"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintDimensionRatio="24:26"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvTaskTitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="Debugging in VSCode"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/imgTaskImage1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:layout_constraintVertical_chainStyle="packed" />
+
+                    <TextView
+                        android:id="@+id/tvTaskDueDate1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="4dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="3 days from now"
+                        android:textColor="@color/mms_black_5"
+                        android:textSize="12sp"
+                        android:layout_marginTop="8dp"
+                        app:drawableStartCompat="@drawable/calender_appointment"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/tvTaskTitle1"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTaskTitle1"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
+                    <TextView
+                        android:id="@+id/tvTaskStatus1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="Completed"
+                        android:textColor="@color/mms_black_5"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tCard3"
+                style="?attr/materialCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:minHeight="80dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/mms_pry_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tCard2"
+                app:strokeColor="@color/mms_pry_10"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:minHeight="64dp">
+
+                    <ImageView
+                        android:id="@+id/imgTaskImage2"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/task"
+                        android:backgroundTint="@color/mms_black_4"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintDimensionRatio="24:26"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvTaskTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="Debugging in VSCode"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/imgTaskImage2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:layout_constraintVertical_chainStyle="packed" />
+
+                    <TextView
+                        android:id="@+id/tvTaskDueDate2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="4dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="3 days from now"
+                        android:textColor="@color/mms_black_5"
+                        android:textSize="12sp"
+                        android:layout_marginTop="8dp"
+                        app:drawableStartCompat="@drawable/calender_appointment"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/tvTaskTitle2"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTaskTitle2"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
+                    <TextView
+                        android:id="@+id/tvTaskStatus2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="Assigned"
+                        android:textColor="@color/mms_black_5"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tCard4"
+                style="?attr/materialCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:minHeight="80dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/mms_pry_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tCard3"
+                app:strokeColor="@color/mms_pry_10"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:minHeight="64dp">
+
+                    <ImageView
+                        android:id="@+id/imgTaskImage3"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/task"
+                        android:backgroundTint="@color/mms_black_4"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintDimensionRatio="24:26"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvTaskTitle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="Debugging in VSCode"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/imgTaskImage3"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:layout_constraintVertical_chainStyle="packed" />
+
+                    <TextView
+                        android:id="@+id/tvTaskDueDate3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="4dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="3 days from now"
+                        android:textColor="@color/mms_black_5"
+                        android:textSize="12sp"
+                        android:layout_marginTop="8dp"
+                        app:drawableStartCompat="@drawable/calender_appointment"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/tvTaskTitle3"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTaskTitle3"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
+                    <TextView
+                        android:id="@+id/tvTaskStatus3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="In Progress"
+                        android:textColor="@color/mms_pry_4"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tCard5"
+                style="?attr/materialCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:minHeight="80dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tCard4"
+                app:strokeColor="@color/mms_pry_10"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:minHeight="64dp">
+
+                    <ImageView
+                        android:id="@+id/imgTaskImage4"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/task"
+                        android:backgroundTint="@color/mms_black_4"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintDimensionRatio="24:26"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvTaskTitle4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="Debugging in VSCode"
+                        android:textColor="@color/mms_black_2"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/imgTaskImage4"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:layout_constraintVertical_chainStyle="packed" />
+
+                    <TextView
+                        android:id="@+id/tvTaskDueDate4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="4dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="3 days from now"
+                        android:textColor="@color/mms_black_5"
+                        android:textSize="12sp"
+                        android:layout_marginTop="8dp"
+                        app:drawableStartCompat="@drawable/calender_appointment"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/tvTaskTitle4"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTaskTitle4"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
+                    <TextView
+                        android:id="@+id/tvTaskStatus4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="Completed"
+                        android:textColor="@color/mms_black_5"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

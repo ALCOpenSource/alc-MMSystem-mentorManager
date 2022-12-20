@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.card.MaterialCardView
+        style="?attr/materialCardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_marginVertical="5dp"
+        app:cardBackgroundColor="@color/mms_pry_10"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/mms_pry_10"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvReportTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/mukta_regular"
+                android:text="Google Africa Scholarship Report"
+                android:textColor="@color/mms_black_2"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvReportBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/mukta_regular"
+                android:gravity="start"
+                android:text="By Ibrahim Kabir  -  19th - 25th Oct 22"
+                android:textColor="@color/mms_black_5"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@id/tvReportTitle"
+                app:layout_constraintTop_toBottomOf="@id/tvReportTitle"/>
+
+            <ImageView
+                android:id="@+id/imgDownloadReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/download_btn"
+                app:layout_constraintStart_toEndOf="@id/tvReportTitle"
+                app:layout_constraintTop_toTopOf="@id/tvReportTitle"
+                />
+
+            <ImageView
+                android:id="@+id/imgShareReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/share_btn"
+                app:layout_constraintBottom_toBottomOf="@+id/imgDownloadReport"
+                app:layout_constraintStart_toEndOf="@+id/imgDownloadReport"
+                app:layout_constraintTop_toTopOf="@+id/imgDownloadReport" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

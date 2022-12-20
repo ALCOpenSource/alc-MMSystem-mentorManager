@@ -631,4 +631,7 @@
         <item name="android:textColor">@color/mms_black_2</item>
         <item name="android:fontFamily">@font/mukta</item>
     </style>
+    <style name="Divider">Divider</style>
+
+    <style name="mySwitch">mySwitch</style>
 </resources>

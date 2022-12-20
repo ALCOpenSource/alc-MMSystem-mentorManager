@@ -35,4 +35,5 @@
             android:id="@+id/action_notificationsFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
     </fragment>
+
 </navigation>
