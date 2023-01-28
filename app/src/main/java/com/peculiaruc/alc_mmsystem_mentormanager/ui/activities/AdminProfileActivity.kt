@@ -7,7 +7,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ActivityAdminProfileBinding
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.viewmodels.AdminProfileViewModel
+import com.peculiaruc.alc_mmsystem_mentormanager.ui.profile.AdminProfileViewModel
 
 /**
  * This activity is for Admin profile which

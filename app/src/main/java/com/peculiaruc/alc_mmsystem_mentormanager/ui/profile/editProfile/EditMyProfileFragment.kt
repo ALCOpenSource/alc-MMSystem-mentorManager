@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments
+package com.peculiaruc.alc_mmsystem_mentormanager.ui.profile.editProfile
 
 import android.app.Dialog
 import android.graphics.Color

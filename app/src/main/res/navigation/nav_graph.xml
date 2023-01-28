@@ -285,7 +285,7 @@
     </fragment>
     <fragment
         android:id="@+id/editMyProfileFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.EditMyProfileFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.profile.editProfile.EditMyProfileFragment"
         android:label="fragment_edit_my_profile"
         tools:layout="@layout/fragment_edit_my_profile">
         <action
@@ -354,7 +354,7 @@
     </fragment>
     <fragment
         android:id="@+id/editProfileFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.EditProfileFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.profile.editProfile.EditProfileFragment"
         android:label="fragment_edit_profile"
         tools:layout="@layout/fragment_edit_profile">
         <action

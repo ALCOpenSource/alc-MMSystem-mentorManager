@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments
+package com.peculiaruc.alc_mmsystem_mentormanager.ui.profile.editProfile
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -28,7 +28,6 @@ import com.peculiaruc.alc_mmsystem_mentormanager.data.models.RoleDto
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentEditProfileBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.DocumentsAdapter
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.DocumentsProfileAdapter
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.viewmodels.EditProfileViewModel
 import com.peculiaruc.alc_mmsystem_mentormanager.util.CompressUtil
 import com.peculiaruc.alc_mmsystem_mentormanager.util.MyPermissions
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
