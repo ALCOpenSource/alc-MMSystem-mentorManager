@@ -1,16 +1,16 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.ui.viewmodels
+package com.peculiaruc.alc_mmsystem_mentormanager.ui.chat
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+
 /**
- * to implement the individual chats view model
- *
+ * To implement the viw model for individualmessages screen
  */
-class individual_chats_viewmodel : ViewModel() {
+class ChatViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+        value = "This is notifications Fragment"
     }
     val text: LiveData<String> = _text
 }

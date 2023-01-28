@@ -47,7 +47,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.activities.SetNewPasswordActivity"
+            android:name=".ui.authentication.SetNewPasswordActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -61,7 +61,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.activities.RegisterFormActivity"
+            android:name=".ui.authentication.register.RegisterFormActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

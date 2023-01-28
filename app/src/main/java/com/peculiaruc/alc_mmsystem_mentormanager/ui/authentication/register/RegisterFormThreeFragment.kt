@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments
+package com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.register
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,7 +12,6 @@ import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.models.ChipDto
 import com.peculiaruc.alc_mmsystem_mentormanager.data.models.RoleDto
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentRegisterFormThreeBinding
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.viewmodels.RegisterFormThreeViewModel
 
 /**
  * this fragment is used to fill form three when registering

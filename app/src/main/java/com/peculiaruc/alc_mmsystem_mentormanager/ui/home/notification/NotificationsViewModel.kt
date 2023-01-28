@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.ui.viewmodels
+package com.peculiaruc.alc_mmsystem_mentormanager.ui.home.notification
 
 import androidx.lifecycle.ViewModel
 

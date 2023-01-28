@@ -13,7 +13,7 @@ import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.models.chatMessages.IndividualChatMessage
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMmChats2Binding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.disscussion_forum.fragment_mm_chat2_adapter
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.viewmodels.individual_chats_viewmodel
+import com.peculiaruc.alc_mmsystem_mentormanager.ui.chat.chatIndividual.IndividualChatsViewModel
 
 /**
  * implements the functionlaity of the mmcharts screen
@@ -34,7 +34,7 @@ class fragment_mm_chat2 : Fragment() {
         _binding = FragmentMmChats2Binding.inflate(inflater, container, false)
         load_messages()
         val homeViewModel =
-            ViewModelProvider(this).get(individual_chats_viewmodel::class.java)
+            ViewModelProvider(this).get(IndividualChatsViewModel::class.java)
         _binding = FragmentMmChats2Binding.inflate(inflater, container, false)
         val root: View = binding.root
         homeViewModel.text.observe(viewLifecycleOwner) {

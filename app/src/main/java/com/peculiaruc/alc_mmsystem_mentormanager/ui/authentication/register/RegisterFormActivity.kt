@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.ui.activities
+package com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.register
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

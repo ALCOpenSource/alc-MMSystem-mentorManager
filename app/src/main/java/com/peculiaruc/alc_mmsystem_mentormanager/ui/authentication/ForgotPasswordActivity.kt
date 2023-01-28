@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ActivityForgotPasswordBinding
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.activities.SetNewPasswordActivity
 
 /**
  * This activity is for Resting password when

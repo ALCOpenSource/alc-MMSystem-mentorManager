@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/registerFormOneFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.RegisterFormOneFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.register.RegisterFormOneFragment"
         android:label="fragment_register_form_one"
         tools:layout="@layout/fragment_register_form_one" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/registerFormTwoFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.RegisterFormTwoFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.register.RegisterFormTwoFragment"
         android:label="fragment_register_form_two"
         tools:layout="@layout/fragment_register_form_two" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/registerFormThreeFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.RegisterFormThreeFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.register.RegisterFormThreeFragment"
         android:label="RegisterFormThreeFragment" >
         <action
             android:id="@+id/action_registerFormThreeFragment_to_registerFormFourFragment"
@@ -39,7 +39,7 @@
     </fragment>
     <fragment
         android:id="@+id/registerFormFourFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.RegisterFormFourFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.register.RegisterFormFourFragment"
         android:label="RegisterFormFourFragment" >
         <action
             android:id="@+id/action_registerFormFourFragment_to_registerFormThreeFragment"

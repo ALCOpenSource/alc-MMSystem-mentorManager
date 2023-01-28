@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments
+package com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.register
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,7 +12,6 @@ import com.peculiaruc.alc_mmsystem_mentormanager.data.models.DocumentDto
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentRegisterFormFourBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.home.HomeActivity
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.DocumentsAdapter
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.viewmodels.RegisterFormFourViewModel
 
 /**
  * this fragment is used to fill form four when registering

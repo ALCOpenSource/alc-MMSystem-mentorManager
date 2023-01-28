@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments
+package com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.register
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentRegisterFormTwoBinding
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.viewmodels.RegisterFormTwoViewModel
 
 /**
  * this fragment is used to fill form two when registering

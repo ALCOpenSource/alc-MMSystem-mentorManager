@@ -13,7 +13,6 @@ import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.models.chatMessages.ChatMessage
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentChatMessagesHomeBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.chat_messages.chat_messages_adapter
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.viewmodels.individualmessages_viewmode
 
 /**handle the toggle screen in the chats
  *
@@ -34,7 +33,7 @@ class ChatMessagesFragment : Fragment() {
         load_messages()
 
         val homeViewModel =
-            ViewModelProvider(this).get(individualmessages_viewmode::class.java)
+            ViewModelProvider(this).get(ChatViewModel::class.java)
         _binding = FragmentChatMessagesHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
         homeViewModel.text.observe(viewLifecycleOwner) {

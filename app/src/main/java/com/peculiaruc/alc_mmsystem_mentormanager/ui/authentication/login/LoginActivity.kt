@@ -5,10 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ActivityLoginBinding
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.activities.RegisterFormActivity
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.ForgotPasswordActivity
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.SignUpActivity
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.HomeFragment
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.home.HomeActivity
 
 /**
