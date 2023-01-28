@@ -6,15 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages.individual_chat_messages
-import kotlin.contracts.Returns
+import com.peculiaruc.alc_mmsystem_mentormanager.data.models.chatMessages.IndividualChatMessage
 
 /**
  * MMM-Team-7
  * Adapter for individual chat recycler with forwarded messages
  */
 
-class fragment_mm_chat2_adapter(private var messages: List<individual_chat_messages>)  :
+class fragment_mm_chat2_adapter(private var messages: List<IndividualChatMessage>)  :
     RecyclerView.Adapter<fragment_mm_chat2_adapter.MessageViewHolder>() {
 
         private val SENT = 1
@@ -68,10 +67,10 @@ class fragment_mm_chat2_adapter(private var messages: List<individual_chat_messa
          * binds views to the data form the message list
          */
 
-        fun bind(message: individual_chat_messages) {
+        fun bind(message: IndividualChatMessage) {
                 messageText.text = message.message
 
-                time.text=message.chat_time
+                time.text=message.chatTime
 
         }
     }

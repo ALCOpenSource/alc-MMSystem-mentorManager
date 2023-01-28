@@ -6,14 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages.chat__broadcast_messages
+import com.peculiaruc.alc_mmsystem_mentormanager.data.models.chatMessages.ChatBroadcastMessage
 
 /**
  * MMM-Team-7
  * An adapter class for the broadcast message recycler view
  */
 
-class chat_broadcast_messages_adapter(private var messages: List<chat__broadcast_messages>)  :
+class chat_broadcast_messages_adapter(private var messages: List<ChatBroadcastMessage>)  :
     RecyclerView.Adapter<chat_broadcast_messages_adapter.MessageViewHolder>() {
 
         private val SENT = 1
@@ -56,10 +56,10 @@ class chat_broadcast_messages_adapter(private var messages: List<chat__broadcast
          * binding the views with the text from the list
          */
 
-        fun bind(message: chat__broadcast_messages) {
+        fun bind(message: ChatBroadcastMessage) {
                 messageText.text = message.message
            mentor_name.text = message.name
-                time.text=message.chat_time
+                time.text=message.chatTime
 
         }
     }

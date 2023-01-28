@@ -39,7 +39,7 @@
                 android:text="@string/fill_in_the_form_below"
                 android:textColor="@color/mms_black_2"
                 android:textSize="16sp"
-                app:fontFamily="@font/mukta_regular"
+                app:fontFamily="@font/mukta"
                 app:layout_constraintStart_toStartOf="@+id/textView_become_a_mentor_manager"
                 app:layout_constraintTop_toBottomOf="@id/textView_become_a_mentor_manager" />
 
@@ -51,7 +51,7 @@
                 android:text="@string/page_2_of_4"
                 android:textColor="@color/mms_black_2"
                 android:textSize="16sp"
-                app:fontFamily="@font/mukta_regular"
+                app:fontFamily="@font/mukta"
                 app:layout_constraintStart_toStartOf="@+id/textView_fill_in_the_form_below"
                 app:layout_constraintTop_toBottomOf="@id/textView_fill_in_the_form_below" />
 
@@ -71,7 +71,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/mukta_regular"
+                    android:fontFamily="@font/mukta"
                     android:maxLines="1"
                     android:textSize="16sp" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -91,7 +91,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/mukta_regular"
+                    android:fontFamily="@font/mukta"
                     android:maxLines="1"
                     android:textSize="16sp" />
 
@@ -111,7 +111,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/mukta_regular"
+                    android:fontFamily="@font/mukta"
                     android:maxLines="1"
                     android:textSize="16sp" />
 

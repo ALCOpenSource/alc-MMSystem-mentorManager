@@ -6,14 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages.individual_chat_messages
+import com.peculiaruc.alc_mmsystem_mentormanager.data.models.chatMessages.IndividualChatMessage
 
 /**
  * MMM-Team-7
  * Adapter for the individual chat recycler view
  */
 
-class individual_chat_fragment_adapter(private var messages: List<individual_chat_messages>)  :
+class individual_chat_fragment_adapter(private var messages: List<IndividualChatMessage>)  :
     RecyclerView.Adapter<individual_chat_fragment_adapter.MessageViewHolder>() {
 
         private val SENT = 1
@@ -55,10 +55,10 @@ class individual_chat_fragment_adapter(private var messages: List<individual_cha
          * binds views to the data from messages list
          */
 
-        fun bind(message: individual_chat_messages) {
+        fun bind(message: IndividualChatMessage) {
                 messageText.text = message.message
 
-                time.text=message.chat_time
+                time.text=message.chatTime
 
         }
     }

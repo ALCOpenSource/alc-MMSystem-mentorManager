@@ -3,10 +3,8 @@ package com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.mentor_profile
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
-import com.peculiaruc.alc_mmsystem_mentormanager.R
-import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mentors_tasks
+import com.peculiaruc.alc_mmsystem_mentormanager.data.models.mentorProfile.MentorsTask
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorProgramsRecyclerviewItemBinding
 
 /**
@@ -14,7 +12,7 @@ import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorProgr
  * Adapter for the mentors task screen from the mentors profile
  */
 
-class mentor_tasks_adapter(var mentor_task: List<mentors_tasks>, ) : RecyclerView.Adapter<mentor_tasks_adapter.ViewHolder>() {
+class mentor_tasks_adapter(var mentor_task: List<MentorsTask>, ) : RecyclerView.Adapter<mentor_tasks_adapter.ViewHolder>() {
 
 
     /**
@@ -32,7 +30,7 @@ class mentor_tasks_adapter(var mentor_task: List<mentors_tasks>, ) : RecyclerVie
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         with(holder){
             with(mentor_task[position]){
-                binding.gadsProgra.text = this.task_name
+                binding.gadsProgra.text = this.taskName
                 binding.programDate.text = this.date
 //                binding.mentorProgramPic.setImageResource(this.program_profile_pic)
                 binding.dropdownsD.setOnClickListener {

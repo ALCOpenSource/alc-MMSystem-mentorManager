@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication.Companion.global_Var_MENTOR_NAME
 import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication.Companion.global_Var_MENTOR_NAME_pic
 import com.peculiaruc.alc_mmsystem_mentormanager.R
-import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mentor_list
+import com.peculiaruc.alc_mmsystem_mentormanager.data.models.mentorProfile.Mentor
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorListRecyclerviewItemBinding
 
 /**
@@ -17,7 +17,7 @@ import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorListR
  * Adapter for the mentor list screen
  */
 
-class mentor_list_adapter(private var mentor_list:ArrayList<mentor_list>, ) : RecyclerView.Adapter<mentor_list_adapter.ViewHolder>() {
+class mentor_list_adapter(private var mentor_list:ArrayList<Mentor>, ) : RecyclerView.Adapter<mentor_list_adapter.ViewHolder>() {
     /**
      * holds views from the rv
      */
@@ -34,7 +34,7 @@ class mentor_list_adapter(private var mentor_list:ArrayList<mentor_list>, ) : Re
      *
      */
 
-    fun filterList(filterlist: ArrayList<mentor_list>) {
+    fun filterList(filterlist: ArrayList<Mentor>) {
         /** below line is to add our filtered. list in our course array list.
          *
          */
@@ -52,15 +52,15 @@ class mentor_list_adapter(private var mentor_list:ArrayList<mentor_list>, ) : Re
         with(holder){
             with(mentor_list[position]){
                 binding.mentorName.text = this.name
-                binding.bioData.text = this.Bio_data
-                binding.Title.text = this.Title
-                binding.role.text = this.Role
-                binding.mentorProfilePic.setImageResource(this.profile_pic)
+                binding.bioData.text = this.bioData
+                binding.Title.text = this.title
+                binding.role.text = this.role
+                binding.mentorProfilePic.setImageResource(this.profilePic)
                 binding.dropdownsD.setOnClickListener {
 
                     val bundle = bundleOf("Mentor_name" to binding.mentorName.text.toString().trim())
                     global_Var_MENTOR_NAME=binding.mentorName.text.toString()
-                    global_Var_MENTOR_NAME_pic=this.profile_pic
+                    global_Var_MENTOR_NAME_pic=this.profilePic
                     Navigation.findNavController(it).navigate(R.id.action_FirstFragment_to_SecondFragment2,bundle)
                 }
             }

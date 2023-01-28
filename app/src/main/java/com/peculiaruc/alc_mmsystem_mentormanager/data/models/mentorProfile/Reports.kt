@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile
+package com.peculiaruc.alc_mmsystem_mentormanager.data.models.mentorProfile
 
 /**
  * MMM-Team-7

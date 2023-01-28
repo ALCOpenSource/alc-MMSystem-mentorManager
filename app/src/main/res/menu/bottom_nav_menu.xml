@@ -42,6 +42,6 @@
 
     <item android:title="@string/btm_profile"
         android:id="@+id/profileFragment"
-        android:icon="@drawable/profile"/>
+        android:icon="@drawable/profile_img"/>
 
 </menu>

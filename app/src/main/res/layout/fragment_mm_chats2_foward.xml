@@ -64,7 +64,7 @@ android:layout_height="wrap_content"
                 android:id="@+id/mentor_program_pic"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/profile"></ImageView>
+                android:src="@drawable/profile_img"></ImageView>
         </androidx.cardview.widget.CardView>
 
         <!-- Samuel Kebede -->

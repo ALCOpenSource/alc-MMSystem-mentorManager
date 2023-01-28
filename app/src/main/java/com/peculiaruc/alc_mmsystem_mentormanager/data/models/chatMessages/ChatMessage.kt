@@ -1,14 +1,14 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages
+package com.peculiaruc.alc_mmsystem_mentormanager.data.models.chatMessages
 
 /**
  * MMM-Team-7
  * This is a data class use to generate dummy data for the chat screen recycler view
  */
 
-data class chat_messages (
+data class ChatMessage (
     val name : String ="",
     val message : String ="",
-    val creation_time : String ="",
+    val creationTime : String ="",
     val number : String ="",
-    val profile_pic : Int
+    val profilePic : Int
 )

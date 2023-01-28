@@ -121,7 +121,7 @@
                             android:id="@+id/mentor_program_pic"
                             android:layout_width="112dp"
                             android:layout_height="112dp"
-                            android:src="@drawable/profile"></ImageView>
+                            android:src="@drawable/profile_img"></ImageView>
                     </androidx.cardview.widget.CardView>
 
                     <!-- Group 432 -->

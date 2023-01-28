@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages
+package com.peculiaruc.alc_mmsystem_mentormanager.data.models.chatMessages
 
 /**
  * MMM-Team-7
@@ -6,10 +6,10 @@ package com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages
  * this
  */
 
-data class individual_chat_messages(
+data class IndividualChatMessage(
     val name: String ="",
     val message: String ="",
     val receive: Int,
-    val chat_time: String ="",
-    val profile_pic: Int
+    val chatTime: String ="",
+    val profilePic: Int
 )

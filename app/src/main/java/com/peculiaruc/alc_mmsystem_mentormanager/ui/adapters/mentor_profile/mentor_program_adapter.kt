@@ -3,10 +3,8 @@ package com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.mentor_profile
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
-import com.peculiaruc.alc_mmsystem_mentormanager.R
-import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mentors_programs
+import com.peculiaruc.alc_mmsystem_mentormanager.data.models.mentorProfile.MentorsPrograms
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorProgramsRecyclerviewItemBinding
 
 /**
@@ -14,7 +12,7 @@ import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorProgr
  * Adapter for the mentors program screen from the mentors profile
  */
 
-class mentor_program_adapter(var mentor_program: List<mentors_programs>, ) : RecyclerView.Adapter<mentor_program_adapter.ViewHolder>() {
+class mentor_program_adapter(var mentor_program: List<MentorsPrograms>, ) : RecyclerView.Adapter<mentor_program_adapter.ViewHolder>() {
 
     /**
      * holds the views from the rv
@@ -31,7 +29,7 @@ class mentor_program_adapter(var mentor_program: List<mentors_programs>, ) : Rec
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         with(holder){
             with(mentor_program[position]){
-                binding.gadsProgra.text = this.program_name
+                binding.gadsProgra.text = this.programName
                 binding.programDate.text = this.date
 //                binding.mentorProgramPic.setImageResource(this.program_profile_pic)
                 binding.dropdownsD.setOnClickListener {

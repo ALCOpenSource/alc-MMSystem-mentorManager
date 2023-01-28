@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication.Companion.global_Var_chat_partner
 import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication.Companion.global_Var_chat_profile_pic
 import com.peculiaruc.alc_mmsystem_mentormanager.R
-import com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages.individual_chat_messages
+import com.peculiaruc.alc_mmsystem_mentormanager.data.models.chatMessages.IndividualChatMessage
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentChatsBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.chat_messages.individual_chat_fragment_adapter
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.viewmodels.individual_chats_viewmodel
@@ -24,7 +24,7 @@ class individual_chat_fragment : Fragment() {
     private var _binding: FragmentChatsBinding? = null
     private val binding get() = _binding!!
     private lateinit var rvAdapter: individual_chat_fragment_adapter
-    private lateinit var chat_messages: List<individual_chat_messages>
+    private lateinit var chat_messages: List<IndividualChatMessage>
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -45,8 +45,8 @@ class individual_chat_fragment : Fragment() {
     private fun load_messages() {
 
         chat_messages = listOf(
-            individual_chat_messages("Peculiar C. Umeh1","Hello Kabiru, trust you are well?",1,"10:30 am", R.drawable.grace),
-            individual_chat_messages("Kabiru M. Magaya2","Hi Peculiar, i am well. Thanks",0,"10:30 am", R.drawable.profile),
+            IndividualChatMessage("Peculiar C. Umeh1","Hello Kabiru, trust you are well?",1,"10:30 am", R.drawable.grace),
+            IndividualChatMessage("Kabiru M. Magaya2","Hi Peculiar, i am well. Thanks",0,"10:30 am", R.drawable.profile_img),
             )
 
     }

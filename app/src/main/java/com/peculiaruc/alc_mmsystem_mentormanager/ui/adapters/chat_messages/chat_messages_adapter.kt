@@ -8,17 +8,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication.Companion.global_Var_chat_partner
 import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication.Companion.global_Var_chat_profile_pic
 import com.peculiaruc.alc_mmsystem_mentormanager.R
-import com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages.chat_messages
-import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mentors_programs
+import com.peculiaruc.alc_mmsystem_mentormanager.data.models.chatMessages.ChatMessage
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentChatMessagesRecyclerviewItemBinding
-import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorProgramsRecyclerviewItemBinding
 
 /**
  * MMM-Team-7
  * An adapter for the chat messages recycler view
  */
 
-class chat_messages_adapter(var chats_message_list: List<chat_messages>, ) : RecyclerView.Adapter<chat_messages_adapter.ViewHolder>() {
+class chat_messages_adapter(var chats_message_list: List<ChatMessage>, ) : RecyclerView.Adapter<chat_messages_adapter.ViewHolder>() {
 
     /**
      * view holder class for the adapter
@@ -37,13 +35,13 @@ class chat_messages_adapter(var chats_message_list: List<chat_messages>, ) : Rec
             with(chats_message_list[position]){
                 binding.name.text = this.name
                binding.message.text = this.message
-               binding.mentorProgramPic.setImageResource(this.profile_pic)
-                binding.agingTime.text = this.creation_time
+               binding.mentorProgramPic.setImageResource(this.profilePic)
+                binding.agingTime.text = this.creationTime
                 binding.noOfMessages.text = this.number
 
                 binding.dropdownsD.setOnClickListener {
                     global_Var_chat_partner=this.name
-                    global_Var_chat_profile_pic=this.profile_pic
+                    global_Var_chat_profile_pic=this.profilePic
                     Navigation.findNavController(it).navigate(R.id.action_chat_messages_Fragment3_to_individual_chat_fragment2)
                 }
             }

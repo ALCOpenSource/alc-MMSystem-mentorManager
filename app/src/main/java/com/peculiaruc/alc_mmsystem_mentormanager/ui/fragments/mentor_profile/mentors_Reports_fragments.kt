@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication
 import com.peculiaruc.alc_mmsystem_mentormanager.R
-import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mentors_reports
+import com.peculiaruc.alc_mmsystem_mentormanager.data.models.mentorProfile.MentorsReport
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorsReportsBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.mentor_profile.mentor_report_adapter
 /**
@@ -22,7 +22,7 @@ import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.mentor_profile.ment
 class mentors_Reports_fragments : Fragment() {
     private var _binding: FragmentMentorsReportsBinding? = null
     private lateinit var rvAdapter: mentor_report_adapter
-    private lateinit var mentors_reports : List<mentors_reports>
+    private lateinit var mentors_reports : List<MentorsReport>
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
@@ -38,8 +38,8 @@ class mentors_Reports_fragments : Fragment() {
     private fun load_dummy_programms() {
         mentors_reports = listOf(
 
-            mentors_reports("Google Africa Scholarship Report2","By Ibrahim Kabir  -  19th - 25th Oct 22"),
-            mentors_reports("Google Africa Scholarship Report3","By Ibrahim Kabir  -  19th - 25th Oct 22"),
+            MentorsReport("Google Africa Scholarship Report2","By Ibrahim Kabir  -  19th - 25th Oct 22"),
+            MentorsReport("Google Africa Scholarship Report3","By Ibrahim Kabir  -  19th - 25th Oct 22"),
      )
     }
 

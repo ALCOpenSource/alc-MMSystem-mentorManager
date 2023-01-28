@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:fontFamily="@font/mukta_regular"
+        android:fontFamily="@font/mukta"
         android:text="Today at 9:42AM"
         android:textColor="#A5ACB8"
         android:textSize="12sp"

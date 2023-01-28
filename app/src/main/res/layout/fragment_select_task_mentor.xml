@@ -69,7 +69,7 @@
         android:textSize="12sp"
         app:backgroundTint="@color/mms_black_6"
         app:cornerRadius="5dp"
-        app:fontFamily="@font/mukta_regular"
+        app:fontFamily="@font/mukta"
         app:layout_constraintBottom_toBottomOf="@+id/outlinedTextField_mentor_filter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/outlinedTextField_mentor_filter"

@@ -55,7 +55,7 @@
             android:layout_marginStart="105dp"
             android:layout_marginEnd="156dp"
             android:text="@string/set_a_profile_picture"
-            android:fontFamily="@font/mukta_regular"
+            android:fontFamily="@font/mukta"
             android:textColor="@color/mms_black_2"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="@+id/mmProfilePicture"
@@ -73,7 +73,7 @@
             android:layout_marginTop="2dp"
             android:text="@string/btn_select_file"
             android:textColor="@color/mms_pry_2"
-            android:fontFamily="@font/mukta_regular"
+            android:fontFamily="@font/mukta"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="@+id/textView"
             app:layout_constraintHorizontal_bias="0.0"
@@ -91,7 +91,7 @@
             android:hint="@string/full_name"
             android:padding="8dp"
             android:textColor="@color/mms_black_5"
-            android:fontFamily="@font/mukta_regular"
+            android:fontFamily="@font/mukta"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -105,7 +105,7 @@
             android:background="@drawable/rounded_border_background"
             android:hint="@string/headline"
             android:padding="8dp"
-            android:fontFamily="@font/mukta_regular"
+            android:fontFamily="@font/mukta"
             android:textColor="@color/mms_black_5"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="@+id/etFullName"
@@ -121,7 +121,7 @@
             android:gravity="start"
             android:hint="@string/about"
             android:padding="8dp"
-            android:fontFamily="@font/mukta_regular"
+            android:fontFamily="@font/mukta"
             android:textColor="@color/mms_black_5"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="@+id/etHeadline"
@@ -144,7 +144,7 @@
                 android:id="@+id/autoCompleteCountryTextView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:fontFamily="@font/mukta_regular"
+                android:fontFamily="@font/mukta"
                 android:textSize="16sp"
                 android:inputType="none" />
 
@@ -167,7 +167,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textSize="16sp"
-                android:fontFamily="@font/mukta_regular"
+                android:fontFamily="@font/mukta"
                 android:inputType="none" />
 
         </com.google.android.material.textfield.TextInputLayout>

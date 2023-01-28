@@ -42,7 +42,7 @@
                 android:id="@+id/textView_document_name"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/mukta_regular"
+                android:fontFamily="@font/mukta"
                 android:lineSpacingExtra="-8dp"
                 android:text="Google Africa Scholarship Program"
                 android:textColor="@color/mms_black_2"

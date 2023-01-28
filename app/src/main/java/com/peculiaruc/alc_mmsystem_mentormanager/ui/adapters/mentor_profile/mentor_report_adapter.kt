@@ -6,8 +6,7 @@ import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentormanager.R
-import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mentors_reports
-import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorReportsRecyclerviewItemBinding
+import com.peculiaruc.alc_mmsystem_mentormanager.data.models.mentorProfile.MentorsReport
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ReportItemBinding
 
 /**
@@ -15,7 +14,7 @@ import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ReportItemBinding
  * Adapter for the mentors reports screen from the mentors profile
  */
 
-class mentor_report_adapter(var mentor_report: List<mentors_reports>, ) : RecyclerView.Adapter<mentor_report_adapter.ViewHolder>() {
+class mentor_report_adapter(var mentor_report: List<MentorsReport>, ) : RecyclerView.Adapter<mentor_report_adapter.ViewHolder>() {
 
     /**
      * holds the views from the rv
@@ -31,8 +30,8 @@ class mentor_report_adapter(var mentor_report: List<mentors_reports>, ) : Recycl
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         with(holder){
             with(mentor_report[position]){
-                binding.reporItemTitle.text = this.Report_name
-                binding.reportItemTime.text = this.Report_creation_infor
+                binding.reporItemTitle.text = this.ReportName
+                binding.reportItemTime.text = this.ReportCreationInfo
 //                binding.mentorProgramPic.setImageResource(this.program_profile_pic)
                 binding.reportitem.setOnClickListener {
                     Navigation.findNavController(it).navigate(R.id.action_mentors_Reports_fragments_to_mentor_report_details)

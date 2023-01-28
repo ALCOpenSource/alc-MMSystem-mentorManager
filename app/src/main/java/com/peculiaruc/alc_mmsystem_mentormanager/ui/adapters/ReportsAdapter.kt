@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentormanager.R
-import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.Reports
+import com.peculiaruc.alc_mmsystem_mentormanager.data.models.mentorProfile.Reports
 import com.peculiaruc.alc_mmsystem_mentormanager.util.OnDownloadClickListener
 import com.peculiaruc.alc_mmsystem_mentormanager.util.OnItemClickListener
 import com.peculiaruc.alc_mmsystem_mentormanager.util.OnShareClickListener

@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication
 import com.peculiaruc.alc_mmsystem_mentormanager.R
-import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mentors_tasks
+import com.peculiaruc.alc_mmsystem_mentormanager.data.models.mentorProfile.MentorsTask
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentroTasksFragmentBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.mentor_profile.mentor_tasks_adapter
 
@@ -25,7 +25,7 @@ class Mentro_tasks_fragment : Fragment() {
 
     private var _binding: FragmentMentroTasksFragmentBinding? = null
     private lateinit var rvAdapter: mentor_tasks_adapter
-    private lateinit var mentors_task_list : List<mentors_tasks>
+    private lateinit var mentors_task_list : List<MentorsTask>
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
@@ -42,8 +42,8 @@ class Mentro_tasks_fragment : Fragment() {
     private fun load_dummy_programms() {
         mentors_task_list = listOf(
 
-            mentors_tasks("Room library article writ...1 ","3 days from now",R.id.mentor_program_pic),
-            mentors_tasks("Debugging in VSCode2","3 days from now",R.id.mentor_program_pic),
+            MentorsTask("Room library article writ...1 ","3 days from now",R.id.mentor_program_pic),
+            MentorsTask("Debugging in VSCode2","3 days from now",R.id.mentor_program_pic),
 
 
             )

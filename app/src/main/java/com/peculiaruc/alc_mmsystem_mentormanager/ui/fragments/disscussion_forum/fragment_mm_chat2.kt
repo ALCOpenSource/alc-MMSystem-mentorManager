@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentormanager.R
-import com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages.individual_chat_messages
+import com.peculiaruc.alc_mmsystem_mentormanager.data.models.chatMessages.IndividualChatMessage
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMmChats2Binding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.disscussion_forum.fragment_mm_chat2_adapter
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.viewmodels.individual_chats_viewmodel
@@ -23,7 +23,7 @@ class fragment_mm_chat2 : Fragment() {
     private var _binding: FragmentMmChats2Binding? = null
     private val binding get() = _binding!!
     private lateinit var rvAdapter: fragment_mm_chat2_adapter
-    private lateinit var chat_messages: List<individual_chat_messages>
+    private lateinit var chat_messages: List<IndividualChatMessage>
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -45,8 +45,8 @@ class fragment_mm_chat2 : Fragment() {
     private fun load_messages() {
 
         chat_messages = listOf(
-            individual_chat_messages("Kabiru M. Magaya2","Hi Peculiar, i am well. Thanks",0,"10:30 am", R.drawable.ann_2),
-            individual_chat_messages("Peculiar C. Umeh4","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",2,"10:30 am", R.drawable.ann_2),
+            IndividualChatMessage("Kabiru M. Magaya2","Hi Peculiar, i am well. Thanks",0,"10:30 am", R.drawable.ann_2),
+            IndividualChatMessage("Peculiar C. Umeh4","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.",2,"10:30 am", R.drawable.ann_2),
 
             )
 

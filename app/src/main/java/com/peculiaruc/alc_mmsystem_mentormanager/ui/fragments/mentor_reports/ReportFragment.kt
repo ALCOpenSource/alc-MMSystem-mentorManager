@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.peculiaruc.alc_mmsystem_mentormanager.R
-import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.Reports
+import com.peculiaruc.alc_mmsystem_mentormanager.data.models.mentorProfile.Reports
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentReportBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.ReportsAdapter
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.SpinnerAdapter

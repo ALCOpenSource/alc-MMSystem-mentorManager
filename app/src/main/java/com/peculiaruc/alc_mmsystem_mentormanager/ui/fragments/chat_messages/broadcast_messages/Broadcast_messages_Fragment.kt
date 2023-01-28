@@ -10,7 +10,7 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentormanager.R
-import com.peculiaruc.alc_mmsystem_mentormanager.data.local.chat_messages.chat__broadcast_messages
+import com.peculiaruc.alc_mmsystem_mentormanager.data.models.chatMessages.ChatBroadcastMessage
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentBroadcastMessagesBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.chat_messages.chat_broadcast_messages_adapter
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.viewmodels.individual_chats_viewmodel
@@ -25,7 +25,7 @@ class Broadcast_messages_Fragment : Fragment() {
     private var _binding: FragmentBroadcastMessagesBinding? = null
     private val binding get() = _binding!!
     private lateinit var rvAdapter: chat_broadcast_messages_adapter
-    private lateinit var chat_messages: List<chat__broadcast_messages>
+    private lateinit var chat_messages: List<ChatBroadcastMessage>
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -54,8 +54,8 @@ class Broadcast_messages_Fragment : Fragment() {
     private fun load_messages() {
 
         chat_messages = listOf(
-            chat__broadcast_messages("Peculiar C. Umeh1  ","Hello Kabiru, trust you are well?",1,"10:30 am",R.drawable.ann_2),
-            chat__broadcast_messages("Kabiru M. Magaya2 ","Hi Peculiar, i am well. Thanks",0,"10:30 am",R.drawable.ann_2),
+            ChatBroadcastMessage("Peculiar C. Umeh1  ","Hello Kabiru, trust you are well?",1,"10:30 am",R.drawable.ann_2),
+            ChatBroadcastMessage("Kabiru M. Magaya2 ","Hi Peculiar, i am well. Thanks",0,"10:30 am",R.drawable.ann_2),
           )
     }
 

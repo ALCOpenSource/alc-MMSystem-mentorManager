@@ -5,13 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.os.bundleOf
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentormanager.MentorManagerApplication
 import com.peculiaruc.alc_mmsystem_mentormanager.R
-import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mentors_programs
+import com.peculiaruc.alc_mmsystem_mentormanager.data.models.mentorProfile.MentorsPrograms
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorsProgramsFragmentBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.mentor_profile.mentor_program_adapter
 
@@ -27,7 +26,7 @@ class mentors_programs_fragment : Fragment() {
 
     private var _binding: FragmentMentorsProgramsFragmentBinding? = null
     private lateinit var rvAdapter: mentor_program_adapter
-    private lateinit var mentors_program_list : List<mentors_programs>
+    private lateinit var mentors_program_list : List<MentorsPrograms>
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
@@ -42,11 +41,11 @@ class mentors_programs_fragment : Fragment() {
     // this loads the dummy data on the list of programs for the mentor
     private fun load_dummy_programms() {
         mentors_program_list = listOf(
-            mentors_programs("GADS Program 20221","Dec 11, 2022",R.id.mentor_program_pic),
-            mentors_programs("GADS Program 20222","Dec 12, 2022",R.drawable.profile),
-            mentors_programs("GADS Program 20223","Dec 13, 2022",R.drawable.ann_2),
-            mentors_programs("GADS Program 20224","Dec 14, 2022",R.drawable.ann),
-            mentors_programs("GADS Program 20225","Dec 15, 2022",R.drawable.grace),
+            MentorsPrograms("GADS Program 20221","Dec 11, 2022",R.id.mentor_program_pic),
+            MentorsPrograms("GADS Program 20222","Dec 12, 2022",R.drawable.profile_img),
+            MentorsPrograms("GADS Program 20223","Dec 13, 2022",R.drawable.ann_2),
+            MentorsPrograms("GADS Program 20224","Dec 14, 2022",R.drawable.ann),
+            MentorsPrograms("GADS Program 20225","Dec 15, 2022",R.drawable.grace),
             )
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

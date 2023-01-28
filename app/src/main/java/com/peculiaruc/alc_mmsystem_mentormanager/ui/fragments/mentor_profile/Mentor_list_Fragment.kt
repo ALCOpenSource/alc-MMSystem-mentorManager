@@ -3,19 +3,16 @@ import android.os.Bundle
 
 import android.view.*
 import android.widget.*
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentormanager.R
-import com.peculiaruc.alc_mmsystem_mentormanager.data.local.mentor_profile.mentor_list
-import com.peculiaruc.alc_mmsystem_mentormanager.databinding.AlertDialogBoxAddMentorBinding
+import com.peculiaruc.alc_mmsystem_mentormanager.data.models.mentorProfile.Mentor
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorListBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.SpinnerAdapter
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.mentor_profile.mentor_list_adapter
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_reports.ShareDialogueFragment
 import java.util.*
 
 
@@ -28,7 +25,7 @@ class Mentor_list_Fragment : Fragment() {
     private var _binding:FragmentMentorListBinding? = null
     private val binding get() = _binding!!
     private lateinit var rvAdapter: mentor_list_adapter
-    private lateinit var mentorLists :ArrayList<mentor_list>
+    private lateinit var mentorLists :ArrayList<Mentor>
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?):
             View? {
@@ -96,9 +93,9 @@ class Mentor_list_Fragment : Fragment() {
 
     //this function is executed when the spinner element is selected to  sort menotrs list based on the selected item
     private fun sort_mentors(text: Boolean) {
-        val filteredlist = ArrayList<mentor_list>()
+        val filteredlist = ArrayList<Mentor>()
         for (item in mentorLists) {
-            if (item.assignne?.equals(text)==true) {
+            if (item.assign?.equals(text)==true) {
                 filteredlist.add(item)
             }
         }
@@ -122,8 +119,8 @@ class Mentor_list_Fragment : Fragment() {
 
     private fun load_mentors_dummy_list() {
         mentorLists = arrayListOf(
-            mentor_list("Peculiar C. Umeh1", "Program Assistant, Andela, She.her", "PROGRAM SST.", "MENTOR-GDs", R.drawable.ann, true),
-            mentor_list(
+            Mentor("Peculiar C. Umeh1", "Program Assistant, Andela, She.her", "PROGRAM SST.", "MENTOR-GDs", R.drawable.ann, true),
+            Mentor(
                 "Mohammend J. Hassan",
                 "Program Assistant1, Andela, She-her",
                 "PROGRAM ASST",
@@ -131,7 +128,7 @@ class Mentor_list_Fragment : Fragment() {
                 R.drawable.ann_2,
                 false
             ),
-            mentor_list(
+            Mentor(
                 "Ombasanjo R. Uke",
                 "Program Assistant2, Andela, She her",
                 "PROGRAM ASST.",
@@ -139,12 +136,12 @@ class Mentor_list_Fragment : Fragment() {
                 R.drawable.grace,
                 true
             ),
-            mentor_list(
+            Mentor(
                 "James Karim Michael",
                 "Program Assistant3, Andela, She",
                 "PROGRAM AST.",
                 "MENTOR GAD",
-                R.drawable.profile,
+                R.drawable.profile_img,
                 false,
             ),
 
@@ -156,7 +153,7 @@ class Mentor_list_Fragment : Fragment() {
  //  filter function does instant sreach of the emntors list on change of text in the search button
 
     private fun filter(text: String) {
-        val filteredlist = ArrayList<mentor_list>()
+        val filteredlist = ArrayList<Mentor>()
         for (item in mentorLists) {
             if (item.name?.toLowerCase()?.contains(text.lowercase(Locale.getDefault())) == true) {
                 filteredlist.add(item)

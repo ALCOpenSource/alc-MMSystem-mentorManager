@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="11dp"
-        android:fontFamily="@font/mukta_regular"
+        android:fontFamily="@font/mukta"
         android:text="@string/registration_dialog_message"
         android:paddingStart="60dp"
         android:paddingEnd="60dp"

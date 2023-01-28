@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="11dp"
-                android:fontFamily="@font/mukta_regular"
+                android:fontFamily="@font/mukta"
                 android:lines="2"
                 android:text="GADS CLOUD 2022 - \n COMPLETION"
                 android:textColor="@color/mms_black_2"

@@ -20,7 +20,7 @@ class ProgramListAdapter(private val programs: Array<String>) : RecyclerView.Ada
      */
     class ProgramViewHolder(view: View): RecyclerView.ViewHolder(view) {
 
-        private val nTitle = view.findViewById<TextView>(R.id.programHead)
+        private val nTitle = view.findViewById<TextView>(R.id.programs)
 
         /** A function used to attach data to the recycler view items
          *

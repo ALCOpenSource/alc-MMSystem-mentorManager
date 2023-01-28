@@ -4,7 +4,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/learner"
-    app:fontFamily="@font/mukta_regular"
+    app:fontFamily="@font/mukta"
     app:chipCornerRadius="5dp"
     android:textSize="12sp"
     app:chipEndPadding="20dp"
