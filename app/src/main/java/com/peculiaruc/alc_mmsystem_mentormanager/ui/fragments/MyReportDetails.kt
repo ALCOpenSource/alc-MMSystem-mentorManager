@@ -76,10 +76,10 @@ class MyReportDetails : Fragment() {
             myDialog.show()
 
         }
-        binding.btnCloseReport.setOnClickListener {
-            val action = MyReportDetailsDirections.actionMyReportDetailsToReportsDummy()
-            it.findNavController().navigate(action)
-        }
+//        binding.btnCloseReport.setOnClickListener {
+//            val action = MyReportDetailsDirections.actionMyReportDetailsToReportsDummy()
+//            it.findNavController().navigate(action)
+//        }
 
 
         // Inflate the layout for this fragment

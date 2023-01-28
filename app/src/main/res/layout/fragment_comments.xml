@@ -8,7 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.fragments.disscussion_forum.CommentsFragment">
+        tools:context=".ui.disscussion_forum.CommentsFragment">
 
         <ImageView
             android:id="@+id/comment_back"

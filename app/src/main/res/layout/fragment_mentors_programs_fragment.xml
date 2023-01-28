@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.fragments.mentor_profile.mentors_programs_fragment">
+    tools:context=".ui.mentorProfile.mentors_programs_fragment">
 
     <ScrollView
         android:layout_width="match_parent"

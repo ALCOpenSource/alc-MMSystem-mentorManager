@@ -32,12 +32,12 @@
 
     <fragment
         android:id="@+id/broadcast_messages_Fragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.chat_messages.broadcast_messages.Broadcast_messages_Fragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.chat_messages.broadcast_messages.Broadcast_messages_Fragment"
         android:label="fragment_broadcast_messages"
         tools:layout="@layout/fragment_broadcast_messages" />
     <fragment
         android:id="@+id/individual_chat_fragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.chat_messages.chat_fragment.individual_chat_fragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.chat_messages.chat_fragment.individual_chat_fragment"
         android:label="individual_chat_fragment" />
     <activity
         android:id="@+id/mentor_list_Activity"
@@ -51,7 +51,7 @@
         tools:layout="@layout/activity_mm_reports" />
     <fragment
         android:id="@+id/fragment_mm_chat2"
-        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.disscussion_forum.fragment_mm_chat2"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.disscussion_forum.fragment_mm_chat2"
         android:label="fragment_mm_chat2" />
     <activity
         android:id="@+id/discussion_forum2"

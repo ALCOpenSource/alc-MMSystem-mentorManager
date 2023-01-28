@@ -27,23 +27,6 @@ class ProfileFragment : Fragment() {
     private val binding get() = _binding!!
 
     private lateinit var viewModel: ProfileViewModel
-
-//import android.os.Bundle
-//import androidx.fragment.app.Fragment
-//import android.view.LayoutInflater
-//import android.view.View
-//import android.view.ViewGroup
-//import androidx.navigation.findNavController
-//import com.peculiaruc.alc_mmsystem_mentormanager.R
-//import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentProfileBinding
-//
-///**
-// * Fragment to display mentor managers profile data
-// */
-//class ProfileFragment : Fragment() {
-//
-//    private lateinit var binding: FragmentProfileBinding
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -52,7 +35,8 @@ class ProfileFragment : Fragment() {
         _binding = FragmentProfileBinding.inflate(layoutInflater)
         viewModel = ViewModelProvider(this)[ProfileViewModel::class.java]
 
-        Glide.with(this).load("https://images.unsplash.com/photo-1632765854612-9b02b6ec2b15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1886&q=80")
+        Glide.with(this)
+            .load("https://images.unsplash.com/photo-1632765854612-9b02b6ec2b15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1886&q=80")
             .circleCrop()
             .placeholder(R.drawable.profile_circle)
             .diskCacheStrategy(DiskCacheStrategy.ALL)

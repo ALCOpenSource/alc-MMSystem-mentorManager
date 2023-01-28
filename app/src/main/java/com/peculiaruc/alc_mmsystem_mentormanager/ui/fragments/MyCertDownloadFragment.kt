@@ -50,10 +50,10 @@ class MyCertDownloadFragment : Fragment() {
                 myDialog.show()
             }
 
-        binding.btnBackArrow.setOnClickListener {
-            val action = MyCertDownloadFragmentDirections.actionMyCertDownloadFragmentToCertificatesDummy()
-            it.findNavController().navigate(action)
-        }
+//        binding.btnBackArrow.setOnClickListener {
+//            val action = MyCertDownloadFragmentDirections.actionMyCertDownloadFragmentToCertificatesDummy()
+//            it.findNavController().navigate(action)
+//        }
 
 
         // Inflate the layout for this fragment

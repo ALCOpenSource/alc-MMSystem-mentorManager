@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:contentDescription="scroll"
     android:fillViewport="true"
-    tools:context=".ui.fragments.mentor_reports.ReportDetailsFragment">
+    tools:context=".ui.mentor_reports.ReportDetailsFragment">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
