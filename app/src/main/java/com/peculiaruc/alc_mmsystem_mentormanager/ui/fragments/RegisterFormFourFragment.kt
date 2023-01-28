@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.peculiaruc.alc_mmsystem_mentormanager.data.models.DocumentDto
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentRegisterFormFourBinding
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.activities.MainActivity
+import com.peculiaruc.alc_mmsystem_mentormanager.ui.home.HomeActivity
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.DocumentsAdapter
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.viewmodels.RegisterFormFourViewModel
 
@@ -48,7 +48,7 @@ class RegisterFormFourFragment : Fragment() {
         }
 
         binding?.buttonNext?.setOnClickListener {
-            val intent = Intent(activity, MainActivity::class.java)
+            val intent = Intent(activity, HomeActivity::class.java)
             startActivity(intent)
             activity?.finish()
         }

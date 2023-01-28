@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.ui.activities
+package com.peculiaruc.alc_mmsystem_mentormanager.ui.onboarding
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +8,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ActivityOnboardingBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.OnBoardingAdapter
+import com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.login.LoginActivity
 
 /**
  * This activity is for onboarding screens

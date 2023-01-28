@@ -1,10 +1,11 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.ui.activities
+package com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ActivitySignUpBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.SignUpDialogFragment
+import com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.login.LoginActivity
 
 /**
  * this activity is used for to sign up

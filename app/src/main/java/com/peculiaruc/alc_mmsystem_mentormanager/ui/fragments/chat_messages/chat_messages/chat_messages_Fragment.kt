@@ -38,11 +38,11 @@ class chat_messages_Fragment : Fragment() {
         val navView: BottomNavigationView = binding.navView
 
 
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.chat_messages_Fragment, R.id.mentor_profile
-            )
-        )
+//        val appBarConfiguration = AppBarConfiguration(
+//            setOf(
+//                R.id.chat_messages_Fragment, R.id.mentor_profile
+//            )
+//        )
         val homeViewModel =
             ViewModelProvider(this).get(individualmessages_viewmode::class.java)
         _binding = FragmentChatMessagesHomeBinding.inflate(inflater, container, false)
@@ -110,32 +110,32 @@ class chat_messages_Fragment : Fragment() {
 
         val navView: BottomNavigationView = binding.navView
 
-        navView.setOnItemReselectedListener {
-            when (it.itemId) {
-                R.id.chat_messages_Fragment -> {
-                    //reports task
-                    Navigation.findNavController(navView).navigate(R.id.action_chat_messages_Fragment3_to_activity_mm_reports2)
-                }
-                R.id.Search -> {
-                    Navigation.findNavController(navView).navigate(R.id.action_chat_messages_Fragment3_to_individual_chat_fragment2)
-                }
-                R.id.programs -> {
-
-                    Navigation.findNavController(navView).navigate(R.id.action_chat_messages_Fragment3_to_discussionForumFragment)
-                }
-                R.id.Messages -> {
-                    Navigation.findNavController(navView).navigate(R.id.action_chat_messages_Fragment3_to_broadcast_messages_Fragment)
-
-                }
-                R.id.mentor_profile -> {
-                    //mentor profile task
-
-                    Navigation.findNavController(navView).navigate(R.id.action_chat_messages_Fragment3_to_mentor_list_Activity2)
-
-             
-                }
-            }
-        }
+//        navView.setOnItemReselectedListener {
+//            when (it.itemId) {
+//                R.id.chat_messages_Fragment -> {
+//                    //reports task
+//                    Navigation.findNavController(navView).navigate(R.id.action_chat_messages_Fragment3_to_activity_mm_reports2)
+//                }
+//                R.id.Search -> {
+//                    Navigation.findNavController(navView).navigate(R.id.action_chat_messages_Fragment3_to_individual_chat_fragment2)
+//                }
+//                R.id.programs -> {
+//
+//                    Navigation.findNavController(navView).navigate(R.id.action_chat_messages_Fragment3_to_discussionForumFragment)
+//                }
+//                R.id.Messages -> {
+//                    Navigation.findNavController(navView).navigate(R.id.action_chat_messages_Fragment3_to_broadcast_messages_Fragment)
+//
+//                }
+//                R.id.mentor_profile -> {
+//                    //mentor profile task
+//
+//                    Navigation.findNavController(navView).navigate(R.id.action_chat_messages_Fragment3_to_mentor_list_Activity2)
+//
+//
+//                }
+//            }
+//        }
         binding.arrowLeft.setOnClickListener {
             activity?.onBackPressed();
         }

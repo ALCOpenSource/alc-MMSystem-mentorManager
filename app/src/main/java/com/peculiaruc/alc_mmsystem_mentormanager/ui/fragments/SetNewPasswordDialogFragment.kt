@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentSetNewPasswordDialogBinding
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.activities.LoginActivity
+import com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.login.LoginActivity
 
 /**
  * its a bottom sheet dialog for Program set new password success

@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.ui.activities
+package com.peculiaruc.alc_mmsystem_mentormanager.ui.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -21,15 +21,15 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_home) as NavHostFragment
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.nav_home) as NavHostFragment
         val navController = navHostFragment.navController
 
         binding.bottomNavigation.setupWithNavController(navController)
 
-        navController.addOnDestinationChangedListener{ _, nd: NavDestination, _->
-            if (nd.id == R.id.programsFragment) {
+        navController.addOnDestinationChangedListener { _, nd: NavDestination, _ ->
+            if (nd.id == R.id.programsFragment || nd.id == R.id.homeFragment) {
                 binding.bottomNavigation.visibility = View.VISIBLE
-//                binding.bottomNavigation.selectedItemId = R.id.page_3
             } else {
                 binding.bottomNavigation.visibility = View.GONE
             }

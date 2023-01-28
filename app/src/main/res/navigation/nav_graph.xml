@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/chats_broadcast_messages_home">
+    app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/chats_broadcast_messages_home"
@@ -27,7 +27,7 @@
         android:id="@+id/mentors_programs_fragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_profile.mentors_programs_fragment"
         android:label="fragment_mentors_programs_fragment"
-        tools:layout="@layout/fragment_mentors_programs_fragment" >
+        tools:layout="@layout/fragment_mentors_programs_fragment">
         <action
             android:id="@+id/action_mentors_programs_fragment_to_mentro_tasks_fragment"
             app:destination="@id/mentro_tasks_fragment" />
@@ -35,7 +35,7 @@
     <fragment
         android:id="@+id/mentro_tasks_fragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_profile.Mentro_tasks_fragment"
-        android:label="Mentro_tasks_fragment" >
+        android:label="Mentro_tasks_fragment">
         <action
             android:id="@+id/action_mentro_tasks_fragment_to_mentors_Reports_fragments"
             app:destination="@id/mentors_Reports_fragments" />
@@ -43,7 +43,7 @@
     <fragment
         android:id="@+id/mentors_Reports_fragments"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_profile.mentors_Reports_fragments"
-        android:label="mentors_Reports_fragments" >
+        android:label="mentors_Reports_fragments">
         <action
             android:id="@+id/action_mentors_Reports_fragments_to_mentor_certificates_fragment"
             app:destination="@id/mentor_certificates_fragment" />
@@ -55,7 +55,7 @@
         android:id="@+id/mentor_certificates_fragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_profile.mentor_certificates_fragment"
         android:label="fragment_mentor_certificates_fragment"
-        tools:layout="@layout/fragment_mentor_certificates_fragment" >
+        tools:layout="@layout/fragment_mentor_certificates_fragment">
         <action
             android:id="@+id/action_mentor_certificates_fragment_to_mentors_certificate_generate"
             app:destination="@id/mentors_certificate_generate" />
@@ -71,7 +71,7 @@
     <fragment
         android:id="@+id/mentors_certificate_generate"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.mentor_profile.mentors_certificate_generate"
-        android:label="mentors_certificate_generate" >
+        android:label="mentors_certificate_generate">
         <action
             android:id="@+id/action_mentors_certificate_generate_to_cert_select_program"
             app:destination="@id/cert_select_program" />
@@ -81,7 +81,7 @@
         android:id="@+id/homeFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.HomeFragment"
         android:label="@string/home"
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_emptyNotificationsFragment"
             app:destination="@id/emptyNotificationsFragment" />
@@ -96,7 +96,7 @@
         android:id="@+id/certificatesFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.CertificatesFragment"
         android:label="@string/certificates"
-        tools:layout="@layout/fragment_certificates" >
+        tools:layout="@layout/fragment_certificates">
         <action
             android:id="@+id/action_certificatesFragment_to_approvedCertificateFragment"
             app:destination="@id/approvedCertificateFragment" />
@@ -108,11 +108,11 @@
             app:destination="@id/certBeneficiaryFragment" />
     </fragment>
 
-<!--<fragment-->
-<!--        tools:layout="@layout/fragment_certificates" >-->
-<!--        <action-->
-<!--            android:id="@+id/action_certificatesFragment_to_earnedCertFragment"-->
-<!--            app:destination="@id/earnedCertFragment" />-->
+    <!--<fragment-->
+    <!--        tools:layout="@layout/fragment_certificates" >-->
+    <!--        <action-->
+    <!--            android:id="@+id/action_certificatesFragment_to_earnedCertFragment"-->
+    <!--            app:destination="@id/earnedCertFragment" />-->
 
     <fragment
         android:id="@+id/programsFragment2"
@@ -128,7 +128,7 @@
         android:id="@+id/profileFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" >
+        tools:layout="@layout/fragment_profile">
         <action
             android:id="@+id/action_profileFragment_to_editMyProfileFragment"
             app:destination="@id/editMyProfileFragment" />
@@ -154,6 +154,7 @@
             android:id="@+id/action_profileFragment_to_programDummy2"
             app:destination="@id/programDummy" />
     </fragment>
+
     <fragment
         android:id="@+id/myManagersFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.MyManagersFragment"
@@ -183,7 +184,7 @@
         android:id="@+id/searchFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.SearchFragment"
         android:label="fragment_search"
-        tools:layout="@layout/fragment_search" >
+        tools:layout="@layout/fragment_search">
         <action
             android:id="@+id/action_searchFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
@@ -193,7 +194,7 @@
         android:id="@+id/mentorCertficateFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.MentorCertficateFragment"
         android:label="fragment_mentor_certficate"
-        tools:layout="@layout/fragment_mentor_certficate" >
+        tools:layout="@layout/fragment_mentor_certficate">
         <action
             android:id="@+id/action_mentorCertficateFragment_to_generatedCertsFragment"
             app:destination="@id/generatedCertsFragment" />
@@ -204,7 +205,7 @@
         android:id="@+id/certRequestSelectFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.CertRequestSelectFragment"
         android:label="fragment_cert_request_select"
-        tools:layout="@layout/fragment_cert_request_select" >
+        tools:layout="@layout/fragment_cert_request_select">
         <action
             android:id="@+id/action_certRequestSelectFragment_to_generateCertFragment"
             app:destination="@id/generateCertFragment" />
@@ -219,7 +220,7 @@
         android:id="@+id/emptyNotificationsFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.EmptyNotificationsFragment"
         android:label="fragment_empty_notifications"
-        tools:layout="@layout/fragment_empty_notifications" >
+        tools:layout="@layout/fragment_empty_notifications">
         <action
             android:id="@+id/action_emptyNotificationsFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
@@ -232,7 +233,7 @@
         android:id="@+id/approvedCertificateFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.ApprovedCertificateFragment"
         android:label="fragment_approved_certificates"
-        tools:layout="@layout/fragment_approved_certificates" >
+        tools:layout="@layout/fragment_approved_certificates">
         <action
             android:id="@+id/action_approvedCertificateFragment_to_certificatesFragment"
             app:destination="@id/certificatesFragment" />
@@ -246,7 +247,7 @@
         android:id="@+id/earnedCertFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.EarnedCertFragment"
         android:label="fragment_earned_cert"
-        tools:layout="@layout/fragment_earned_cert" >
+        tools:layout="@layout/fragment_earned_cert">
         <action
             android:id="@+id/action_earnedCertFragment_to_mentorCertficateFragment"
             app:destination="@id/mentorCertficateFragment" />
@@ -255,7 +256,7 @@
         android:id="@+id/certBeneficiaryFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.CertBeneficiaryFragment"
         android:label="fragment_cert_beneficiary"
-        tools:layout="@layout/fragment_cert_beneficiary" >
+        tools:layout="@layout/fragment_cert_beneficiary">
         <action
             android:id="@+id/action_certBeneficiaryFragment_to_generateCertFragment"
             app:destination="@id/generateCertFragment" />
@@ -267,7 +268,7 @@
         android:id="@+id/generateCertFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.GenerateCertFragment"
         android:label="fragment_generate_cert"
-        tools:layout="@layout/fragment_generate_cert" >
+        tools:layout="@layout/fragment_generate_cert">
         <action
             android:id="@+id/action_generateCertFragment_to_certRequestSelectFragment"
             app:destination="@id/certRequestSelectFragment" />
@@ -282,7 +283,7 @@
         android:id="@+id/editMyProfileFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.EditMyProfileFragment"
         android:label="fragment_edit_my_profile"
-        tools:layout="@layout/fragment_edit_my_profile" >
+        tools:layout="@layout/fragment_edit_my_profile">
         <action
             android:id="@+id/action_editMyProfileFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
@@ -291,7 +292,7 @@
         android:id="@+id/generatedCertsFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.GeneratedCertsFragment"
         android:label="fragment_generated_certs"
-        tools:layout="@layout/fragment_generated_certs" >
+        tools:layout="@layout/fragment_generated_certs">
         <action
             android:id="@+id/action_generatedCertsFragment_to_mentorCertficateFragment"
             app:destination="@id/mentorCertficateFragment" />
@@ -303,7 +304,7 @@
         android:id="@+id/notificationsFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.NotificationsFragment"
         android:label="fragment_notifications"
-        tools:layout="@layout/fragment_notifications" >
+        tools:layout="@layout/fragment_notifications">
         <action
             android:id="@+id/action_notificationsFragment_to_emptyNotificationsFragment"
             app:destination="@id/emptyNotificationsFragment" />
@@ -312,7 +313,7 @@
         android:id="@+id/programDummy"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.uiDummy.ProgramDummy"
         android:label="fragment_program_dummy"
-        tools:layout="@layout/fragment_program_dummy" >
+        tools:layout="@layout/fragment_program_dummy">
         <action
             android:id="@+id/action_programDummy_to_profileFragment"
             app:destination="@id/profileFragment" />
@@ -327,7 +328,7 @@
         android:id="@+id/mentorsDummy"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.uiDummy.MentorsDummy"
         android:label="fragment_mentors_dummy"
-        tools:layout="@layout/fragment_mentors_dummy" >
+        tools:layout="@layout/fragment_mentors_dummy">
         <action
             android:id="@+id/action_mentorsDummy_to_programDummy"
             app:destination="@id/programDummy" />
@@ -342,7 +343,7 @@
         android:id="@+id/taskDummy"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.uiDummy.TaskDummy"
         android:label="fragment_task_dummy"
-        tools:layout="@layout/fragment_task_dummy" >
+        tools:layout="@layout/fragment_task_dummy">
         <action
             android:id="@+id/action_taskDummy_to_mentorsDummy"
             app:destination="@id/mentorsDummy" />
@@ -354,7 +355,7 @@
         android:id="@+id/reportsDummy"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.uiDummy.ReportsDummy"
         android:label="fragment_reports_dummy"
-        tools:layout="@layout/fragment_reports_dummy" >
+        tools:layout="@layout/fragment_reports_dummy">
         <action
             android:id="@+id/action_reportsDummy_to_taskDummy"
             app:destination="@id/taskDummy" />
@@ -369,7 +370,7 @@
         android:id="@+id/certificatesDummy"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.uiDummy.CertificatesDummy"
         android:label="fragment_certificates_dummy"
-        tools:layout="@layout/fragment_certificates_dummy" >
+        tools:layout="@layout/fragment_certificates_dummy">
         <action
             android:id="@+id/action_certificatesDummy_to_reportsDummy"
             app:destination="@id/reportsDummy" />
@@ -380,7 +381,7 @@
     <fragment
         android:id="@+id/myReportDetails"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.MyReportDetails"
-        android:label="MyReportDetails" >
+        android:label="MyReportDetails">
         <action
             android:id="@+id/action_myReportDetails_to_reportsDummy"
             app:destination="@id/reportsDummy" />
@@ -388,7 +389,7 @@
     <fragment
         android:id="@+id/myCertDownloadFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.MyCertDownloadFragment"
-        android:label="MyCertDownloadFragment" >
+        android:label="MyCertDownloadFragment">
         <action
             android:id="@+id/action_myCertDownloadFragment_to_certificatesDummy"
             app:destination="@id/certificatesDummy" />
@@ -397,7 +398,7 @@
         android:id="@+id/mentorApplicants"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.MentorApplicants"
         android:label="fragment_mentor_applicants"
-        tools:layout="@layout/fragment_mentor_applicants" >
+        tools:layout="@layout/fragment_mentor_applicants">
         <action
             android:id="@+id/action_mentorApplicants_to_homeFragment"
             app:destination="@id/homeFragment" />
@@ -409,10 +410,53 @@
         android:id="@+id/mentorApplicationRequest"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.MentorApplicationRequest"
         android:label="fragment_mentor_application_request"
-        tools:layout="@layout/fragment_mentor_application_request" >
+        tools:layout="@layout/fragment_mentor_application_request">
         <action
             android:id="@+id/action_mentorApplicationRequest_to_mentorApplicants"
             app:destination="@id/mentorApplicants" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile">
+        <action
+            android:id="@+id/action_editMyProfileFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/programDetailsFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.ProgramDetailsFragment"
+        android:label="fragment_program_details"
+        tools:layout="@layout/fragment_program_details">
+        <action
+            android:id="@+id/action_programDetailsFragment_to_programsFragment"
+            app:destination="@id/programsFragment" />
+        <action
+            android:id="@+id/action_programDetailsFragment_to_programCriteriaFormFragment"
+            app:destination="@id/programCriteriaFormFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/programsFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.ProgramsFragment"
+        android:label="fragment_programs"
+        tools:layout="@layout/fragment_programs">
+        <action
+            android:id="@+id/action_programsFragment_to_programDetailsFragment"
+            app:destination="@id/programDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/programCriteriaFormFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.ProgramCriteriaFormFragment"
+        android:label="fragment_program_criteria_form"
+        tools:layout="@layout/fragment_program_criteria_form">
+        <action
+            android:id="@+id/action_programCriteriaFormFragment_to_programDetailsFragment"
+            app:destination="@id/programDetailsFragment" />
     </fragment>
 
 </navigation>

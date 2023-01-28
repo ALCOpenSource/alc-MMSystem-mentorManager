@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.ui.activities
+package com.peculiaruc.alc_mmsystem_mentormanager.ui.onboarding
 
 import android.annotation.SuppressLint
 import android.content.Intent

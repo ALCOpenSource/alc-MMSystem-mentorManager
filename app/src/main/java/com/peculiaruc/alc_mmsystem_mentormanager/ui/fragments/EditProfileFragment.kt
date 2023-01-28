@@ -46,7 +46,7 @@ class EditProfileFragment : Fragment() {
     private val binding get() = _binding!!
     private lateinit var viewModel: EditProfileViewModel
 
-    private var imageBody : MultipartBody.Part? = null
+    private var imageBody: MultipartBody.Part? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -56,7 +56,8 @@ class EditProfileFragment : Fragment() {
         viewModel = ViewModelProvider(this)[EditProfileViewModel::class.java]
 
 
-        Glide.with(this).load("https://images.unsplash.com/photo-1632765854612-9b02b6ec2b15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1886&q=80")
+        Glide.with(this)
+            .load("https://images.unsplash.com/photo-1632765854612-9b02b6ec2b15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1886&q=80")
             .circleCrop()
             .placeholder(R.drawable.ic_user_avater)
             .diskCacheStrategy(DiskCacheStrategy.ALL)
@@ -84,26 +85,36 @@ class EditProfileFragment : Fragment() {
         }
 
         binding.buttonSaveProfile.setOnClickListener {
-            findNavController().navigate(EditProfileFragmentDirections.actionEditProfileFragmentToProfileFragment())
+            findNavController().navigate(EditProfileFragmentDirections.actionEditMyProfileFragmentToProfileFragment())
         }
 
         val chipsTechnicality = listOf(
-            ChipDto(1,"Python"), ChipDto(2,"Java"), ChipDto(3,"Kotlin"),
-            ChipDto(4,"Django"), ChipDto(5,"JavaScript"), ChipDto(6,"My SQL"),
-            ChipDto(6,"Android"), ChipDto(6,"Swift"), ChipDto(6,"C++"),)
+            ChipDto(1, "Python"), ChipDto(2, "Java"), ChipDto(3, "Kotlin"),
+            ChipDto(4, "Django"), ChipDto(5, "JavaScript"), ChipDto(6, "My SQL"),
+            ChipDto(6, "Android"), ChipDto(6, "Swift"), ChipDto(6, "C++"),
+        )
 
         val chipsRules = listOf(
-            RoleDto(1,"Learner"), RoleDto(2,"Mentor"), RoleDto(3,"Program Assistant"),
-            RoleDto(4,"Program Assistant Lead"), RoleDto(5,"Mentor Manager"),)
+            RoleDto(1, "Learner"), RoleDto(2, "Mentor"), RoleDto(3, "Program Assistant"),
+            RoleDto(4, "Program Assistant Lead"), RoleDto(5, "Mentor Manager"),
+        )
         chipsTechnicality.forEach {
-            val chip = layoutInflater.inflate(R.layout.custom_chip_choice, binding.chipGroupTechnicalProficiency, false) as Chip
+            val chip = layoutInflater.inflate(
+                R.layout.custom_chip_choice,
+                binding.chipGroupTechnicalProficiency,
+                false
+            ) as Chip
             chip.text = it.name
 
             binding.chipGroupTechnicalProficiency.addView(chip)
         }
 
         chipsRules.forEach {
-            val chip = layoutInflater.inflate(R.layout.custom_chip_choice, binding.chipGroupPreviousRolesHeld, false) as Chip
+            val chip = layoutInflater.inflate(
+                R.layout.custom_chip_choice,
+                binding.chipGroupPreviousRolesHeld,
+                false
+            ) as Chip
             chip.text = it.name
 
             binding.chipGroupPreviousRolesHeld.addView(chip)
@@ -132,7 +143,7 @@ class EditProfileFragment : Fragment() {
         addProgramView()
 
         binding.toolbar.setNavigationOnClickListener {
-            findNavController().navigate(EditProfileFragmentDirections.actionEditProfileFragmentToProfileFragment())
+            findNavController().navigate(EditProfileFragmentDirections.actionEditMyProfileFragmentToProfileFragment())
         }
 
         binding.buttonPreviousPrograms.setOnClickListener {
@@ -177,7 +188,7 @@ class EditProfileFragment : Fragment() {
     private fun setUserImageBitmap(imageBitmap: Bitmap?) {
         if (imageBitmap != null) {
             try {
-                val imageFile = CompressUtil.compressBitmap(imageBitmap,requireContext())
+                val imageFile = CompressUtil.compressBitmap(imageBitmap, requireContext())
 
                 val requestFile = imageFile.asRequestBody("image/*".toMediaTypeOrNull())
                 imageBody = MultipartBody.Part.createFormData("image", imageFile.name, requestFile)

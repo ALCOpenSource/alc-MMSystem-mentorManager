@@ -8,13 +8,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.models.DocumentDto
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentProfileBinding
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.activities.LoginActivity
+import com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.login.LoginActivity
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.DocumentsProfileAdapter
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.viewmodels.ProfileViewModel
 

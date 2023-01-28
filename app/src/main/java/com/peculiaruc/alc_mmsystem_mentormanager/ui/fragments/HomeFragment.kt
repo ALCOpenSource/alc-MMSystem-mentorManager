@@ -21,15 +21,15 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentHomeBinding.inflate(inflater)
 
-        binding.btnNotifications.setOnClickListener {
-            val action = HomeFragmentDirections.actionHomeFragmentToEmptyNotificationsFragment()
-            it.findNavController().navigate(action)
-        }
-
-        binding.btnMentorApplication.setOnClickListener {
-            val action = HomeFragmentDirections.actionHomeFragmentToMentorApplicants()
-            it.findNavController().navigate(action)
-        }
+//        binding.btnNotifications.setOnClickListener {
+//            val action = HomeFragmentDirections.actionHomeFragmentToEmptyNotificationsFragment()
+//            it.findNavController().navigate(action)
+//        }
+//
+//        binding.btnMentorApplication.setOnClickListener {
+//            val action = HomeFragmentDirections.actionHomeFragmentToMentorApplicants()
+//            it.findNavController().navigate(action)
+//        }
 
 
         return binding.root
