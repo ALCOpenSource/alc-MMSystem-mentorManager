@@ -3,9 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.fragments.chat_messages.chat_messages.chat_messages_Fragment">
-
+    android:layout_height="match_parent">
 
 
     <!-- Group 591 -->
@@ -194,12 +192,12 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="24dp"
-                android:background="@null"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="4dp"
                 android:layout_toEndOf="@+id/emoji_smile"
+                android:background="@null"
                 android:gravity="top"
-              android:hint="type message .. "
+                android:hint="type message .. "
                 android:textAppearance="@style/type_messag"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/emoji_smile"

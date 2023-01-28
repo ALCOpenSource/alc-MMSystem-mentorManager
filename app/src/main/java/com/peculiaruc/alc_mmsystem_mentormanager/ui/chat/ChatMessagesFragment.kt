@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.chat_messages.home
+package com.peculiaruc.alc_mmsystem_mentormanager.ui.chat
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,10 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
-import androidx.navigation.ui.AppBarConfiguration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.models.chatMessages.ChatMessage
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentChatMessagesHomeBinding
@@ -20,7 +18,7 @@ import com.peculiaruc.alc_mmsystem_mentormanager.ui.viewmodels.individualmessage
 /**handle the toggle screen in the chats
  *
  */
-class chat_messages_Fragment : Fragment() {
+class ChatMessagesFragment : Fragment() {
 
     private var _binding: FragmentChatMessagesHomeBinding? = null
     private val binding get() = _binding!!
@@ -31,18 +29,10 @@ class chat_messages_Fragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ):
-            View? {
+    ): View? {
         _binding = FragmentChatMessagesHomeBinding.inflate(inflater, container, false)
         load_messages()
-        val navView: BottomNavigationView = binding.navView
 
-
-//        val appBarConfiguration = AppBarConfiguration(
-//            setOf(
-//                R.id.chat_messages_Fragment, R.id.mentor_profile
-//            )
-//        )
         val homeViewModel =
             ViewModelProvider(this).get(individualmessages_viewmode::class.java)
         _binding = FragmentChatMessagesHomeBinding.inflate(inflater, container, false)
@@ -53,7 +43,6 @@ class chat_messages_Fragment : Fragment() {
 
         return binding.root
     }
-
 
 
     private fun load_messages() {
@@ -94,48 +83,27 @@ class chat_messages_Fragment : Fragment() {
                 "3",
                 R.drawable.ann
             ),
-            )
+        )
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.broadcastM.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_chat_messages_Fragment3_to_individual_chat_fragment2)
+            Navigation.findNavController(it)
+                .navigate(R.id.action_chatMessagesFragment_to_individualChatFragment)
 
         }
         binding.carbonAdd.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_chat_messages_Fragment3_to_fragment_mm_chat22)
+            Navigation.findNavController(it)
+                .navigate(R.id.action_chatMessagesFragment_to_broadcastMessagesFragment)
         }
 
-        val navView: BottomNavigationView = binding.navView
+        binding.broadcastM.setOnClickListener {
+            Navigation.findNavController(it)
+                .navigate(R.id.action_chatMessagesFragment_to_broadcastMessagesFragment)
+        }
 
-//        navView.setOnItemReselectedListener {
-//            when (it.itemId) {
-//                R.id.chat_messages_Fragment -> {
-//                    //reports task
-//                    Navigation.findNavController(navView).navigate(R.id.action_chat_messages_Fragment3_to_activity_mm_reports2)
-//                }
-//                R.id.Search -> {
-//                    Navigation.findNavController(navView).navigate(R.id.action_chat_messages_Fragment3_to_individual_chat_fragment2)
-//                }
-//                R.id.programs -> {
-//
-//                    Navigation.findNavController(navView).navigate(R.id.action_chat_messages_Fragment3_to_discussionForumFragment)
-//                }
-//                R.id.Messages -> {
-//                    Navigation.findNavController(navView).navigate(R.id.action_chat_messages_Fragment3_to_broadcast_messages_Fragment)
-//
-//                }
-//                R.id.mentor_profile -> {
-//                    //mentor profile task
-//
-//                    Navigation.findNavController(navView).navigate(R.id.action_chat_messages_Fragment3_to_mentor_list_Activity2)
-//
-//
-//                }
-//            }
-//        }
         binding.arrowLeft.setOnClickListener {
             activity?.onBackPressed();
         }
@@ -147,11 +115,5 @@ class chat_messages_Fragment : Fragment() {
         rvAdapter = chat_messages_adapter(chat_messages)
         // attach adapter to the recycler view
         binding.mentorTasksRecycleview.adapter = rvAdapter
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-
-
     }
 }

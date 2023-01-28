@@ -42,7 +42,7 @@ class chat_messages_adapter(var chats_message_list: List<ChatMessage>, ) : Recyc
                 binding.dropdownsD.setOnClickListener {
                     global_Var_chat_partner=this.name
                     global_Var_chat_profile_pic=this.profilePic
-                    Navigation.findNavController(it).navigate(R.id.action_chat_messages_Fragment3_to_individual_chat_fragment2)
+                    Navigation.findNavController(it).navigate(R.id.action_chatMessagesFragment_to_individualChatFragment)
                 }
             }
             }

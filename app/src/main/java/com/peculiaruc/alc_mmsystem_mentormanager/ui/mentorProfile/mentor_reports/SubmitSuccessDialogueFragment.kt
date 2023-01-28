@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.ui.mentor_reports
+package com.peculiaruc.alc_mmsystem_mentormanager.ui.mentorProfile.mentor_reports
 
 
 import android.os.Bundle
@@ -7,15 +7,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import com.peculiaruc.alc_mmsystem_mentormanager.databinding.DownloadDialogueFragmentBinding
+import com.peculiaruc.alc_mmsystem_mentormanager.databinding.SubmitSuccessDialogueBinding
 
 /**
- * to implement the download dialogue fragment functionality
- * no functionality is implemented yet
+ * to implement the success dialogue screen functionality
+ *
  */
 
-class DownloadDialogueFragment : BottomSheetDialogFragment() {
-    private var _binding: DownloadDialogueFragmentBinding? = null
+class SubmitSuccessDialogueFragment : BottomSheetDialogFragment() {
+    private var _binding: SubmitSuccessDialogueBinding? = null
     private val binding
         get() = _binding!!
 
@@ -25,7 +25,7 @@ class DownloadDialogueFragment : BottomSheetDialogFragment() {
         savedInstanceState: Bundle?
     ): View {
         super.onCreateView(inflater, container, savedInstanceState)
-        _binding = DownloadDialogueFragmentBinding.inflate(inflater, container, false)
+        _binding = SubmitSuccessDialogueBinding.inflate(inflater, container, false)
 
         return binding.root
     }

@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.ui.mentor_reports
+package com.peculiaruc.alc_mmsystem_mentormanager.ui.mentorProfile.mentor_reports
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

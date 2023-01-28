@@ -19,8 +19,8 @@ import com.google.android.material.snackbar.Snackbar
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentDiscussionForumBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.DiscussionForumAdapter
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.mentor_reports.ComposeReportFragment
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.mentor_reports.DownloadDialogueFragment
+import com.peculiaruc.alc_mmsystem_mentormanager.ui.mentorProfile.mentor_reports.ComposeReportFragment
+import com.peculiaruc.alc_mmsystem_mentormanager.ui.mentorProfile.mentor_reports.DownloadDialogueFragment
 import com.peculiaruc.alc_mmsystem_mentormanager.util.OnBookmarkClickListener
 import com.peculiaruc.alc_mmsystem_mentormanager.util.OnDeleteClickListener
 import com.peculiaruc.alc_mmsystem_mentormanager.util.OnEditClickListener

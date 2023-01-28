@@ -26,9 +26,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Initializing Fragments
-//        navController = findNavController(R.id.nav_host_fragment_container)
-        navController = findNavController(R.id.nav_view)
         val navBottomView: BottomNavigationView = findViewById(R.id.bottom_navigation_view)
         val drawerLayout: DrawerLayout = findViewById(R.id.mmDrawerLayout)
         val navView: NavigationView = findViewById(R.id.Nav_View)
@@ -59,12 +56,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         //Navigation Up button
-        appBarConfiguration = AppBarConfiguration(navController.graph,drawerLayout)
+        appBarConfiguration = AppBarConfiguration(navController.graph, drawerLayout)
 
         // Drawer Layout
-        NavigationUI.setupWithNavController(navView,navController)
+        NavigationUI.setupWithNavController(navView, navController)
     }
+
     override fun onSupportNavigateUp(): Boolean {
-        return NavigationUI.navigateUp(navController,appBarConfiguration)
+        return NavigationUI.navigateUp(navController, appBarConfiguration)
     }
 }

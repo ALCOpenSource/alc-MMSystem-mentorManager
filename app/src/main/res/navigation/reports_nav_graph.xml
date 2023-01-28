@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/reportFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.mentor_reports.ReportFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.mentorProfile.mentor_reports.ReportFragment"
         android:label="fragment_report"
         tools:layout="@layout/fragment_report" >
         <action
@@ -19,13 +19,13 @@
     </fragment>
     <fragment
         android:id="@+id/reportDetailsFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.mentor_reports.ReportDetailsFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.mentorProfile.mentor_reports.ReportDetailsFragment"
         android:label="fragment_report_details"
         tools:layout="@layout/fragment_report_details" >
     </fragment>
     <fragment
         android:id="@+id/composeReportFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.mentor_reports.ComposeReportFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.mentorProfile.mentor_reports.ComposeReportFragment"
         android:label="fragment_compose_report"
         tools:layout="@layout/fragment_compose_report" >
         <action
@@ -38,14 +38,14 @@
 
     <fragment
         android:id="@+id/taskListFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.mentor_reports.TaskListFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.mentorProfile.mentor_reports.TaskListFragment"
         android:label="fragment_compose_report"
         tools:layout="@layout/fragment_task_list" >
     </fragment>
 
     <fragment
         android:id="@+id/programListFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.mentor_reports.ProgramListFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.mentorProfile.mentor_reports.ProgramListFragment"
         android:label="fragment_compose_report"
         tools:layout="@layout/fragment_program_list" >
     </fragment>

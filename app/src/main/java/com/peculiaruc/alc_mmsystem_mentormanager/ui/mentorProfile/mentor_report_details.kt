@@ -6,8 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorReportDetailsBinding
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.mentor_reports.DownloadDialogueFragment
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.mentor_reports.ShareDialogueFragment
+import com.peculiaruc.alc_mmsystem_mentormanager.ui.mentorProfile.mentor_reports.DownloadDialogueFragment
+import com.peculiaruc.alc_mmsystem_mentormanager.ui.mentorProfile.mentor_reports.ShareDialogueFragment
 
 /**
  * This handles the details of the report

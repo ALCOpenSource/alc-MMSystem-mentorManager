@@ -130,7 +130,7 @@
         tools:layout="@layout/fragment_messages" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.ProfileFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile">
         <action
@@ -186,7 +186,7 @@
         tools:layout="@layout/fragment_mentors" />
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments.SearchFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.search.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search">
         <action
@@ -385,5 +385,27 @@
             android:id="@+id/action_programCriteriaFormFragment_to_programDetailsFragment"
             app:destination="@id/programDetailsFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/chatMessagesFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.chat.ChatMessagesFragment"
+        android:label="ChatMessagesFragment"
+        tools:layout="@layout/fragment_chat_messages_home" >
+        <action
+            android:id="@+id/action_chatMessagesFragment_to_individualChatFragment"
+            app:destination="@id/individualChatFragment" />
+        <action
+            android:id="@+id/action_chatMessagesFragment_to_broadcastMessagesFragment"
+            app:destination="@id/broadcastMessagesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/individualChatFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.chat.chatIndividual.IndividualChatFragment"
+        android:label="IndividualChatFragment"
+        tools:layout="@layout/fragment_chats" />
+    <fragment
+        android:id="@+id/broadcastMessagesFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.chat.broadcastMessages.BroadcastMessagesFragment"
+        android:label="BroadcastMessagesFragment" />
+
 
 </navigation>

@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentormanager.ui.fragments
+package com.peculiaruc.alc_mmsystem_mentormanager.ui.profile
 
 
 import android.content.Intent
@@ -15,7 +15,6 @@ import com.peculiaruc.alc_mmsystem_mentormanager.data.models.DocumentDto
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentProfileBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.login.LoginActivity
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.adapters.DocumentsProfileAdapter
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.viewmodels.ProfileViewModel
 
 /**
  * this fragment is used to show the profile of the user
