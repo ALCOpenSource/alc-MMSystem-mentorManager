@@ -1,3 +1,37 @@
 <resources>
     <string name="app_name">MMS Mentor Manager</string>
+
+    <!--  ******************* Bottom Navigation Titles ********************** -->
+    <string name="home_title">Home</string>
+    <string name="search_title">Search</string>
+    <string name="programs_title">Programs</string>
+    <string name="messages_title">Messages</string>
+    <string name="profile_title">Profile</string>
+    <string name="edit_profile_title">Edit Profile</string>
+
+    <!--  ******************* Home  ********************** -->
+    <string name="mentor_manager">Mentor manager</string>
+    <string name="notifications_button">Notification</string>
+    <string name="mentors">Mentors</string>
+    <string name="view">view</string>
+    <string name="programs">Programs</string>
+    <string name="tasks">Tasks</string>
+    <string name="reports">Reports</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="certificates">Certificates</string>
+    <string name="image_certificate_content_description">Mentor Manager Certificate</string>
+    <string name="image_task_content_description">Task Icon</string>
+    <string name="all_tasks">All Tasks</string>
+    <string name="task_assign">Assign Task</string>
+    <string name="task_assigned">Assigned</string>
+    <string name="task_completed">Completed</string>
+    <string name="all_programs">All Programs</string>
+    <string name="all_reports">All Reports</string>
+    <string name="create_task">Create\nTask</string>
+    <string name="send_broadcast_message">Send Broadcast\nMessage</string>
+    <string name="add_new_mentor">Add New \nMentor</string>
+    <string name="requests">Requests</string>
+    <string name="mentor_application">Mentor Application</string>
+
+
 </resources>
