@@ -84,5 +84,9 @@
 
     <string name="filter">Filter</string>
 
+    <!-- *************** Splash ************    -->
+    <string name="splash_screen_logo_desc">Brand Logo</string>
+    <string name="splash_screen_app_name">Mentor Management System</string>
+
 
 </resources>
