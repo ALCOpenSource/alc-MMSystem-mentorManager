@@ -7,11 +7,13 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.models.*
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorManagerProfileBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.base.BaseFragment
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.mentorManagerProfile.adapters.*
+import com.peculiaruc.alc_mmsystem_mentormanager.utilities.event.EventObserve
 import com.peculiaruc.alc_mmsystem_mentormanager.utilities.type.ProgramProgress
 import com.peculiaruc.alc_mmsystem_mentormanager.utilities.type.TaskStatus
 
@@ -60,21 +62,21 @@ class MentorManagerProfileFragment : BaseFragment<FragmentMentorManagerProfileBi
     }
 
     private fun onEvents() {
-//        viewModel.selectCertificateEvent.observe(viewLifecycleOwner, EventObserve { certificate ->
-//            // need to add certificate id
-//            findNavController().navigate(
-//                MentorManagerProfileFragmentDirections
-//                    .actionMentorManagerProfileFragmentToCertificateFragment(certificate.title)
-//            )
-//        })
-//
+        viewModel.selectCertificateEvent.observe(viewLifecycleOwner, EventObserve { certificate ->
+            // need to add certificate id
+            findNavController().navigate(
+                MentorManagerProfileFragmentDirections
+                    .actionMentorManagerProfileFragmentToCertificateFragment(certificate.title)
+            )
+        })
+
 //        viewModel.selectTaskEvent.observe(viewLifecycleOwner, EventObserve { task ->
 //            findNavController().navigate(
 //                MentorManagerProfileFragmentDirections
 //                    .actionMentorManagerProfileFragmentToTaskDetailsFragment()
 //            )
 //        })
-//
+
 //        viewModel.downloadReportEvent.observe(viewLifecycleOwner, EventObserve {
 //            findNavController().navigate(
 //                MentorManagerProfileFragmentDirections.actionMentorManagerProfileFragmentToBasicDialog(
@@ -82,7 +84,7 @@ class MentorManagerProfileFragment : BaseFragment<FragmentMentorManagerProfileBi
 //                )
 //            )
 //        })
-//
+
 //        viewModel.shareReportEvent.observe(viewLifecycleOwner, EventObserve {
 //            findNavController().navigate(
 //                MentorManagerProfileFragmentDirections
@@ -92,12 +94,12 @@ class MentorManagerProfileFragment : BaseFragment<FragmentMentorManagerProfileBi
 //            )
 //        })
 //
-//        viewModel.openReportDetailsEvent.observe(viewLifecycleOwner, EventObserve {
-//            findNavController().navigate(
-//                MentorManagerProfileFragmentDirections
-//                    .actionMentorManagerProfileFragmentToReportDetailsFragment()
-//            )
-//        })
+        viewModel.openReportDetailsEvent.observe(viewLifecycleOwner, EventObserve {
+            findNavController().navigate(
+                MentorManagerProfileFragmentDirections
+                    .actionMentorManagerProfileFragmentToReportDetailsFragment()
+            )
+        })
 //
 //        viewModel.selectProgramEvent.observe(viewLifecycleOwner, EventObserve {
 //            findNavController().navigate(
