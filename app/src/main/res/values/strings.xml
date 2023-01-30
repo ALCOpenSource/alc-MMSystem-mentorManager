@@ -96,6 +96,15 @@
     <string name="new_user">New user?</string>
     <string name="sign_up"><u>Sign up</u></string>
 
+    <!-- *************** Register  ************    -->
+    <string name="join_team_signup">join the team</string>
+    <string name="fill_form_signup">Fill in the form below</string>
+    <string name="name_signup">Name</string>
+    <string name="mentor_radio_button">Mentor</string>
+    <string name="mentor_manager_radio_button">Mentor Manager</string>
+    <string name="register_button">Register</string>
+
+
     <!-- *************** Splash ************    -->
     <string name="splash_screen_logo_desc">Brand Logo</string>
     <string name="splash_screen_app_name">Mentor Management System</string>

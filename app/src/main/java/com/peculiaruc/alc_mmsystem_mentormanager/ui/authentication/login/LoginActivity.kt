@@ -7,6 +7,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ActivityLoginBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.MainActivity
+import com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.register.RegisterActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -27,9 +28,9 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.textViewSignUp.setOnClickListener {
-//            val intent = Intent(this, SignUpActivity::class.java)
-//            startActivity(intent)
-//            finish()
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+            finish()
         }
 
         binding.textViewForgotPassword.setOnClickListener {

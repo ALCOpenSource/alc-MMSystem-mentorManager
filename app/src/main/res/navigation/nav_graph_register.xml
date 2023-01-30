@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_register"
+    app:startDestination="@id/registerJoinTeamFragment">
+
+    <fragment
+        android:id="@+id/registerJoinTeamFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.register.RegisterJoinTeamFragment"
+        android:label="RegisterJoinTeamFragment"
+        tools:layout="@layout/fragment_register_join_team" />
+</navigation>
