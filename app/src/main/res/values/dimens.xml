@@ -40,4 +40,6 @@
     <dimen name="search_item_spacing_extra_small">4dp</dimen>
     <dimen name="search_item_spacing_small">10dp</dimen>
 
+    <dimen name="google_icon_padding">-70dp</dimen>
+
 </resources>

@@ -7,7 +7,7 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.ActivitySplashScreenBinding
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.MainActivity
+import com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.login.LoginActivity
 
 /**
  * This activity is used for splash screen
@@ -24,7 +24,7 @@ class SplashScreenActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }, timeDelay)
