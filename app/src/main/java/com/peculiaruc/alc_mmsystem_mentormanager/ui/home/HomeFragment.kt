@@ -3,7 +3,7 @@ package com.peculiaruc.alc_mmsystem_mentormanager.ui.home
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.viewModels
-import com.peculiaruc.alc_mmsystem_admin.utilities.event.EventObserve
+import com.peculiaruc.alc_mmsystem_mentormanager.utilities.event.EventObserve
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentHomeBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.MainActivity

@@ -12,12 +12,21 @@
     <!--  ******************* Home  ********************** -->
     <string name="mentor_manager">Mentor manager</string>
     <string name="notifications_button">Notification</string>
-    <string name="mentors">Mentors</string>
     <string name="view">view</string>
     <string name="programs">Programs</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="create_task">Create\nTask</string>
+    <string name="send_broadcast_message">Send Broadcast\nMessage</string>
+    <string name="add_new_mentor">Add New \nMentor</string>
+    <string name="requests">Requests</string>
+    <string name="mentor_application">Mentor Application</string>
+
+    <!--  ************ Mentor Manger Profile ****************** -->
+    <string name="menu_chat">Chat</string>
+    <string name="about">About</string>
+    <string name="mentors">Mentors</string>
     <string name="tasks">Tasks</string>
     <string name="reports">Reports</string>
-    <string name="quick_actions">Quick Actions</string>
     <string name="certificates">Certificates</string>
     <string name="image_certificate_content_description">Mentor Manager Certificate</string>
     <string name="image_task_content_description">Task Icon</string>
@@ -27,11 +36,27 @@
     <string name="task_completed">Completed</string>
     <string name="all_programs">All Programs</string>
     <string name="all_reports">All Reports</string>
-    <string name="create_task">Create\nTask</string>
-    <string name="send_broadcast_message">Send Broadcast\nMessage</string>
-    <string name="add_new_mentor">Add New \nMentor</string>
-    <string name="requests">Requests</string>
-    <string name="mentor_application">Mentor Application</string>
+
+    <!--  ************ Mentor Manger Profile About ****************** -->
+    <string name="years_of_technical_experience">Years of Technical Experience:</string>
+    <string name="been_a_mentor_before">Been a Mentor Before?</string>
+    <string name="previous_roles_held">Previous Roles Held:</string>
+    <string name="documents">Documents</string>
+    <string name="program_of_interest">Program of interest:</string>
+    <string name="previous_programs">Previous Programs</string>
+    <string name="text_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissimpharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus. </string>
+    <string name="bio">Bio</string>
+    <string name="technical_proficiency">Technical Proficiency</string>
+    <string name="delete_mentor_manager">Delete Mentor Manager</string>
+
+
+    <!-- *************** Certificate ************    -->
+    <string name="program_image">Program image</string>
+    <string name="add_icon">Add Icon</string>
+
+    <!-- *************** Report ************    -->
+    <string name="download_report">Download report</string>
+    <string name="share_report">Share report</string>
 
 
 </resources>

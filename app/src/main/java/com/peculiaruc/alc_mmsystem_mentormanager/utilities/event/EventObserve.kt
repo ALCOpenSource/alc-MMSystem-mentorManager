@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_admin.utilities.event
+package com.peculiaruc.alc_mmsystem_mentormanager.utilities.event
 
 import androidx.lifecycle.Observer
 

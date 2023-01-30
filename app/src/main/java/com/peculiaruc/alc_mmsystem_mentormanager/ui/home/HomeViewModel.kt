@@ -3,7 +3,7 @@ package com.peculiaruc.alc_mmsystem_mentormanager.ui.home
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.peculiaruc.alc_mmsystem_admin.utilities.event.Event
+import com.peculiaruc.alc_mmsystem_mentormanager.utilities.event.Event
 
 class HomeViewModel : ViewModel() {
 

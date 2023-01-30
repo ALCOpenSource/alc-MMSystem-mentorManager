@@ -8,6 +8,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.ViewModel
+import com.peculiaruc.alc_mmsystem_mentormanager.BR
 
 /**
  * abstract class for all dialogs
@@ -28,7 +29,7 @@ abstract class BaseDialog<VDB : ViewDataBinding> : DialogFragment(){
         _binding = DataBindingUtil.inflate(inflater, layoutIdFragment, container, false)
         _binding.apply {
             lifecycleOwner = viewLifecycleOwner
-//            setVariable(BR.viewModel,viewModel)
+            setVariable(BR.viewModel,viewModel)
             return root
         }
     }
