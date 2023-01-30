@@ -103,6 +103,15 @@
     <string name="mentor_radio_button">Mentor</string>
     <string name="mentor_manager_radio_button">Mentor Manager</string>
     <string name="register_button">Register</string>
+    <string name="next">Next</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="full_name">Full Name</string>
+    <string name="select_file">Select file</string>
+    <string name="set_a_profile_picture">Set a profile picture</string>
+    <string name="become_a_mentor_manager">Become a mentor manager</string>
+    <string name="fill_in_the_form_below">Fill in the form below</string>
+    <string name="page_1_of_4">Page 1 of 4</string>
 
 
     <!-- *************** Splash ************    -->

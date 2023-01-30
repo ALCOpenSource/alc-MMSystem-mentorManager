@@ -9,5 +9,15 @@
         android:id="@+id/registerJoinTeamFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.register.RegisterJoinTeamFragment"
         android:label="RegisterJoinTeamFragment"
-        tools:layout="@layout/fragment_register_join_team" />
+        tools:layout="@layout/fragment_register_join_team">
+        <action
+            android:id="@+id/action_registerJoinTeamFragment_to_registerMentorMangerFragment"
+            app:destination="@id/registerMentorMangerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerMentorMangerFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.register.RegisterMentorMangerFragment"
+        android:label="RegisterMentorMangerFragment"
+        tools:layout="@layout/fragment_register_mentor_manger" />
 </navigation>

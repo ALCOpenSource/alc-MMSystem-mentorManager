@@ -115,4 +115,5 @@
         <item name="android:textColor">@color/chip_text_selector</item>
         <item name="chipCornerRadius">5dp</item>
     </style>
+
 </resources>

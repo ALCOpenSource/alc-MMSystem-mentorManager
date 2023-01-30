@@ -1,16 +1,13 @@
 package com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.register
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.peculiaruc.alc_mmsystem_mentormanager.R
-import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentHomeBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentRegisterJoinTeamBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.base.BaseFragment
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.home.HomeViewModel
+import com.peculiaruc.alc_mmsystem_mentormanager.utilities.event.EventObserve
 
 
 class RegisterJoinTeamFragment : BaseFragment<FragmentRegisterJoinTeamBinding>() {
@@ -20,9 +17,15 @@ class RegisterJoinTeamFragment : BaseFragment<FragmentRegisterJoinTeamBinding>()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setTitle(false)
+
+        observeEvent()
     }
 
+    private fun observeEvent() {
+        viewModel.registerMentorManagerEvent.observe(viewLifecycleOwner, EventObserve {
+            findNavController().navigate(RegisterJoinTeamFragmentDirections.actionRegisterJoinTeamFragmentToRegisterMentorMangerFragment())
+        })
+    }
 
 
 }
