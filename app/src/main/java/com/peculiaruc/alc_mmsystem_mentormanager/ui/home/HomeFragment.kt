@@ -3,6 +3,8 @@ package com.peculiaruc.alc_mmsystem_mentormanager.ui.home
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.viewModels
+import androidx.navigation.Navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.peculiaruc.alc_mmsystem_mentormanager.utilities.event.EventObserve
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentHomeBinding
@@ -23,10 +25,10 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
     private fun onEvents() {
         viewModel.notificationEvent.observe(viewLifecycleOwner, EventObserve {
-//            findNavController().navigate(
-//                HomeFragmentDirections
-//                    .actionHomeFragmentToNotificationFragment()
-//            )
+            findNavController().navigate(
+                HomeFragmentDirections
+                    .actionHomeFragmentToNotificationFragment()
+            )
         })
 
         viewModel.drawerEvent.observe(viewLifecycleOwner, EventObserve {

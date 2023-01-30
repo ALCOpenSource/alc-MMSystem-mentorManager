@@ -58,5 +58,15 @@
     <string name="download_report">Download report</string>
     <string name="share_report">Share report</string>
 
+    <!-- *************** Notification ************    -->
+    <string name="notification_title">Notifications</string>
+    <string name="all_notifications">All</string>
+    <string name="read_notification">Mark all as read</string>
+    <string name="notification_details">&lt;b> %1$s &lt;/b>  %2$s &lt;b> %3$s &lt;/b></string>
+    <array name="types">
+        <item>All</item>
+        <item>Read</item>
+        <item>Unread</item>
+    </array>
 
 </resources>
