@@ -94,9 +94,13 @@
         android:id="@+id/mentorFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.mentor.MentorFragment"
         android:label="MentorFragment"
-        tools:layout="@layout/fragment_mentor" >
+        tools:layout="@layout/fragment_mentor">
         <action
             android:id="@+id/action_mentorFragment_to_mentorManagerProfileFragment"
             app:destination="@id/mentorManagerProfileFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.setting.SettingsFragment"
+        android:label="SettingsFragment" />
 </navigation>

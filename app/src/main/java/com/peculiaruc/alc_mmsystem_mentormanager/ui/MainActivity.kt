@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
      * */
     fun onClickSetting(view: View) {
         binding.drawerLayout.closeDrawers()
-//        binding.navHostFragment.findNavController().navigate(R.id.settingsFragment)
+        binding.navHostFragment.findNavController().navigate(R.id.settingsFragment)
     }
 
     override fun onResume() {
