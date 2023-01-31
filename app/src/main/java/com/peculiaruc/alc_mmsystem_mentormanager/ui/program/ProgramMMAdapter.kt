@@ -16,5 +16,5 @@ class ProgramMMAdapter(
 
 
 interface ProgramMMAInteractionListener : BaseInteractionListener {
-    fun onItemProgramSelected(item: Certificate)
+    fun onItemProgramSelected(item: ProgramDto)
 }

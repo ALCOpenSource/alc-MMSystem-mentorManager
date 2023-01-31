@@ -273,21 +273,21 @@ fun setVisibility(view: View, isVisible: Boolean) {
 /**
  * help to set text on button in Mentor Manger Dialog screen
  */
-//@BindingAdapter("app:mentorMangerButton")
-//fun setMentorMangerButtonText(view: Button, doneSend: Boolean?) {
-//    doneSend?.let {
-//        val title = if (doneSend) {
-//            R.string.button_done
-//        } else {
-//            R.string.button_send
-//        }
-//        view.text = view.context.getText(title)
-//    }
-//}
-//
-///**
-// * help to set text on first button in Dialog screen
-// */
+@BindingAdapter("app:mentorMangerButton")
+fun setMentorMangerButtonText(view: Button, doneSend: Boolean?) {
+    doneSend?.let {
+        val title = if (doneSend) {
+            R.string.button_done
+        } else {
+            R.string.button_send
+        }
+        view.text = view.context.getText(title)
+    }
+}
+
+/**
+ * help to set text on first button in Dialog screen
+ */
 //@BindingAdapter("app:textFirstActionButton")
 //fun setTextFirstActionButton(view: Button, type: DialogTypes?) {
 //    type?.let {
@@ -299,10 +299,10 @@ fun setVisibility(view: View, isVisible: Boolean) {
 //        view.text = view.context.getText(title)
 //    }
 //}
-//
-///**
-// * help to set text on second button in Dialog screen
-// */
+
+/**
+ * help to set text on second button in Dialog screen
+ */
 //@BindingAdapter("app:textSecondActionButton")
 //fun setTextSecondActionButton(view: Button, type: DialogTypes?) {
 //    type?.let {
@@ -314,42 +314,42 @@ fun setVisibility(view: View, isVisible: Boolean) {
 //        view.text = view.context.getText(title)
 //    }
 //}
-//
-//
-///**
-// * help to set text on button in ProgramDetails screen
-// */
-//@BindingAdapter("app:buttonAssignProgram")
-//fun setButtonAssignProgram(button: Button, isAssigned: Boolean?) {
-//    isAssigned?.let {
-//        val context = button.context
-//        if (isAssigned) {
-//            button.setTextColor(context.resources.getColor(R.color.mms_pry_2))
-//            button.setBackgroundColor(context.resources.getColor(R.color.white))
-//            button.text = context.getText(R.string.button_unAssign_program)
-//        } else {
-//            button.setTextColor(context.resources.getColor(R.color.mms_black_10))
-//            button.setBackgroundColor(context.resources.getColor(R.color.mms_pry_2))
-//            button.text = context.getText(R.string.button_assign_program)
-//        }
-//    }
-//}
-//
-///**
-// * help to set text on button in taskDetails screen
-// */
-//@BindingAdapter("app:buttonAssignTask")
-//fun setButtonTaskProgram(button: Button, isAssigned: Boolean?) {
-//    isAssigned?.let {
-//        val context = button.context
-//        if (isAssigned) {
-//            button.setTextColor(context.resources.getColor(R.color.mms_pry_2))
-//            button.setBackgroundColor(context.resources.getColor(R.color.white))
-//            button.text = context.getText(R.string.unassigned_task_button)
-//        } else {
-//            button.setTextColor(context.resources.getColor(R.color.mms_black_10))
-//            button.setBackgroundColor(context.resources.getColor(R.color.mms_pry_2))
-//            button.text = context.getText(R.string.assign_task_button)
-//        }
-//    }
-//}
+
+
+/**
+ * help to set text on button in ProgramDetails screen
+ */
+@BindingAdapter("app:buttonAssignProgram")
+fun setButtonAssignProgram(button: Button, isAssigned: Boolean?) {
+    isAssigned?.let {
+        val context = button.context
+        if (isAssigned) {
+            button.setTextColor(context.resources.getColor(R.color.mms_pry_2))
+            button.setBackgroundColor(context.resources.getColor(R.color.white))
+            button.text = context.getText(R.string.button_unAssign_program)
+        } else {
+            button.setTextColor(context.resources.getColor(R.color.mms_black_10))
+            button.setBackgroundColor(context.resources.getColor(R.color.mms_pry_2))
+            button.text = context.getText(R.string.button_assign_program)
+        }
+    }
+}
+
+/**
+ * help to set text on button in taskDetails screen
+ */
+@BindingAdapter("app:buttonAssignTask")
+fun setButtonTaskProgram(button: Button, isAssigned: Boolean?) {
+    isAssigned?.let {
+        val context = button.context
+        if (isAssigned) {
+            button.setTextColor(context.resources.getColor(R.color.mms_pry_2))
+            button.setBackgroundColor(context.resources.getColor(R.color.white))
+            button.text = context.getText(R.string.unassigned_task_button)
+        } else {
+            button.setTextColor(context.resources.getColor(R.color.mms_black_10))
+            button.setBackgroundColor(context.resources.getColor(R.color.mms_pry_2))
+            button.text = context.getText(R.string.assign_task_button)
+        }
+    }
+}

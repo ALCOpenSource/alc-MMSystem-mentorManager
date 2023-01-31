@@ -3,12 +3,12 @@ package com.peculiaruc.alc_mmsystem_mentormanager.ui.program
 import android.media.metrics.Event
 import android.os.Build
 import android.os.Bundle
+import android.view.*
+import android.widget.Toast
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.models.Program
 import com.peculiaruc.alc_mmsystem_mentormanager.data.models.ProgramDto
@@ -27,8 +27,9 @@ class ProgramFragment : BaseFragment<FragmentProgramBinding>() {
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setTitle(false)
+        setTitle(true, getString(R.string.programs))
         setBottomNavigationVisibility(true)
+        setHasOptionsMenu(true)
         onEvents()
     }
 
@@ -77,16 +78,32 @@ class ProgramFragment : BaseFragment<FragmentProgramBinding>() {
 
         viewModel.assignedProgramEvent.observe(viewLifecycleOwner, EventObserve {
             resetAllTabs()
-            binding.buttonAssigned.backgroundTintList = resources.getColorStateList(R.color.white,null)
-            binding.buttonAssigned.setTextColor( resources.getColorStateList(R.color.mms_pry_2,null))
+            binding.buttonAssigned.backgroundTintList =
+                resources.getColorStateList(R.color.white, null)
+            binding.buttonAssigned.setTextColor(
+                resources.getColorStateList(
+                    R.color.mms_pry_2,
+                    null
+                )
+            )
             binding.recyclerViewPrograms.adapter = ProgramMMAdapter(assignedFakes, viewModel)
         })
 
         viewModel.completedProgramEvent.observe(viewLifecycleOwner, EventObserve {
             resetAllTabs()
-            binding.buttonCompleted.backgroundTintList = resources.getColorStateList(R.color.white,null)
-            binding.buttonCompleted.setTextColor( resources.getColorStateList(R.color.mms_pry_2,null))
+            binding.buttonCompleted.backgroundTintList =
+                resources.getColorStateList(R.color.white, null)
+            binding.buttonCompleted.setTextColor(
+                resources.getColorStateList(
+                    R.color.mms_pry_2,
+                    null
+                )
+            )
             binding.recyclerViewPrograms.adapter = ProgramMMAdapter(completedFakes, viewModel)
+        })
+
+        viewModel.selectProgramEvent.observe(viewLifecycleOwner, EventObserve {
+            findNavController().navigate(ProgramFragmentDirections.actionProgramFragmentToProgramDetailsFragment())
         })
     }
 
@@ -104,4 +121,15 @@ class ProgramFragment : BaseFragment<FragmentProgramBinding>() {
         binding.buttonCompleted.setTextColor(resources.getColorStateList(R.color.white, null))
     }
 
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.program, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.search) {
+            Toast.makeText(requireContext(), "search", Toast.LENGTH_LONG).show()
+        }
+        return super.onOptionsItemSelected(item)
+    }
 }

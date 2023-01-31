@@ -70,12 +70,12 @@ class MentorManagerProfileFragment : BaseFragment<FragmentMentorManagerProfileBi
             )
         })
 
-//        viewModel.selectTaskEvent.observe(viewLifecycleOwner, EventObserve { task ->
-//            findNavController().navigate(
-//                MentorManagerProfileFragmentDirections
-//                    .actionMentorManagerProfileFragmentToTaskDetailsFragment()
-//            )
-//        })
+        viewModel.selectTaskEvent.observe(viewLifecycleOwner, EventObserve { task ->
+            findNavController().navigate(
+                MentorManagerProfileFragmentDirections
+                    .actionMentorManagerProfileFragmentToTaskDetailsFragment()
+            )
+        })
 
 //        viewModel.downloadReportEvent.observe(viewLifecycleOwner, EventObserve {
 //            findNavController().navigate(
@@ -100,13 +100,13 @@ class MentorManagerProfileFragment : BaseFragment<FragmentMentorManagerProfileBi
                     .actionMentorManagerProfileFragmentToReportDetailsFragment()
             )
         })
-//
-//        viewModel.selectProgramEvent.observe(viewLifecycleOwner, EventObserve {
-//            findNavController().navigate(
-//                MentorManagerProfileFragmentDirections
-//                    .actionMentorManagerProfileFragmentToProgramDetailsFragment()
-//            )
-//        })
+
+        viewModel.selectProgramEvent.observe(viewLifecycleOwner, EventObserve {
+            findNavController().navigate(
+                MentorManagerProfileFragmentDirections
+                    .actionMentorManagerProfileFragmentToProgramDetailsFragment()
+            )
+        })
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

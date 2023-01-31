@@ -69,6 +69,12 @@
     <string name="add_icon">Add Icon</string>
     <string name="program_image">Program image</string>
 
+    <!-- *************** Task ************    -->
+    <string name="task_title">Task</string>
+    <string name="assign_task_button">Assign to task</string>
+    <string name="unassigned_task_button">Unassigned to task</string>
+    <string name="view_button">View</string>
+
 
     <!-- *************** Notification ************    -->
     <string name="notification_title">Notifications</string>
@@ -157,5 +163,11 @@
     <string name="assigned">Assigned</string>
     <string name="completed">Completed</string>
     <string name="search">Search</string>
+    <string name="button_assign_program">Assign to Program</string>
+    <string name="button_unAssign_program">Unassigned from program</string>
+
+    <string name="button_done">Done</string>
+    <string name="button_undo">Undo</string>
+    <string name="button_send">Send</string>
 
 </resources>
