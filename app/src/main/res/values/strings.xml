@@ -111,12 +111,41 @@
     <string name="set_a_profile_picture">Set a profile picture</string>
     <string name="become_a_mentor_manager">Become a mentor manager</string>
     <string name="fill_in_the_form_below">Fill in the form below</string>
+    <string name="previous">Previous</string>
+    <string name="been_a_mentor_manager_before">Been a mentor manager before? *</string>
+    <string name="years_of_technical_expereience">Years of technical expereience *</string>
     <string name="page_1_of_4">Page 1 of 4</string>
+    <string name="page_2_of_4">Page 2 of 4</string>
+    <string name="page_3_of_4">Page 3 of 4</string>
+    <string name="page_4_of_4">Page 4 of 4</string>
+    <string name="upload_documents">Upload Documents</string>
+    <string name="social">Social</string>
+    <string name="github">Github</string>
+    <string name="linkedin">Linkedin</string>
+    <string name="twitter">Twitter</string>
+    <string name="instagram">Instagram</string>
+    <string name="choose">Choose</string>
 
+    <string name="learner">Learner</string>
+
+    <array name="countries">
+        <item>Egypt</item>
+        <item>Ethiopia</item>
+        <item>Sudan</item>
+    </array>
+
+    <array name="cities">
+        <item>Egypt</item>
+        <item>Ethiopia</item>
+        <item>Sudan</item>
+    </array>
+    <string name="notification">Notification</string>
 
     <!-- *************** Splash ************    -->
     <string name="splash_screen_logo_desc">Brand Logo</string>
     <string name="splash_screen_app_name">Mentor Management System</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

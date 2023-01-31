@@ -19,5 +19,46 @@
         android:id="@+id/registerMentorMangerFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.register.RegisterMentorMangerFragment"
         android:label="RegisterMentorMangerFragment"
-        tools:layout="@layout/fragment_register_mentor_manger" />
+        tools:layout="@layout/fragment_register_mentor_manger">
+        <action
+            android:id="@+id/action_registerMentorMangerFragment_to_registrationSecondFormFragment"
+            app:destination="@id/registrationSecondFormFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registrationSecondFormFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.register.RegistrationSecondFormFragment"
+        android:label="RegistrationSecondFormFragment"
+        tools:layout="@layout/fragment_registeration_second_form">
+        <action
+            android:id="@+id/action_registrationSecondFormFragment_to_registrationThirdFormFragment"
+            app:destination="@id/registrationThirdFormFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registrationThirdFormFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.register.RegistrationThirdFormFragment"
+        android:label="RegistrationThirdFormFragment"
+        tools:layout="@layout/fragment_registration_third_form">
+        <action
+            android:id="@+id/action_registrationThirdFormFragment_to_registrationForthFormFragment"
+            app:destination="@id/registrationForthFormFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registrationForthFormFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.register.RegistrationForthFormFragment"
+        android:label="RegistrationForthFormFragment"
+        tools:layout="@layout/fragment_registration_forth_form">
+        <action
+            android:id="@+id/action_registrationForthFormFragment_to_registerNotificationFragment"
+            app:destination="@id/registerNotificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerNotificationFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.register.notification.RegisterNotificationFragment"
+        android:label="RegisterNotificationFragment"
+        tools:layout="@layout/fragment_register_notification" />
+
+
 </navigation>

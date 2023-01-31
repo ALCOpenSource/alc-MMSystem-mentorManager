@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.peculiaruc.alc_mmsystem_mentormanager.data.models.DocumentDto" />
+
+        <variable
+            name="listener"
+            type="com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.register.DocumentInteractionListener" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_document_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/mms_black_2"
+            android:textSize="16sp"
+            android:text="@{item.name}"
+            app:fontFamily="@font/mukta_regular"
+            app:layout_constraintEnd_toStartOf="@+id/textView_choose"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Resume.doc" />
+
+        <TextView
+            android:id="@+id/textView_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="@string/choose"
+            android:textColor="@color/mms_pry_2"
+            android:textSize="16sp"
+            app:fontFamily="@font/mukta_regular"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_document_name"
+            app:layout_constraintEnd_toStartOf="@+id/imageView_remove"
+            app:layout_constraintTop_toTopOf="@+id/textView_document_name" />
+
+        <ImageView
+            android:id="@+id/imageView_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_remove"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_choose"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView_choose"
+            tools:ignore="ContentDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

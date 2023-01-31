@@ -71,6 +71,7 @@
                     android:layout_height="74dp"
                     android:layout_marginTop="30dp"
                     android:scaleType="centerCrop"
+                    android:src="@drawable/image"
                     app:layout_constraintStart_toStartOf="@+id/textView_page_1_of_4"
                     app:layout_constraintTop_toBottomOf="@id/textView_page_1_of_4"
                     app:shapeAppearanceOverlay="@style/CircleImage"
@@ -165,7 +166,8 @@
                         android:layout_height="match_parent"
                         android:fontFamily="@font/mukta_regular"
                         android:inputType="none"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        app:simpleItems="@array/countries" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -186,7 +188,8 @@
                         android:layout_height="match_parent"
                         android:fontFamily="@font/mukta_regular"
                         android:inputType="none"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        app:simpleItems="@array/cities" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.button.MaterialButton
@@ -195,6 +198,7 @@
                     android:layout_height="70dp"
                     android:layout_marginTop="46dp"
                     android:layout_marginBottom="30dp"
+                    android:onClick="@{()->viewModel.goToSecondRegistrationForm()}"
                     android:paddingVertical="15dp"
                     android:text="@string/next"
                     android:textAllCaps="false"
