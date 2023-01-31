@@ -32,12 +32,7 @@ class MainActivity : AppCompatActivity() {
         binding.drawer.setNavigationItemSelectedListener { menuItem ->
             binding.drawerLayout.closeDrawers()
             menuItem.isChecked = true
-
-            // this condition for test only until other fragment be complete.
-            if (menuItem.itemId == R.id.adminProfileFragment
-                || menuItem.itemId == R.id.homeFragment
-            )
-                binding.navHostFragment.findNavController().navigate(menuItem.itemId)
+            binding.navHostFragment.findNavController().navigate(menuItem.itemId)
             true
         }
     }

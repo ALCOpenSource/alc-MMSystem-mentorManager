@@ -1,21 +1,16 @@
 package com.peculiaruc.alc_mmsystem_mentormanager.ui.program
 
-import android.media.metrics.Event
 import android.os.Build
 import android.os.Bundle
 import android.view.*
 import android.widget.Toast
-import androidx.fragment.app.Fragment
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.peculiaruc.alc_mmsystem_mentormanager.R
-import com.peculiaruc.alc_mmsystem_mentormanager.data.models.Program
 import com.peculiaruc.alc_mmsystem_mentormanager.data.models.ProgramDto
-import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentHomeBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentProgramBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.base.BaseFragment
-import com.peculiaruc.alc_mmsystem_mentormanager.ui.home.HomeViewModel
 import com.peculiaruc.alc_mmsystem_mentormanager.utilities.event.EventObserve
 
 

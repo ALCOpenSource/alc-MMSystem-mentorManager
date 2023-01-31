@@ -22,7 +22,7 @@
             android:title="My Managers" />
 
         <item
-            android:id="@+id/tasksFragment"
+            android:id="@+id/taskFragment"
             android:icon="@drawable/ic_tasks"
             android:title="Tasks" />
 
