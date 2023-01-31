@@ -45,12 +45,17 @@
         android:id="@+id/certificateFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.mentorManagerProfile.certificate.CertificateFragment"
         android:label="CertificateFragment"
-        tools:layout="@layout/fragment_certificate" >
+        tools:layout="@layout/fragment_certificate">
         <argument
             android:name="certificateTitle"
             app:argType="string" />
-<!--        <action-->
-<!--            android:id="@+id/action_certificateFragment_to_basicDialog"-->
-<!--            app:destination="@id/basicDialog" />-->
+        <!--        <action-->
+        <!--            android:id="@+id/action_certificateFragment_to_basicDialog"-->
+        <!--            app:destination="@id/basicDialog" />-->
     </fragment>
+    <fragment
+        android:id="@+id/programFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.program.ProgramFragment"
+        android:label="ProgramFragment"
+        tools:layout="@layout/fragment_program" />
 </navigation>

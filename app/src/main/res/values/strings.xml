@@ -152,5 +152,10 @@
         <item>Improved data security with end-to-end encryption technology</item>
     </string-array>
 
+    <!-- *************** Program ************    -->
+    <string name="all">All</string>
+    <string name="assigned">Assigned</string>
+    <string name="completed">Completed</string>
+    <string name="search">Search</string>
 
 </resources>
