@@ -144,8 +144,13 @@
     <!-- *************** Splash ************    -->
     <string name="splash_screen_logo_desc">Brand Logo</string>
     <string name="splash_screen_app_name">Mentor Management System</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- *************** OnBoarding ************    -->
+    <string-array name="messages">
+        <item>Get real-time updates from mentors and their activities</item>
+        <item>Enjoy more control and supervision of mentors assigned to you </item>
+        <item>Improved data security with end-to-end encryption technology</item>
+    </string-array>
 
 
 </resources>
