@@ -103,4 +103,19 @@
         android:id="@+id/settingsFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.setting.SettingsFragment"
         android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/chatMessagesFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.message.ChatMessagesFragment"
+        android:label="ChatMessagesFragment"
+        tools:layout="@layout/fragment_chat_messages" >
+        <action
+            android:id="@+id/action_chatMessagesFragment_to_conversationFragment"
+            app:destination="@id/conversationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/conversationFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.message.conversation.ConversationFragment"
+        android:label="ConversationFragment"
+        tools:layout="@layout/fragment_conversation" />
 </navigation>

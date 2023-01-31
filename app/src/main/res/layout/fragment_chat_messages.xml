@@ -7,30 +7,30 @@
 
         <variable
             name="viewModel"
-            type="com.peculiaruc.alc_mmsystem_mentormanager.ui.task.TaskViewModel" />
+            type="com.peculiaruc.alc_mmsystem_mentormanager.ui.message.ChatMessagesViewModel" />
 
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".ui.task.TaskFragment">
+        android:layout_height="match_parent">
 
         <com.google.android.material.chip.ChipGroup
             android:id="@+id/chipGroup_tasks"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="15dp"
             android:background="@drawable/bg_chips_group_filter"
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
             app:checkedChip="@id/chip_chat"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:selectionRequired="true"
             app:singleLine="true"
+
             app:singleSelection="true">
 
             <com.google.android.material.chip.Chip
@@ -38,51 +38,34 @@
                 style="@style/CustomChipTaskFilter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="@{()-> viewModel.onSelectTask(1)}"
-                android:text="   All   " />
+                android:minWidth="160dp"
+                android:text="   Chats   " />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip_broadcast"
                 style="@style/CustomChipTaskFilter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="@{()-> viewModel.onSelectTask(2)}"
-                android:text="Assigned"
+                android:minWidth="200dp"
+                android:text="Broadcast Messages"
                 android:textSize="12sp" />
-
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chip_completed_task"
-                style="@style/CustomChipTaskFilter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="@{()-> viewModel.onSelectTask(3)}"
-                android:text="Completed"
-                android:textSize="12sp" />
-
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chip_my_tasks"
-                style="@style/CustomChipTaskFilter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="@{()-> viewModel.onSelectTask(4)}"
-                android:text="My Tasks"
-                android:textSize="12sp" />
-
         </com.google.android.material.chip.ChipGroup>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView_tasks"
+            android:id="@+id/recyclerView_chat"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
             android:orientation="vertical"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/chipGroup_tasks"
-            tools:listitem="@layout/item_task" />
+            tools:listitem="@layout/item_chat" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fabCreateTask"

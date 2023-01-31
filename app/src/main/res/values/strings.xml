@@ -191,5 +191,8 @@
     <string name="settings_faq">FAQ</string>
     <string name="settings_exit">Logout</string>
 
+    <string name="conversation_start">Conversation Started,</string>
+
+
 
 </resources>
