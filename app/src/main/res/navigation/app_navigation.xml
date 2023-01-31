@@ -85,5 +85,9 @@
         android:id="@+id/taskFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.task.TaskFragment"
         android:label="TaskFragment"
-        tools:layout="@layout/fragment_task" />
+        tools:layout="@layout/fragment_task" >
+        <action
+            android:id="@+id/action_taskFragment_to_taskDetailsFragment"
+            app:destination="@id/taskDetailsFragment" />
+    </fragment>
 </navigation>

@@ -3,6 +3,7 @@ package com.peculiaruc.alc_mmsystem_mentormanager.ui.task
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.models.Task
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentProgramBinding
@@ -58,6 +59,10 @@ class TaskFragment : BaseFragment<FragmentTaskBinding>() {
                 }
             }
             binding.recyclerViewTasks.adapter = TaskAdapter(list, viewModel)
+        })
+
+        viewModel.selectTaskEvent.observe(viewLifecycleOwner, EventObserve { task ->
+            findNavController().navigate(TaskFragmentDirections.actionTaskFragmentToTaskDetailsFragment())
         })
     }
 
