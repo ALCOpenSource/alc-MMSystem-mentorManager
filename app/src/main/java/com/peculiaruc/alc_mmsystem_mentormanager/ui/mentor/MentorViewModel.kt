@@ -9,8 +9,8 @@ import com.peculiaruc.alc_mmsystem_mentormanager.utilities.event.Event
 
 class MentorViewModel : ViewModel(), MentorInteractionListener {
 
-    private val _selectItemMange = MutableLiveData<Event<Mentor>>()
-    val selectItemMange: LiveData<Event<Mentor>> = _selectItemMange
+    private val _selectMentor = MutableLiveData<Event<Mentor>>()
+    val selectMentor: LiveData<Event<Mentor>> = _selectMentor
 
     private val _addMentorEvent = MutableLiveData<Event<Boolean>>()
     val addMentorEvent: LiveData<Event<Boolean>> = _addMentorEvent
@@ -23,6 +23,6 @@ class MentorViewModel : ViewModel(), MentorInteractionListener {
     }
 
     override fun onItemMentorSelected(item: Mentor) {
-        _selectItemMange.postValue(Event(item))
+        _selectMentor.postValue(Event(item))
     }
 }

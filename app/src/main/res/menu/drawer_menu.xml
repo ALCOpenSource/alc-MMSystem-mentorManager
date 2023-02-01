@@ -16,8 +16,9 @@
             android:id="@+id/programsFragment"
             android:icon="@drawable/ic_programs"
             android:title="@string/programs_title" />
+
         <item
-            android:id="@+id/myManagers"
+            android:id="@+id/managerFragment"
             android:icon="@drawable/ic_programs"
             android:title="My Managers" />
 

@@ -81,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/spacing_default"
                 android:contentDescription="@string/add_icon"
-                android:src="@drawable/add_circle_plus_1"
+                android:src="@drawable/comment_circle_chat_message_1"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

@@ -107,7 +107,7 @@
         android:id="@+id/chatMessagesFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.message.ChatMessagesFragment"
         android:label="ChatMessagesFragment"
-        tools:layout="@layout/fragment_chat_messages" >
+        tools:layout="@layout/fragment_chat_messages">
         <action
             android:id="@+id/action_chatMessagesFragment_to_conversationFragment"
             app:destination="@id/conversationFragment" />
@@ -118,4 +118,19 @@
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.message.conversation.ConversationFragment"
         android:label="ConversationFragment"
         tools:layout="@layout/fragment_conversation" />
+
+    <fragment
+        android:id="@+id/managerFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.manager.ManagerFragment"
+        android:label="ManagerFragment"
+        tools:layout="@layout/fragment_manager" >
+        <action
+            android:id="@+id/action_managerFragment_to_adminProfileFragment"
+            app:destination="@id/adminProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminProfileFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.manager.profile.AdminProfileFragment"
+        android:label="AdminProfileFragment"
+        tools:layout="@layout/fragment_admin_profile" />
 </navigation>
