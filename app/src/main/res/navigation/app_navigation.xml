@@ -140,5 +140,18 @@
         android:id="@+id/mentorApplicationFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.mentorApplication.MentorApplicationFragment"
         android:label="MentorApplicationFragment"
-        tools:layout="@layout/fragment_mentor_application" />
+        tools:layout="@layout/fragment_mentor_application">
+        <action
+            android:id="@+id/action_mentorApplicationFragment_to_requestedProfileFragment"
+            app:destination="@id/requestedProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/requestedProfileFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.mentorApplication.profileRequested.RequestedProfileFragment"
+        android:label="RequestedProfileFragment"
+        tools:layout="@layout/fragment_requested_profile" >
+        <argument
+            android:name="type"
+            app:argType="integer" />
+    </fragment>
 </navigation>

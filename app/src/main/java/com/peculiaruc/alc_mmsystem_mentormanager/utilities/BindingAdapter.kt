@@ -353,3 +353,13 @@ fun setButtonTaskProgram(button: Button, isAssigned: Boolean?) {
         }
     }
 }
+
+@BindingAdapter("app:showEditButtonProfile")
+fun showEditButtonProfile(view: View, status: Int) {
+    view.isVisible = status == 1
+}
+
+@BindingAdapter("app:showAcceptButtonProfile")
+fun showAcceptButtonProfile(view: View, status: Int) {
+    view.isVisible = status == 2
+}

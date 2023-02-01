@@ -198,7 +198,12 @@
     <string name="title_social">Social</string>
     <string name="managers_title">Managers</string>
 
+    <!--  ************ Applicant Requests ****************** -->
     <string name="applicant_requests">Applicant Requests</string>
+    <string name="previous_roles_held_double_colon">Previous Roles Held:</string>
+    <string name="program_of_interest_double_colon">Program of interest:</string>
+    <string name="www_andela_com">www.andela.com</string>
+
 
 
 </resources>

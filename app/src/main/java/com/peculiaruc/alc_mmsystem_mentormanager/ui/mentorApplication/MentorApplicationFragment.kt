@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.models.Mentor
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorApplicationBinding
@@ -11,6 +12,7 @@ import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentMentorBindi
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.base.BaseFragment
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.mentor.MentorViewModel
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.mentorManagerProfile.adapters.MentorAdapter
+import com.peculiaruc.alc_mmsystem_mentormanager.utilities.event.EventObserve
 
 
 class MentorApplicationFragment : BaseFragment<FragmentMentorApplicationBinding>() {
@@ -42,7 +44,9 @@ class MentorApplicationFragment : BaseFragment<FragmentMentorApplicationBinding>
     }
 
     private fun observeEvents() {
-
+        viewModel.selectMentor.observe(viewLifecycleOwner, EventObserve {
+            findNavController().navigate(MentorApplicationFragmentDirections.actionMentorApplicationFragmentToRequestedProfileFragment(2))
+        })
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
