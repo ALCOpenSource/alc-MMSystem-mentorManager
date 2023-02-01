@@ -204,6 +204,15 @@
     <string name="program_of_interest_double_colon">Program of interest:</string>
     <string name="www_andela_com">www.andela.com</string>
 
+    <!--  ************ Certificate ****************** -->
+    <string name="apply_for_certificate">Apply for Certificate</string>
+    <string name="earned_certififcates">Earned Certificates</string>
+    <string name="certificates_pending_approval">Certificates pending approval</string>
+    <string name="generate_new_certificate">Generate New Certificate</string>
+    <string name="approved_certificates">Approved Certificates</string>
+    <string name="cert_image">Certificate image</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

@@ -149,9 +149,31 @@
         android:id="@+id/requestedProfileFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.mentorApplication.profileRequested.RequestedProfileFragment"
         android:label="RequestedProfileFragment"
-        tools:layout="@layout/fragment_requested_profile" >
+        tools:layout="@layout/fragment_requested_profile">
         <argument
             android:name="type"
             app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/certificatesFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.certificate.CertificatesFragment"
+        android:label="CertificatesFragment"
+        tools:layout="@layout/fragment_certificates">
+        <action
+            android:id="@+id/action_certificatesFragment_to_certificateStatusFragment"
+            app:destination="@id/certificateStatusFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/certificateStatusFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.certificate.status.CertificateStatusFragment"
+        android:label="CertificateStatusFragment"
+        tools:layout="@layout/fragment_certificate_status">
+        <argument
+            android:name="type"
+            app:argType="com.peculiaruc.alc_mmsystem_mentormanager.ui.certificate.CertificateStatus" />
+        <action
+            android:id="@+id/action_certificateStatusFragment_to_certificateFragment"
+            app:destination="@id/certificateFragment" />
     </fragment>
 </navigation>

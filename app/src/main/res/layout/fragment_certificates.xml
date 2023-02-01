@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.peculiaruc.alc_mmsystem_mentormanager.ui.certificate.CertificateViewModel" />
+
+        <import type="com.peculiaruc.alc_mmsystem_mentormanager.ui.certificate.CertificateStatus" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/approved"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mms_black_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/certDash_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:contentDescription="@string/cert_image"
+                android:src="@drawable/approved_certificate_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/app_cert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/mukta_bold"
+                android:text="@string/approved_certificates"
+                android:textColor="@color/mms_black_2"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/certDash_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/no_of_apprCert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/mukta_extrabold"
+                android:text="287"
+                android:textColor="@color/mms_black_1"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/certDash_image"
+                app:layout_constraintTop_toBottomOf="@+id/app_cert"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cert_btn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="@dimen/spacing_small"
+                android:fontFamily="@font/mukta_semibold"
+                android:inputType="textCapSentences"
+                android:onClick="@{()-> viewModel.onClickCertificate(CertificateStatus.APPROVED)}"
+                android:text="@string/view"
+                android:textColor="@color/mms_black_10"
+                android:textSize="@dimen/font_small"
+                app:cornerRadius="@dimen/radius_default"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/earned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/mms_black_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/approved">
+
+            <ImageView
+                android:id="@+id/earn_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:contentDescription="@string/earned_certififcates"
+                android:src="@drawable/earn_certificate"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/cert_earned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/mukta_bold"
+                android:text="@string/earned_certififcates"
+                android:textColor="@color/mms_black_2"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@id/earn_img"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/earn_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="33dp"
+                android:fontFamily="@font/mukta_extrabold"
+                android:text="12"
+                android:textColor="@color/mms_black_1"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/earn_img"
+                app:layout_constraintTop_toBottomOf="@+id/cert_earned" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/earn_btn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="@dimen/spacing_small"
+                android:fontFamily="@font/mukta_semibold"
+                android:inputType="textCapSentences"
+                android:onClick="@{()-> viewModel.onClickCertificate(CertificateStatus.EARNED)}"
+                android:text="@string/view"
+                android:textColor="@color/mms_black_10"
+                android:textSize="@dimen/font_small"
+                app:cornerRadius="@dimen/radius_default"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/earned">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:onClick="@{()-> viewModel.onClickCertificate(CertificateStatus.PENDING)}">
+
+                <TextView
+                    android:id="@+id/pend_cert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/mukta_regular"
+                    android:text="@string/certificates_pending_approval"
+                    android:textColor="@color/mms_black_2"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/no_of_cert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/mms_sec_6"
+                    android:fontFamily="@font/mukta_regular"
+                    android:gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:text="3"
+                    android:textColor="@color/mms_green_11"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintStart_toEndOf="@+id/pend_cert"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_generate"
+            style="?attr/materialIconButtonFilledStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/mukta_semibold"
+            android:minHeight="50dp"
+            android:paddingVertical="12dp"
+            android:text="@string/generate_new_certificate"
+            android:textColor="@color/mms_black_10"
+            android:textSize="16sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/button_apply"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="@color/mms_pry_2" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_apply"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/mukta_semibold"
+            android:minHeight="50dp"
+            android:paddingVertical="12dp"
+            android:text="@string/apply_for_certificate"
+            android:textColor="@color/mms_pry_2"
+            android:textSize="16sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="@color/mms_pry_2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
