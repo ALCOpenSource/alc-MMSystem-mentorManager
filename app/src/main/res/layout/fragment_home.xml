@@ -496,6 +496,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/mukta_semibold"
+                    android:onClick="@{()-> viewModel.onClickMentorApplication()}"
                     android:text="@string/mentor_application"
                     android:textAlignment="center"
                     android:textColor="@color/mms_pry_2"

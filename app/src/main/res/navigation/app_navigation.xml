@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_homeFragment_to_notificationFragment"
             app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mentorApplicationFragment"
+            app:destination="@id/mentorApplicationFragment" />
     </fragment>
     <fragment
         android:id="@+id/mentorManagerProfileFragment"
@@ -123,7 +126,7 @@
         android:id="@+id/managerFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.manager.ManagerFragment"
         android:label="ManagerFragment"
-        tools:layout="@layout/fragment_manager" >
+        tools:layout="@layout/fragment_manager">
         <action
             android:id="@+id/action_managerFragment_to_adminProfileFragment"
             app:destination="@id/adminProfileFragment" />
@@ -133,4 +136,9 @@
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.manager.profile.AdminProfileFragment"
         android:label="AdminProfileFragment"
         tools:layout="@layout/fragment_admin_profile" />
+    <fragment
+        android:id="@+id/mentorApplicationFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.mentorApplication.MentorApplicationFragment"
+        android:label="MentorApplicationFragment"
+        tools:layout="@layout/fragment_mentor_application" />
 </navigation>

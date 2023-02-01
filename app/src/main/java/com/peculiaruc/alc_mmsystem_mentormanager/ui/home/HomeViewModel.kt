@@ -34,6 +34,9 @@ class HomeViewModel : ViewModel() {
     private val _addMentorEvent = MutableLiveData<Event<Boolean>>()
     val addMentorEvent: LiveData<Event<Boolean>> = _addMentorEvent
 
+    private val _clickMentorEvent = MutableLiveData<Event<Boolean>>()
+    val clickMentorEvent: LiveData<Event<Boolean>> = _clickMentorEvent
+
     /**
      * set event when user click on notification
      * */
@@ -95,5 +98,9 @@ class HomeViewModel : ViewModel() {
      * */
     fun onAddMentorClick() {
         _addMentorEvent.postValue(Event(true))
+    }
+
+    fun onClickMentorApplication() {
+        _clickMentorEvent.postValue(Event(true))
     }
 }

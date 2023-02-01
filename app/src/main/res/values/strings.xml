@@ -198,5 +198,7 @@
     <string name="title_social">Social</string>
     <string name="managers_title">Managers</string>
 
+    <string name="applicant_requests">Applicant Requests</string>
+
 
 </resources>

@@ -65,5 +65,9 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         viewModel.addMentorEvent.observe(viewLifecycleOwner, EventObserve {
             // TODO: Navigate to Add Mentor Fragment
         })
+
+        viewModel.clickMentorEvent.observe(viewLifecycleOwner, EventObserve {
+            findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToMentorApplicationFragment())
+        })
     }
 }
