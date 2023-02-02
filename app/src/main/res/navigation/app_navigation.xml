@@ -198,7 +198,35 @@
         android:id="@+id/discussionForumFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.discussionForum.DiscussionForumFragment"
         android:label="DiscussionForumFragment"
-        tools:layout="@layout/fragment_discussion_forum" />
+        tools:layout="@layout/fragment_discussion_forum">
+        <action
+            android:id="@+id/action_discussionForumFragment_to_editPostFragment"
+            app:destination="@id/editPostFragment" />
+        <action
+            android:id="@+id/action_discussionForumFragment_to_postDetailsFragment"
+            app:destination="@id/postDetailsFragment" />
+        <action
+            android:id="@+id/action_discussionForumFragment_to_createPostFragment"
+            app:destination="@id/createPostFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editPostFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.discussionForum.editPost.EditPostFragment"
+        android:label="EditPostFragment"
+        tools:layout="@layout/fragment_edit_post" />
+
+    <fragment
+        android:id="@+id/postDetailsFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.discussionForum.postDetails.PostDetailsFragment"
+        android:label="PostDetailsFragment"
+        tools:layout="@layout/fragment_post_details" />
+
+    <fragment
+        android:id="@+id/createPostFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.discussionForum.createPost.CreatePostFragment"
+        android:label="CreatePostFragment"
+        tools:layout="@layout/fragment_create_post" />
 
 
 </navigation>

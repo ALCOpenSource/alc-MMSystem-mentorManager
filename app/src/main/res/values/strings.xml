@@ -217,5 +217,7 @@
     <string name="button_generate">Generate </string>
     <string name="discussion_forum_title">Discussion forum</string>
     <string name="saved">Saved</string>
+    <string name="comments_title">Comments</string>
+    <string name="create_post">New Topic</string>
 
 </resources>

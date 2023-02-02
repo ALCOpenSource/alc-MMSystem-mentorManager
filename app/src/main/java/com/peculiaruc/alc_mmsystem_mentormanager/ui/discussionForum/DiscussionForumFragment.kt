@@ -7,10 +7,12 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.models.Discussion
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentDiscussionForumBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.base.BaseFragment
+import com.peculiaruc.alc_mmsystem_mentormanager.utilities.event.EventObserve
 
 class DiscussionForumFragment : BaseFragment<FragmentDiscussionForumBinding>() {
 
@@ -27,7 +29,17 @@ class DiscussionForumFragment : BaseFragment<FragmentDiscussionForumBinding>() {
     }
 
     private fun observeEvents() {
+        viewModel.selectEditPost.observe(viewLifecycleOwner, EventObserve {
+            findNavController().navigate(DiscussionForumFragmentDirections.actionDiscussionForumFragmentToEditPostFragment())
+        })
 
+        viewModel.selectCommentOnPost.observe(viewLifecycleOwner, EventObserve {
+            findNavController().navigate(DiscussionForumFragmentDirections.actionDiscussionForumFragmentToPostDetailsFragment())
+        })
+
+        viewModel.createPostEvent.observe(viewLifecycleOwner, EventObserve {
+            findNavController().navigate(DiscussionForumFragmentDirections.actionDiscussionForumFragmentToCreatePostFragment())
+        })
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

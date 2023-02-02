@@ -36,6 +36,7 @@
             android:layout_margin="16dp"
             android:backgroundTint="@color/mms_pry_2"
             android:contentDescription="@string/fab_add_mentor"
+            android:onClick="@{()-> viewModel.onClickCreatePost()}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@drawable/ic_add"

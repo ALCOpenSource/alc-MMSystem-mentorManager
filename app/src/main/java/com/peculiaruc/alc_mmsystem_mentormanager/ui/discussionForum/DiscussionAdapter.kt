@@ -15,5 +15,8 @@ class DiscussionAdapter(
 }
 
 interface DiscussionInteractionListener : BaseInteractionListener {
-    fun onItemDiscussionSelected(item: BeneficiaryMember)
+    fun onItemEditDiscussionSelected(item: Discussion)
+    fun onItemCommentOnPostSelected(item: Discussion)
+
+
 }

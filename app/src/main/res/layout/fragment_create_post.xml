@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.peculiaruc.alc_mmsystem_mentormanager.ui.discussionForum.editPost.PostViewModel" />
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/newTopicTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="36dp"
+                android:text="Title"
+                android:textColor="@color/mms_black_2"
+                android:textFontWeight="600"
+                android:textSize="16sp"
+                app:fontFamily="@font/mukta_regular"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/newTopicInputTitle"
+                android:layout_width="0dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/card_border"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Enter a title"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/mms_black_2"
+                android:textColorHint="@color/mms_black_6"
+                android:textFontWeight="400"
+                android:textSize="16sp"
+                app:fontFamily="@font/mukta_regular"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/newTopicTitle"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/newTopicInputGuide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="The title must contain a maximum of 32 characters"
+                android:textColor="@color/mms_black_2"
+                android:textFontWeight="400"
+                android:textSize="12sp"
+                app:fontFamily="@font/mukta_regular"
+                app:layout_constraintEnd_toEndOf="@+id/newTopicInputTitle"
+                app:layout_constraintStart_toStartOf="@+id/newTopicInputTitle"
+                app:layout_constraintTop_toBottomOf="@+id/newTopicInputTitle" />
+
+            <TextView
+                android:id="@+id/newTpicBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Body"
+                android:textColor="@color/mms_black_2"
+                android:textFontWeight="600"
+                android:textSize="16sp"
+                app:fontFamily="@font/mukta_regular"
+                app:layout_constraintStart_toStartOf="@+id/newTopicInputGuide"
+                app:layout_constraintTop_toBottomOf="@+id/newTopicInputGuide" />
+
+            <EditText
+                android:id="@+id/newTopicInputBody"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/card_border"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Start typing..."
+                android:inputType="textMultiLine"
+                android:minHeight="150dp"
+                android:padding="10dp"
+                android:textColor="@color/mms_black_2"
+                android:textColorHint="@color/mms_black_6"
+                android:textSize="16sp"
+                app:fontFamily="@font/mukta_regular"
+                app:layout_constraintEnd_toEndOf="@+id/newTopicInputGuide"
+                app:layout_constraintStart_toStartOf="@+id/newTpicBody"
+                app:layout_constraintTop_toBottomOf="@+id/newTpicBody" />
+
+            <ImageView
+                android:id="@+id/newTopicIconLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="36dp"
+                android:layout_marginBottom="19dp"
+                android:src="@drawable/ic_link"
+                app:layout_constraintBottom_toBottomOf="@+id/newTopicInputBody"
+                app:layout_constraintEnd_toEndOf="@+id/newTopicInputBody" />
+
+            <ImageView
+                android:id="@+id/newTopicIconImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="26dp"
+                android:src="@drawable/ic_img_pic"
+                app:layout_constraintBottom_toBottomOf="@+id/newTopicIconLink"
+                app:layout_constraintEnd_toStartOf="@+id/newTopicIconLink" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_save"
+                style="?attr/materialIconButtonFilledStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/mukta_semibold"
+                android:paddingVertical="12dp"
+                android:text="Save Changes"
+                android:textColor="@color/mms_black_10"
+                android:textSize="16sp"
+                app:cornerRadius="7dp"
+                app:layout_constraintBottom_toTopOf="@+id/button_cancel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/newTopicInputBody" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_cancel"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/mukta_semibold"
+                android:paddingVertical="12dp"
+                android:text="Cancel"
+                android:textColor="@color/mms_pry_2"
+                android:textSize="16sp"
+                app:cornerRadius="7dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:strokeColor="@color/mms_pry_2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
