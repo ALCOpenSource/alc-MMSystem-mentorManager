@@ -162,6 +162,9 @@
         <action
             android:id="@+id/action_certificatesFragment_to_certificateStatusFragment"
             app:destination="@id/certificateStatusFragment" />
+        <action
+            android:id="@+id/action_certificatesFragment_to_certificateBeneficiaryFragment"
+            app:destination="@id/certificateBeneficiaryFragment" />
     </fragment>
 
     <fragment
@@ -176,4 +179,21 @@
             android:id="@+id/action_certificateStatusFragment_to_certificateFragment"
             app:destination="@id/certificateFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/certificateBeneficiaryFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.certificate.beneficiary.CertificateBeneficiaryFragment"
+        android:label="CertificateBeneficiaryFragment"
+        tools:layout="@layout/fragment_certificate_beneficiary" >
+        <action
+            android:id="@+id/action_certificateBeneficiaryFragment_to_generateCertificateFragment"
+            app:destination="@id/generateCertificateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/generateCertificateFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.certificate.generateCertificate.GenerateCertificateFragment"
+        android:label="GenerateCertificateFragment"
+        tools:layout="@layout/fragment_generate_certificate" />
+
+
 </navigation>

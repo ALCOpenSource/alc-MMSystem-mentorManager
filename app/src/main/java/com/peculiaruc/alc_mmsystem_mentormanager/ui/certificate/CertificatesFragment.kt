@@ -22,7 +22,7 @@ class CertificatesFragment : BaseFragment<FragmentCertificateBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setTitle(true, getString(R.string.certificates))
-        setBottomNavigationVisibility(true)
+        setBottomNavigationVisibility(false)
         setHasOptionsMenu(true)
         onEvents()
     }
@@ -35,6 +35,10 @@ class CertificatesFragment : BaseFragment<FragmentCertificateBinding>() {
                     it
                 )
             )
+        })
+
+        viewModel.selectGenerateCertificateEvent.observe(viewLifecycleOwner, EventObserve {
+            findNavController().navigate(CertificatesFragmentDirections.actionCertificatesFragmentToCertificateBeneficiaryFragment())
         })
     }
 

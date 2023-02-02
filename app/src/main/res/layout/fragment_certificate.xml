@@ -101,12 +101,12 @@
                 android:text="@string/download_certificate"
                 android:textColor="@color/mms_black_2"
                 android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/input_text_download"
+                app:layout_constraintBottom_toBottomOf="@+id/input_text_program"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/input_text_download" />
+                app:layout_constraintTop_toTopOf="@+id/input_text_program" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/input_text_download"
+                android:id="@+id/input_text_program"
                 style="?attr/textInputOutlinedExposedDropdownMenuStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -138,7 +138,7 @@
                 android:textSize="@dimen/font_large"
                 app:cornerRadius="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/input_text_download"
+                app:layout_constraintTop_toBottomOf="@+id/input_text_program"
                 app:layout_constraintVertical_bias="1.0" />
 
             <androidx.constraintlayout.widget.Guideline

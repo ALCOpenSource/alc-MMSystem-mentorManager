@@ -211,8 +211,10 @@
     <string name="generate_new_certificate">Generate New Certificate</string>
     <string name="approved_certificates">Approved Certificates</string>
     <string name="cert_image">Certificate image</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_beneficiary_title">Select Beneficiary</string>
+    <string name="select_program_title">Select Program</string>
+
+    <string name="button_generate">Generate </string>
 
 
 </resources>

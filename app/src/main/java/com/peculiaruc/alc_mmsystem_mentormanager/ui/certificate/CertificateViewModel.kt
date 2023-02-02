@@ -10,7 +10,15 @@ class CertificateViewModel : ViewModel() {
     private val _selectCertificateEvent = MutableLiveData<Event<CertificateStatus>>()
     val selectCertificateEvent: LiveData<Event<CertificateStatus>> = _selectCertificateEvent
 
+    private val _selectGenerateCertificateEvent = MutableLiveData<Event<Boolean>>()
+    val selectGenerateCertificateEvent: LiveData<Event<Boolean>> = _selectGenerateCertificateEvent
+
+
     fun onClickCertificate(type: CertificateStatus) {
         _selectCertificateEvent.postValue(Event(type))
+    }
+
+    fun onClickGenerateCertificate() {
+        _selectGenerateCertificateEvent.postValue(Event(true))
     }
 }

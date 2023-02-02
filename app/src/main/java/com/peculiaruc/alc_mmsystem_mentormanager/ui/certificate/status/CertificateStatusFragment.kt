@@ -33,7 +33,7 @@ class CertificateStatusFragment : BaseFragment<FragmentCertificateStatusBinding>
         }
 
         setTitle(true, title)
-        setBottomNavigationVisibility(true)
+        setBottomNavigationVisibility(false)
         setHasOptionsMenu(true)
         onEvents()
         binding.recyclerCertificate.adapter = CertificateAdapter(listCertificate, viewModel)
