@@ -215,6 +215,7 @@
     <string name="select_program_title">Select Program</string>
 
     <string name="button_generate">Generate </string>
-
+    <string name="discussion_forum_title">Discussion forum</string>
+    <string name="saved">Saved</string>
 
 </resources>

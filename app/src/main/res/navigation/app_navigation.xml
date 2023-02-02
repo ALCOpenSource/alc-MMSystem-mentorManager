@@ -184,7 +184,7 @@
         android:id="@+id/certificateBeneficiaryFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.certificate.beneficiary.CertificateBeneficiaryFragment"
         android:label="CertificateBeneficiaryFragment"
-        tools:layout="@layout/fragment_certificate_beneficiary" >
+        tools:layout="@layout/fragment_certificate_beneficiary">
         <action
             android:id="@+id/action_certificateBeneficiaryFragment_to_generateCertificateFragment"
             app:destination="@id/generateCertificateFragment" />
@@ -194,6 +194,11 @@
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.certificate.generateCertificate.GenerateCertificateFragment"
         android:label="GenerateCertificateFragment"
         tools:layout="@layout/fragment_generate_certificate" />
+    <fragment
+        android:id="@+id/discussionForumFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.discussionForum.DiscussionForumFragment"
+        android:label="DiscussionForumFragment"
+        tools:layout="@layout/fragment_discussion_forum" />
 
 
 </navigation>
