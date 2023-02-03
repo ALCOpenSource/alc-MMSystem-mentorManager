@@ -64,7 +64,16 @@
         android:id="@+id/forgetPasswordFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.forgetPassword.ForgetPasswordFragment"
         android:label="ForgetPasswordFragment"
-        tools:layout="@layout/fragment_forget_password" />
+        tools:layout="@layout/fragment_forget_password" >
+        <action
+            android:id="@+id/action_forgetPasswordFragment_to_resetPasswordFragment"
+            app:destination="@id/resetPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetPasswordFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.setPassword.ResetPasswordFragment"
+        android:label="ResetPasswordFragment"
+        tools:layout="@layout/fragment_reset_password" />
 
 
 </navigation>
