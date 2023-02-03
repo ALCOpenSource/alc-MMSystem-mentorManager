@@ -29,14 +29,16 @@ class LoginActivity : AppCompatActivity() {
 
         binding.textViewSignUp.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
+            intent.putExtra("START_DESTINATION", "REGISTER")
             startActivity(intent)
             finish()
         }
 
         binding.textViewForgotPassword.setOnClickListener {
-//            val intent = Intent(this, ForgotPasswordActivity::class.java)
-//            startActivity(intent)
-//            finish()
+            val intent = Intent(this, RegisterActivity::class.java)
+            intent.putExtra("START_DESTINATION", "FORGET_PASSWORD")
+            startActivity(intent)
+            finish()
         }
     }
 }

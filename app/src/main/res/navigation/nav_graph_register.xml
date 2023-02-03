@@ -60,5 +60,11 @@
         android:label="RegisterNotificationFragment"
         tools:layout="@layout/fragment_register_notification" />
 
+    <fragment
+        android:id="@+id/forgetPasswordFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.authentication.forgetPassword.ForgetPasswordFragment"
+        android:label="ForgetPasswordFragment"
+        tools:layout="@layout/fragment_forget_password" />
+
 
 </navigation>
