@@ -67,7 +67,6 @@
                 android:onClick="@{()-> viewModel.onSelectTask(4)}"
                 android:text="My Tasks"
                 android:textSize="12sp" />
-
         </com.google.android.material.chip.ChipGroup>
 
         <androidx.recyclerview.widget.RecyclerView
@@ -96,6 +95,7 @@
             android:onClick="@{()-> viewModel.onClickCreateTask()}"
             android:src="@drawable/ic_add"
             app:backgroundTint="@color/mms_pry_2"
+            app:isNewTask="@{viewModel.taskType}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:tint="@color/mms_black_10"

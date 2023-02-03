@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.data.models.Task
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentProgramBinding
@@ -18,10 +19,11 @@ class TaskFragment : BaseFragment<FragmentTaskBinding>() {
 
     override val layoutIdFragment: Int = R.layout.fragment_task
     override val viewModel: TaskViewModel by viewModels()
-
+    private val args: TaskFragmentArgs by navArgs()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setTitle(true, getString(R.string.task_title))
+        viewModel.setType(args.taskType)
         onEvents()
         setBottomNavigationVisibility(false)
     }

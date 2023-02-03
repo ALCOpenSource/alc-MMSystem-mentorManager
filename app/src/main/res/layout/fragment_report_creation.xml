@@ -27,17 +27,51 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="19dp"
-                android:layout_marginTop="16dp"
                 android:text="@string/text_choose_report_type"
                 android:textColor="@color/mms_black_2"
                 android:textFontWeight="600"
                 android:textSize="16sp"
                 app:fontFamily="@font/mukta_regular"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:targetApi="p" />
+                app:layout_constraintTop_toTopOf="parent" />
 
+
+            <RadioGroup
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/program"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <RadioButton
+                    android:id="@+id/program"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{()-> viewModel.setTaskType(1)}"
+                    android:text="Program"
+                    app:buttonTint="@color/mms_pry_3" />
+
+                <RadioButton
+                    android:id="@+id/task"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{()-> viewModel.setTaskType(2)}"
+                    android:text="Task"
+                    app:buttonTint="@color/mms_pry_3" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button_task"
+                style="@style/buttonOutline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{()-> viewModel.onClickSelectTask()}"
+                android:text="Select type"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/type" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -47,7 +81,7 @@
                 android:ellipsize="end"
                 android:singleLine="true"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/button_task"
                 tools:text="Room library article write" />
 
             <ImageView

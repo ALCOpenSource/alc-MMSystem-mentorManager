@@ -89,6 +89,11 @@
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.task.TaskFragment"
         android:label="TaskFragment"
         tools:layout="@layout/fragment_task">
+        <argument
+            android:name="taskType"
+            android:defaultValue="NEW_TASK"
+            app:argType="string" />
+
         <action
             android:id="@+id/action_taskFragment_to_taskDetailsFragment"
             app:destination="@id/taskDetailsFragment" />
@@ -247,12 +252,19 @@
         android:id="@+id/reportCreationFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.report.createReport.ReportCreationFragment"
         android:label="ReportCreationFragment"
-        tools:layout="@layout/fragment_report_creation" />
+        tools:layout="@layout/fragment_report_creation">
+        <action
+            android:id="@+id/action_reportCreationFragment_to_programFragment"
+            app:destination="@id/programFragment" />
+        <action
+            android:id="@+id/action_reportCreationFragment_to_taskFragment"
+            app:destination="@id/taskFragment" />
+    </fragment>
     <fragment
         android:id="@+id/taskCreationFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.task.taskCreation.TaskCreationFragment"
         android:label="TaskCreationFragment"
-        tools:layout="@layout/fragment_task_creation" >
+        tools:layout="@layout/fragment_task_creation">
         <action
             android:id="@+id/action_taskCreationFragment_to_taskAssigningMentorFragment"
             app:destination="@id/taskAssigningMentorFragment" />

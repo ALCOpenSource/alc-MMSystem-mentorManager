@@ -19,6 +19,9 @@ class TaskViewModel : ViewModel(), TaskInteractionListener {
     private val _createTaskEvent = MutableLiveData<Event<Boolean>>()
     val createTaskEvent: LiveData<Event<Boolean>> = _createTaskEvent
 
+    private val _taskType = MutableLiveData(TaskType.NEW_TASK)
+    val taskType: LiveData<TaskType> = _taskType
+
     fun onSelectTask(type: Int) {
         _taskEvent.postValue(Event(type))
     }
@@ -29,5 +32,13 @@ class TaskViewModel : ViewModel(), TaskInteractionListener {
 
     fun onClickCreateTask() {
         _createTaskEvent.postValue(Event(true))
+    }
+
+    fun setType(taskType: String) {
+        if (taskType == TaskType.ASSIGN_TASK.value) {
+            _taskType.postValue(TaskType.ASSIGN_TASK)
+        } else {
+            _taskType.postValue(TaskType.NEW_TASK)
+        }
     }
 }

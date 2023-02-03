@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.chip.ChipGroup
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.base.BaseAdapter
+import com.peculiaruc.alc_mmsystem_mentormanager.ui.task.TaskType
 import com.peculiaruc.alc_mmsystem_mentormanager.utilities.type.ProgramProgress
 import com.peculiaruc.alc_mmsystem_mentormanager.utilities.type.TaskStatus
 
@@ -362,4 +363,10 @@ fun showEditButtonProfile(view: View, status: Int) {
 @BindingAdapter("app:showAcceptButtonProfile")
 fun showAcceptButtonProfile(view: View, status: Int) {
     view.isVisible = status == 2
+}
+
+
+@BindingAdapter("app:isNewTask")
+fun isNewTask(view: View, status: TaskType) {
+    view.isVisible = status == TaskType.NEW_TASK
 }

@@ -6,12 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.peculiaruc.alc_mmsystem_mentormanager.R
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentReportBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.databinding.FragmentReportCreationBinding
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.base.BaseFragment
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.mentorManagerProfile.adapters.ReportAdapter
 import com.peculiaruc.alc_mmsystem_mentormanager.ui.report.ReportViewModel
+import com.peculiaruc.alc_mmsystem_mentormanager.ui.task.TaskType
+import com.peculiaruc.alc_mmsystem_mentormanager.utilities.event.EventObserve
 
 
 class ReportCreationFragment : BaseFragment<FragmentReportCreationBinding>() {
@@ -27,7 +30,16 @@ class ReportCreationFragment : BaseFragment<FragmentReportCreationBinding>() {
     }
 
     private fun observeEvents() {
-
+        viewModel.onClickSelectTaskEvent.observe(viewLifecycleOwner, EventObserve {
+            if (viewModel.taskType.value == 1) {
+                findNavController().navigate(ReportCreationFragmentDirections.actionReportCreationFragmentToProgramFragment())
+            } else {
+                val action =
+                    ReportCreationFragmentDirections.actionReportCreationFragmentToTaskFragment()
+                action.taskType = TaskType.ASSIGN_TASK.value
+                findNavController().navigate(action)
+            }
+        })
     }
 
 
