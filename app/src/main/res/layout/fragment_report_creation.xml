@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.peculiaruc.alc_mmsystem_mentormanager.ui.report.createReport.ReportCreationViewModel" />
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="16dp"
+            android:fillViewport="true">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/text_choose_report_type"
+                android:textColor="@color/mms_black_2"
+                android:textFontWeight="600"
+                android:textSize="16sp"
+                app:fontFamily="@font/mukta_regular"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:targetApi="p" />
+
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                tools:text="Room library article write" />
+
+            <ImageView
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/button_cancel"
+                android:src="@drawable/ic_cancel"
+                app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                app:layout_constraintStart_toEndOf="@+id/textView9" />
+
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/card_border"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/title_hint"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/mms_black_2"
+                android:textColorHint="@color/mms_black_5"
+                android:textFontWeight="400"
+                android:textSize="16sp"
+                app:fontFamily="@font/mukta_regular"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/card_border"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/achievement_hint"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/mms_black_2"
+                android:textColorHint="@color/mms_black_5"
+                android:textSize="16sp"
+                app:fontFamily="@font/mukta_regular"
+                app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine"
+                app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine3"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/card_border"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/blocker_hint"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/mms_black_2"
+                android:textColorHint="@color/mms_black_5"
+                android:textSize="16sp"
+                app:fontFamily="@font/mukta_regular"
+                app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine2"
+                app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine2"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine4"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/card_border"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/recommendation_hint"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/mms_black_2"
+                android:textColorHint="@color/mms_black_5"
+                android:textSize="16sp"
+                app:fontFamily="@font/mukta_regular"
+                app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine3"
+                app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine3"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine3" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_edit_profile"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/submit_text"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"
+                app:cornerRadius="10dp"
+                app:fontFamily="@font/mukta_semibold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

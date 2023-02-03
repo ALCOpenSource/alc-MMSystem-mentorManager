@@ -16,11 +16,18 @@ class TaskViewModel : ViewModel(), TaskInteractionListener {
     private val _selectTaskEvent = MutableLiveData<Event<Task>>()
     val selectTaskEvent: LiveData<Event<Task>> = _selectTaskEvent
 
+    private val _createTaskEvent = MutableLiveData<Event<Boolean>>()
+    val createTaskEvent: LiveData<Event<Boolean>> = _createTaskEvent
+
     fun onSelectTask(type: Int) {
         _taskEvent.postValue(Event(type))
     }
 
     override fun onItemTaskSelected(item: Task) {
         _selectTaskEvent.postValue(Event(item))
+    }
+
+    fun onClickCreateTask() {
+        _createTaskEvent.postValue(Event(true))
     }
 }

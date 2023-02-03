@@ -28,7 +28,7 @@
             android:title="Tasks" />
 
         <item
-            android:id="@+id/reportsFragment"
+            android:id="@+id/reportFragment"
             android:icon="@drawable/ic_reports"
             android:title="Reports" />
 

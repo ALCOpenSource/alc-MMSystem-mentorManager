@@ -92,6 +92,9 @@
         <action
             android:id="@+id/action_taskFragment_to_taskDetailsFragment"
             app:destination="@id/taskDetailsFragment" />
+        <action
+            android:id="@+id/action_taskFragment_to_taskCreationFragment"
+            app:destination="@id/taskCreationFragment" />
     </fragment>
     <fragment
         android:id="@+id/mentorFragment"
@@ -227,6 +230,39 @@
         android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.discussionForum.createPost.CreatePostFragment"
         android:label="CreatePostFragment"
         tools:layout="@layout/fragment_create_post" />
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.report.ReportFragment"
+        android:label="ReportFragment"
+        tools:layout="@layout/fragment_report">
+        <action
+            android:id="@+id/action_reportFragment_to_reportDetailsFragment"
+            app:destination="@id/reportDetailsFragment" />
+        <action
+            android:id="@+id/action_reportFragment_to_reportCreationFragment"
+            app:destination="@id/reportCreationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/reportCreationFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.report.createReport.ReportCreationFragment"
+        android:label="ReportCreationFragment"
+        tools:layout="@layout/fragment_report_creation" />
+    <fragment
+        android:id="@+id/taskCreationFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.task.taskCreation.TaskCreationFragment"
+        android:label="TaskCreationFragment"
+        tools:layout="@layout/fragment_task_creation" >
+        <action
+            android:id="@+id/action_taskCreationFragment_to_taskAssigningMentorFragment"
+            app:destination="@id/taskAssigningMentorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/taskAssigningMentorFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentormanager.ui.task.taskMentor.TaskAssigningMentorFragment"
+        android:label="TaskAssigningMentorFragment"
+        tools:layout="@layout/fragment_task_assining_mentor" />
 
 
 </navigation>

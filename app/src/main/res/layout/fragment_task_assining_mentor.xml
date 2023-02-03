@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.peculiaruc.alc_mmsystem_mentormanager.ui.task.taskMentor.TaskAssigningMentorViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        tools:context=".ui.mentor.MentorFragment">
+
+        <TextView
+            android:id="@+id/text_mentor_manger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/mukta_semibold"
+            android:text="@string/all_mentor_manger"
+            android:textColor="@color/mms_black_2"
+            android:textSize="@dimen/font_medium"
+            app:drawableEndCompat="@drawable/down_arrow_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/mms_black_6"
+            android:fontFamily="@font/mukta_regular"
+            android:onClick="@{()-> viewModel.onClickDone()}"
+            android:text="Done"
+            android:textColor="@color/mms_black_10"
+            android:textSize="12sp"
+            app:cornerRadius="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_mentor_manger" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_mentor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_mentor_manger"
+            tools:listitem="@layout/item_select_mentor" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -64,6 +64,10 @@ class TaskFragment : BaseFragment<FragmentTaskBinding>() {
         viewModel.selectTaskEvent.observe(viewLifecycleOwner, EventObserve { task ->
             findNavController().navigate(TaskFragmentDirections.actionTaskFragmentToTaskDetailsFragment())
         })
+
+        viewModel.createTaskEvent.observe(viewLifecycleOwner, EventObserve {
+            findNavController().navigate(TaskFragmentDirections.actionTaskFragmentToTaskCreationFragment())
+        })
     }
 
 
